@@ -22,7 +22,6 @@ class Layout extends React.Component {
   }
 
   render() {
-    console.log(this.state.navigating);
     return (
       <StaticQuery
         query={graphql`

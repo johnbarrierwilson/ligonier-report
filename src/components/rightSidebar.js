@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const RightSidebar = (props) => (
-  <Container>
+  <Container {...props}>
     <li></li>
     <li></li>
     <li></li>
@@ -19,11 +19,14 @@ const Container = styled('ol')`
   list-style: none;
   li {
     background: transparent;
-    border: 1px solid white;
+    border: 1px solid ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
     border-radius: 50%;
     height: 8px;
     margin: 4px auto;
     width: 8px;
+  }
+  li:nth-child(${p => p.status}) {
+    background: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   }
 `
 

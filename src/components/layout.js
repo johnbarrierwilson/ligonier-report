@@ -36,7 +36,12 @@ class Layout extends React.Component {
         render={data => (
             <ThemeProvider theme={theme} >
               <>
-                <Toggle href="#" onClick={this.toggleNavigation} navigating={this.state.navigating}>
+                <Toggle
+                  href="#"
+                  navigating={this.state.navigating}
+                  onClick={this.toggleNavigation}
+                  type={this.props.type}
+                >
                   <div></div>
                 </Toggle>
                 <Container>
@@ -51,7 +56,7 @@ class Layout extends React.Component {
                     <html lang="en" />
                     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6693092/7770812/css/fonts.css" />
                   </Helmet>
-                  <Grid navigating={this.state.navigating}>
+                  <Grid navigating={this.state.navigating} type={this.props.type}>
                     {this.props.children}
                   </Grid>
                 </Container>
@@ -87,10 +92,13 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.1;
     margin: 0;
   }
+  a {
+    text-decoration: none;
+  }
 `
 
 const Grid = styled('div')`
-  background: ${p => p.theme.colors.teal};
+  background: ${p => p.type === "tf" ? p.theme.colors.teal : p.theme.colors.white};
   display: grid;
   grid-template-columns: 90px repeat(12, 1fr) 90px;
   grid-template-rows: 90px repeat(11, 1fr);
@@ -118,13 +126,13 @@ const Toggle = styled('a')`
   width: 50px;
   z-index: 10;
   div {
-    background: ${p => p.navigating ? 'transparent' : 'white'};
+    background: ${p => p.navigating ? 'transparent' : p.type !== 'tf' ? p.theme.colors.black : p.theme.colors.white};
     position: relative;
     height: 2px;
     transition: all 250ms cubic-bezier(.55,0,.1,1);
     width: 24px;
     &::after {
-      background: white;
+      background: ${p => p.navigating ? p.theme.colors.white : p.type !== 'tf' ? p.theme.colors.black : p.theme.colors.white};
       content: '';
       height: 100%;
       left: 0;
@@ -135,7 +143,7 @@ const Toggle = styled('a')`
       width: 100%;
     }
     &::before {
-      background: white;
+      background: ${p => p.navigating ? p.theme.colors.white : p.type !== 'tf' ? p.theme.colors.black : p.theme.colors.white};
       bottom: 8px;
       content: '';
       height: 100%;

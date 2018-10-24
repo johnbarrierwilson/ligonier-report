@@ -7,7 +7,7 @@ const DocumentTitle = () => (
 
 const Container = styled('p')`
   align-self: center;
-  color: ${p => p.theme.colors.white};
+  color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   font-size: 10px;
   font-weight: 600;
   grid-column: 12 / span 2;

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const LeftSidebar = (props) => (
-  <Container>
+  <Container {...props}>
     <p>{props.text}</p>
   </Container>
 )
@@ -12,7 +12,7 @@ const Container = styled('div')`
   grid-row: 2 / span 10;
   position: relative;
   p {
-    color: ${p => p.theme.colors.white};
+    color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.35em;

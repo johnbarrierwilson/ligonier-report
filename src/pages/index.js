@@ -16,11 +16,11 @@ const IndexPage = () => (
 
 const Content = styled('p')`
   color: ${p => p.theme.colors.white};
-  grid-column: 9 / span 5;
+  grid-column: 10 / span 4;
   grid-row: 11 / span 2;
+  text-align: justify;
   strong {
     font-weight: 600;
-    letter-spacing: 0.05em;
     text-transform: uppercase;
   }
 `
@@ -39,8 +39,10 @@ const TeachingFellows = styled('div')`
   background-image: url(${p => p.image});
   background-position: center 20%;
   background-size: cover;
+  filter: saturate(65%);
   grid-column: 2 / span 12;
   grid-row: 2 / span 9;
+  margin-bottom: 70px;
 `
 
 const Title = styled('h1')`
@@ -48,7 +50,6 @@ const Title = styled('h1')`
   font-size: 32px;
   grid-column: 2 / span 6;
   grid-row: 11 / span 1;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
 `
 

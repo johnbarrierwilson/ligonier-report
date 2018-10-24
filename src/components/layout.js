@@ -50,24 +50,29 @@ Layout.propTypes = {
 export default Layout
 
 const GlobalStyles = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   html {
     font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.6
+    line-height: 1.45;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: "Chronicle Cond A", "Chronicle Cond B", Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
     line-height: 1.1;
+    margin: 0;
   }
 `
 
 const Grid = styled('div')`
   display: grid;
-  grid-gap: 40px;
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: 90px repeat(12, 1fr) 90px;
+  grid-template-rows: 90px repeat(11, 1fr);
   height: 100vh;
 `
 

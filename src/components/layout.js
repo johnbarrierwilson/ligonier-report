@@ -59,7 +59,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.45;
+    line-height: 1.6;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: "Chronicle Cond A", "Chronicle Cond B", Georgia, 'Times New Roman', Times, serif;

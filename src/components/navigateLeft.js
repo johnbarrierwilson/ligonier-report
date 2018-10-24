@@ -9,7 +9,7 @@ const NavigateLeft = (props) => (
 const Container = styled(Link)`
   align-items: center;
   align-self: center;
-  border: 1px solid ${p => p.theme.colors.white};
+  background: ${p => p.theme.colors.white};
   border-radius: 50%;
   display: flex;
   font-size: 35px;
@@ -21,8 +21,8 @@ const Container = styled(Link)`
   width: 40px;
   &::before {
     content: '';
-    border-left: 2px solid ${p => p.theme.colors.white};
-    border-top: 2px solid ${p => p.theme.colors.white};
+    border-left: 2px solid ${p => p.theme.colors.black};
+    border-top: 2px solid ${p => p.theme.colors.black};
     height: 8px;
     transform: rotate(-45deg) translate(1px, 1px);
     width: 8px;

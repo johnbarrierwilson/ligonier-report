@@ -22,6 +22,7 @@ const IndexPage = () => (
     <NavigateLeft to="/" />
     <Image
       column='2 / span 12'
+      position='center 20%'
       row='2 / span 8'
       src={TeachingFellowsImage}
     />

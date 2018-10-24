@@ -21,18 +21,26 @@ const IndexPage = () => (
     <NavigateRight to="/teaching-fellows" />
     <Image
       column='1 / span 3'
-      row='4 / span 4'
+      row='4 / span 6'
+      position='top right'
+      size='495px 446px'
       src={Piece01}
+      transform='translate(-90px, -35px)'
     />
     <Image
-      column='9 / span 3'
-      row='1 / span 4'
+      column='9 / span 6'
+      row='1 / span 3'
+      position='bottom left'
+      size='495px 369px'
       src={Piece02}
     />
     <Image
-      column='4 / span 4'
-      row='11 / span 2'
+      column='3 / span 6'
+      row='10 / span 3'
+      position='top center'
+      size='468px 414px'
       src={Piece03}
+      transform='translate(15px, 25px)'
     />
     <Heading
       column='2 / span 3'
@@ -55,7 +63,7 @@ const IndexPage = () => (
     />
     <Content
       column='10 / span 2'
-      row='7 / span 5'
+      row='8 / span 5'
     >
       <p><strong>Every year</strong>, Ligonier Ministries provides more ways for Christians to read, listen, and gather around God's truth.</p>
       <p>Under God’s blessing, the outreach we’ve been able to do together has continued to grow, This report is a celebration of all that you’ve enabled through your generosity and your prayers.</p>

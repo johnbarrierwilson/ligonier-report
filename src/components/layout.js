@@ -36,9 +36,9 @@ class Layout extends React.Component {
         render={data => (
             <ThemeProvider theme={theme} >
               <>
-                <Toggle href="#" onClick={this.toggleNavigation} navigating={this.state.navigating}>
+                {/* <Toggle href="#" onClick={this.toggleNavigation} navigating={this.state.navigating}>
                   <div></div>
-                </Toggle>
+                </Toggle> */}
                 <Container>
                   <GlobalStyles />
                   <Helmet
@@ -107,43 +107,43 @@ const Container = styled('div')`
   background: #000000;
 `
 
-const Toggle = styled('a')`
-  align-items: center;
-  display: flex;
-  height: 50px;
-  justify-content: center;
-  position: fixed;
-  right: 20px;
-  top: 20px;
-  width: 50px;
-  z-index: 10;
-  div {
-    background: ${p => p.navigating ? 'transparent' : 'white'};
-    position: relative;
-    height: 2px;
-    transition: all 250ms cubic-bezier(.55,0,.1,1);
-    width: 24px;
-    &::after {
-      background: white;
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 8px;
-      transform: ${p => p.navigating ? 'rotate(-45deg) translate(5.75px, -5.75px)' : 'rotate(0deg)'};
-      transition: all 500ms cubic-bezier(.55,0,.1,1);
-      width: 100%;
-    }
-    &::before {
-      background: white;
-      bottom: 8px;
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      transform: ${p => p.navigating ? 'rotate(45deg) translate(5.75px, 5.75px)' : 'rotate(0deg)'};
-      transition: all 500ms cubic-bezier(.55,0,.1,1);
-      width: 100%;
-    }
-  }
-`
+// const Toggle = styled('a')`
+//   align-items: center;
+//   display: flex;
+//   height: 50px;
+//   justify-content: center;
+//   position: fixed;
+//   right: 20px;
+//   top: 20px;
+//   width: 50px;
+//   z-index: 10;
+//   div {
+//     background: ${p => p.navigating ? 'transparent' : 'white'};
+//     position: relative;
+//     height: 2px;
+//     transition: all 250ms cubic-bezier(.55,0,.1,1);
+//     width: 24px;
+//     &::after {
+//       background: white;
+//       content: '';
+//       height: 100%;
+//       left: 0;
+//       position: absolute;
+//       top: 8px;
+//       transform: ${p => p.navigating ? 'rotate(-45deg) translate(5.75px, -5.75px)' : 'rotate(0deg)'};
+//       transition: all 500ms cubic-bezier(.55,0,.1,1);
+//       width: 100%;
+//     }
+//     &::before {
+//       background: white;
+//       bottom: 8px;
+//       content: '';
+//       height: 100%;
+//       left: 0;
+//       position: absolute;
+//       transform: ${p => p.navigating ? 'rotate(45deg) translate(5.75px, 5.75px)' : 'rotate(0deg)'};
+//       transition: all 500ms cubic-bezier(.55,0,.1,1);
+//       width: 100%;
+//     }
+//   }
+// `

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const DocumentTitle = () => (
-  <Container>Ministry Report</Container>
+const DocumentTitle = (props) => (
+  <Container {...props}>Ministry Report</Container>
 )
 
 const Container = styled('p')`

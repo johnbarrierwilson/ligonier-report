@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Content from '../components/content'
+import DocumentTitle from '../components/documentTitle'
 import Heading from '../components/heading'
 import Image from '../components/image'
 import Layout from '../components/layout'
@@ -15,6 +16,7 @@ import Piece03 from '../images/piece_03.png'
 const IndexPage = () => (
   <Layout>
     <Logo />
+    <DocumentTitle />
     <RightSidebar status={0} />
     <NavigateRight to="/teaching-fellows" />
     <Image
@@ -23,7 +25,7 @@ const IndexPage = () => (
       src={Piece01}
     />
     <Image
-      column='10 / span 3'
+      column='9 / span 3'
       row='1 / span 4'
       src={Piece02}
     />

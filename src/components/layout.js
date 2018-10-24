@@ -113,6 +113,7 @@ const Grid = styled('div')`
 
 const Container = styled('div')`
   background: #000000;
+  overflow: hidden;
 `
 
 const Toggle = styled('a')`

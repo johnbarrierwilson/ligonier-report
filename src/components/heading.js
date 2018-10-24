@@ -12,7 +12,7 @@ const Container = styled('h1')`
       case 'xl':
         return '75px'
       default:
-        return '32px'
+        return '38px'
     }
   }};
   grid-column: ${p => p.column};

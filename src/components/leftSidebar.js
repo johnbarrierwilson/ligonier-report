@@ -19,6 +19,7 @@ const Container = styled('div')`
     position: absolute;
     top: 50%;
     right: 50%;
+    text-align: center;
     text-transform: uppercase;
     transform: rotate(-90deg) translateX(50%);
     transform-origin: 100% 50%;

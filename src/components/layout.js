@@ -32,8 +32,11 @@ const Layout = ({ children }) => {
               ]}
             >
               <html lang="en" />
+              <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6693092/7770812/css/fonts.css" />
             </Helmet>
-            {children}
+            <Grid>
+              {children}
+            </Grid>
           </Container>
         </ThemeProvider>
     )}
@@ -48,11 +51,26 @@ export default Layout
 
 const GlobalStyles = createGlobalStyle`
   html {
-    font-family: sans-serif;
+    font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
     font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Chronicle Cond A", "Chronicle Cond B", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    line-height: 1.1;
   }
 `
 
+const Grid = styled('div')`
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 100vh;
+`
+
 const Container = styled('div')`
-  background: ${p => p.theme.colors.pink};
+  background: ${p => p.theme.colors.teal};
 `

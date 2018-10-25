@@ -15,7 +15,10 @@ const Mark = styled('svg')`
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   justify-self: center;
-  transform: scale(0.9);
+  transform: scale(0.5);
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    transform: scale(0.9);
+  }
   path {
     fill: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   }
@@ -26,10 +29,15 @@ const Title = styled('p')`
   color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   font-size: 10px;
   font-weight: 600;
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 12;
   grid-row: 1 / span 1;
   letter-spacing: 0.35em;
+  text-align: center;
   text-transform: uppercase;
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    grid-column: 2 / span 4;
+    text-align: left;
+  }
 `
 
 export default Logo

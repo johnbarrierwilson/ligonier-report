@@ -13,10 +13,20 @@ const Container = styled('ol')`
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  grid-column: 14 / span 1;
-  grid-row: 6 / span 2;
   justify-content: center;
+  position: fixed;
+  right: 20px;
+  top: 50%;
   list-style: none;
+  transform: translate(50%, -50%);
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    grid-column: 14 / span 1;
+    grid-row: 6 / span 2;
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+  }
   li {
     background: transparent;
     border: 1px solid ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};

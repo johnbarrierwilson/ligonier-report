@@ -7,6 +7,8 @@ import styled, { ThemeProvider, createGlobalStyle, css } from 'styled-components
 import 'normalize.css'
 import theme from '../theme.js'
 
+import Toggle from './toggle'
+
 class Layout extends React.Component {
   constructor(props) {
     super(props);
@@ -37,13 +39,10 @@ class Layout extends React.Component {
             <ThemeProvider theme={theme} >
               <>
                 <Toggle
-                  href="#"
                   navigating={this.state.navigating}
                   onClick={this.toggleNavigation}
                   type={this.props.type}
-                >
-                  <div></div>
-                </Toggle>
+                />
                 <Container>
                   <GlobalStyles />
                   <Helmet
@@ -101,60 +100,30 @@ const GlobalStyles = createGlobalStyle`
 const Grid = styled('div')`
   background: ${p => p.type === "tf" ? p.theme.colors.teal : p.theme.colors.white};
   display: grid;
-  grid-template-columns: 90px repeat(12, 1fr) 90px;
-  grid-template-rows: 90px repeat(11, 1fr);
-  height: 100vh;
-  overflow: hidden;
+  grid-template-columns: 40px repeat(12, 1fr) 40px;
+  grid-template-rows: 40px repeat(11, auto);
   transition: all 500ms cubic-bezier(.55,0,.1,1);
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    grid-template-columns: 90px repeat(12, 1fr) 90px;
+    grid-template-rows: 90px repeat(11, 1fr);
+  }
+  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    height: 100vh;
+  }
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
+    overflow: hidden;
+  }
+
   ${p => p.navigating && css`
-    border-radius: 30px;
+    /* border-radius: 30px; */
     opacity: 0.5;
-    transform: scale(0.9) translateY(50vh);
+    transform: translateY(50vh);
   `}
 `
 
 const Container = styled('div')`
   background: #000000;
-  overflow: hidden;
-`
-
-const Toggle = styled('a')`
-  align-items: center;
-  display: flex;
-  height: 50px;
-  justify-content: center;
-  position: fixed;
-  right: 20px;
-  top: 20px;
-  width: 50px;
-  z-index: 10;
-  div {
-    background: ${p => p.navigating ? 'transparent' : p.type !== 'tf' ? p.theme.colors.black : p.theme.colors.white};
-    position: relative;
-    height: 2px;
-    transition: all 250ms cubic-bezier(.55,0,.1,1);
-    width: 24px;
-    &::after {
-      background: ${p => p.navigating ? p.theme.colors.white : p.type !== 'tf' ? p.theme.colors.black : p.theme.colors.white};
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 8px;
-      transform: ${p => p.navigating ? 'rotate(-45deg) translate(5.75px, -5.75px)' : 'rotate(0deg)'};
-      transition: all 500ms cubic-bezier(.55,0,.1,1);
-      width: 100%;
-    }
-    &::before {
-      background: ${p => p.navigating ? p.theme.colors.white : p.type !== 'tf' ? p.theme.colors.black : p.theme.colors.white};
-      bottom: 8px;
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      transform: ${p => p.navigating ? 'rotate(45deg) translate(5.75px, 5.75px)' : 'rotate(0deg)'};
-      transition: all 500ms cubic-bezier(.55,0,.1,1);
-      width: 100%;
-    }
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
+    overflow: hidden;
   }
 `

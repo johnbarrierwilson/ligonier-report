@@ -5,7 +5,7 @@ const Content = styled('div')`
   grid-column: ${p => p.column};
   grid-row: ${p => p.row};
   p {
-    /* text-align: justify; */
+    text-align: justify;
     text-indent: 25px;
     &:first-of-type {
       text-indent: 0px;

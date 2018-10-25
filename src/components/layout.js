@@ -81,10 +81,11 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
   html {
-    font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.4;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: "Chronicle Cond A", "Chronicle Cond B", Georgia, 'Times New Roman', Times, serif;
@@ -103,6 +104,7 @@ const Grid = styled('div')`
   grid-template-columns: 90px repeat(12, 1fr) 90px;
   grid-template-rows: 90px repeat(11, 1fr);
   height: 100vh;
+  overflow: hidden;
   transition: all 500ms cubic-bezier(.55,0,.1,1);
   ${p => p.navigating && css`
     border-radius: 30px;

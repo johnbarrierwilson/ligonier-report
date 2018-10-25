@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const Image = styled('div')`
   background-image: url(${p => p.src});
@@ -9,9 +9,11 @@ const Image = styled('div')`
   grid-row: ${p => p.row[0]};
   position: relative;
   z-index: ${p => p.theme.index.image};
+  ${p => p.height ? css`height: ${p.height};` : null}
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-column: ${p => p.column[1]};
     grid-row: ${p => p.row[1]};
+    height: auto;
     transform: ${p => p.transform ? p.transform : 'none'};
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {

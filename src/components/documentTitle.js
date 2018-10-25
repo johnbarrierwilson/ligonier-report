@@ -13,11 +13,14 @@ const Container = styled('p')`
     display: block;
     font-size: 10px;
     font-weight: 600;
-    grid-column: 12 / span 2;
+    grid-column: 8 / span 6;
     grid-row: 1 / span 1;
     letter-spacing: 0.35em;
     text-align: right;
     text-transform: uppercase;
+  }
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
+    grid-column: 12 / span 2;
   }
 `
 

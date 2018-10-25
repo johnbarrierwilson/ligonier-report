@@ -35,7 +35,7 @@ const Title = styled('p')`
   text-align: center;
   text-transform: uppercase;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 5;
     text-align: left;
   }
 `

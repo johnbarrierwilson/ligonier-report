@@ -2,6 +2,7 @@ const theme = {
   colors: {
     black: '#222222',
     gray: '#dce0df',
+    tan: '#f3efea',
     tanDark: '#bfaea2',
     teal: '#06212b',
     white: '#ffffff'

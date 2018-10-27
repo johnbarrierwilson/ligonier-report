@@ -12,6 +12,7 @@ import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
+import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 
 import Xavier from '../images/StoryXavier.jpg'
@@ -24,6 +25,7 @@ const IndexPage = () => (
     <LeftSidebar text='Part One / Read' />
     <RightSidebar status={1} />
     <NavigateLeft to="/introduction-read" />
+    <NavigateRight to="/read-01" />
     <Subject
       column={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
       row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}

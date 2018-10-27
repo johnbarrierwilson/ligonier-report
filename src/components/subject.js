@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Subject = styled('div')`
   align-self: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   grid-column: ${p => p.column[0]};
   grid-row: ${p => p.row[0]};

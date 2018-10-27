@@ -3,13 +3,13 @@ import styled from 'styled-components'
 
 import Content from '../components/content'
 import Divider from '../components/divider'
-import Heading from '../components/Heading'
+import Heading from '../components/heading'
 import Image from '../components/image'
 import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
-import NavigateRight from '../components/navigateRight'
+// import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 import Subject from '../components/subject'
 
@@ -44,7 +44,6 @@ const IndexPage = () => (
       transform="translateY(50px)"
     />
     <Heading
-      // center={true}
       column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
       row={['6 / span 1', '6 / span 1', '6 / span 1', '6 / span 1']}
       text="Helping Disciples Grow"

@@ -1,11 +1,14 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const Heading = (props) => (
   <Container {...props}>{props.text}</Container>
 )
 
 const Container = styled('h1')`
+  ${p => p.center ? css`
+    align-self: center;
+  ` : null}
   color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   font-size: ${p => {
     switch(p.size) {

@@ -9,6 +9,7 @@ import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
+import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 
 import IntroductionPattern from '../images/IntroductionPattern.png'
@@ -22,6 +23,7 @@ const IndexPage = () => (
     <LeftSidebar text='A Letter from the President' />
     <RightSidebar status={1} />
     <NavigateLeft to="/president-letter" />
+    <NavigateRight to="/story-xavier" />
     <Heading
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
       row={['4 / span 1', '4 / span 1', '4 / span 1', '4 / span 1']}
@@ -44,7 +46,7 @@ const IndexPage = () => (
 )
 
 const Backdrop = styled('div')`
-  background: ${p => p.theme.colors.white};
+  background: #efeded;
   background-image: url(${IntroductionPattern});
   background-size: 500px 500px;
   grid-column: 1 / span 14;

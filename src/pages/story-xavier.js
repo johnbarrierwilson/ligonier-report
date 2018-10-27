@@ -7,7 +7,7 @@ import Divider from '../components/divider'
 import DocumentTitle from '../components/documentTitle'
 import Heading from '../components/heading'
 import Image from '../components/image'
-import Label from '../components/label'
+import Subject from '../components/subject'
 import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
@@ -24,12 +24,16 @@ const IndexPage = () => (
     <LeftSidebar text='Part One / Read' />
     <RightSidebar status={1} />
     <NavigateLeft to="/introduction-read" />
-    <Label
+    <Subject
       column={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
       row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
     >
-      <span>Testimony</span>
-    </Label>
+      Testimony
+    </Subject>
+    <Divider
+      column={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
+      row={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
+    />
     <Image
       column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
       position="center 20%"

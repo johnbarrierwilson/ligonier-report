@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Content from '../components/content'
+import Divider from '../components/divider'
 import DocumentTitle from '../components/documentTitle'
-import Heading from '../components/heading'
 import Image from '../components/image'
 import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
@@ -11,6 +11,7 @@ import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
 import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
+import Subject from '../components/subject'
 
 import ChrisLarson from '../images/ChrisLarson.png'
 import ChrisLarsonSignature from '../images/ChrisLarsonSignature.png'
@@ -30,10 +31,15 @@ const IndexPage = () => (
       row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
       src={ChrisLarson}
     />
-    <Heading
+    <Subject
       column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
       row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
-      text="Dear Friend"
+    >
+      Dear Friend
+    </Subject>
+    <Divider
+      column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
+      row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
     />
     <Content
       column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}

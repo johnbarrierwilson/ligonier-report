@@ -9,6 +9,7 @@ import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
+import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 
 import ChrisLarson from '../images/ChrisLarson.png'
@@ -22,6 +23,7 @@ const IndexPage = () => (
     <LeftSidebar text='A Letter from the President' />
     <RightSidebar status={0} />
     <NavigateLeft to="/teaching-fellows" />
+    <NavigateRight to="/introduction-read" />
     <Image
       column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
       position="center 20%"

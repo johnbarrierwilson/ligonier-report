@@ -4,7 +4,7 @@ const Image = styled('div')`
   background-image: url(${p => p.src});
   background-position: ${p => p.position ? p.position : 'center center'};
   background-repeat: no-repeat;
-  background-size: ${p => p.size ? p.size : 'cover'};
+  background-size: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'};
   grid-column: ${p => p.column[0]};
   grid-row: ${p => p.row[0]};
   position: relative;

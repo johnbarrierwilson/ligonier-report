@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Content from '../components/content'
 import Divider from '../components/divider'
@@ -15,7 +16,8 @@ import RightSidebar from '../components/rightSidebar'
 import TeachingFellowsImage from "../images/2018_TF_Group_Wide_RGB.jpg"
 
 const IndexPage = () => (
-  <Layout type="tf">
+  <Layout inverted={true}>
+    <Backdrop />
     <Logo inverted={true} />
     <DocumentTitle inverted={true} />
     <LeftSidebar inverted={true} text='The Ligonier Teaching Fellows' />
@@ -49,5 +51,11 @@ const IndexPage = () => (
     </Content>
   </Layout>
 )
+
+const Backdrop = styled('div')`
+  background: ${p => p.theme.colors.teal};
+  grid-column: 1 / span 14;
+  grid-row: 1 / span 12;
+`
 
 export default IndexPage

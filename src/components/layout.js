@@ -39,6 +39,7 @@ class Layout extends React.Component {
             <ThemeProvider theme={theme} >
               <>
                 <Toggle
+                  inverted={this.props.inverted}
                   navigating={this.state.navigating}
                   onClick={this.toggleNavigation}
                   type={this.props.type}
@@ -55,7 +56,7 @@ class Layout extends React.Component {
                     <html lang="en" />
                     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6693092/7770812/css/fonts.css" />
                   </Helmet>
-                  <Grid navigating={this.state.navigating} type={this.props.type}>
+                  <Grid navigating={this.state.navigating}>
                     {this.props.children}
                   </Grid>
                 </Container>
@@ -98,7 +99,7 @@ const GlobalStyles = createGlobalStyle`
 `
 
 const Grid = styled('div')`
-  background: ${p => p.type === "tf" ? p.theme.colors.teal : p.theme.colors.white};
+  background: ${p => p.theme.colors.white};
   display: grid;
   grid-template-columns: 40px repeat(12, 1fr) 40px;
   grid-template-rows: 40px repeat(11, auto);

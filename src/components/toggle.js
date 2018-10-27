@@ -24,7 +24,7 @@ const Container = styled('a')`
     width: 50px;
   }
   div {
-    background: ${p => p.navigating ? 'transparent' : p.type !== 'tf' ? p.theme.colors.black : p.theme.colors.white};
+    background: ${p => p.navigating ? 'transparent' : p.inverted ? p.theme.colors.white : p.theme.colors.black};
     position: relative;
     height: 2px;
     transition: all 250ms cubic-bezier(.55,0,.1,1);
@@ -33,7 +33,7 @@ const Container = styled('a')`
       width: 24px;
     }
     &::after {
-      background: ${p => p.navigating ? p.theme.colors.white : p.type !== 'tf' ? p.theme.colors.black : p.theme.colors.white};
+      background: ${p => p.navigating ? p.theme.colors.white : p.inverted ? p.theme.colors.white : p.theme.colors.black};
       content: '';
       height: 100%;
       left: 0;
@@ -48,7 +48,7 @@ const Container = styled('a')`
       }
     }
     &::before {
-      background: ${p => p.navigating ? p.theme.colors.white : p.type !== 'tf' ? p.theme.colors.black : p.theme.colors.white};
+      background: ${p => p.navigating ? p.theme.colors.white : p.inverted ? p.theme.colors.white : p.theme.colors.black};
       bottom: 6px;
       content: '';
       height: 100%;

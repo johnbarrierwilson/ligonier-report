@@ -9,6 +9,7 @@ import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
+import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 
 import TeachingFellowsImage from "../images/2018_TF_Group_Wide_RGB.jpg"
@@ -19,7 +20,8 @@ const IndexPage = () => (
     <DocumentTitle inverted={true} />
     <LeftSidebar inverted={true} text='The Ligonier Teaching Fellows' />
     <RightSidebar inverted={true} status={0} />
-    <NavigateLeft to="/" />
+    <NavigateLeft inverted={true} to="/" />
+    <NavigateRight inverted={true} to="/president-letter" />
     <Image
       column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
       height='50vh'
@@ -36,7 +38,7 @@ const IndexPage = () => (
     <Divider
       column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
       inverted={true}
-      row={['3 / span 2', '12 / span 1', '12 / span 1', '12 / span 1']}
+      row={['3 / span 2', '12 / span 1', '12 / span 1', '11 / span 2']}
     />
     <Content
       column={['2 / span 12', '10 / span 4', '10 / span 4', '10 / span 4']}

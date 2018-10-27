@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import styled, { ThemeProvider, createGlobalStyle, css } from 'styled-components'
 
 import 'normalize.css'
@@ -56,6 +56,35 @@ class Layout extends React.Component {
                     <html lang="en" />
                     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6693092/7770812/css/fonts.css" />
                   </Helmet>
+                  <Navigation navigating={this.state.navigating}>
+                    <div>
+                      <p>Introduction</p>
+                      <Link to="/">Overview</Link>
+                      <Link to="/teaching-fellows">The Teaching Fellows</Link>
+                      <Link to="/president-letter">A Letter from the President</Link>
+                    </div>
+                    <div>
+                      <p>Read</p>
+                      <Link to="/introduction-read">Introduction</Link>
+                      <Link to="/story-xavier">Story: Xavier</Link>
+                      <Link to="/read-01">Page #01</Link>
+                      <Link to="#">Page Four</Link>
+                    </div>
+                    <div>
+                      <p>Listen</p>
+                      <Link to="#">Placeholder</Link>
+                      <Link to="#">Placeholder</Link>
+                      <Link to="#">Placeholder</Link>
+                      <Link to="#">Placeholder</Link>
+                    </div>
+                    <div>
+                      <p>Gather</p>
+                      <Link to="#">Placeholder</Link>
+                      <Link to="#">Placeholder</Link>
+                      <Link to="#">Placeholder</Link>
+                      <Link to="#">Placeholder</Link>
+                    </div>
+                  </Navigation>
                   <Grid navigating={this.state.navigating}>
                     {this.props.children}
                   </Grid>
@@ -103,7 +132,9 @@ const Grid = styled('div')`
   display: grid;
   grid-template-columns: 40px repeat(12, 1fr) 40px;
   grid-template-rows: 40px repeat(11, auto);
+  position: relative;
   transition: all 500ms cubic-bezier(.55,0,.1,1);
+  z-index: ${p => p.theme.index.grid};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-template-columns: 90px repeat(12, 1fr) 90px;
     grid-template-rows: 90px repeat(11, 1fr);
@@ -118,13 +149,55 @@ const Grid = styled('div')`
   ${p => p.navigating && css`
     /* border-radius: 30px; */
     opacity: 0.5;
-    transform: translateY(50vh);
+    transform: translateY(500px);
   `}
 `
 
 const Container = styled('div')`
-  background: #000000;
+  background: #111111;
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     overflow: hidden;
+  }
+`
+
+const Navigation = styled('nav')`
+  align-items: center;
+  color: ${p => p.theme.colors.white};
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  opacity: ${p => p.navigating ? '1' : '0'};
+  padding: 0 25px;
+  position: absolute;
+  right: 0;
+  transform: ${p => p.navigating ? 'scale(1)': 'scale(0.75)'};
+  transition: all 500ms 100ms cubic-bezier(.55,0,.1,1);
+  width: 100%;
+  z-index: ${p => p.theme.index.navigation};
+  a {
+    color: ${p => p.theme.colors.gray};
+    display: block;
+    font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    margin: 15px auto;
+    text-transform: uppercase;
+    &:hover {
+      color: ${p => p.theme.colors.white};
+    }
+  }
+  div {
+    text-align: center;
+    height: 50%;
+    width: 25%;
+  }
+  p {
+    letter-spacing: 0.15em;
+    margin-bottom: 50px;
+    opacity: 0.5;
+    text-transform: uppercase;
   }
 `

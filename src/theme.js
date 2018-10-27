@@ -13,11 +13,13 @@ const theme = {
     large: '1600px'
   },
   index: {
-    content: '20',
-    heading: '20',
-    image: '10',
-    label: '20',
-    toggle: '50'
+    content: '30',
+    grid: '10',
+    heading: '30',
+    image: '20',
+    label: '30',
+    navigation: '0',
+    toggle: '90'
   }
 }
 

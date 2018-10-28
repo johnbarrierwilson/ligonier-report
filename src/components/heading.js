@@ -13,9 +13,9 @@ const Container = styled('h1')`
   font-size: ${p => {
     switch(p.size) {
       case 'xl':
-        return '50px'
+        return '3.125rem'
       default:
-        return '24px'
+        return '1.5rem'
     }
   }};
   grid-column: ${p => p.column[0]};
@@ -34,9 +34,9 @@ const Container = styled('h1')`
     font-size: ${p => {
       switch(p.size) {
         case 'xl':
-          return '75px'
+          return '4.6875rem'
         default:
-          return '38px'
+          return '2.375rem'
       }
     }};
     grid-column: ${p => p.column[2]};

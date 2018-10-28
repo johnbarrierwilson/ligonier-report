@@ -112,7 +112,7 @@ const GlobalStyles = createGlobalStyle`
   html {
     -webkit-font-smoothing: antialiased;
     font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
-    font-size: 16px;
+    font-size: 1.5vmin;
     font-weight: 400;
     line-height: 1.4;
   }
@@ -133,7 +133,7 @@ const Grid = styled('div')`
   grid-template-columns: 40px repeat(12, 1fr) 40px;
   grid-template-rows: 40px repeat(11, auto);
   position: relative;
-  transition: all 500ms cubic-bezier(.55,0,.1,1);
+  transition: transform 500ms cubic-bezier(.55,0,.1,1), opacity 500ms cubic-bezier(.55,0,.1,1);
   z-index: ${p => p.theme.index.grid};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-template-columns: 90px repeat(12, 1fr) 90px;

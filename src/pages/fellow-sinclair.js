@@ -21,7 +21,7 @@ const IndexPage = () => (
     <Backdrop />
     <Logo inverted={true} />
     <DocumentTitle inverted={true} />
-    <LeftSidebar inverted={true} text='The Ligonier Teaching Fellows' />
+    <LeftSidebar inverted={true} text='Teaching Fellows / Ferguson' />
     <RightSidebar inverted={true} status={0} />
     <NavigateLeft inverted={true} to="/read-01" />
     <NavigateRight inverted={true} to="/read-02" />

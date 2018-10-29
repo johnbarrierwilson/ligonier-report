@@ -20,7 +20,7 @@ const IndexPage = () => (
   <Layout>
     <Logo />
     <DocumentTitle />
-    <LeftSidebar text='A Letter from the President' />
+    <LeftSidebar text='Part One / Read' />
     <RightSidebar status={1} />
     <NavigateLeft to="/fellow-sinclair" />
     {/* <NavigateRight to="/fellow-sinclair" /> */}

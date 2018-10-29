@@ -64,7 +64,7 @@ const IndexPage = () => (
     </Content>
     <Divider
       column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
-      row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+      row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
     />
   </Layout>
 )

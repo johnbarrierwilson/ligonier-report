@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import Content from '../components/content'
 import Divider from '../components/divider'
@@ -11,10 +10,14 @@ import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
 // import NavigateRight from '../components/navigateRight'
+import Numbers from '../components/numbers'
 import RightSidebar from '../components/rightSidebar'
 import Subject from '../components/subject'
 
 import Brown from '../images/BibleBrown.jpg'
+import Gray from '../images/BibleGray.jpg'
+import Leather from '../images/BibleLeather.jpg'
+import Standard from '../images/BibleStandard.jpg'
 
 const IndexPage = () => (
   <Layout>
@@ -43,40 +46,41 @@ const IndexPage = () => (
     />
     <Image
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-      position='left center'
-      row={['6 / span 6', '6 / span 6', '6 / span 6', '6 / span 6']}
+      row={['5 / span 6', '5 / span 6', '5 / span 6', '5 / span 6']}
       size="contain"
-      src={Brown}
+      src={Standard}
     />
     <Image
       column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
-      position='left center'
       row={['1 / span 6', '1 / span 6', '1 / span 6', '1 / span 6']}
       size="contain"
       src={Brown}
+      transform="translateY(-2rem)"
     />
     <Image
       column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
-      position='left center'
       row={['7 / span 6', '7 / span 6', '7 / span 6', '7 / span 6']}
       size="contain"
-      src={Brown}
+      src={Leather}
     />
     <Image
       column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
-      position='left center'
-      row={['2 / span 6', '2 / span 6', '2 / span 6', '2 / span 6']}
+      row={['1 / span 6', '1 / span 6', '1 / span 6', '1 / span 6']}
       size="contain"
-      src={Brown}
+      src={Gray}
     />
     <Content
       column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
-      row={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}
+      row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
     >
       <p><strong>The Reformation Study Bible</strong> guides growing Christians through the Word of God with trusted contributions from seventy-five gifted scholars. More than one hundred thousand copies have been distributed since March 2015.</p>
       <p>Dr. R.C. Sproul edited this landmark publication, which contains over 1.1 million words of verse-by-verse commentary. The original edition is packed with insightful articles; topical explanations; historic creeds, confessions, and catechisms; plus award-winning maps and visuals. The newly released Condensed Edition contains the best of this commentary and is designed for life on the go.</p>
       <p>The Reformation Study Bible, available in ESV or NKJV, elevates Scripture on every page and distills timeless theology for twenty-first-century disciples.</p>
     </Content>
+    <Numbers
+      column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+      row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+    />
   </Layout>
 )
 

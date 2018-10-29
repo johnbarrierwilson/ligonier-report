@@ -49,7 +49,7 @@ const IndexPage = () => (
       text="Xavier, San&nbsp;Francisco"
     />
     <Blockquote
-      column={['9 / span 4', '9 / span 4', '7 / span 6', '9 / span 4']}
+      column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
       row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
     >
       <p>“Shortly after I became a Christian, one of my coworkers gave me a copy of Tabletalk and&nbsp;said,</p>

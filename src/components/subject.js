@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const Subject = styled('div')`
   align-self: center;
+  color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   font-size: 12px;
   font-weight: 600;
   grid-column: ${p => p.column[0]};

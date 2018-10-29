@@ -14,6 +14,8 @@ const Container = styled('h1')`
     switch(p.size) {
       case 'xl':
         return '3.125rem'
+      case 's':
+        return '1rem'
       default:
         return '1.5rem'
     }
@@ -35,6 +37,8 @@ const Container = styled('h1')`
       switch(p.size) {
         case 'xl':
           return '4.6875rem'
+        case 's':
+          return '1.5rem'
         default:
           return '2.375rem'
       }

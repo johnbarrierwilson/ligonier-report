@@ -19,6 +19,7 @@ const theme = {
     image: '20',
     label: '30',
     navigation: '0',
+    title: '30',
     toggle: '90'
   }
 }

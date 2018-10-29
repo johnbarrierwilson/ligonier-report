@@ -18,9 +18,9 @@ const Container = styled('div')`
   font-size: 0.6rem;
   font-weight: 600;
   grid-column: ${p => p.column[0]};
-  grid-gap: 10px;
+  grid-gap: 0.5rem;
   grid-row: ${p => p.row[0]};
-  grid-template: 1fr 1fr / 1fr 2.5fr;
+  grid-template: 1fr 1fr / 1fr 3fr;
   letter-spacing: 0.5em;
   text-align: center;
   text-transform: uppercase;
@@ -47,7 +47,7 @@ const Title = styled('div')`
   grid-row: 1 / span 2;
   justify-content: space-around;
   margin: 10px 0;
-  padding: 0.6rem 0 1rem;
+  padding: 1rem 0 1.4rem;
   span {
     border-bottom: 1px solid ${p => p.theme.colors.black};
     padding: 5px 0;
@@ -63,7 +63,7 @@ const Number = styled('div')`
   grid-row: 1 / span 1;
   justify-content: center;
   letter-spacing: 0;
-  padding: 10px;
+  padding-top: 0.5rem;
 `
 
 const Description = styled('div')`
@@ -74,7 +74,7 @@ const Description = styled('div')`
   grid-row: 2 / span 1;
   justify-content: center;
   line-height: 2;
-  padding: 0 1rem;
+  padding: 0.75rem 1rem;
 `
 
 export default Numbers

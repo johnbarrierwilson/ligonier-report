@@ -16,8 +16,10 @@ const Container = styled('p')`
     grid-column: 8 / span 6;
     grid-row: 1 / span 1;
     letter-spacing: 0.35em;
+    position: relative;
     text-align: right;
     text-transform: uppercase;
+    z-index: ${p => p.theme.index.title};
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     grid-column: 12 / span 2;

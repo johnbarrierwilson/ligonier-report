@@ -3,11 +3,11 @@ import styled from 'styled-components'
 const Blockquote = styled('div')`
   color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   font-family: "Chronicle Cond A", "Chronicle Cond B", Georgia, 'Times New Roman', Times, serif;
-  font-size: 2.375rem;
+  font-size: 2.35rem;
   grid-column: ${p => p.column[0]};
   grid-row: ${p => p.row[0]};
   letter-spacing: 0.175em;
-  line-height: 1.7;
+  line-height: 1.5;
   position: relative;
   text-transform: uppercase;
   z-index: ${p => p.theme.index.content};

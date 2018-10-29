@@ -68,7 +68,7 @@ class Layout extends React.Component {
                       <Link to="/introduction-read">Introduction</Link>
                       <Link to="/story-xavier">Story: Xavier</Link>
                       <Link to="/read-01">Page #01</Link>
-                      <Link to="#">Page Four</Link>
+                      <Link to="/fellow-sinclair">Fellow: Sinclair Ferguson</Link>
                     </div>
                     <div>
                       <p>Listen</p>

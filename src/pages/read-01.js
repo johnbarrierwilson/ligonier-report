@@ -9,7 +9,7 @@ import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
-// import NavigateRight from '../components/navigateRight'
+import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 import Subject from '../components/subject'
 
@@ -23,7 +23,7 @@ const IndexPage = () => (
     <LeftSidebar text='A Letter from the President' />
     <RightSidebar status={1} />
     <NavigateLeft to="/story-xavier" />
-    {/* <NavigateRight to="/introduction-read" /> */}
+    <NavigateRight to="/fellow-sinclair" />
 
     <Subject
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}

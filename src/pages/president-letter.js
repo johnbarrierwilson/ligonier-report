@@ -43,7 +43,7 @@ const IndexPage = () => (
     />
     <Content
       column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
-      row={['5 / span 7', '5 / span 7', '5 / span 7', '5 / span 7']}
+      row={['4 / span 7', '4 / span 7', '4 / span 7', '4 / span 7']}
     >
       <p><strong>We moved into a new year</strong> with a deepened trust in our sovereign God. Without our beloved founder, our steps were tentative at first, but the pace of ministry quickened in the following weeks and months. It’s almost as if a spotlight was turned toward Ligonier this year. With thanksgiving to God for His mercy, we can report to you that more people than ever are seeking out biblical and theological teaching through this ministry.</p>
       <p>Dr. Sproul and I often discussed his vision for the future. He had in mind for us to have a growing, global outreach—as long as we are faithful. Ligonier stands on the authority of God’s Word and the gospel of Jesus Christ. If we lose that, we’ve lost everything.</p>

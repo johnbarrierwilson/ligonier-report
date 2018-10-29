@@ -11,20 +11,20 @@ const RightSidebar = (props) => (
 
 const Container = styled('ol')`
   align-items: center;
+  bottom: 50%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   position: fixed;
   right: 20px;
-  top: 50%;
   list-style: none;
-  transform: translate(50%, -50%);
+  transform: translate(50%, 50%);
   @media (min-width: ${p => p.theme.breakpoints.small}) {
+    bottom: auto;
     grid-column: 14 / span 1;
     grid-row: 6 / span 2;
     position: relative;
     right: auto;
-    top: auto;
     transform: none;
   }
   li {

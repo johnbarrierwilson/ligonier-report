@@ -112,9 +112,19 @@ const GlobalStyles = createGlobalStyle`
   html {
     -webkit-font-smoothing: antialiased;
     font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
-    font-size: 16px;
+    font-size: 4.25vw;
     font-weight: 400;
     line-height: 1.4;
+  }
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    html {
+      font-size: 1.2vw;
+    }
+  }
+  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    html {
+      font-size: 0.9vw;
+    }
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: "Chronicle Cond A", "Chronicle Cond B", Georgia, 'Times New Roman', Times, serif;
@@ -131,18 +141,13 @@ const Grid = styled('div')`
   background: ${p => p.theme.colors.white};
   display: grid;
   grid-template-columns: 40px repeat(12, 1fr) 40px;
-  grid-template-rows: 40px repeat(11, auto);
   position: relative;
-  transition: all 500ms cubic-bezier(.55,0,.1,1);
+  transition: transform 500ms cubic-bezier(.55,0,.1,1), opacity 500ms cubic-bezier(.55,0,.1,1);
   z-index: ${p => p.theme.index.grid};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-template-columns: 90px repeat(12, 1fr) 90px;
     grid-template-rows: 90px repeat(11, 1fr);
-  }
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
     height: 100vh;
-  }
-  @media (min-width: ${p => p.theme.breakpoints.large}) {
     overflow: hidden;
   }
 

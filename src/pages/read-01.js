@@ -44,9 +44,9 @@ const IndexPage = () => (
       transform="translateY(50px)"
     />
     <Heading
-      column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
+      column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
       row={['6 / span 1', '6 / span 1', '6 / span 1', '6 / span 1']}
-      text="Helping Disciples Grow"
+      text="Helping Disciples&nbsp;Grow"
     />
     <Content
       column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}

@@ -10,7 +10,7 @@ import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
-// import NavigateRight from '../components/navigateRight'
+import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 import Subject from '../components/subject'
 
@@ -24,7 +24,7 @@ const IndexPage = () => (
     <LeftSidebar inverted={true} text='The Ligonier Teaching Fellows' />
     <RightSidebar inverted={true} status={0} />
     <NavigateLeft inverted={true} to="/read-01" />
-    {/* <NavigateRight inverted={true} to="/president-letter" /> */}
+    <NavigateRight inverted={true} to="/read-02" />
     <Image
       column={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
       position="center 20%"

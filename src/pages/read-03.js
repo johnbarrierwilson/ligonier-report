@@ -9,7 +9,7 @@ import Image from '../components/image'
 import Layout from '../components/layout'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
-// import NavigateRight from '../components/navigateRight'
+import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 import Subject from '../components/subject'
 
@@ -25,7 +25,7 @@ const IndexPage = () => (
     <DocumentTitle />
     <RightSidebar status={1} />
     <NavigateLeft to="/read-02" />
-    {/* <NavigateRight to="/fellow-sinclair" /> */}
+    <NavigateRight to="/read-04" />
 
     <Subject
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
@@ -103,8 +103,9 @@ const IndexPage = () => (
       transform="translateY(-15%)"
     />
     <Content
+      center={true}
       column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-      row={['8 / span 3', '8 / span 3', '8 / span 3', '8 / span 3']}
+      row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
     >
       <p><strong>Thousands of pastors,</strong> church leaders, and students in ten African countries are receiving a free copy of the Reformation Study Bible thanks to the strategic partnership between Ligonier Ministries and the Rosemary Jensen Bible Foundation. We have already sent more than 10,000 Bibles, with plans to distribute an additional 26,000 by 2028.</p>
       <p>This outreach is only possible with the support of visionary donors. Thank you for partnering with us. You are bringing the Word of God to needy Christians in lands where Bibles are expensive and trustworthy theological resources are rare.</p>

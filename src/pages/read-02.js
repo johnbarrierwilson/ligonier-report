@@ -79,6 +79,8 @@ const IndexPage = () => (
     </Content>
     <Numbers
       column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+      description='REFORMATION STUDY BIBLES DISTRIBUTED SINCE 2015'
+      number='145,000+'
       row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
     />
   </Layout>

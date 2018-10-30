@@ -11,12 +11,13 @@ const Logo = (props) => (
 )
 
 const Mark = styled('svg')`
-  align-self: center;
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-  justify-self: center;
+  left: 0;
+  position: fixed;
+  top: 2px;
   transform: scale(0.5);
   @media (min-width: ${p => p.theme.breakpoints.small}) {
+    left: 25px;
+    top: 25px;
     transform: scale(0.9);
   }
   path {
@@ -25,18 +26,21 @@ const Mark = styled('svg')`
 `
 
 const Title = styled('p')`
-  align-self: center;
   color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   font-size: 10px;
   font-weight: 600;
-  grid-column: 2 / span 12;
-  grid-row: 1 / span 1;
+  left: 0;
   letter-spacing: 0.35em;
+  position: fixed;
+  right: 0;
   text-align: center;
   text-transform: uppercase;
+  top: 14px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
-    grid-column: 2 / span 5;
+    left: 90px;
+    right: auto;
     text-align: left;
+    top: 38px;
   }
 `
 

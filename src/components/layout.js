@@ -7,6 +7,7 @@ import styled, { ThemeProvider, createGlobalStyle, css } from 'styled-components
 import 'normalize.css'
 import theme from '../theme.js'
 
+import Logo from './logo'
 import Toggle from './toggle'
 
 class Layout extends React.Component {
@@ -38,6 +39,7 @@ class Layout extends React.Component {
         render={data => (
             <ThemeProvider theme={theme} >
               <>
+                <Logo inverted={true} />
                 <Toggle
                   inverted={this.props.inverted}
                   navigating={this.state.navigating}
@@ -133,6 +135,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
   a {
+    color: ${p => p.theme.colors.green};
     text-decoration: none;
   }
 `
@@ -166,19 +169,27 @@ const Container = styled('div')`
 `
 
 const Navigation = styled('nav')`
+  -webkit-overflow-scrolling: touch;
   align-items: center;
   color: ${p => p.theme.colors.white};
   display: flex;
+  flex-flow: column;
   height: 500px;
-  justify-content: center;
+  justify-content: flex-start;
   left: 0;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 25px;
+  overflow: auto;
+  padding: 75px 50px;
   position: absolute;
   right: 0;
   width: 100%;
   z-index: ${p => p.theme.index.navigation};
+  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    flex-flow: row;
+    justify-content: center;
+    padding: 0 25px;
+  }
   a {
     color: ${p => p.theme.colors.gray};
     display: block;
@@ -192,12 +203,14 @@ const Navigation = styled('nav')`
     }
   }
   div {
-    height: 50%;
     opacity: ${p => p.navigating ? '1' : '0'};
     text-align: center;
     transform: ${p => p.navigating ? 'scale(1) translateY(0%)': 'scale(0.75) translateY(25%)'};
     transition: all 500ms cubic-bezier(.55,0,.1,1);
-    width: 25%;
+    @media (min-width: ${p => p.theme.breakpoints.medium}) {
+      height: 50%;
+      width: 25%;
+    }
     &:nth-child(1) {
       transition-delay: 100ms;
     }
@@ -213,8 +226,11 @@ const Navigation = styled('nav')`
   }
   p {
     letter-spacing: 0.15em;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     opacity: 0.5;
     text-transform: uppercase;
+    @media (min-width: ${p => p.theme.breakpoints.medium}) {
+      margin-bottom: 50px;
+    }
   }
 `

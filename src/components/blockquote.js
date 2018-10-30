@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const Blockquote = styled('div')`
   color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
@@ -23,9 +23,11 @@ const Blockquote = styled('div')`
     grid-column: ${p => p.column[3]};
     grid-row: ${p => p.row[3]};
   }
-  p:first-of-type {
-    text-indent: -19px;
-  }
+  ${p => p.indent ? css`
+    p:first-of-type {
+      text-indent: -19px;
+    }
+  ` : null}
 `
 
 export default Blockquote

@@ -27,6 +27,7 @@ const Container = styled('div')`
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-column: ${p => p.column[1]};
     grid-row: ${p => p.row[1]};
+    transform: ${p => p.transform ? p.transform : 'none'};
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     grid-column: ${p => p.column[2]};

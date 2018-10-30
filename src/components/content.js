@@ -10,6 +10,7 @@ const Content = styled('div')`
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-column: ${p => p.column[1]};
     grid-row: ${p => p.row[1]};
+    transform: ${p => p.transform ? p.transform : 'none'};
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     grid-column: ${p => p.column[2]};
@@ -20,7 +21,7 @@ const Content = styled('div')`
     grid-row: ${p => p.row[3]};
   }
   p {
-    text-align: justify;
+    /* text-align: justify; */
     text-indent: 25px;
     &:first-of-type {
       text-indent: 0px;

@@ -75,6 +75,7 @@ const Description = styled('div')`
   height: 4rem;
   justify-content: center;
   line-height: 2;
+  padding: 0 2rem;
 `
 
 export default Numbers

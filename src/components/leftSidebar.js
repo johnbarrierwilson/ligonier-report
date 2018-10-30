@@ -13,6 +13,7 @@ const Container = styled('div')`
   position: relative;
   p {
     color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, Helvetica, sans-serif;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.35em;

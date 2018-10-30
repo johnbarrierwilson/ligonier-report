@@ -114,7 +114,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
     font-size: 4.25vw;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.3;
   }
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     html {
@@ -174,12 +174,9 @@ const Navigation = styled('nav')`
   left: 0;
   margin: 0 auto;
   max-width: 1200px;
-  opacity: ${p => p.navigating ? '1' : '0'};
   padding: 0 25px;
   position: absolute;
   right: 0;
-  transform: ${p => p.navigating ? 'scale(1)': 'scale(0.75)'};
-  transition: all 500ms 100ms cubic-bezier(.55,0,.1,1);
   width: 100%;
   z-index: ${p => p.theme.index.navigation};
   a {
@@ -195,9 +192,24 @@ const Navigation = styled('nav')`
     }
   }
   div {
-    text-align: center;
     height: 50%;
+    opacity: ${p => p.navigating ? '1' : '0'};
+    text-align: center;
+    transform: ${p => p.navigating ? 'scale(1) translateY(0%)': 'scale(0.75) translateY(25%)'};
+    transition: all 500ms cubic-bezier(.55,0,.1,1);
     width: 25%;
+    &:nth-child(1) {
+      transition-delay: 100ms;
+    }
+    &:nth-child(2) {
+      transition-delay: 200ms;
+    }
+    &:nth-child(3) {
+      transition-delay: 300ms;
+    }
+    &:nth-child(4) {
+      transition-delay: 400ms;
+    }
   }
   p {
     letter-spacing: 0.15em;

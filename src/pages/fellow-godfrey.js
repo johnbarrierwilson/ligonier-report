@@ -10,7 +10,7 @@ import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
-// import NavigateRight from '../components/navigateRight'
+import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 import Subject from '../components/subject'
 
@@ -24,7 +24,7 @@ const IndexPage = () => (
     <LeftSidebar inverted={true} text='Teaching Fellows / Godfrey' />
     <RightSidebar inverted={true} status={0} />
     <NavigateLeft inverted={true} to="/read-04" />
-    {/* <NavigateRight inverted={true} to="/read-02" /> */}
+    <NavigateRight inverted={true} to="/read-05" />
 
     <Subject
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}

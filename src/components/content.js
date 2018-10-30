@@ -1,11 +1,6 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 const Content = styled('div')`
-  ${p => p.center ? css`
-    align-items: center;
-    display: flex;
-    flex-flow: column;
-  ` : null}
   align-self: center;
   color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   grid-column: ${p => p.column[0]};

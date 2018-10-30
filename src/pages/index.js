@@ -78,7 +78,7 @@ const IndexPage = () => (
     </Label>
     <Content
       column={['2 / span 12', '9 / span 5', '10 / span 3', '10 / span 2']}
-      row={['7 / span 1', '8 / span 5', '8 / span 5', '8 / span 5']}
+      row={['7 / span 1', '8 / span 2', '8 / span 2', '8 / span 2']}
     >
       <p><strong>Every year</strong>, Ligonier Ministries provides more ways for Christians to read, listen, and gather around God's truth.</p>
       <p>Under God’s blessing, the outreach we’ve been able to do together has continued to grow, This report is a celebration of all that you’ve enabled through your generosity and your prayers.</p>

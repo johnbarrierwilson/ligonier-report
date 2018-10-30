@@ -81,7 +81,7 @@ const IndexPage = () => (
       center={true}
       column={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
       row={['7 / span 2', '7 / span 2', '7 / span 2', '7 / span 2']}
-      text="Supplying Your Most Trusted Bible Teaching"
+      text="Supplying Your Most Trusted&nbsp;Bible Teaching"
     />
     <Content
       center={true}

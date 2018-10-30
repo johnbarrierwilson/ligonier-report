@@ -13,34 +13,34 @@ import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 
 import IntroductionPattern from '../images/IntroductionPattern.png'
-import IntroductionRead from '../images/IntroductionRead.png'
+import IntroductionListen from '../images/IntroductionListen.png'
 
 const IndexPage = () => (
   <Layout>
     <Backdrop />
     <Logo />
     <DocumentTitle />
-    <LeftSidebar text='Part One / Read' />
-    <RightSidebar status={1} />
-    <NavigateLeft to="/president-letter" />
-    <NavigateRight to="/story-xavier" />
+    <LeftSidebar text='Part Two / Listen' />
+    <RightSidebar status={2} />
+    <NavigateLeft to="/fellow-lawson" />
+    <NavigateRight to="/story-amy" />
     <Heading
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
       row={['4 / span 1', '4 / span 1', '4 / span 1', '4 / span 1']}
       size="xl"
-      text="Read"
+      text="Listen"
     />
     <Content
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
       row={['8 / span 3', '8 / span 3', '8 / span 3', '8 / span 3']}
     >
-      <p><strong>God revealed himself in a book.</strong> That makes reading an essential part of every Christian’s life. We publish so Christians can grow in their understanding of God and of themselves. Every year, we give away thousands of study Bibles, books, and magazines to people around the world who are hungry for the truth. Thank you for joining them.</p>
+      <p><strong>Faith comes by hearing.</strong> Every week, Ligonier Ministries broadcasts audio and video teaching on the air and on the web to millions of people, free of charge. Trustworthy, life-changing teaching from Dr. R.C. Sproul, the Ligonier Ministries Teaching Fellows, and many others is available to you 24/7. Thank you for tuning in.</p>
     </Content>
     <Image
       column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
       row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
       size="contain"
-      src={IntroductionRead}
+      src={IntroductionListen}
     />
   </Layout>
 )

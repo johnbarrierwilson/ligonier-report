@@ -125,7 +125,7 @@ const GlobalStyles = createGlobalStyle`
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     html {
-      font-size: 0.9vw;
+      font-size: 0.85vw;
     }
   }
   h1, h2, h3, h4, h5, h6 {

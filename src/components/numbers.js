@@ -20,13 +20,14 @@ const Container = styled('div')`
   grid-column: ${p => p.column[0]};
   grid-gap: 0.5rem;
   grid-row: ${p => p.row[0]};
-  grid-template: 1fr 1fr / 8rem 1fr;
+  grid-template: 1fr 1fr / 7rem 1fr;
   letter-spacing: 0.5em;
   text-align: center;
   text-transform: uppercase;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-column: ${p => p.column[1]};
     grid-row: ${p => p.row[1]};
+    transform: ${p => p.transform ? p.transform : 'none'};
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     grid-column: ${p => p.column[2]};

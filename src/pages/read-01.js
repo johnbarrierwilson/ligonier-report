@@ -46,7 +46,7 @@ const IndexPage = () => (
     />
     <Content
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-      row={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}
+      row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
     >
       <p><strong>For over forty years,</strong> Tabletalk magazine has helped growing Christians live biblically informed lives. Every month, it reaches approxi- mately 250,000 people in more than seventy-five countries around the world.</p>
       <p>Each issue contains daily Bible studies to help readers understand and apply the Word of God, as well as an effective plan for reading through the Bible in a year. Thought-provoking articles from trusted pastors and Bible teachers address biblical, theological, and practical themes to help strength- en and encourage people in their faith.</p>

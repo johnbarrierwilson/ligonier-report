@@ -9,7 +9,7 @@ import Layout from '../components/layout'
 import LeftSidebar from '../components/leftSidebar'
 import Logo from '../components/logo'
 import NavigateLeft from '../components/navigateLeft'
-// import NavigateRight from '../components/navigateRight'
+import NavigateRight from '../components/navigateRight'
 import Numbers from '../components/numbers'
 import RightSidebar from '../components/rightSidebar'
 import Subject from '../components/subject'
@@ -24,7 +24,7 @@ const IndexPage = () => (
     <LeftSidebar text="Part One / Read" />
     <RightSidebar status={1} />
     <NavigateLeft to="/fellow-godfrey" />
-    {/* <NavigateRight to="/fellow-godfrey" /> */}
+    <NavigateRight to="/fellow-lawson" />
 
     <Image
       column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}

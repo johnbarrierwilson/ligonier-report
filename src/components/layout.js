@@ -133,6 +133,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
   a {
+    color: ${p => p.theme.colors.green};
     text-decoration: none;
   }
 `

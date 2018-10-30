@@ -4,8 +4,8 @@ import styled from 'styled-components'
 const Numbers = (props) => (
   <Container {...props}>
     <Title><span>By The</span><span>Numbers</span></Title>
-    <Number>145,000+</Number>
-    <Description>REFORMATION STUDY BIBLES DISTRIBUTED SINCE 2015</Description>
+    <Number>{props.number}</Number>
+    <Description>{props.description}</Description>
   </Container>
 )
 
@@ -20,7 +20,7 @@ const Container = styled('div')`
   grid-column: ${p => p.column[0]};
   grid-gap: 0.5rem;
   grid-row: ${p => p.row[0]};
-  grid-template: 1fr 1fr / 1fr 3fr;
+  grid-template: 1fr 1fr / 8rem 1fr;
   letter-spacing: 0.5em;
   text-align: center;
   text-transform: uppercase;
@@ -72,9 +72,9 @@ const Description = styled('div')`
   display: flex;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
+  height: 4rem;
   justify-content: center;
   line-height: 2;
-  padding: 0.75rem 1rem;
 `
 
 export default Numbers

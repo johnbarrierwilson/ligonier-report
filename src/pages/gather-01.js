@@ -15,7 +15,7 @@ import RightSidebar from '../components/rightSidebar'
 import Subject from '../components/subject'
 
 import Seattle from '../images/ConferenceSeattle.jpg'
-import FatherSon from '../images/FatherSon.jpg'
+import Conference from '../images/Conference.jpg'
 
 const IndexPage = () => (
   <Layout>
@@ -28,9 +28,9 @@ const IndexPage = () => (
 
     <Image
       column={['2 / span 7', '2 / span 7', '2 / span 7', '2 / span 7']}
-      position='center 30%'
+      position='center bottom'
       row={['1 / span 6', '1 / span 6', '1 / span 6', '1 / span 6']}
-      src={FatherSon}
+      src={Conference}
     />
     <Subject
       column={['2 / span 5', '2 / span 5', '2 / span 5', '2 / span 5']}

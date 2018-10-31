@@ -60,31 +60,43 @@ class Layout extends React.Component {
                   </Helmet>
                   <Navigation navigating={this.state.navigating}>
                     <div>
-                      <p>Introduction</p>
+                      <p><small>&nbsp;</small>Introduction</p>
                       <Link to="/">Overview</Link>
                       <Link to="/teaching-fellows">The Teaching Fellows</Link>
                       <Link to="/president-letter">A Letter from the President</Link>
                     </div>
                     <div>
-                      <p>Read</p>
+                      <p><small>Part One</small>Read</p>
                       <Link to="/introduction-read">Introduction</Link>
                       <Link to="/story-xavier">Story: Xavier</Link>
-                      <Link to="/read-01">Page #01</Link>
+                      <Link to="/read-01">Tabletalk, Ask Ligoner &amp; The State of Theology</Link>
                       <Link to="/fellow-sinclair">Fellow: Sinclair Ferguson</Link>
+                      <Link to="/read-02">Reformation Study Bible</Link>
+                      <Link to="/read-03">Study Bible Translations &amp; Study Bibles for Africa</Link>
+                      <Link to="/read-04">Reformation Trust &amp; Ligonier.org</Link>
+                      <Link to="/fellow-godfrey">Fellow: W. Robert Godfrey</Link>
+                      <Link to="/read-05">Translations, Military &amp; Prison Chaplains and Christology Statement</Link>
+                      <Link to="/fellow-lawson">Fellow: Steven Lawson</Link>
                     </div>
                     <div>
-                      <p>Listen</p>
-                      <Link to="#">Placeholder</Link>
-                      <Link to="#">Placeholder</Link>
-                      <Link to="#">Placeholder</Link>
-                      <Link to="#">Placeholder</Link>
+                      <p><small>Part Two</small>Listen</p>
+                      <Link to="/introduction-listen">Introduction</Link>
+                      <Link to="/story-amy">Story: Amy</Link>
+                      <Link to="/listen-01">Renewing Your Mind and RefNet</Link>
+                      <Link to="/fellow-mohler">Fellow: Albert Mohler</Link>
+                      <Link to="/listen-02">Teaching Series and the Ligoner App</Link>
+                      <Link to="/fellow-nichols">Fellow: Stephen J. Nichols</Link>
+                      <Link to="/listen-03">Platforms and Podcasts</Link>
                     </div>
                     <div>
-                      <p>Gather</p>
-                      <Link to="#">Placeholder</Link>
-                      <Link to="#">Placeholder</Link>
-                      <Link to="#">Placeholder</Link>
-                      <Link to="#">Placeholder</Link>
+                      <p><small>Part Three</small>Gather</p>
+                      <Link to="/introduction-gather">Introduction</Link>
+                      <Link to="/story-doug">Story: Doug</Link>
+                      <Link to="/gather-01">National, Regional and International Conferences</Link>
+                      <Link to="/fellow-parsons">Fellow: Burk Parsons</Link>
+                      <Link to="/gather-02">Reformation Bible College and Ligonier Connect</Link>
+                      <Link to="/fellow-thomas">Fellow: Derek W.H. Thomas</Link>
+                      <Link to="/gather-03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</Link>
                     </div>
                   </Navigation>
                   <Grid navigating={this.state.navigating}>
@@ -158,6 +170,9 @@ const Grid = styled('div')`
     /* border-radius: 30px; */
     opacity: 0.5;
     transform: translateY(500px);
+    @media (min-width: ${p => p.theme.breakpoints.small}) {
+      transform: translateY(750px);
+    }
   `}
 `
 
@@ -170,15 +185,12 @@ const Container = styled('div')`
 
 const Navigation = styled('nav')`
   -webkit-overflow-scrolling: touch;
-  align-items: center;
   color: ${p => p.theme.colors.white};
   display: flex;
   flex-flow: column;
   height: 500px;
-  justify-content: flex-start;
   left: 0;
   margin: 0 auto;
-  max-width: 1200px;
   overflow: auto;
   padding: 75px 50px;
   position: absolute;
@@ -187,28 +199,27 @@ const Navigation = styled('nav')`
   z-index: ${p => p.theme.index.navigation};
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     flex-flow: row;
-    justify-content: center;
-    padding: 0 25px;
+    height: auto;
+    padding: 140px 50px 0;
   }
   a {
     color: ${p => p.theme.colors.gray};
     display: block;
     font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
     font-size: 14px;
-    letter-spacing: 0.05em;
+    /* letter-spacing: 0.05em; */
     margin: 15px auto;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     &:hover {
       color: ${p => p.theme.colors.white};
     }
   }
   div {
     opacity: ${p => p.navigating ? '1' : '0'};
-    text-align: center;
+    /* text-align: center; */
     transform: ${p => p.navigating ? 'scale(1) translateY(0%)': 'scale(0.75) translateY(25%)'};
     transition: all 500ms cubic-bezier(.55,0,.1,1);
     @media (min-width: ${p => p.theme.breakpoints.medium}) {
-      height: 50%;
       width: 25%;
     }
     &:nth-child(1) {
@@ -225,12 +236,19 @@ const Navigation = styled('nav')`
     }
   }
   p {
+    font-size: 18px;
     letter-spacing: 0.15em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     opacity: 0.5;
     text-transform: uppercase;
     @media (min-width: ${p => p.theme.breakpoints.medium}) {
       margin-bottom: 50px;
     }
+  }
+  small {
+    display: block;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-bottom: 5px;
   }
 `

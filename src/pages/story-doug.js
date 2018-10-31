@@ -15,17 +15,17 @@ import NavigateLeft from '../components/navigateLeft'
 import NavigateRight from '../components/navigateRight'
 import RightSidebar from '../components/rightSidebar'
 
-import Amy from '../images/StoryAmy.jpg'
+import Doug from '../images/StoryDoug.jpg'
 
 const IndexPage = () => (
   <Layout>
     <Backdrop />
     <Logo />
     <DocumentTitle />
-    <LeftSidebar text='Part Two / Listen' />
-    <RightSidebar status={2} />
-    <NavigateLeft to="/introduction-listen" />
-    <NavigateRight to="/listen-01" />
+    <LeftSidebar text='Part Three / Gather' />
+    <RightSidebar status={3} />
+    <NavigateLeft to="/introduction-gather" />
+    <NavigateRight to="/gather-01" />
     <Subject
       column={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
       row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
@@ -40,32 +40,32 @@ const IndexPage = () => (
       column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
       row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
       size="contain"
-      src={Amy}
+      src={Doug}
     />
     <Heading
       center={true}
-      column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+      column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
       row={['10 / span 1', '10 / span 1', '10 / span 1', '10 / span 1']}
-      text="Amy, Washington D.C."
+      text="Doug, Los&nbsp;Angeles"
     />
     <Content
       column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
       row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
     >
-      <p><strong>"I remember hearing R.C. Sproul</strong> preach a sermon many years ago about how we think we choose God, but the Bible says that God chooses us. From that moment on, I knew I needed to know the Bible better because what I was believing was wrong. Ligonier has always been a trustworthy place to turn for good teaching, and it has grown along with me, giving me more choices even be- yond my Tabletalk devotional and Renewing Your Mind.</p>
+      <p><strong>“I wasn’t actively practicing</strong> or able to articulate what I said I believed. My dad sent over a Ligonier Conference Q&A, and on a free weekend I sat down and watched one. . . and then another and another. . . and I could not stop watching. It was my discovery of theology, the doctrines of grace, and the provision of a system of belief.</p>
+      <p>Since then, I’ve been to two Ligonier conferences in Seattle. It felt like an eternity before I finally went to one since I had watched so many online. It is interesting that . . .</p>
     </Content>
     <Blockquote
-      column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
+      column={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}
       row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
     >
-      <p>Now I listen to Ref Net everyday.</p>
+      <p>WHEN YOU HEAR THE WORD PREACHED IN PERSON, IT IS OFTEN MORE POWERFUL.</p>
     </Blockquote>
     <Content
       column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
-      row={['7 / span 4', '7 / span 4', '7 / span 4', '7 / span 4']}
+      row={['7 / span 5', '7 / span 5', '7 / span 5', '7 / span 5']}
     >
-      <p>I have my phone with me all the time, and I can listen anywhere. I can be traveling, in my car, waking up in the morning, or going to sleep at night and get a few minutes of good theology. This is the steady, consistent teaching of the Word of God. It’s needed in my life.</p>
-      <p>I appreciate that R.C. Sproul gathered men of similar skills and had the overall vision to build something of real substance. Of course, we know that God did the building and He just used R.C. to do that.”</p>
+      <p>I now know that I’m a third-generation Ligonier student. When my grandma passed away, I got her copy of The Holiness of God from one of the first printings. It’s pretty special to have such a classic. Like R.C. said, there’s a gap between Sunday school and seminary. Ligonier serves to fill that gap in a format that is scalable and digestible for many churches out there that don’t have the resources to produce this kind of material.”</p>
     </Content>
     <Divider
       column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}

@@ -24,7 +24,7 @@ const IndexPage = () => (
     <LeftSidebar text="Part Three / Gather" />
     <RightSidebar status={3} />
     <NavigateLeft to="/story-doug" />
-    <NavigateRight to="/introduction-gather" />
+    <NavigateRight to="/fellow-parsons" />
 
     <Image
       column={['2 / span 7', '2 / span 7', '2 / span 7', '2 / span 7']}

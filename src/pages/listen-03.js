@@ -98,9 +98,9 @@ const IndexPage = () => (
       row={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
       transform="translateY(-2rem)"
     >
-      <img src={Podcast01} alt='five minutes in church history podcast cover image' />
-      <img src={Podcast02} alt='the westminster shorter catechism podcast cover image' />
-      <img src={Podcast03} alt='open book with stephen nichols podcast cover image' />
+      <img src={Podcast01} alt='five minutes in church history podcast cover' />
+      <img src={Podcast02} alt='the westminster shorter catechism podcast cover' />
+      <img src={Podcast03} alt='open book with stephen nichols podcast cover' />
     </Podcasts>
     <Numbers
       column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}

@@ -24,7 +24,7 @@ const IndexPage = () => (
     {/* <LeftSidebar text="Part Two / Listen" /> */}
     <RightSidebar status={2} />
     <NavigateLeft to="/fellow-mohler" />
-    <NavigateRight to="/fellow-" />
+    <NavigateRight to="/fellow-nichols" />
 
     <Subject
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}

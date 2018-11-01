@@ -12,7 +12,7 @@ import ChrisLarson from '../images/ChrisLarson.png'
 import ChrisLarsonSignature from '../images/ChrisLarsonSignature.png'
 
 const IndexPage = () => (
-  <LazyLoad height={'100vh'}>
+  <LazyLoad>
     <Grid>
       <Backdrop />
       <Image

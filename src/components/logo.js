@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import theme from '../theme'
+
 const Logo = (props) => (
   <>
     <Mark {...props} width="42px" height="37px" viewBox="0 0 42 37">
@@ -22,12 +24,12 @@ const Mark = styled('svg')`
     transform: scale(0.9);
   }
   path {
-    fill: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
+    fill: ${p => p.inverted ? p.theme.colors.white : theme.colors.black};
   }
 `
 
 const Title = styled('p')`
-  color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
+  color: ${p => p.inverted ? p.theme.colors.white : theme.colors.black};
   font-size: 10px;
   font-weight: 600;
   left: 0;

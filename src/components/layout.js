@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { ThemeProvider, createGlobalStyle, ThemeProvider } from 'styled-components'
 
 import 'normalize.css'
 import theme from '../theme.js'
@@ -38,6 +38,7 @@ class Layout extends React.Component {
           }
         `}
         render={data => (
+          <ThemeProvider theme={theme}>
             <>
               <Logo />
               <DocumentTitle />
@@ -103,6 +104,7 @@ class Layout extends React.Component {
                 {this.props.children}
               </Container>
             </>
+          </ThemeProvider>
         )}
       />
     )

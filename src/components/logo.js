@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import theme from '../theme'
+
 const Logo = (props) => (
   <>
     <Mark {...props} width="42px" height="37px" viewBox="0 0 42 37">
@@ -15,19 +17,19 @@ const Mark = styled('svg')`
   position: fixed;
   top: 2px;
   transform: scale(0.5);
-  z-index: ${p => p.theme.index.logoMark};
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
+  z-index: ${theme.index.logoMark};
+  @media (min-width: ${theme.breakpoints.small}) {
     left: 25px;
     top: 25px;
     transform: scale(0.9);
   }
   path {
-    fill: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
+    fill: ${p => p.inverted ? theme.colors.white : theme.colors.black};
   }
 `
 
 const Title = styled('p')`
-  color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
+  color: ${p => p.inverted ? theme.colors.white : theme.colors.black};
   font-size: 10px;
   font-weight: 600;
   left: 0;
@@ -37,8 +39,8 @@ const Title = styled('p')`
   text-align: center;
   text-transform: uppercase;
   top: 14px;
-  z-index: ${p => p.theme.index.logoTitle};
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
+  z-index: ${theme.index.logoTitle};
+  @media (min-width: ${theme.breakpoints.small}) {
     left: 90px;
     right: auto;
     text-align: left;

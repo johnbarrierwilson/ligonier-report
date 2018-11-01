@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 
-import 'normalize.css'
+import theme from '../theme.js'
 
 import DocumentTitle from './documentTitle'
 import Logo from './logo'
@@ -37,71 +37,74 @@ class Layout extends React.Component {
           }
         `}
         render={data => (
-          <>
-            <Logo />
-            <DocumentTitle />
-            <Toggle
-              inverted={this.props.inverted}
-              navigating={this.state.navigating}
-              onClick={this.toggleNavigation}
-              type={this.props.type}
-            />
-            <Container>
-              <GlobalStyles />
-              <Helmet
-                title={data.site.siteMetadata.title}
-                meta={[
-                  { name: 'description', content: 'Sample' },
-                  { name: 'keywords', content: 'sample, something' },
-                ]}
-              >
-                <html lang="en" />
-                <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6693092/7770812/css/fonts.css" />
-              </Helmet>
-              <Navigation navigating={this.state.navigating}>
-                <div>
-                  <p><small>&nbsp;</small>Introduction</p>
-                  <Link to="/">Overview</Link>
-                  <Link to="/teaching-fellows">The Teaching Fellows</Link>
-                  <Link to="/president-letter">A Letter from the President</Link>
-                </div>
-                <div>
-                  <p><small>Part One</small>Read</p>
-                  <Link to="/introduction-read">Introduction</Link>
-                  <Link to="/story-xavier">Story: Xavier</Link>
-                  <Link to="/read-01">Tabletalk, Ask Ligoner &amp; The State of Theology</Link>
-                  <Link to="/fellow-sinclair">Fellow: Sinclair Ferguson</Link>
-                  <Link to="/read-02">Reformation Study Bible</Link>
-                  <Link to="/read-03">Study Bible Translations &amp; Study Bibles for Africa</Link>
-                  <Link to="/read-04">Reformation Trust &amp; Ligonier.org</Link>
-                  <Link to="/fellow-godfrey">Fellow: W. Robert Godfrey</Link>
-                  <Link to="/read-05">Translations, Military &amp; Prison Chaplains and Christology Statement</Link>
-                  <Link to="/fellow-lawson">Fellow: Steven Lawson</Link>
-                </div>
-                <div>
-                  <p><small>Part Two</small>Listen</p>
-                  <Link to="/introduction-listen">Introduction</Link>
-                  <Link to="/story-amy">Story: Amy</Link>
-                  <Link to="/listen-01">Renewing Your Mind and RefNet</Link>
-                  <Link to="/fellow-mohler">Fellow: Albert Mohler</Link>
-                  <Link to="/listen-02">Teaching Series and the Ligoner App</Link>
-                  <Link to="/fellow-nichols">Fellow: Stephen J. Nichols</Link>
-                  <Link to="/listen-03">Platforms and Podcasts</Link>
-                </div>
-                <div>
-                  <p><small>Part Three</small>Gather</p>
-                  <Link to="/introduction-gather">Introduction</Link>
-                  <Link to="/story-doug">Story: Doug</Link>
-                  <Link to="/gather-01">National, Regional and International Conferences</Link>
-                  <Link to="/fellow-parsons">Fellow: Burk Parsons</Link>
-                  <Link to="/gather-02">Reformation Bible College and Ligonier Connect</Link>
-                  <Link to="/fellow-thomas">Fellow: Derek W.H. Thomas</Link>
-                  <Link to="/gather-03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</Link>
-                </div>
-              </Navigation>
-              {this.props.children}
-            </Container>
-          </>
+          <ThemeProvider theme={theme}>
+            <>
+              <Logo />
+              <DocumentTitle />
+              <Toggle
+                inverted={this.props.inverted}
+                navigating={this.state.navigating}
+                onClick={this.toggleNavigation}
+               
+                type={this.props.type}
+              />
+              <Container>
+                <GlobalStyles />
+                <Helmet
+                  title={data.site.siteMetadata.title}
+                  meta={[
+                    { name: 'description', content: 'Sample' },
+                    { name: 'keywords', content: 'sample, something' },
+                  ]}
+                >
+                  <html lang="en" />
+                  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6693092/7770812/css/fonts.css" />
+                </Helmet>
+                <Navigation navigating={this.state.navigating}>
+                  <div>
+                    <p><small>&nbsp;</small>Introduction</p>
+                    <Link to="/">Overview</Link>
+                    <Link to="/teaching-fellows">The Teaching Fellows</Link>
+                    <Link to="/president-letter">A Letter from the President</Link>
+                  </div>
+                  <div>
+                    <p><small>Part One</small>Read</p>
+                    <Link to="/introduction-read">Introduction</Link>
+                    <Link to="/story-xavier">Story: Xavier</Link>
+                    <Link to="/read-01">Tabletalk, Ask Ligoner &amp; The State of Theology</Link>
+                    <Link to="/fellow-sinclair">Fellow: Sinclair Ferguson</Link>
+                    <Link to="/read-02">Reformation Study Bible</Link>
+                    <Link to="/read-03">Study Bible Translations &amp; Study Bibles for Africa</Link>
+                    <Link to="/read-04">Reformation Trust &amp; Ligonier.org</Link>
+                    <Link to="/fellow-godfrey">Fellow: W. Robert Godfrey</Link>
+                    <Link to="/read-05">Translations, Military &amp; Prison Chaplains and Christology Statement</Link>
+                    <Link to="/fellow-lawson">Fellow: Steven Lawson</Link>
+                  </div>
+                  <div>
+                    <p><small>Part Two</small>Listen</p>
+                    <Link to="/introduction-listen">Introduction</Link>
+                    <Link to="/story-amy">Story: Amy</Link>
+                    <Link to="/listen-01">Renewing Your Mind and RefNet</Link>
+                    <Link to="/fellow-mohler">Fellow: Albert Mohler</Link>
+                    <Link to="/listen-02">Teaching Series and the Ligoner App</Link>
+                    <Link to="/fellow-nichols">Fellow: Stephen J. Nichols</Link>
+                    <Link to="/listen-03">Platforms and Podcasts</Link>
+                  </div>
+                  <div>
+                    <p><small>Part Three</small>Gather</p>
+                    <Link to="/introduction-gather">Introduction</Link>
+                    <Link to="/story-doug">Story: Doug</Link>
+                    <Link to="/gather-01">National, Regional and International Conferences</Link>
+                    <Link to="/fellow-parsons">Fellow: Burk Parsons</Link>
+                    <Link to="/gather-02">Reformation Bible College and Ligonier Connect</Link>
+                    <Link to="/fellow-thomas">Fellow: Derek W.H. Thomas</Link>
+                    <Link to="/gather-03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</Link>
+                  </div>
+                </Navigation>
+                {this.props.children}
+              </Container>
+            </>
+          </ThemeProvider>
         )}
       />
     )

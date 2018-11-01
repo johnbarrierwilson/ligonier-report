@@ -12,7 +12,6 @@ import TeachingFellowsImage from "../images/2018_TF_Group_Wide_RGB.jpg"
 const IndexPage = () => (
   <Grid>
     <Backdrop />
-    {/* <LeftSidebar inverted={true} text='The Ligonier Teaching Fellows' /> */}
     <Image
       column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
       height='50vh'

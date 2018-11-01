@@ -16,7 +16,7 @@ import RefNet from '../images/RefNet.jpg'
 import Window from '../images/RYMWindow.jpg'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Subject

@@ -14,7 +14,7 @@ import GirlBus from '../images/GirlBus.jpg'
 import TeachingSeries from '../images/TeachingSeries.png'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Subject

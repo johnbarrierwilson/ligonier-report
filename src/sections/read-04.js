@@ -14,7 +14,7 @@ import Books from '../images/ReformationTrust.png'
 import Reading from '../images/LigonierWeb.jpg'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Subject

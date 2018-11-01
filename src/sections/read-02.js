@@ -15,7 +15,7 @@ import Leather from '../images/BibleLeather.jpg'
 import Standard from '../images/BibleStandard.jpg'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Subject
         column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}

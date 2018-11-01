@@ -12,7 +12,7 @@ import ChrisLarson from '../images/ChrisLarson.png'
 import ChrisLarsonSignature from '../images/ChrisLarsonSignature.png'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Image

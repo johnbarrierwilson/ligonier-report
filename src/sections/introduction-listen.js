@@ -11,7 +11,7 @@ import IntroductionPattern from '../images/IntroductionPattern.png'
 import IntroductionListen from '../images/IntroductionListen.png'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Heading

@@ -13,7 +13,7 @@ import TabletalkPlaceholder from '../images/placeholder-tabletalk.png'
 import GuyWalking from '../images/Read01–GuyWalking.jpg'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Subject

@@ -14,7 +14,7 @@ import Book from '../images/ChristologyStatement.png'
 import NoneOther from '../images/TranslationsNoneOther.jpg'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Image

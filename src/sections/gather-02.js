@@ -15,7 +15,7 @@ import Connect from '../images/Connect.jpg'
 import Students from '../images/RBCStudents.jpg'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Image

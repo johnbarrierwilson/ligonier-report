@@ -17,7 +17,7 @@ import Podcast02 from '../images/Podcast02.jpg'
 import Podcast03 from '../images/Podcast03.jpg'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Image

@@ -15,7 +15,7 @@ import City from '../images/TranslationCity.jpg'
 import Group from '../images/GroupAfrica.jpg'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Subject

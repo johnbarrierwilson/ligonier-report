@@ -15,7 +15,7 @@ import Travel02 from '../images/Travel02.jpg'
 import Travel03 from '../images/Travel03.jpg'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Subject

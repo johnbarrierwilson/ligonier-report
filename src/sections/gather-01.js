@@ -14,7 +14,7 @@ import Seattle from '../images/ConferenceSeattle.jpg'
 import Conference from '../images/Conference.jpg'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Image

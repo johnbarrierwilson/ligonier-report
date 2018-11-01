@@ -11,7 +11,7 @@ import IntroductionPattern from '../images/IntroductionPattern.png'
 import IntroductionGather from '../images/IntroductionGather.png'
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Heading

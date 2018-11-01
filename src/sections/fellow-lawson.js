@@ -12,7 +12,7 @@ import Subject from '../components/subject'
 import Lawson from "../images/FellowLawson.jpg"
 
 const IndexPage = () => (
-  <LazyLoad>
+  <LazyLoad offset={100}>
     <Grid>
       <Backdrop />
       <Subject

@@ -2,11 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import styled, { ThemeProvider, createGlobalStyle, css } from 'styled-components'
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 
 import 'normalize.css'
 import theme from '../theme.js'
 
+import DocumentTitle from './documentTitle'
 import Logo from './logo'
 import Toggle from './toggle'
 
@@ -39,7 +40,8 @@ class Layout extends React.Component {
         render={data => (
             <ThemeProvider theme={theme} >
               <>
-                <Logo inverted={true} />
+                <Logo />
+                <DocumentTitle />
                 <Toggle
                   inverted={this.props.inverted}
                   navigating={this.state.navigating}
@@ -99,9 +101,7 @@ class Layout extends React.Component {
                       <Link to="/gather-03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</Link>
                     </div>
                   </Navigation>
-                  <Grid navigating={this.state.navigating}>
-                    {this.props.children}
-                  </Grid>
+                  {this.props.children}
                 </Container>
               </>
             </ThemeProvider>
@@ -150,30 +150,6 @@ const GlobalStyles = createGlobalStyle`
     color: ${p => p.theme.colors.green};
     text-decoration: none;
   }
-`
-
-const Grid = styled('div')`
-  background: ${p => p.theme.colors.white};
-  display: grid;
-  grid-template-columns: 40px repeat(12, 1fr) 40px;
-  position: relative;
-  transition: transform 500ms cubic-bezier(.55,0,.1,1), opacity 500ms cubic-bezier(.55,0,.1,1);
-  z-index: ${p => p.theme.index.grid};
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
-    grid-template-columns: 90px repeat(12, 1fr) 90px;
-    grid-template-rows: 90px repeat(11, 1fr);
-    height: 100vh;
-    overflow: hidden;
-  }
-
-  ${p => p.navigating && css`
-    /* border-radius: 30px; */
-    opacity: 0.5;
-    transform: translateY(500px);
-    @media (min-width: ${p => p.theme.breakpoints.small}) {
-      transform: translateY(750px);
-    }
-  `}
 `
 
 const Container = styled('div')`

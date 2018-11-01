@@ -19,6 +19,8 @@ const theme = {
     heading: '30',
     image: '20',
     label: '30',
+    logoMark: '90',
+    logoTitle: '90',
     navigation: '0',
     title: '30',
     toggle: '90'

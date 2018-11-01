@@ -1,55 +1,47 @@
 import React from 'react'
+import LazyLoad from 'react-lazyload'
 import styled from 'styled-components'
 
 import Content from '../components/content'
 import Divider from '../components/divider'
-import DocumentTitle from '../components/documentTitle'
+import Grid from '../components/grid'
 import Heading from '../components/heading'
 import Image from '../components/image'
-import Layout from '../components/layout'
-import LeftSidebar from '../components/leftSidebar'
-import Logo from '../components/logo'
-import NavigateLeft from '../components/navigateLeft'
-import NavigateRight from '../components/navigateRight'
-import RightSidebar from '../components/rightSidebar'
 
 import TeachingFellowsImage from "../images/2018_TF_Group_Wide_RGB.jpg"
 
 const IndexPage = () => (
-  <Layout inverted={true}>
-    <Backdrop />
-    <Logo inverted={true} />
-    <DocumentTitle inverted={true} />
-    <LeftSidebar inverted={true} text='The Ligonier Teaching Fellows' />
-    <RightSidebar inverted={true} status={0} />
-    <NavigateLeft inverted={true} to="/" />
-    <NavigateRight inverted={true} to="/president-letter" />
-    <Image
-      column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
-      height='50vh'
-      position='center 20%'
-      row={['2 / span 1', '2 / span 8', '2 / span 8', '2 / span 8']}
-      src={TeachingFellowsImage}
-    />
-    <Heading
-      column={['2 / span 12', '2 / span 6', '2 / span 6', '2 / span 6']}
-      inverted={true}
-      row={['3 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
-      text='The Ligonier Teaching Fellows'
-    />
-    <Divider
-      column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
-      inverted={true}
-      row={['3 / span 2', '12 / span 1', '12 / span 1', '11 / span 2']}
-    />
-    <Content
-      column={['2 / span 12', '10 / span 4', '10 / span 4', '10 / span 4']}
-      inverted={true}
-      row={['5 / span 1', '10 / span 3', '10 / span 3', '10 / span 3']}
-    >
-      <strong>The Teaching Fellows</strong> bring unique gifts and broad experience to Ligonier Ministries. They help us remain true to our founding purpose and inform our future outreach. Dr. R.C. Sproul and the board gathered this team of men to aid in present and future ministry. Trusting God for biblical and theological fidelity, we are grateful for this group of gifted&nbsp;teachers.
-    </Content>
-  </Layout>
+  <LazyLoad height={'100%'}>
+    <Grid>
+      <Backdrop />
+      {/* <LeftSidebar inverted={true} text='The Ligonier Teaching Fellows' /> */}
+      <Image
+        column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
+        height='50vh'
+        position='center 20%'
+        row={['2 / span 1', '2 / span 8', '2 / span 8', '2 / span 8']}
+        src={TeachingFellowsImage}
+      />
+      <Heading
+        column={['2 / span 12', '2 / span 6', '2 / span 6', '2 / span 6']}
+        inverted={true}
+        row={['3 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
+        text='The Ligonier Teaching Fellows'
+      />
+      <Divider
+        column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+        inverted={true}
+        row={['3 / span 2', '12 / span 1', '12 / span 1', '11 / span 2']}
+      />
+      <Content
+        column={['2 / span 12', '10 / span 4', '10 / span 4', '10 / span 4']}
+        inverted={true}
+        row={['5 / span 1', '10 / span 3', '10 / span 3', '10 / span 3']}
+      >
+        <strong>The Teaching Fellows</strong> bring unique gifts and broad experience to Ligonier Ministries. They help us remain true to our founding purpose and inform our future outreach. Dr. R.C. Sproul and the board gathered this team of men to aid in present and future ministry. Trusting God for biblical and theological fidelity, we are grateful for this group of gifted&nbsp;teachers.
+      </Content>
+    </Grid>
+  </LazyLoad>
 )
 
 const Backdrop = styled('div')`

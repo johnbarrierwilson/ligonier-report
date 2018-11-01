@@ -15,6 +15,7 @@ const Mark = styled('svg')`
   position: fixed;
   top: 2px;
   transform: scale(0.5);
+  z-index: ${p => p.theme.index.logoMark};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     left: 25px;
     top: 25px;
@@ -36,6 +37,7 @@ const Title = styled('p')`
   text-align: center;
   text-transform: uppercase;
   top: 14px;
+  z-index: ${p => p.theme.index.logoTitle};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     left: 90px;
     right: auto;

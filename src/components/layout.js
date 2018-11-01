@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import styled, { ThemeProvider, createGlobalStyle, ThemeProvider } from 'styled-components'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 import 'normalize.css'
 import theme from '../theme.js'

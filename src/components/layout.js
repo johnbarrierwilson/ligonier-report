@@ -63,42 +63,42 @@ class Layout extends React.Component {
                 <Navigation navigating={this.state.navigating}>
                   <div>
                     <p><small>&nbsp;</small>Introduction</p>
-                    <Link to="/">Overview</Link>
-                    <Link to="/teaching-fellows">The Teaching Fellows</Link>
-                    <Link to="/president-letter">A Letter from the President</Link>
+                    <a href="#introduction">Overview</a>
+                    <a href="#teachingfellows">The Teaching Fellows</a>
+                    <a href="#presidentletter">A Letter from the President</a>
                   </div>
                   <div>
                     <p><small>Part One</small>Read</p>
-                    <Link to="/introduction-read">Introduction</Link>
-                    <Link to="/story-xavier">Story: Xavier</Link>
-                    <Link to="/read-01">Tabletalk, Ask Ligoner &amp; The State of Theology</Link>
-                    <Link to="/fellow-sinclair">Fellow: Sinclair Ferguson</Link>
-                    <Link to="/read-02">Reformation Study Bible</Link>
-                    <Link to="/read-03">Study Bible Translations &amp; Study Bibles for Africa</Link>
-                    <Link to="/read-04">Reformation Trust &amp; Ligonier.org</Link>
-                    <Link to="/fellow-godfrey">Fellow: W. Robert Godfrey</Link>
-                    <Link to="/read-05">Translations, Military &amp; Prison Chaplains and Christology Statement</Link>
-                    <Link to="/fellow-lawson">Fellow: Steven Lawson</Link>
+                    <a href="#introductionread">Introduction</a>
+                    <a href="#storyxavier">Story: Xavier</a>
+                    <a href="#read01">Tabletalk, Ask Ligoner &amp; The State of Theology</a>
+                    <a href="#fellowsinclair">Fellow: Sinclair Ferguson</a>
+                    <a href="#read02">Reformation Study Bible</a>
+                    <a href="#read03">Study Bible Translations &amp; Study Bibles for Africa</a>
+                    <a href="#read04">Reformation Trust &amp; Ligonier.org</a>
+                    <a href="#fellowgodfrey">Fellow: W. Robert Godfrey</a>
+                    <a href="#read05">Translations, Military &amp; Prison Chaplains and Christology Statement</a>
+                    <a href="#fellowlawson">Fellow: Steven Lawson</a>
                   </div>
                   <div>
                     <p><small>Part Two</small>Listen</p>
-                    <Link to="/introduction-listen">Introduction</Link>
-                    <Link to="/story-amy">Story: Amy</Link>
-                    <Link to="/listen-01">Renewing Your Mind and RefNet</Link>
-                    <Link to="/fellow-mohler">Fellow: Albert Mohler</Link>
-                    <Link to="/listen-02">Teaching Series and the Ligoner App</Link>
-                    <Link to="/fellow-nichols">Fellow: Stephen J. Nichols</Link>
-                    <Link to="/listen-03">Platforms and Podcasts</Link>
+                    <a href="#introductionlisten">Introduction</a>
+                    <a href="#storyamy">Story: Amy</a>
+                    <a href="#listen01">Renewing Your Mind and RefNet</a>
+                    <a href="#fellowmohler">Fellow: Albert Mohler</a>
+                    <a href="#listen02">Teaching Series and the Ligoner App</a>
+                    <a href="#fellownichols">Fellow: Stephen J. Nichols</a>
+                    <a href="#listen03">Platforms and Podcasts</a>
                   </div>
                   <div>
                     <p><small>Part Three</small>Gather</p>
-                    <Link to="/introduction-gather">Introduction</Link>
-                    <Link to="/story-doug">Story: Doug</Link>
-                    <Link to="/gather-01">National, Regional and International Conferences</Link>
-                    <Link to="/fellow-parsons">Fellow: Burk Parsons</Link>
-                    <Link to="/gather-02">Reformation Bible College and Ligonier Connect</Link>
-                    <Link to="/fellow-thomas">Fellow: Derek W.H. Thomas</Link>
-                    <Link to="/gather-03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</Link>
+                    <a href="#introductiongather">Introduction</a>
+                    <a href="#storydoug">Story: Doug</a>
+                    <a href="#gather01">National, Regional and International Conferences</a>
+                    <a href="#fellowparsons">Fellow: Burk Parsons</a>
+                    <a href="#gather02">Reformation Bible College and Ligonier Connect</a>
+                    <a href="#fellowthomas">Fellow: Derek W.H. Thomas</a>
+                    <a href="#gather03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</a>
                   </div>
                 </Navigation>
                 {this.props.children}
@@ -183,16 +183,13 @@ const Navigation = styled('nav')`
     display: block;
     font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
     font-size: 14px;
-    /* letter-spacing: 0.05em; */
     margin: 15px auto;
-    /* text-transform: uppercase; */
     &:hover {
       color: ${p => p.theme.colors.white};
     }
   }
   div {
     opacity: ${p => p.navigating ? '1' : '0'};
-    /* text-align: center; */
     transform: ${p => p.navigating ? 'scale(1) translateY(0%)': 'scale(0.75) translateY(25%)'};
     transition: all 500ms cubic-bezier(.55,0,.1,1);
     @media (min-width: ${p => p.theme.breakpoints.medium}) {

@@ -9,7 +9,7 @@ const LeftSidebar = (props) => (
 
 const Container = styled('div')`
   bottom: 50%;
-  left: 45px;
+  left: 43px;
   position: fixed;
   transform: translate(-50%, 50%);
   z-index: ${p => p.theme.index.leftSidebar};

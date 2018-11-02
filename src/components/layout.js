@@ -14,8 +14,33 @@ import Toggle from './toggle'
 class Layout extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {navigating: false};
-    this.toggleNavigation = this.toggleNavigation.bind(this);
+    this.state = {
+      inverted: false,
+      navigating: false
+    }
+    this.toggleNavigation = this.toggleNavigation.bind(this)
+  }
+
+  componentDidMount() {
+    const container = document.getElementById('containerElement')
+
+    container.addEventListener('scroll', () => {
+      const distance = container.scrollTop + 50
+      const viewportHeight = window.innerHeight
+      const slideNumber = Math.floor(distance / viewportHeight)
+
+      const invertedSlides = [1, 6, 10, 12, 16, 18, 23, 25]
+
+      if (invertedSlides.includes(slideNumber)) {
+        this.setState({inverted: true})
+      } else {
+        this.setState({inverted: false})
+      }
+    })
+  }
+
+  componentWillUnmount() {
+    document.getElementById('containerElement').removeEventListener('scroll')
   }
 
   toggleNavigation(e) {
@@ -40,10 +65,10 @@ class Layout extends React.Component {
         render={data => (
           <ThemeProvider theme={theme}>
             <>
-              <Logo inverted={this.state.navigating} />
-              <DocumentTitle inverted={this.state.navigating} />
+              <Logo inverted={this.state.navigating || this.state.inverted} />
+              <DocumentTitle inverted={this.state.navigating || this.state.inverted} />
               <Toggle
-                inverted={this.props.inverted}
+                inverted={this.props.inverted || this.state.inverted}
                 navigating={this.state.navigating}
                 onClick={this.toggleNavigation}
                

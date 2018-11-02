@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { Link, StaticQuery, graphql } from 'gatsby'
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
+import styled, { createGlobalStyle, css, ThemeProvider } from 'styled-components'
 
 import theme from '../theme.js'
 
@@ -39,8 +39,8 @@ class Layout extends React.Component {
         render={data => (
           <ThemeProvider theme={theme}>
             <>
-              <Logo />
-              <DocumentTitle />
+              <Logo inverted={this.state.navigating} />
+              <DocumentTitle inverted={this.state.navigating} />
               <Toggle
                 inverted={this.props.inverted}
                 navigating={this.state.navigating}
@@ -101,7 +101,9 @@ class Layout extends React.Component {
                     <a href="#gather03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</a>
                   </div>
                 </Navigation>
-                {this.props.children}
+                <ContainerInner navigating={this.state.navigating} onClick={this.state.navigating ? this.toggleNavigation : null}>
+                  {this.props.children}
+                </ContainerInner>
               </Container>
             </>
           </ThemeProvider>
@@ -154,9 +156,19 @@ const GlobalStyles = createGlobalStyle`
 
 const Container = styled('div')`
   background: #111111;
-  @media (min-width: ${p => p.theme.breakpoints.large}) {
-    overflow: hidden;
-  }
+  overflow: hidden;
+`
+
+const ContainerInner = styled('div')`
+  -webkit-overflow-scrolling: touch;
+  height: 100vh;
+  overflow: auto;
+  transition: ${p => p.theme.transition};
+
+  ${p => p.navigating ? css`
+    transform: translateY(650px);
+    opacity: 0.5;
+  ` : null}
 `
 
 const Navigation = styled('nav')`
@@ -191,7 +203,7 @@ const Navigation = styled('nav')`
   div {
     opacity: ${p => p.navigating ? '1' : '0'};
     transform: ${p => p.navigating ? 'scale(1) translateY(0%)': 'scale(0.75) translateY(25%)'};
-    transition: all 500ms cubic-bezier(.55,0,.1,1);
+    transition: ${p => p.theme.transition};
     @media (min-width: ${p => p.theme.breakpoints.medium}) {
       width: 25%;
     }

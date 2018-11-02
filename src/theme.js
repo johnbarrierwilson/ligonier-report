@@ -24,7 +24,8 @@ const theme = {
     navigation: '0',
     title: '30',
     toggle: '90'
-  }
+  },
+  transition: 'all 500ms cubic-bezier(.55,0,.1,1)'
 }
 
 export default theme

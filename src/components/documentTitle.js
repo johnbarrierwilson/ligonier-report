@@ -18,6 +18,7 @@ const Container = styled('p')`
     text-align: right;
     text-transform: uppercase;
     top: 38px;
+    transition: ${p => p.theme.transition};
     z-index: ${p => p.theme.index.title};
   }
 `

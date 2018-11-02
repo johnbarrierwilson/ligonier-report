@@ -10,7 +10,7 @@ import Image from '../components/image'
 import TeachingFellowsImage from "../images/2018_TF_Group_Wide_RGB.jpg"
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="teachingfellows">
     <Backdrop />
     <Image
       column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}

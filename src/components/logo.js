@@ -25,6 +25,7 @@ const Mark = styled('svg')`
   }
   path {
     fill: ${p => p.inverted ? p.theme.colors.white : theme.colors.black};
+    transition: ${p => p.theme.transition};
   }
 `
 
@@ -39,6 +40,7 @@ const Title = styled('p')`
   text-align: center;
   text-transform: uppercase;
   top: 14px;
+  transition: ${p => p.theme.transition};
   z-index: ${p => p.theme.index.logoTitle};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     left: 90px;

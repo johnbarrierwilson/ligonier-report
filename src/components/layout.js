@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { Link, StaticQuery, graphql } from 'gatsby'
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
+import styled, { createGlobalStyle, css, ThemeProvider } from 'styled-components'
+import { Link }from 'react-scroll'
 
 import theme from '../theme.js'
 
@@ -39,8 +40,8 @@ class Layout extends React.Component {
         render={data => (
           <ThemeProvider theme={theme}>
             <>
-              <Logo />
-              <DocumentTitle />
+              <Logo inverted={this.state.navigating} />
+              <DocumentTitle inverted={this.state.navigating} />
               <Toggle
                 inverted={this.props.inverted}
                 navigating={this.state.navigating}
@@ -63,45 +64,51 @@ class Layout extends React.Component {
                 <Navigation navigating={this.state.navigating}>
                   <div>
                     <p><small>&nbsp;</small>Introduction</p>
-                    <Link to="/">Overview</Link>
-                    <Link to="/teaching-fellows">The Teaching Fellows</Link>
-                    <Link to="/president-letter">A Letter from the President</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="introduction">Overview</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="teachingfellows">The Teaching Fellows</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="presidentletter">A Letter from the President</Link>
                   </div>
                   <div>
                     <p><small>Part One</small>Read</p>
-                    <Link to="/introduction-read">Introduction</Link>
-                    <Link to="/story-xavier">Story: Xavier</Link>
-                    <Link to="/read-01">Tabletalk, Ask Ligoner &amp; The State of Theology</Link>
-                    <Link to="/fellow-sinclair">Fellow: Sinclair Ferguson</Link>
-                    <Link to="/read-02">Reformation Study Bible</Link>
-                    <Link to="/read-03">Study Bible Translations &amp; Study Bibles for Africa</Link>
-                    <Link to="/read-04">Reformation Trust &amp; Ligonier.org</Link>
-                    <Link to="/fellow-godfrey">Fellow: W. Robert Godfrey</Link>
-                    <Link to="/read-05">Translations, Military &amp; Prison Chaplains and Christology Statement</Link>
-                    <Link to="/fellow-lawson">Fellow: Steven Lawson</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="introductionread">Introduction</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="storyxavier">Story: Xavier</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="read01">Tabletalk, Ask Ligoner &amp; The State of Theology</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="fellowsinclair">Fellow: Sinclair Ferguson</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="read02">Reformation Study Bible</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="read03">Study Bible Translations &amp; Study Bibles for Africa</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="read04">Reformation Trust &amp; Ligonier.org</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="fellowgodfrey">Fellow: W. Robert Godfrey</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="read05">Translations, Military &amp; Prison Chaplains and Christology Statement</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="fellowlawson">Fellow: Steven Lawson</Link>
                   </div>
                   <div>
                     <p><small>Part Two</small>Listen</p>
-                    <Link to="/introduction-listen">Introduction</Link>
-                    <Link to="/story-amy">Story: Amy</Link>
-                    <Link to="/listen-01">Renewing Your Mind and RefNet</Link>
-                    <Link to="/fellow-mohler">Fellow: Albert Mohler</Link>
-                    <Link to="/listen-02">Teaching Series and the Ligoner App</Link>
-                    <Link to="/fellow-nichols">Fellow: Stephen J. Nichols</Link>
-                    <Link to="/listen-03">Platforms and Podcasts</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="introductionlisten">Introduction</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="storyamy">Story: Amy</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="listen01">Renewing Your Mind and RefNet</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="fellowmohler">Fellow: Albert Mohler</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="listen02">Teaching Series and the Ligoner App</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="fellownichols">Fellow: Stephen J. Nichols</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="listen03">Platforms and Podcasts</Link>
                   </div>
                   <div>
                     <p><small>Part Three</small>Gather</p>
-                    <Link to="/introduction-gather">Introduction</Link>
-                    <Link to="/story-doug">Story: Doug</Link>
-                    <Link to="/gather-01">National, Regional and International Conferences</Link>
-                    <Link to="/fellow-parsons">Fellow: Burk Parsons</Link>
-                    <Link to="/gather-02">Reformation Bible College and Ligonier Connect</Link>
-                    <Link to="/fellow-thomas">Fellow: Derek W.H. Thomas</Link>
-                    <Link to="/gather-03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="introductiongather">Introduction</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="storydoug">Story: Doug</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="gather01">National, Regional and International Conferences</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="fellowparsons">Fellow: Burk Parsons</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="gather02">Reformation Bible College and Ligonier Connect</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="fellowthomas">Fellow: Derek W.H. Thomas</Link>
+                    <Link containerId="containerElement" delay={500} href="#" offset={-650} onClick={this.toggleNavigation} smooth={true} to="gather03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</Link>
                   </div>
                 </Navigation>
-                {this.props.children}
+                <ContainerInner
+                  id="containerElement"
+                  navigating={this.state.navigating}
+                  onClick={this.state.navigating ? this.toggleNavigation : null}
+                >
+                  {this.props.children}
+                </ContainerInner>
               </Container>
             </>
           </ThemeProvider>
@@ -154,9 +161,19 @@ const GlobalStyles = createGlobalStyle`
 
 const Container = styled('div')`
   background: #111111;
-  @media (min-width: ${p => p.theme.breakpoints.large}) {
-    overflow: hidden;
-  }
+  overflow: hidden;
+`
+
+const ContainerInner = styled('div')`
+  -webkit-overflow-scrolling: touch;
+  height: 100vh;
+  overflow: auto;
+  transition: ${p => p.theme.transition};
+
+  ${p => p.navigating ? css`
+    transform: translateY(650px);
+    opacity: 0.5;
+  ` : null}
 `
 
 const Navigation = styled('nav')`
@@ -183,18 +200,15 @@ const Navigation = styled('nav')`
     display: block;
     font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
     font-size: 14px;
-    /* letter-spacing: 0.05em; */
     margin: 15px auto;
-    /* text-transform: uppercase; */
     &:hover {
       color: ${p => p.theme.colors.white};
     }
   }
   div {
     opacity: ${p => p.navigating ? '1' : '0'};
-    /* text-align: center; */
     transform: ${p => p.navigating ? 'scale(1) translateY(0%)': 'scale(0.75) translateY(25%)'};
-    transition: all 500ms cubic-bezier(.55,0,.1,1);
+    transition: ${p => p.theme.transition};
     @media (min-width: ${p => p.theme.breakpoints.medium}) {
       width: 25%;
     }

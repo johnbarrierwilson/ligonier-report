@@ -37,6 +37,8 @@ class Layout extends React.Component {
       invertedMiddle: false,
       invertedTop: false,
       navigating: false,
+      slideNumberMiddle: 0,
+      slideNumberTop: 0,
       sidebarStatus: 0,
       sidebarTitle: '',
     }
@@ -54,13 +56,22 @@ class Layout extends React.Component {
       const topSlideNumber = Math.floor(topDistance / viewportHeight)
 
       const invertedSlides = [1, 6, 10, 12, 16, 18, 23, 25]
+      
+      if (this.state.slideNumberTop !== topSlideNumber) {
+        this.setState({
+          invertedTop: invertedSlides.includes(topSlideNumber),
+          slideNumberTop: topSlideNumber
+        })
+      }
 
-      this.setState({
-        invertedTop: invertedSlides.includes(topSlideNumber),
-        invertedMiddle: invertedSlides.includes(middleSlideNumber),
-        sidebarStatus: sidebarStatuses[middleSlideNumber],
-        sidebarTitle: sidebarTitles[middleSlideNumber]
-      })
+      if (this.state.slideNumberMiddle !== middleSlideNumber) {
+        this.setState({
+          invertedMiddle: invertedSlides.includes(middleSlideNumber),
+          sidebarStatus: sidebarStatuses[middleSlideNumber],
+          sidebarTitle: sidebarTitles[middleSlideNumber],
+          slideNumberMiddle: middleSlideNumber
+        })
+      }
     })
   }
 

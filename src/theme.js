@@ -19,9 +19,11 @@ const theme = {
     heading: '30',
     image: '20',
     label: '30',
+    leftSidebar: '90',
     logoMark: '90',
     logoTitle: '90',
     navigation: '0',
+    rightSidebar: '90',
     title: '30',
     toggle: '90'
   },

@@ -19,20 +19,14 @@ const Container = styled('ol')`
   right: 20px;
   list-style: none;
   transform: translate(50%, 50%);
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
-    bottom: auto;
-    grid-column: 14 / span 1;
-    grid-row: 6 / span 2;
-    position: relative;
-    right: auto;
-    transform: none;
-  }
+  z-index: ${p => p.theme.index.rightSidebar};
   li {
     background: transparent;
     border: 1px solid ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
     border-radius: 50%;
     height: 8px;
     margin: 4px auto;
+    transition: ${p => p.theme.transition};
     width: 8px;
   }
   li:nth-child(${p => p.status}) {

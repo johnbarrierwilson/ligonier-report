@@ -15,7 +15,7 @@ import RefNet from '../images/RefNet.jpg'
 import Window from '../images/RYMWindow.jpg'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="listen01">
     <Backdrop />
     <Subject
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}

@@ -11,7 +11,7 @@ import Piece02 from '../images/piece_02.png'
 import Piece03 from '../images/piece_03.png'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="introduction" >
     <Image
       column={['1 / span 2', '1 / span 3', '1 / span 3', '1 / span 3']}
       row={['3 / span 3', '4 / span 6', '4 / span 6', '4 / span 6']}

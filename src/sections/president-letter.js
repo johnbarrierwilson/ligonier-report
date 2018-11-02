@@ -11,7 +11,7 @@ import ChrisLarson from '../images/ChrisLarson.png'
 import ChrisLarsonSignature from '../images/ChrisLarsonSignature.png'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="presidentletter">
     <Backdrop />
     <Image
       column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}

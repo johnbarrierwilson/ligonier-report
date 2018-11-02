@@ -13,7 +13,7 @@ import GirlBus from '../images/GirlBus.jpg'
 import TeachingSeries from '../images/TeachingSeries.png'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="listen02">
     <Backdrop />
     <Subject
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}

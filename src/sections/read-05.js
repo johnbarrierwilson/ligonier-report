@@ -13,7 +13,7 @@ import Book from '../images/ChristologyStatement.png'
 import NoneOther from '../images/TranslationsNoneOther.jpg'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="read05">
     <Backdrop />
     <Image
       column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}

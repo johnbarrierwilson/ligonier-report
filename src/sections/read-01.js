@@ -12,7 +12,7 @@ import TabletalkPlaceholder from '../images/placeholder-tabletalk.png'
 import GuyWalking from '../images/Read01–GuyWalking.jpg'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="read01">
     <Backdrop />
     <Subject
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}

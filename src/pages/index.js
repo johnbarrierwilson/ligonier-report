@@ -37,33 +37,33 @@ import TeachingFellows from'../sections/teaching-fellows'
 const IndexPage = () => (
   <ThemeProvider theme={theme} >
     <Layout>
-      <Introduction id="introduction" />
-      <TeachingFellows id="teachingfellows" />
-      <PresidentLetter id="presidentletter" />
-      <IntroductionRead id="introductionread" />
-      <StoryXavier id="storyxavier" />
-      <Read01 id="read01" />
-      <FellowSinclair id="fellowsinclair" />
-      <Read02 id="read02" />
-      <Read03 id="read03" />
-      <Read04 id="read04" />
-      <FellowGodfrey id="fellowgodfrey" />
-      <Read05 id="read05" />
-      <FellowLawson id="fellowlawson" />
-      <IntroductionListen id="introductionlisten" />
-      <StoryAmy id="storyamy" />
-      <Listen01 id="listen01" />
-      <FellowMohler id="fellowmohler" />
-      <Listen02 id="listen02" />
-      <FellowNichols id="fellownichols" />
-      <Listen03 id="listen03" />
-      <IntroductionGather id="introductiongather" />
-      <StoryDoug id="storydoug" />
-      <Gather01 id="gather01" />
-      <FellowParsons id="fellowparsons" />
-      <Gather02 id="gather02" />
-      <FellowThomas id="fellowthomas" />
-      <Gather03 id="gather03" />
+      <Introduction />
+      <TeachingFellows />
+      <PresidentLetter />
+      <IntroductionRead />
+      <StoryXavier />
+      <Read01 />
+      <FellowSinclair />
+      <Read02 />
+      <Read03 />
+      <Read04 />
+      <FellowGodfrey />
+      <Read05 />
+      <FellowLawson />
+      <IntroductionListen />
+      <StoryAmy />
+      <Listen01 />
+      <FellowMohler />
+      <Listen02 />
+      <FellowNichols />
+      <Listen03 />
+      <IntroductionGather />
+      <StoryDoug />
+      <Gather01 />
+      <FellowParsons />
+      <Gather02 />
+      <FellowThomas />
+      <Gather03 />
     </Layout>
   </ThemeProvider>
 )

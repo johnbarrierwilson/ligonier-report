@@ -12,7 +12,7 @@ import Subject from '../components/subject'
 import Doug from '../images/StoryDoug.jpg'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="storydoug">
     <Backdrop />
     <Subject
       column={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}

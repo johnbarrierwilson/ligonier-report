@@ -14,7 +14,7 @@ import Leather from '../images/BibleLeather.jpg'
 import Standard from '../images/BibleStandard.jpg'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="read02">
     <Subject
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
       row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}

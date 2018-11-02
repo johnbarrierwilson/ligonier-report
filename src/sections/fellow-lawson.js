@@ -11,7 +11,7 @@ import Subject from '../components/subject'
 import Lawson from "../images/FellowLawson.jpg"
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="fellowlawson">
     <Backdrop />
     <Subject
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}

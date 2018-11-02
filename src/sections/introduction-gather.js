@@ -10,7 +10,7 @@ import IntroductionPattern from '../images/IntroductionPattern.png'
 import IntroductionGather from '../images/IntroductionGather.png'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="introductiongather">
     <Backdrop />
     <Heading
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}

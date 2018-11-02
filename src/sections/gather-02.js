@@ -14,7 +14,7 @@ import Connect from '../images/Connect.jpg'
 import Students from '../images/RBCStudents.jpg'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="gather02">
     <Backdrop />
     <Image
       column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}

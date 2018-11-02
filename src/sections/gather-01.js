@@ -13,7 +13,7 @@ import Seattle from '../images/ConferenceSeattle.jpg'
 import Conference from '../images/Conference.jpg'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="gather01">
     <Backdrop />
     <Image
       column={['2 / span 7', '2 / span 7', '2 / span 7', '2 / span 7']}

@@ -14,7 +14,7 @@ import Travel02 from '../images/Travel02.jpg'
 import Travel03 from '../images/Travel03.jpg'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="gather03">
     <Backdrop />
     <Subject
       column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}

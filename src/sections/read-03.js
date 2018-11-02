@@ -14,7 +14,7 @@ import City from '../images/TranslationCity.jpg'
 import Group from '../images/GroupAfrica.jpg'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="read03">
     <Backdrop />
     <Subject
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}

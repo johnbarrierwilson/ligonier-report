@@ -10,7 +10,7 @@ import IntroductionPattern from '../images/IntroductionPattern.png'
 import IntroductionListen from '../images/IntroductionListen.png'
 
 const IndexPage = () => (
-  <Grid>
+  <Grid name="introductionlisten">
     <Backdrop />
     <Heading
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}

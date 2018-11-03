@@ -11,7 +11,7 @@ const Image = (props) => (
 const Container = styled('img')`
   grid-column: ${p => p.column[0]};
   grid-row: ${p => p.row[0]};
-  height: ${p => p.size && p.size != 'contain' ? p.size.split(' ')[1] : '100%'};
+  height: ${p => p.size && p.size !== 'contain' ? p.size.split(' ')[1] : '100%'};
   object-position: ${p => p.position ? p.position : 'center center'};
   object-fit: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'};
   position: relative;

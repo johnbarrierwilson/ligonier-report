@@ -205,7 +205,7 @@ const GlobalStyles = createGlobalStyle`
       font-size: 1.2vw;
     }
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     html {
       font-size: 0.85vw;
     }

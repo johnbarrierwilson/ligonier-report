@@ -22,13 +22,13 @@ const IndexPage = () => (
     />
     <Image
       column={['9 / span 6', '9 / span 6', '9 / span 6', '9 / span 6']}
-      row={['3 / span 3', '1 / span 3', '1 / span 3', '1 / span 3']}
+      row={['3 / span 3', '1 / span 2', '1 / span 2', '1 / span 2']}
       position='bottom left'
       size='495px 369px'
       src={Piece02}
     />
     <Image
-      column={['1 / span 14', '1 / span 9', '2 / span 8', '3 / span 6']}
+      column={['1 / span 14', '1 / span 9', '3 / span 8', '4 / span 6']}
       row={['9 / span 4', '10 / span 3', '10 / span 3', '10 / span 3']}
       position='top center'
       size='468px 414px'

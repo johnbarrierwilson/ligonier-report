@@ -22,8 +22,10 @@ const Container = styled('div')`
   grid-row: ${p => p.row[0]};
   grid-template: 1fr 1fr / 7rem 1fr;
   letter-spacing: 0.5em;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
+  z-index: ${p => p.theme.index.numbers};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-column: ${p => p.column[1]};
     grid-row: ${p => p.row[1]};

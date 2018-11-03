@@ -4,7 +4,7 @@ const Divider = styled('hr')`
   align-self: center;
   border: none;
   border-top: 1px solid ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
-  margin: 0 0 30px;
+  margin: ${p => p.top ? '30px 0' : '0 0 30px'};
   grid-column: ${p => p.column[0]};
   grid-row: ${p => p.row[0]};
   position: relative;

@@ -7,25 +7,13 @@ import Grid from '../components/grid'
 import Heading from '../components/heading'
 import Image from '../components/image'
 import Subject from '../components/subject'
+import Well from '../components/well'
 
 import Sinclair from "../images/FellowFerguson.jpg"
 
 const IndexPage = () => (
   <Grid name="fellowsinclair">
     <Backdrop />
-    <Image
-      column={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
-      position="center 20%"
-      row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
-      src={Sinclair}
-    />
-    <Heading
-      column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-      inverted={true}
-      row={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
-      size="s"
-      text='“What was central to R.C., and what is central to Ligonier, is the message and the burden of the Holiness of God, the Glory of God, and the Honor of God.”'
-    />
     <Subject
       column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
       inverted={true}
@@ -43,6 +31,21 @@ const IndexPage = () => (
       inverted={true}
       row={['4 / span 1', '4 / span 1', '4 / span 1', '4 / span 1']}
       text='Sinclair Ferguson'
+    />
+    <Well bottom={true}>
+      <Image
+        column={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
+        position="center 20%"
+        row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+        src={Sinclair}
+      />
+    </Well>
+    <Heading
+      column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
+      inverted={true}
+      row={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
+      size="s"
+      text='“What was central to R.C., and what is central to Ligonier, is the message and the burden of the Holiness of God, the Glory of God, and the Honor of God.”'
     />
     <Content
       column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}

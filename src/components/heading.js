@@ -15,7 +15,7 @@ const Container = styled('h1')`
       case 'xl':
         return '3.125rem'
       case 's':
-        return '1rem'
+        return '1.2rem'
       default:
         return '1.5rem'
     }
@@ -31,6 +31,7 @@ const Container = styled('h1')`
     grid-column: ${p => p.column[1]};
     grid-row: ${p => p.row[1]};
     margin: 0;
+    transform: ${p => p.transform ? p.transform : null};
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     font-size: ${p => {

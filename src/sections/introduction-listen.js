@@ -5,6 +5,7 @@ import Content from '../components/content'
 import Grid from '../components/grid'
 import Heading from '../components/heading'
 import Image from '../components/image'
+import Well from '../components/well'
 
 import IntroductionPattern from '../images/IntroductionPattern.png'
 import IntroductionListen from '../images/IntroductionListen.png'
@@ -18,18 +19,20 @@ const IndexPage = () => (
       size="xl"
       text="Listen"
     />
-    <Image
-      column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
-      row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
-      size="contain"
-      src={IntroductionListen}
-    />
+    <Well size="xl">
+      <Image
+        column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
+        row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+        size="contain"
+        src={IntroductionListen}
+      />
+    </Well>
     <Content
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
       row={['8 / span 3', '8 / span 3', '8 / span 3', '8 / span 3']}
       type="deck"
     >
-      <p><strong>Faith comes by hearing.</strong> Every week, Ligonier Ministries broadcasts audio and video teaching on the air and on the web to millions of people, free of charge. Trustworthy, life-changing teaching from Dr. R.C. Sproul, the Ligonier Ministries Teaching Fellows, and many others is available to you 24/7. Thank you for tuning in.</p>
+      <p><strong>Faith comes by hearing.</strong> Every week, Ligonier Ministries broadcasts audio and video teaching on the air and on the web to millions of people, free of charge. Trustworthy, life-changing teaching from Dr. R.C. Sproul, the Ligonier Ministries Teaching Fellows, and many others is available to you 24/7. Thank you for tuning&nbsp;in.</p>
     </Content>
   </Grid>
 )

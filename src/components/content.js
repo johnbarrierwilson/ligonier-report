@@ -23,7 +23,9 @@ const Content = styled('div')`
 
   ${p => p.type === 'deck' ? css`
     font-style: italic;
-    line-height: 2;
+    @media (min-width: ${p.theme.breakpoints.small}) {
+      line-height: 2;
+    }
     strong {
       font-style: normal;
       font-weight: 400 !important;

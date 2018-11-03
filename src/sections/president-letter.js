@@ -14,13 +14,15 @@ import ChrisLarsonSignature from '../images/ChrisLarsonSignature.png'
 const IndexPage = () => (
   <Grid name="presidentletter">
     <Backdrop />
-    <Image
-      column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
-      position="center 20%"
-      row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
-      src={ChrisLarson}
-    />
-    <Well>
+    <Well bottom={true}>
+      <Image
+        column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+        position="center 20%"
+        row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+        src={ChrisLarson}
+      />
+    </Well>
+    <Well size="l" top={true}>
       <Subject
         column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
         row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}

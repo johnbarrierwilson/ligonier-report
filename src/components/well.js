@@ -1,6 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
+// Used for mobile sizing/spacing/display
+
 class Well extends React.Component {
   constructor() {
     super()
@@ -12,16 +14,23 @@ class Well extends React.Component {
       this.setState({ isSmall: window.innerWidth <= 600 })
     })
   }
-  componentWillUnmount() {
-    window.removeEventListener('resize')
-  }
   render() {
     return this.state.isSmall ? <Container {...this.props}>{this.props.children}</Container> : this.props.children;
   }
 }
 
 const Container = styled('div')`
-  margin: 75px 0 50px;
+  margin: ${p => {
+    switch(p.size) {
+      case 'xl':
+        return '100px'
+      case 'l':
+        return '80px'
+      default:
+        return '40px'
+    }
+  }} 0;
+  position: relative;
 
   ${p => p.bottom ? css`
     margin-top: 0;
@@ -29,6 +38,10 @@ const Container = styled('div')`
 
   ${p => p.top ? css`
     margin-bottom: 0;
+  ` : null}
+
+  ${p => p.hide ? css`
+    display: none;
   ` : null}
 `
 

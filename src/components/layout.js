@@ -75,10 +75,6 @@ class Layout extends React.Component {
     })
   }
 
-  componentWillUnmount() {
-    document.getElementById('containerElement').removeEventListener('scroll')
-  }
-
   toggleNavigation(e) {
     e.preventDefault();
     this.setState({

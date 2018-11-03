@@ -6,6 +6,7 @@ import Divider from '../components/divider'
 import Grid from '../components/grid'
 import Heading from '../components/heading'
 import Image from '../components/image'
+import Well from '../components/well'
 
 import TeachingFellowsImage from "../images/2018_TF_Group_Wide_RGB.jpg"
 
@@ -23,12 +24,14 @@ const IndexPage = () => (
       inverted={true}
       row={['3 / span 2', '12 / span 1', '12 / span 1', '11 / span 2']}
     />
-    <Image
-      column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
-      position='center 20%'
-      row={['2 / span 8', '2 / span 8', '2 / span 8', '2 / span 8']}
-      src={TeachingFellowsImage}
-    />
+    <Well bottom={true}>
+      <Image
+        column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
+        position='center 20%'
+        row={['2 / span 8', '2 / span 8', '2 / span 8', '2 / span 8']}
+        src={TeachingFellowsImage}
+      />
+    </Well>
     <Content
       column={['2 / span 12', '10 / span 4', '10 / span 4', '10 / span 4']}
       inverted={true}

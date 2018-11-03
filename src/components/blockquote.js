@@ -3,17 +3,19 @@ import styled, { css } from 'styled-components'
 const Blockquote = styled('div')`
   color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   font-family: "Chronicle Cond A", "Chronicle Cond B", Georgia, 'Times New Roman', Times, serif;
-  font-size: 2.35rem;
-  grid-column: ${p => p.column[0]};
-  grid-row: ${p => p.row[0]};
-  letter-spacing: 0.175em;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  margin: ${p => p.top ? '25px 0 0': '25px 0'};
   position: relative;
   text-transform: uppercase;
   z-index: ${p => p.theme.index.content};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
+    font-size: 2.35rem;
     grid-column: ${p => p.column[1]};
     grid-row: ${p => p.row[1]};
+    letter-spacing: 0.175em;
+    line-height: 1.5;
+    margin: 0;
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     grid-column: ${p => p.column[2]};
@@ -25,7 +27,10 @@ const Blockquote = styled('div')`
   }
   ${p => p.indent ? css`
     p:first-of-type {
-      text-indent: -19px;
+      text-indent: -8px;
+      @media (min-width: ${p => p.theme.breakpoints.small}) {
+        text-index: -19px
+      }
     }
   ` : null}
 `

@@ -11,11 +11,11 @@ const Image = (props) => (
 const Container = styled('img')`
   grid-column: ${p => p.column[0]};
   grid-row: ${p => p.row[0]};
-  height: 100%;
+  height: ${p => p.size && p.size != 'contain' ? p.size.split(' ')[1] : '100%'};
   object-position: ${p => p.position ? p.position : 'center center'};
   object-fit: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'};
   position: relative;
-  width: 100%;
+  width: ${p => p.size ? p.size.split(' ')[0] : '100%'};
   z-index: ${p => p.theme.index.image};
   ${p => p.height ? css`height: ${p.height};` : null}
   @media (min-width: ${p => p.theme.breakpoints.small}) {

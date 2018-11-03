@@ -7,7 +7,7 @@ const DocumentTitle = (props) => (
 
 const Container = styled('p')`
   display: none;
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
+  @media (min-width: ${p => p.theme.breakpoints.medium}) {
     color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
     display: block;
     font-size: 10px;

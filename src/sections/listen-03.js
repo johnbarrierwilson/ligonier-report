@@ -114,10 +114,14 @@ const Backdrop = styled('div')`
   position: absolute;
   right: -40px;
   top: -40px;
-  @media (min-width: ${p => p.theme.breakpoints.small}){
+  @media (min-width: ${p => p.theme.breakpoints.medium}){
+    bottom: 0;
     grid-column: 9 / span 6;
     grid-row: 1 / span 12;
     position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
   }
 `
 

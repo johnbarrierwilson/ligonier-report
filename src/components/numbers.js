@@ -10,14 +10,12 @@ const Numbers = (props) => (
 )
 
 const Container = styled('div')`
-  align-self: center;
   border-bottom: 1px solid ${p => p.theme.colors.black};
   border-top: 1px solid ${p => p.theme.colors.black};
   display: grid;
   font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
   font-size: 0.6rem;
   font-weight: 600;
-  grid-column: ${p => p.column[0]};
   grid-gap: 0.5rem;
   grid-row: ${p => p.row[0]};
   grid-template: 1fr 1fr / 7rem 1fr;
@@ -26,14 +24,11 @@ const Container = styled('div')`
   text-align: center;
   text-transform: uppercase;
   z-index: ${p => p.theme.index.numbers};
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
-    grid-column: ${p => p.column[1]};
-    grid-row: ${p => p.row[1]};
-    transform: ${p => p.transform ? p.transform : 'none'};
-  }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    align-self: center;
     grid-column: ${p => p.column[2]};
     grid-row: ${p => p.row[2]};
+    transform: ${p => p.transform ? p.transform : 'none'};
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     grid-column: ${p => p.column[3]};

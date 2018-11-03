@@ -19,7 +19,7 @@ const Container = styled('div')`
   p {
     color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 600;
     letter-spacing: 0.35em;
     position: absolute;
@@ -31,6 +31,9 @@ const Container = styled('div')`
     transform-origin: 100% 50%;
     transition: ${p => p.theme.transition};
     white-space: nowrap;
+    @media (min-width: ${p => p.theme.breakpoints.small}) {
+      font-size: 10px;
+    }
   }
 `
 

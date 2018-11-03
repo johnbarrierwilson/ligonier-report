@@ -9,9 +9,9 @@ class Well extends React.Component {
     this.state = { isSmall: false }
   }
   componentDidMount() {
-    this.setState({ isSmall: window.innerWidth <= 600 })
+    this.setState({ isSmall: window.innerWidth <= 900 })
     window.addEventListener('resize', () => {
-      this.setState({ isSmall: window.innerWidth <= 600 })
+      this.setState({ isSmall: window.innerWidth <= 900 })
     })
   }
   render() {

@@ -23,7 +23,7 @@ const Container = styled('h1')`
   grid-column: ${p => p.column[0]};
   grid-row: ${p => p.row[0]};
   letter-spacing: ${p => p.size === 'xl' ? '0.4em' : '0'};
-  margin: 50px 0;
+  margin: 0 0 25px;
   position: relative;
   text-transform: uppercase;
   z-index: ${p => p.theme.index.heading};

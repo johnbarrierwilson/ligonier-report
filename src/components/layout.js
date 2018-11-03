@@ -198,15 +198,12 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
     font-size: 4.25vw;
     font-weight: 400;
-    line-height: 1.3;
-  }
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
-    html {
-      font-size: 1.2vw;
+    line-height: 1.4;
+    @media (min-width: ${p => p.theme.breakpoints.medium}) {
+      font-size: 1vw;
+      line-height: 1.3;
     }
-  }
-  @media (min-width: ${p => p.theme.breakpoints.large}) {
-    html {
+    @media (min-width: ${p => p.theme.breakpoints.large}) {
       font-size: 0.85vw;
     }
   }

@@ -17,10 +17,13 @@ const Container = styled('ol')`
   flex-flow: column nowrap;
   justify-content: center;
   position: fixed;
-  right: 40px;
+  right: 20px;
   list-style: none;
   transform: translate(50%, 50%);
   z-index: ${p => p.theme.index.rightSidebar};
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    right: 40px;
+  }
   li a {
     align-items: center;
     display: flex;

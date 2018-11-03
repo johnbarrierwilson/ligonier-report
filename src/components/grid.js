@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Grid = styled('div')`
   background: ${p => p.theme.colors.white};
   /* grid-template-columns: 40px repeat(12, 1fr) 40px; */
-  padding: 0 40px;
+  padding: 40px;
   position: relative;
   transition: transform 500ms cubic-bezier(.55,0,.1,1), opacity 500ms cubic-bezier(.55,0,.1,1);
   z-index: ${p => p.theme.index.grid};

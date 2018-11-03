@@ -58,8 +58,16 @@ const IndexPage = () => (
 
 const Backdrop = styled('div')`
   background: ${p => p.theme.colors.teal};
-  grid-column: 1 / span 14;
-  grid-row: 1 / span 12;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  @media (min-width: ${p => p.theme.breakpoints.small}){
+    grid-column: 1 / span 14;
+    grid-row: 1 / span 12;
+    position: relative;
+  }
 `
 
 export default IndexPage

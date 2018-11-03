@@ -8,6 +8,7 @@ import Grid from '../components/grid'
 import Heading from '../components/heading'
 import Image from '../components/image'
 import Subject from '../components/subject'
+import Well from '../components/well'
 
 import Amy from '../images/StoryAmy.jpg'
 
@@ -24,12 +25,14 @@ const IndexPage = () => (
       column={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
       row={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
     />
-    <Image
-      column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
-      row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
-      size="contain"
-      src={Amy}
-    />
+    <Well bottom={true}>
+      <Image
+        column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+        row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+        size="contain"
+        src={Amy}
+      />
+    </Well>
     <Heading
       center={true}
       column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
@@ -46,7 +49,7 @@ const IndexPage = () => (
       column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
       row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
     >
-      <p>Now I listen to Ref Net everyday.</p>
+      <p>Now I listen to RefNet&nbsp;everyday.</p>
     </Blockquote>
     <Content
       column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
@@ -55,17 +58,26 @@ const IndexPage = () => (
       <p>I have my phone with me all the time, and I can listen anywhere. I can be traveling, in my car, waking up in the morning, or going to sleep at night and get a few minutes of good theology. This is the steady, consistent teaching of the Word of God. It’s needed in my life.</p>
       <p>I appreciate that R.C. Sproul gathered men of similar skills and had the overall vision to build something of real substance. Of course, we know that God did the building and He just used R.C. to do that.”</p>
     </Content>
-    <Divider
-      column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
-      row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
-    />
+    <Well top={true}>
+      <Divider
+        column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
+        row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+      />
+    </Well>
   </Grid>
 )
 
 const Backdrop = styled('div')`
   background: ${p => p.theme.colors.gray};
-  grid-column: 2 / span 12;
-  grid-row: 2 / span 10;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    grid-column: 2 / span 12;
+    grid-row: 2 / span 10;
+  }
 `
 
 export default IndexPage

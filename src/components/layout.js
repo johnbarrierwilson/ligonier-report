@@ -8,15 +8,39 @@ import { Link }from 'react-scroll'
 import theme from '../theme.js'
 
 import DocumentTitle from './documentTitle'
+import LeftSidebar from './leftSidebar'
 import Logo from './logo'
+import RightSidebar from './rightSidebar'
 import Toggle from './toggle'
+
+const sidebarStatuses = [
+  0, 0, 0, 1, 1, 1, 0, 1, 1,
+  1, 0, 1, 0, 2, 2, 2, 0, 2,
+  0, 2, 3, 3, 3, 0, 3, 0, 3,
+]
+
+const sidebarTitles = [
+  '', 'The Ligonier Teaching Fellows', 'A Letter from the President',
+  '', 'Part One / Read', 'Part One / Read', 'Teaching Fellows / Ferguson',
+  'Part One / Read', 'Part One / Read', 'Part One / Read',
+  'Teaching Fellows / Godfrey', 'Part One / Read', 'Teaching Fellows / Lawson',
+  '', 'Part Two / Listen', 'Part Two / Listen', 'Teaching Fellows / Mohler',
+  'Part Two / Listen', 'Teaching Fellows / Nichols', 'Part Two / Listen',
+  '', 'Part Three / Gather', 'Part Three / Gather', 'Teaching Fellows / Parsons',
+  'Part Three / Gather', 'Teaching Fellows / Thomas',  'Part Three / Gather'
+]
 
 class Layout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      inverted: false,
-      navigating: false
+      invertedMiddle: false,
+      invertedTop: false,
+      navigating: false,
+      slideNumberMiddle: 0,
+      slideNumberTop: 0,
+      sidebarStatus: 0,
+      sidebarTitle: '',
     }
     this.toggleNavigation = this.toggleNavigation.bind(this)
   }
@@ -25,16 +49,28 @@ class Layout extends React.Component {
     const container = document.getElementById('containerElement')
 
     container.addEventListener('scroll', () => {
-      const distance = container.scrollTop + 50
       const viewportHeight = window.innerHeight
-      const slideNumber = Math.floor(distance / viewportHeight)
+      const middleDistance = container.scrollTop + (viewportHeight / 2)
+      const middleSlideNumber = Math.floor(middleDistance / viewportHeight)
+      const topDistance = container.scrollTop + 50
+      const topSlideNumber = Math.floor(topDistance / viewportHeight)
 
       const invertedSlides = [1, 6, 10, 12, 16, 18, 23, 25]
+      
+      if (this.state.slideNumberTop !== topSlideNumber) {
+        this.setState({
+          invertedTop: invertedSlides.includes(topSlideNumber),
+          slideNumberTop: topSlideNumber
+        })
+      }
 
-      if (invertedSlides.includes(slideNumber)) {
-        this.setState({inverted: true})
-      } else {
-        this.setState({inverted: false})
+      if (this.state.slideNumberMiddle !== middleSlideNumber) {
+        this.setState({
+          invertedMiddle: invertedSlides.includes(middleSlideNumber),
+          sidebarStatus: sidebarStatuses[middleSlideNumber],
+          sidebarTitle: sidebarTitles[middleSlideNumber],
+          slideNumberMiddle: middleSlideNumber
+        })
       }
     })
   }
@@ -65,10 +101,10 @@ class Layout extends React.Component {
         render={data => (
           <ThemeProvider theme={theme}>
             <>
-              <Logo inverted={this.state.navigating || this.state.inverted} />
-              <DocumentTitle inverted={this.state.navigating || this.state.inverted} />
+              <Logo inverted={this.state.navigating || this.state.invertedTop} />
+              <DocumentTitle inverted={this.state.navigating || this.state.invertedTop} />
               <Toggle
-                inverted={this.props.inverted || this.state.inverted}
+                inverted={this.props.inverted || this.state.invertedTop}
                 navigating={this.state.navigating}
                 onClick={this.toggleNavigation}
                
@@ -132,6 +168,8 @@ class Layout extends React.Component {
                   navigating={this.state.navigating}
                   onClick={this.state.navigating ? this.toggleNavigation : null}
                 >
+                  <LeftSidebar inverted={this.state.invertedMiddle} text={this.state.sidebarTitle} />
+                  <RightSidebar inverted={this.state.invertedMiddle} status={this.state.sidebarStatus} />
                   {this.props.children}
                 </ContainerInner>
               </Container>

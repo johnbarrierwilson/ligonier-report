@@ -8,9 +8,11 @@ const LeftSidebar = (props) => (
 )
 
 const Container = styled('div')`
-  grid-column: 1 / span 1;
-  grid-row: 2 / span 10;
-  position: relative;
+  bottom: 50%;
+  left: 43px;
+  position: fixed;
+  transform: translate(-50%, 50%);
+  z-index: ${p => p.theme.index.leftSidebar};
   p {
     color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, Helvetica, sans-serif;
@@ -24,6 +26,7 @@ const Container = styled('div')`
     text-transform: uppercase;
     transform: rotate(-90deg) translateX(50%);
     transform-origin: 100% 50%;
+    transition: ${p => p.theme.transition};
     white-space: nowrap;
   }
 `

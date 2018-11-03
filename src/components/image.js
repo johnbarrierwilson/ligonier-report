@@ -1,19 +1,26 @@
+import React from 'react'
+import LazyLoad from 'react-lazyload'
 import styled, { css } from 'styled-components'
 
-const Image = styled('div')`
-  background-image: url(${p => p.src});
-  background-position: ${p => p.position ? p.position : 'center center'};
-  background-repeat: no-repeat;
-  background-size: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'};
+const Image = (props) => (
+  <LazyLoad height={1} offset={100} overflow={true} once={true}>
+    <Container src={props.src} {...props} />
+  </LazyLoad>
+)
+
+const Container = styled('img')`
   grid-column: ${p => p.column[0]};
   grid-row: ${p => p.row[0]};
+  height: ${p => p.size && p.size !== 'contain' ? p.size.split(' ')[1] : '100%'};
+  object-position: ${p => p.position ? p.position : 'center center'};
+  object-fit: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'};
   position: relative;
+  width: ${p => p.size ? p.size.split(' ')[0] : '100%'};
   z-index: ${p => p.theme.index.image};
   ${p => p.height ? css`height: ${p.height};` : null}
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-column: ${p => p.column[1]};
     grid-row: ${p => p.row[1]};
-    height: auto;
     transform: ${p => p.transform ? p.transform : 'none'};
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {

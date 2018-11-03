@@ -21,6 +21,7 @@ const IndexPage = () => (
     <Content
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
       row={['8 / span 3', '8 / span 3', '8 / span 3', '8 / span 3']}
+      type="deck"
     >
       <p><strong>Faith comes by hearing.</strong> Every week, Ligonier Ministries broadcasts audio and video teaching on the air and on the web to millions of people, free of charge. Trustworthy, life-changing teaching from Dr. R.C. Sproul, the Ligonier Ministries Teaching Fellows, and many others is available to you 24/7. Thank you for tuning in.</p>
     </Content>

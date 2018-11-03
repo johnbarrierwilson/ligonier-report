@@ -50,6 +50,7 @@ const IndexPage = () => (
     <Content
       column={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
       row={['1 / span 5', '1 / span 5', '1 / span 5', '1 / span 5']}
+      type='sans'
     >
       <p><strong>Winter Conference: Gathering with Today and Tomorrow’s Leaders</strong><br/>Every year, RBC hosts its annual Winter Conference on its central Florida campus. Trusted teachers train students and Christian leaders in theology and the knowledge of God, urging them to hold to the truth of God’s Word—especially where it is under attack. With sessions on apologetics, church history, and more, this conference seeks to fuel the bold proclamation of the gospel of our Savior Jesus Christ.</p>
     </Content>
@@ -64,6 +65,7 @@ const IndexPage = () => (
     <Content
       column={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
       row={['9 / span 3', '9 / span 3', '9 / span 3', '9 / span 3']}
+      type='sans'
     >
       <p><strong>Always Ready: Equipping Young Apologists</strong><br/>High school students are equipped to defend the Christian faith at RBC’s Always Ready Youth Conference. This annual, one-day apologetics event in Orlando, Fla., helps young disciples to better share their faith and give a defense to their non-Christian friends. In an age when the Bible’s teaching is rapidly being marginalized, RBC is encouraging young people to stand fast on the truth of God’s&nbsp;Word.</p>
     </Content>

@@ -21,6 +21,7 @@ const IndexPage = () => (
     <Content
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
       row={['8 / span 3', '8 / span 3', '8 / span 3', '8 / span 3']}
+      type="deck"
     >
       <p><strong>God revealed himself in a book.</strong> That makes reading an essential part of every Christian’s life. We publish so Christians can grow in their understanding of God and of themselves. Every year, we give away thousands of study Bibles, books, and magazines to people around the world who are hungry for the truth. Thank you for joining them.</p>
     </Content>

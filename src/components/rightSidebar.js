@@ -17,7 +17,7 @@ const Container = styled('ol')`
   flex-flow: column nowrap;
   justify-content: center;
   position: fixed;
-  right: 20px;
+  right: 17px;
   list-style: none;
   transform: translate(50%, 50%);
   z-index: ${p => p.theme.index.rightSidebar};

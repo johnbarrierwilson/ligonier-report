@@ -23,7 +23,7 @@ const Container = styled('div')`
   margin: ${p => {
     switch(p.size) {
       case 'xl':
-        return '100px'
+        return '90px'
       case 'l':
         return '80px'
       default:

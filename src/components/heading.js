@@ -15,7 +15,7 @@ const Container = styled('h1')`
       case 'xl':
         return '3.125rem'
       case 's':
-        return '1.2rem'
+        return '1.25rem'
       default:
         return '1.5rem'
     }

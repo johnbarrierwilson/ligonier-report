@@ -7,6 +7,8 @@ const podcasts = styled('div')`
   grid-column: ${p => p.column[0]};
   grid-row: ${p => p.row[0]};
   justify-content: space-between;
+  position: relative;
+  z-index: ${p => p.theme.index.podcasts};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-column: ${p => p.column[1]};
     grid-row: ${p => p.row[1]};

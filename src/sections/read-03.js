@@ -44,16 +44,17 @@ const IndexPage = () => (
       src={City}
     />
     <Image
-      column={['6 / span 3', '6 / span 3', '6 / span 3', '6 / span 3']}
-      row={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
+      column={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
+      row={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
       src={Building}
       transform="translate(-1.5rem, 0.5rem)"
     />
     <Heading
       column={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
-      row={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
+      row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
       size="s"
       text='OVER ONE BILLION PEOPLE WORLDWIDE SPEAK SPANISH, PORTUGUESE, OR FRENCH. YET THEY LACK A STUDY BIBLE ROOTED IN THE HISTORIC CHRISTIAN FAITH AND REFORMED THEOLOGY.'
+      style={{transform: "translateX(2rem)"}}
     />
     <Content
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}

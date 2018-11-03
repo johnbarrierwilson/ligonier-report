@@ -14,9 +14,8 @@ const IndexPage = () => (
     <Backdrop />
     <Image
       column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
-      height='50vh'
       position='center 20%'
-      row={['2 / span 1', '2 / span 8', '2 / span 8', '2 / span 8']}
+      row={['2 / span 8', '2 / span 8', '2 / span 8', '2 / span 8']}
       src={TeachingFellowsImage}
     />
     <Heading

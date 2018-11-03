@@ -9,10 +9,13 @@ const LeftSidebar = (props) => (
 
 const Container = styled('div')`
   bottom: 50%;
-  left: 43px;
+  left: 20px;
   position: fixed;
   transform: translate(-50%, 50%);
   z-index: ${p => p.theme.index.leftSidebar};
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    left: 43px;
+  }
   p {
     color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, Helvetica, sans-serif;

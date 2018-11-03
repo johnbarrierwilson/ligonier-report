@@ -12,30 +12,6 @@ import Piece03 from '../images/piece_03.png'
 
 const IndexPage = () => (
   <Grid name="introduction" >
-    <Image
-      column={['1 / span 2', '1 / span 3', '1 / span 3', '1 / span 3']}
-      row={['3 / span 3', '4 / span 6', '4 / span 6', '4 / span 6']}
-      position='top right'
-      size='495px 446px'
-      src={Piece01}
-      transform='translate(-90px, -35px)'
-    />
-    <Image
-      column={['9 / span 6', '9 / span 6', '9 / span 6', '9 / span 6']}
-      row={['3 / span 3', '1 / span 3', '1 / span 3', '1 / span 3']}
-      position='bottom left'
-      size='495px 369px'
-      src={Piece02}
-    />
-    <Image
-      column={['1 / span 14', '1 / span 9', '2 / span 8', '3 / span 6']}
-      row={['9 / span 4', '10 / span 3', '10 / span 3', '10 / span 3']}
-      position='top center'
-      size='468px 414px'
-      src={Piece03}
-      transform='translate(15px, 35px)'
-    />
-
     <Heading
       column={['2 / span 12', '2 / span 3', '2 / span 3', '2 / span 3']}
       row={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
@@ -55,6 +31,14 @@ const IndexPage = () => (
       <p><strong>In 1957, Dr. R.C. Sproul</strong> was confronted by the overwhelming holiness of God. That experience began a lifetime of pursuing a greater knowledge of God and birthed an unquenchable desire to lead others into a greater understanding of God and of themselves.</p>
       <p>Over fifty years later, we are humbled to survey the vast army of supporters that has risen to enable such important work. Thanks to you, the deep truths of God’s Word are finding their way into more places than ever before, and lives are being transformed by a growing knowledge of&nbsp;God.</p>
     </Content>
+    <Image
+      column={['1 / span 2', '1 / span 3', '1 / span 3', '1 / span 3']}
+      row={['3 / span 3', '4 / span 6', '4 / span 6', '4 / span 6']}
+      position='top right'
+      size='495px 446px'
+      src={Piece01}
+      transform='translate(-90px, -35px)'
+    />
 
     <Heading
       column={['2 / span 12', '10 / span 4', '10 / span 4', '10 / span 4']}
@@ -75,6 +59,13 @@ const IndexPage = () => (
       <p><strong>Every year</strong>, Ligonier Ministries provides more ways for Christians to read, listen, and gather around God's truth.</p>
       <p>Under God’s blessing, the outreach we’ve been able to do together has continued to grow, This report is a celebration of all that you’ve enabled through your generosity and your prayers.</p>
     </Content>
+    <Image
+      column={['9 / span 6', '9 / span 6', '9 / span 6', '9 / span 6']}
+      row={['3 / span 3', '1 / span 2', '1 / span 2', '1 / span 2']}
+      position='bottom left'
+      size='495px 369px'
+      src={Piece02}
+    />
 
     <Heading
       column={['2 / span 12', '7 / span 2', '7 / span 2', '7 / span 2']}
@@ -88,6 +79,14 @@ const IndexPage = () => (
     >
       <span>Iron sharpens iron</span>
     </Label>
+    <Image
+      column={['1 / span 14', '1 / span 9', '3 / span 8', '4 / span 6']}
+      row={['9 / span 4', '10 / span 3', '10 / span 3', '10 / span 3']}
+      position='top center'
+      size='468px 414px'
+      src={Piece03}
+      transform='translate(15px, 35px)'
+    />
   </Grid>
 )
 

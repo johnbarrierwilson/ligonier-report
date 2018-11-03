@@ -77,9 +77,10 @@ const IndexPage = () => (
     <Content
       column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
       row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
+      type='sans'
       transform='translateX(-4rem)'
     >
-      <p><strong>New Spanish Edition: Renovando Tu Mente</strong><br/>The program launched in March 2018 and within six months more than thirty Spanish-speaking radio stations were broadcasting the program across Latin America, along with major online radio portals.</p>
+      <p><strong>New Spanish Edition: <em>Renovando Tu Mente</em></strong><br/>The program launched in March 2018 and within six months more than thirty Spanish-speaking radio stations were broadcasting the program across Latin America, along with major online radio portals.</p>
     </Content>
 
     <Subject

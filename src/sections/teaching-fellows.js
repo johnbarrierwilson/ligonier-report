@@ -12,12 +12,6 @@ import TeachingFellowsImage from "../images/2018_TF_Group_Wide_RGB.jpg"
 const IndexPage = () => (
   <Grid name="teachingfellows">
     <Backdrop />
-    <Image
-      column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
-      position='center 20%'
-      row={['2 / span 8', '2 / span 8', '2 / span 8', '2 / span 8']}
-      src={TeachingFellowsImage}
-    />
     <Heading
       column={['2 / span 12', '2 / span 6', '2 / span 6', '2 / span 6']}
       inverted={true}
@@ -28,6 +22,12 @@ const IndexPage = () => (
       column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
       inverted={true}
       row={['3 / span 2', '12 / span 1', '12 / span 1', '11 / span 2']}
+    />
+    <Image
+      column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
+      position='center 20%'
+      row={['2 / span 8', '2 / span 8', '2 / span 8', '2 / span 8']}
+      src={TeachingFellowsImage}
     />
     <Content
       column={['2 / span 12', '10 / span 4', '10 / span 4', '10 / span 4']}
@@ -41,8 +41,16 @@ const IndexPage = () => (
 
 const Backdrop = styled('div')`
   background: ${p => p.theme.colors.teal};
-  grid-column: 1 / span 14;
-  grid-row: 1 / span 12;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    grid-column: 1 / span 14;
+    grid-row: 1 / span 12;
+    position: relative;
+  }
 `
 
 export default IndexPage

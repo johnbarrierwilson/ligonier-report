@@ -9,19 +9,19 @@ const Image = (props) => (
 )
 
 const Container = styled('img')`
-  grid-column: ${p => p.column[0]};
-  grid-row: ${p => p.row[0]};
-  height: ${p => p.size && p.size !== 'contain' ? p.size.split(' ')[1] : '100%'};
-  object-position: ${p => p.position ? p.position : 'center center'};
-  object-fit: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'};
+  height: auto;
   position: relative;
-  width: ${p => p.size ? p.size.split(' ')[0] : '100%'};
+  width: 100%;
   z-index: ${p => p.theme.index.image};
-  ${p => p.height ? css`height: ${p.height};` : null}
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     grid-column: ${p => p.column[1]};
     grid-row: ${p => p.row[1]};
+    height: ${p => p.size && p.size !== 'contain' ? p.size.split(' ')[1] : '100%'};
+    ${p => p.height ? css`height: ${p.height};` : null}
+    object-position: ${p => p.position ? p.position : 'center center'};
+    object-fit: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'};
     transform: ${p => p.transform ? p.transform : 'none'};
+    width: ${p => p.size ? p.size.split(' ')[0] : '100%'};
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     grid-column: ${p => p.column[2]};

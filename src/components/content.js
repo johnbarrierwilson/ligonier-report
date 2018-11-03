@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const Content = styled('div')`
   align-self: center;
@@ -20,6 +20,27 @@ const Content = styled('div')`
     grid-column: ${p => p.column[3]};
     grid-row: ${p => p.row[3]};
   }
+
+  ${p => p.type === 'deck' ? css`
+    font-style: italic;
+    line-height: 2;
+    strong {
+      font-style: normal;
+      font-weight: 400 !important;
+    }
+  ` : null}
+
+  ${p => p.type === 'sans' ? css`
+    font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    strong {
+      display: block;
+      font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
+      padding-right: 4.5rem;
+    }
+  ` : null}
+
   p {
     /* text-align: justify; */
     text-indent: 25px;

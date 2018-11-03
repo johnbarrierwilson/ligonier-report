@@ -4,7 +4,7 @@ const Label = styled('div')`
   align-self: center;
   grid-column: ${p => p.column[0]};
   grid-row: ${p => p.row[0]};
-  margin: 25px 0;
+  margin: 25px 0 50px;
   position: relative;
   text-align: right;
   z-index: ${p => p.theme.index.label};

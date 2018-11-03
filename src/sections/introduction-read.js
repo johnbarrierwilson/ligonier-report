@@ -19,7 +19,7 @@ const IndexPage = () => (
       size="xl"
       text="Read"
     />
-    <Well>
+    <Well size="xl">
       <Image
         column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
         row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}

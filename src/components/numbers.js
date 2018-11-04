@@ -68,7 +68,7 @@ const Number = styled('div')`
   align-items: center;
   display: flex;
   font-family: "Chronicle Cond A", "Chronicle Cond B", Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
+  font-size: 2rem;
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
   justify-content: center;

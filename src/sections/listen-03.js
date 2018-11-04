@@ -54,7 +54,7 @@ const IndexPage = () => (
     <Well top={true}>
       <Numbers
         column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-        description='YOUTUBE CHANNEL PLAYS PER MONTH'
+        description='YOUTUBE CHANNEL PLAYS PER&nbsp;MONTH'
         number='500,000+'
         row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
       />

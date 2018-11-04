@@ -7,25 +7,13 @@ import Grid from '../components/grid'
 import Heading from '../components/heading'
 import Image from '../components/image'
 import Subject from '../components/subject'
+import Well from '../components/well'
 
 import Mohler from "../images/FellowMohler.jpg"
 
 const IndexPage = () => (
   <Grid name="fellowmohler">
     <Backdrop />
-    <Image
-      column={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
-      position="center 20%"
-      row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
-      src={Mohler}
-    />
-    <Heading
-      column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-      inverted={true}
-      row={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
-      size="s"
-      text='“OUR MISSION TOGETHER IS TO PERPETUATE AND TO PRESERVE, AND EVEN TO EXTEND, THE TEACHING MINISTRY SO FAITHFULLY BEGUN BY R.C. SPROUL.”'
-    />
     <Subject
       column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
       inverted={true}
@@ -43,6 +31,21 @@ const IndexPage = () => (
       inverted={true}
       row={['4 / span 1', '4 / span 1', '4 / span 1', '4 / span 1']}
       text='Albert Mohler'
+    />
+    <Well bottom={true}>
+      <Image
+        column={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
+        position="center 20%"
+        row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+        src={Mohler}
+      />
+    </Well>
+    <Heading
+      column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
+      inverted={true}
+      row={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
+      size="s"
+      text='“OUR MISSION TOGETHER IS TO PERPETUATE AND TO PRESERVE, AND EVEN TO EXTEND, THE TEACHING MINISTRY SO FAITHFULLY BEGUN BY R.C.&nbsp;SPROUL.”'
     />
     <Content
       column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
@@ -62,7 +65,7 @@ const Backdrop = styled('div')`
   position: absolute;
   right: 0;
   top: 0;
-  @media (min-width: ${p => p.theme.breakpoints.small}){
+  @media (min-width: ${p => p.theme.breakpoints.medium}){
     grid-column: 1 / span 14;
     grid-row: 1 / span 12;
     position: relative;

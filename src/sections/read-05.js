@@ -126,9 +126,19 @@ const Backdrop = styled('div')`
   right: -40px;
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
+    bottom: -50px;
+    left: -90px;
+    right: -90px;
+    top: -50px;
+  }
+  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    bottom: 0;
     grid-column: 9 / span 6;
     grid-row: 1 / span 12;
+    left: 0;
     position: relative;
+    right: 0;
+    top: 0;
   }
 `
 

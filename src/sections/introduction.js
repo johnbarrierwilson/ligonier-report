@@ -25,7 +25,7 @@ const IndexPage = () => (
       <span>God revealed Himself in a book</span>
     </Label>
     <Content
-      column={['2 / span 12', '2 / span 5', '3 / span 4', '4 / span 2']}
+      column={['2 / span 12', '2 / span 5', '4 / span 2', '4 / span 2']}
       row={['4 / span 1', '5 / span 5', '5 / span 5', '5 / span 5']}
     >
       <p><strong>In 1957, Dr. R.C. Sproul</strong> was confronted by the overwhelming holiness of God. That experience began a lifetime of pursuing a greater knowledge of God and birthed an unquenchable desire to lead others into a greater understanding of God and of themselves.</p>

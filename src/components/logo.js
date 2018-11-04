@@ -30,23 +30,21 @@ const Mark = styled('svg')`
 `
 
 const Title = styled('p')`
-  color: ${p => p.inverted ? p.theme.colors.white : theme.colors.black};
-  font-size: 10px;
-  font-weight: 600;
-  left: 0;
-  letter-spacing: 0.35em;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  text-transform: uppercase;
-  top: 14px;
-  transition: ${p => p.theme.transition};
-  z-index: ${p => p.theme.index.logoTitle};
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
+  display: none;
+  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    color: ${p => p.inverted ? p.theme.colors.white : theme.colors.black};
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
     left: 90px;
+    letter-spacing: 0.35em;
+    position: fixed;
     right: auto;
     text-align: left;
+    text-transform: uppercase;
     top: 38px;
+    transition: ${p => p.theme.transition};
+    z-index: ${p => p.theme.index.logoTitle};
   }
 `
 

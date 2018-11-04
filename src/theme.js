@@ -24,6 +24,7 @@ const theme = {
     logoTitle: '90',
     navigation: '0',
     numbers: '10',
+    podcasts: '10',
     rightSidebar: '90',
     title: '30',
     toggle: '90'

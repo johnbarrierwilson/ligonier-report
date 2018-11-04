@@ -1,20 +1,14 @@
 import styled, { css } from 'styled-components'
 
 const Content = styled('div')`
-  align-self: center;
   color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
-  grid-column: ${p => p.column[0]};
-  grid-row: ${p => p.row[0]};
   position: relative;
   z-index: ${p => p.theme.index.content};
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
-    grid-column: ${p => p.column[1]};
-    grid-row: ${p => p.row[1]};
-    transform: ${p => p.transform ? p.transform : 'none'};
-  }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    align-self: center;
     grid-column: ${p => p.column[2]};
     grid-row: ${p => p.row[2]};
+    transform: ${p => p.transform ? p.transform : 'none'};
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     grid-column: ${p => p.column[3]};

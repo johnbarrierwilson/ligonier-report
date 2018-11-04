@@ -1,21 +1,15 @@
 import styled from 'styled-components'
 
 const Label = styled('div')`
-  align-self: center;
-  grid-column: ${p => p.column[0]};
-  grid-row: ${p => p.row[0]};
   margin: 25px 0 50px;
   position: relative;
   text-align: right;
   z-index: ${p => p.theme.index.label};
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
-    grid-column: ${p => p.column[1]};
-    grid-row: ${p => p.row[1]};
-    margin: 0;
-  }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    align-self: center;
     grid-column: ${p => p.column[2]};
     grid-row: ${p => p.row[2]};
+    margin: 0;
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     grid-column: ${p => p.column[3]};

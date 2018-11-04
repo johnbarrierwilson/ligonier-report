@@ -7,6 +7,7 @@ import Grid from '../components/grid'
 import Heading from '../components/heading'
 import Image from '../components/image'
 import Subject from '../components/subject'
+import Well from '../components/well'
 
 import Thomas from "../images/FellowThomas.jpg"
 
@@ -31,6 +32,21 @@ const IndexPage = () => (
       row={['4 / span 1', '4 / span 1', '4 / span 1', '4 / span 1']}
       text='Derek W.H. Thomas'
     />
+    <Well bottom={true}>
+      <Image
+        column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
+        position="center 20%"
+        row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+        src={Thomas}
+      />
+    </Well>
+    <Heading
+      column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
+      inverted={true}
+      row={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
+      size="s"
+      text='“WEHAVE DIFFERENT GIFTS AND DIFFERENT STYLES AND DIFFERENT BACKGROUNDS, BUT WE’RE ALL COMMITTED TO PROCLAIMING AND TEACHING THE HISTORIC CHRISTIAN&nbsp;FAITH.”'
+    />
     <Content
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
       inverted={true}
@@ -39,20 +55,6 @@ const IndexPage = () => (
       <p><strong>Dr. Derek W.H. Thomas</strong> is senior minister of First Presbyterian Church in Columbia, S.C., and Chancellor’s Professor of Systematic and Pastoral Theology at Reformed Theological Seminary. Originally from Wales, Dr. Thomas served as a pastor in Belfast, Northern Ireland, for seventeen years before being called to the United States to serve as minister of teaching at First Presbyterian Church in Jackson, Miss.</p>
       <p>Dr. Thomas began serving Ligonier Ministries as a teaching fellow in 2015. Dr. Thomas’ many years of pastoral ministry in the United States and Northern Ireland, along with his extensive and profound understanding of Reformed theology, have furnished him with a sharp intellect and a pastor's heart. He is author of numerous books, including How the Gospel Brings Us All the Way Home, Calvin’s Teaching on Job, Strength for the Weary, and, with Dr. Sinclair B. Ferguson, Ichthus: Jesus Christ, God’s Son, the Saviour. He has also written commentaries on books of the Bible including Job, Isaiah, Ezekiel, Ezra and Nehemiah, Acts, Galatians, and Revelation.</p>
     </Content>
-
-    <Image
-      column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
-      position="center 20%"
-      row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
-      src={Thomas}
-    />
-    <Heading
-      column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
-      inverted={true}
-      row={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
-      size="s"
-      text='“WEHAVE DIFFERENT GIFTS AND DIFFERENT STYLES AND DIFFERENT BACKGROUNDS, BUT WE’RE ALL COMMITTED TO PROCLAIMING AND TEACHING THE HISTORIC CHRISTIAN FAITH.”'
-    />
   </Grid>
 )
 
@@ -63,7 +65,7 @@ const Backdrop = styled('div')`
   position: absolute;
   right: 0;
   top: 0;
-  @media (min-width: ${p => p.theme.breakpoints.small}){
+  @media (min-width: ${p => p.theme.breakpoints.medium}){
     grid-column: 1 / span 14;
     grid-row: 1 / span 12;
     position: relative;

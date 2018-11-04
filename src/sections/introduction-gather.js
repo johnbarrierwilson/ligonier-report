@@ -5,6 +5,7 @@ import Content from '../components/content'
 import Grid from '../components/grid'
 import Heading from '../components/heading'
 import Image from '../components/image'
+import Well from '../components/well'
 
 import IntroductionPattern from '../images/IntroductionPattern.png'
 import IntroductionGather from '../images/IntroductionGather.png'
@@ -18,18 +19,20 @@ const IndexPage = () => (
       size="xl"
       text="Gather"
     />
-    <Image
-      column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
-      row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
-      size="contain"
-      src={IntroductionGather}
-    />
+    <Well size="xl">
+      <Image
+        column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
+        row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+        size="contain"
+        src={IntroductionGather}
+      />
+    </Well>
     <Content
       column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
       row={['8 / span 3', '8 / span 3', '8 / span 3', '8 / span 3']}
       type="deck"
     >
-      <p><strong>Iron sharpens iron.</strong> Every year, in cities around the world and online, Ligonier Ministries gathers Christians at events to study God’s Word for mutual edification. It’s a privilege to meet, serve, and learn from God’s people. Our aim is to bless the local church and strengthen its members for greater service. Thank you for joining us.</p>
+      <p><strong>Iron sharpens iron.</strong> Every year, in cities around the world and online, Ligonier Ministries gathers Christians at events to study God’s Word for mutual edification. It’s a privilege to meet, serve, and learn from God’s people. Our aim is to bless the local church and strengthen its members for greater service. Thank you for joining&nbsp;us.</p>
     </Content>
   </Grid>
 )
@@ -43,7 +46,7 @@ const Backdrop = styled('div')`
   position: absolute;
   right: 0;
   top: 0;
-  @media (min-width: ${p => p.theme.breakpoints.small}) {
+  @media (min-width: ${p => p.theme.breakpoints.medium}) {
     grid-column: 1 / span 14;
     grid-row: 1 / span 12;
     position: relative;

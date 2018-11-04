@@ -8,6 +8,7 @@ import Grid from '../components/grid'
 import Heading from '../components/heading'
 import Image from '../components/image'
 import Subject from '../components/subject'
+import Well from '../components/well'
 
 import Doug from '../images/StoryDoug.jpg'
 
@@ -24,12 +25,14 @@ const IndexPage = () => (
       column={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
       row={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
     />
-    <Image
-      column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
-      row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
-      size="contain"
-      src={Doug}
-    />
+    <Well bottom={true}>
+      <Image
+        column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+        row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+        size="contain"
+        src={Doug}
+      />
+    </Well>
     <Heading
       center={true}
       column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
@@ -55,17 +58,26 @@ const IndexPage = () => (
     >
       <p>I now know that I’m a third-generation Ligonier student. When my grandma passed away, I got her copy of The Holiness of God from one of the first printings. It’s pretty special to have such a classic. Like R.C. said, there’s a gap between Sunday school and seminary. Ligonier serves to fill that gap in a format that is scalable and digestible for many churches out there that don’t have the resources to produce this kind of material.”</p>
     </Content>
-    <Divider
-      column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
-      row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
-    />
+    <Well top={true}>
+      <Divider
+        column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
+        row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+      />
+    </Well>
   </Grid>
 )
 
 const Backdrop = styled('div')`
   background: ${p => p.theme.colors.gray};
-  grid-column: 2 / span 12;
-  grid-row: 2 / span 10;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    grid-column: 2 / span 12;
+    grid-row: 2 / span 10;
+  }
 `
 
 export default IndexPage

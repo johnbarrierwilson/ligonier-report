@@ -26,6 +26,7 @@ const theme = {
     numbers: '10',
     podcasts: '10',
     rightSidebar: '90',
+    share: '90',
     title: '30',
     toggle: '90'
   },

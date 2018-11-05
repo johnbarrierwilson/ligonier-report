@@ -61,15 +61,15 @@ const Channels = styled('div')`
     width: 20px;
     &:nth-child(1) {
       color: #3b5998;
-      transition-delay: 225ms;
+      transition-delay: ${p => !p.isSharing ? '0' : '225ms'};
     }
     &:nth-child(2) {
       color: #1da1f2;
-      transition-delay: 150ms;
+      transition-delay: ${p => !p.isSharing ? '0' : '150ms'};;
     }
     &:nth-child(3) {
       color: ${p => p.theme.colors.black};
-      transition-delay: 75ms;
+      transition-delay: ${p => !p.isSharing ? '0' : '75ms'};;
     }
   }
   svg {
@@ -99,6 +99,7 @@ const Container = styled('div')`
 
 const ContainerToggle = styled('div')`
   align-items: center;
+  cursor: pointer;
   display: flex;
   flex-shrink: 0;
   height: 100%;
@@ -106,13 +107,15 @@ const ContainerToggle = styled('div')`
   transition: ${p => p.theme.transition};
   transition-duration: 300ms;
   width: 45px;
+  &:hover {
+    svg {
+      color: ${p => p.theme.colors.green} !important;
+    }
+  }
   svg {
     height: 15px;
     transform: translate(5%, -2%);
     width: 15px;
-    &:hover {
-      color: ${p => p.theme.colors.green} !important;
-    }
   }
   svg:first-of-type {
     display: ${p => p.isSharing ? 'none' : 'block'};

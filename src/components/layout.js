@@ -11,6 +11,7 @@ import DocumentTitle from './documentTitle'
 import LeftSidebar from './leftSidebar'
 import Logo from './logo'
 import RightSidebar from './rightSidebar'
+import Share from './share'
 import Toggle from './toggle'
 
 const sidebarStatuses = [
@@ -106,6 +107,7 @@ class Layout extends React.Component {
                
                 type={this.props.type}
               />
+              <Share />
               <Container>
                 <GlobalStyles />
                 <Helmet

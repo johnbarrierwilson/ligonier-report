@@ -26,6 +26,7 @@ const Container = styled('ol')`
   }
   li a {
     align-items: center;
+    border-bottom: none;
     display: flex;
     height: 24px;
     justify-content: center;

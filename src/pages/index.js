@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import theme from '../theme'
 
 import CoverStart from '../sections/cover-start'
+import CoverEnd from '../sections/cover-end'
 import FellowGodfrey from '../sections/fellow-godfrey'
 import FellowLawson from '../sections/fellow-lawson'
 import FellowMohler from '../sections/fellow-mohler'
@@ -64,6 +65,7 @@ const IndexPage = () => (
       <Gather02 />
       <FellowThomas />
       <Gather03 />
+      <CoverEnd />
     </Layout>
   </ThemeProvider>
 )

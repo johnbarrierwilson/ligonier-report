@@ -14,16 +14,16 @@ import RightSidebar from './rightSidebar'
 import Share from './share'
 import Toggle from './toggle'
 
-const slidesInverted = [2, 7, 11, 13, 17, 19, 24, 26]
+const slidesInverted = [1, 6, 10, 12, 16, 18, 23, 25]
 
 const sidebarStatuses = [
-  0, 0, 0, 0, 1, 1, 1, 0, 1, 1,
+  0, 0, 0, 1, 1, 1, 0, 1, 1,
   1, 0, 1, 0, 2, 2, 2, 0, 2,
   0, 2, 3, 3, 3, 0, 3, 0, 3,
 ]
 
 const sidebarTitles = [
-  '', '', 'The Ligonier Teaching Fellows', 'A Letter from the President',
+  '', 'The Ligonier Teaching Fellows', 'A Letter from the President',
   '', 'Part One / Read', 'Part One / Read', 'Teaching Fellows / Ferguson',
   'Part One / Read', 'Part One / Read', 'Part One / Read',
   'Teaching Fellows / Godfrey', 'Part One / Read', 'Teaching Fellows / Lawson',
@@ -196,7 +196,8 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
   a {
-    color: ${p => p.theme.colors.green};
+    border-bottom: 1px solid ${p => p.theme.colors.black};
+    color: ${p => p.theme.colors.black};
     text-decoration: none;
   }
 `
@@ -238,6 +239,7 @@ const Navigation = styled('nav')`
     padding: 140px 50px 0;
   }
   a {
+    border-bottom: none;
     color: ${p => p.theme.colors.gray};
     display: block;
     font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;

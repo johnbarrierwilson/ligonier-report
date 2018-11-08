@@ -52,13 +52,15 @@ class Layout extends React.Component {
     let windowHeight = window.innerHeight
     let windowWidth = window.innerWidth
     
+    this.setState({ smooth: (windowWidth >= 900) })
+    
     window.addEventListener('resize', () => {
       windowHeight = window.innerHeight
       windowWidth = window.innerWidth
 
-      if (windowWidth >= 900) {
-        this.setState({ smooth: true })
+      this.setState({ smooth: windowWidth >= 900 })
 
+      if (windowWidth >= 900) {
         window.addEventListener('keydown', (e) => {
           if (e.key === 'ArrowDown') {
             animateScroll.scrollMore(windowHeight, {

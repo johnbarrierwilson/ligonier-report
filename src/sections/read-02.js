@@ -32,12 +32,14 @@ const IndexPage = () => (
       row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
       text="Deepening Your Study of&nbsp;God's Word"
     />
-    <Image
-      column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-      row={['5 / span 6', '5 / span 6', '5 / span 6', '5 / span 6']}
-      size="contain"
-      src={Standard}
-    />
+    <Well hide={true}>
+      <Image
+        column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
+        row={['5 / span 6', '5 / span 6', '5 / span 6', '5 / span 6']}
+        size="contain"
+        src={Standard}
+      />
+    </Well>
     <Content
       column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
       row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
@@ -59,12 +61,14 @@ const IndexPage = () => (
       number='145,000+'
       row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
     />
-    <Image
-      column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
-      row={['7 / span 6', '7 / span 6', '7 / span 6', '7 / span 6']}
-      size="contain"
-      src={Leather}
-    />
+    <Well hide={true}>
+      <Image
+        column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
+        row={['7 / span 6', '7 / span 6', '7 / span 6', '7 / span 6']}
+        size="contain"
+        src={Leather}
+      />
+    </Well>
     <Well hide={true}>
       <Image
         column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}

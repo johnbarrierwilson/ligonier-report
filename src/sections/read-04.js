@@ -57,19 +57,21 @@ const IndexPage = () => (
     </Well>
 
     <Well top={true}>
-      <Well bottom={true}>
+      <Well size="xl" top={true}>
         <Image
           column={['7 / span 7', '7 / span 7', '7 / span 7', '7 / span 7']}
           row={['1 / span 5', '1 / span 5', '1 / span 5', '1 / span 5']}
           src={Reading}
         />
       </Well>
-      <Subject
-        column={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}
-        row={['6 / span 1', '6 / span 1', '6 / span 1', '6 / span 1']}
-      >
-        Ligonier.org
-      </Subject>
+      <Well>
+        <Subject
+          column={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}
+          row={['6 / span 1', '6 / span 1', '6 / span 1', '6 / span 1']}
+        >
+          Ligonier.org
+        </Subject>
+      </Well>
       <Divider
         column={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}
         row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}

@@ -40,7 +40,7 @@ const IndexPage = () => (
       center={true}
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
       row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
-      text="STREAMING TRUSTWORTHY&nbsp;TEACHING"
+      text="STREAMING TRUSTWORTHY TEACHING"
     />
     <Content
       center={true}

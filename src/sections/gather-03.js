@@ -102,6 +102,14 @@ const IndexPage = () => (
         column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
         row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
       />
+      <Well>
+        <Image
+          column={['12 / span 3', '12 / span 3', '12 / span 3', '12 / span 3']}
+          position="center 90%"
+          row={['9 / span 3', '9 / span 3', '9 / span 3', '9 / span 3']}
+          src={AskAnything}
+        />
+      </Well>
       <Heading
         center={true}
         column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
@@ -116,13 +124,6 @@ const IndexPage = () => (
         <p>New to major college campuses across the United States, Ask Anything events provide a platform for Dr. Albert Mohler to answer students’ questions live. Dr. Mohler equips Christian students to contend earnestly for the faith once delivered to the saints. He is joined by other Teaching Fellows for the companion Truth and Consequences training seminar, which helps Christian students debunk the tenets of secularism and trains them in a biblical worldview. By God’s grace, your financial support is making these events possible for students.</p>
       </Content>
     </Well>
-
-    <Image
-      column={['12 / span 3', '12 / span 3', '12 / span 3', '12 / span 3']}
-      position="center 90%"
-      row={['9 / span 3', '9 / span 3', '9 / span 3', '9 / span 3']}
-      src={AskAnything}
-    />
   </Grid>
 )
 

@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import Layout from '../components/layout'
 import theme from '../theme'
 
+import CoverStart from '../sections/cover-start'
 import FellowGodfrey from '../sections/fellow-godfrey'
 import FellowLawson from '../sections/fellow-lawson'
 import FellowMohler from '../sections/fellow-mohler'
@@ -35,6 +36,7 @@ import TeachingFellows from'../sections/teaching-fellows'
 const IndexPage = () => (
   <ThemeProvider theme={theme} >
     <Layout>
+      <CoverStart />
       <Introduction />
       <TeachingFellows />
       <PresidentLetter />

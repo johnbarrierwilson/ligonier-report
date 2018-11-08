@@ -25,6 +25,31 @@ const Content = styled('div')`
     }
   ` : null}
 
+  ${p => p.type === 'deck-intro' ? css`
+    text-align: center;
+    @media (min-width: ${p.theme.breakpoints.small}) {
+      font-size: 1.25rem;
+      line-height: 2;
+    }
+    @media (min-width: ${p.theme.breakpoints.medium}) {
+      letter-spacing: 0.5em;
+      text-transform: uppercase;
+    }
+    span {
+      display: block;
+      font-size: 0.875rem;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 0;
+      margin-top: 2rem;
+      text-transform: capitalize;
+      @media (min-width: ${p.theme.breakpoints.small}) {
+        font-size: 1.25rem;
+        line-height: 2;
+      }
+    }
+  ` : null}
+
   ${p => p.type === 'sans' ? css`
     font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
     font-size: 0.8rem;

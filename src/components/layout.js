@@ -14,16 +14,16 @@ import RightSidebar from './rightSidebar'
 import Share from './share'
 import Toggle from './toggle'
 
-const slidesInverted = [1, 6, 10, 12, 16, 18, 23, 25]
+const slidesInverted = [2, 7, 11, 13, 17, 19, 24, 26]
 
 const sidebarStatuses = [
-  0, 0, 0, 1, 1, 1, 0, 1, 1,
+  0, 0, 0, 0, 1, 1, 1, 0, 1, 1,
   1, 0, 1, 0, 2, 2, 2, 0, 2,
   0, 2, 3, 3, 3, 0, 3, 0, 3,
 ]
 
 const sidebarTitles = [
-  '', 'The Ligonier Teaching Fellows', 'A Letter from the President',
+  '', '', 'The Ligonier Teaching Fellows', 'A Letter from the President',
   '', 'Part One / Read', 'Part One / Read', 'Teaching Fellows / Ferguson',
   'Part One / Read', 'Part One / Read', 'Part One / Read',
   'Teaching Fellows / Godfrey', 'Part One / Read', 'Teaching Fellows / Lawson',

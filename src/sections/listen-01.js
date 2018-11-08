@@ -64,7 +64,7 @@ const IndexPage = () => (
       size="s"
       text='GOD CALLS HIS PEOPLE TO BE TRANSFORMED BY THE RENEWING OF THEIR MINDS. THIS TRANSFORMATION IS A DAILY PURSUIT.'
     />
-    <Well>
+    <Well top={true}>
       <Image
         column={['5 / span 4', '5 / span 4', '5 / span 4', '5 / span 4']}
         row={['5 / span 5', '5 / span 5', '5 / span 5', '5 / span 5']}
@@ -72,13 +72,6 @@ const IndexPage = () => (
         transform='translateX(2rem)'
       />
     </Well>
-    <Number
-      column={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
-      description='Countries with Listeners'
-      number='180'
-      row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
-      transform='translateX(-3rem)'
-    />
 
     <Well>
       <Content
@@ -90,6 +83,14 @@ const IndexPage = () => (
         <p><strong>New Spanish Edition: <em>Renovando Tu Mente</em></strong><br/>The program launched in March 2018 and within six months more than thirty Spanish-speaking radio stations were broadcasting the program across Latin America, along with major online radio portals.</p>
       </Content>
     </Well>
+    
+    <Number
+      column={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
+      description='Countries with Listeners'
+      number='180'
+      row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
+      transform='translateX(-3rem)'
+    />
 
     <Well size="l" top={true}>
       <Backdrop />

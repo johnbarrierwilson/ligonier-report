@@ -42,6 +42,7 @@ class Layout extends React.Component {
       slideNumber: 0,
       sidebarStatus: 0,
       sidebarTitle: '',
+      smooth: false
     }
     this.toggleNavigation = this.toggleNavigation.bind(this)
     this.setActive = this.setActive.bind(this)
@@ -54,21 +55,23 @@ class Layout extends React.Component {
     window.addEventListener('resize', () => {
       windowHeight = window.innerHeight
       windowWidth = window.innerWidth
-    })
 
-    if (windowWidth >= 900) {
-      window.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowDown') {
-          animateScroll.scrollMore(windowHeight, {
-            containerId: 'containerElement'
-          })
-        } else if (e.key === 'ArrowUp') {
-          animateScroll.scrollMore(-windowHeight, {
-            containerId: 'containerElement'
-          })
-        }
-      })
-    }
+      if (windowWidth >= 900) {
+        this.setState({ smooth: true })
+
+        window.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowDown') {
+            animateScroll.scrollMore(windowHeight, {
+              containerId: 'containerElement'
+            })
+          } else if (e.key === 'ArrowUp') {
+            animateScroll.scrollMore(-windowHeight, {
+              containerId: 'containerElement'
+            })
+          }
+        })
+      }
+    })
 
     scrollSpy.update()
   }
@@ -131,42 +134,42 @@ class Layout extends React.Component {
                 <Navigation navigating={this.state.navigating}>
                   <div>
                     <p><small>&nbsp;</small>Introduction</p>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(0)} smooth={true} spy={true} to="introduction">Overview</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(1)} smooth={true} spy={true} to="teachingfellows">The Teaching Fellows</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(2)} smooth={true} spy={true} to="presidentletter">A Letter from the President</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(0)} smooth={this.state.smooth} spy={true} to="introduction">Overview</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(1)} smooth={this.state.smooth} spy={true} to="teachingfellows">The Teaching Fellows</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(2)} smooth={this.state.smooth} spy={true} to="presidentletter">A Letter from the President</Link>
                   </div>
                   <div>
                     <p><small>Part One</small>Read</p>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(3)} smooth={true} spy={true} to="introductionread">God Revealed Himself in a Book</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(4)} smooth={true} spy={true} to="storyxavier">Testimony: Xavier</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} smooth={true} spy={true} to="read01">Tabletalk, Ask Ligoner &amp; The State of Theology</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(6)} smooth={true} spy={true} to="fellowsinclair">Teaching Fellow: Sinclair Ferguson</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} smooth={true} spy={true} to="read02">Reformation Study Bible</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} smooth={true} spy={true} to="read03">Study Bible Translations &amp; Study Bibles for Africa</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} smooth={true} spy={true} to="read04">Reformation Trust &amp; Ligonier.org</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(10)} smooth={true} spy={true} to="fellowgodfrey">Teaching Fellow: W. Robert Godfrey</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} smooth={true} spy={true} to="read05">Translations, Military &amp; Prison Chaplains and Christology&nbsp;Statement</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(12)} smooth={true} spy={true} to="fellowlawson">Teaching Fellow: Steven Lawson</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(3)} smooth={this.state.smooth} spy={true} to="introductionread">God Revealed Himself in a Book</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(4)} smooth={this.state.smooth} spy={true} to="storyxavier">Testimony: Xavier</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} smooth={this.state.smooth} spy={true} to="read01">Tabletalk, Ask Ligoner &amp; The State of Theology</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(6)} smooth={this.state.smooth} spy={true} to="fellowsinclair">Teaching Fellow: Sinclair Ferguson</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} smooth={this.state.smooth} spy={true} to="read02">Reformation Study Bible</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} smooth={this.state.smooth} spy={true} to="read03">Study Bible Translations &amp; Study Bibles for Africa</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} smooth={this.state.smooth} spy={true} to="read04">Reformation Trust &amp; Ligonier.org</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(10)} smooth={this.state.smooth} spy={true} to="fellowgodfrey">Teaching Fellow: W. Robert Godfrey</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} smooth={this.state.smooth} spy={true} to="read05">Translations, Military &amp; Prison Chaplains and Christology&nbsp;Statement</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(12)} smooth={this.state.smooth} spy={true} to="fellowlawson">Teaching Fellow: Steven Lawson</Link>
                   </div>
                   <div>
                     <p><small>Part Two</small>Listen</p>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(13)} smooth={true} spy={true} to="introductionlisten">Faith Comes By Hearing</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(14)} smooth={true} spy={true} to="storyamy">Testimony: Amy</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} smooth={true} spy={true} to="listen01">Renewing Your Mind and RefNet</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} smooth={true} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} smooth={true} spy={true} to="listen02">Teaching Series and the Ligoner App</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(18)} smooth={true} spy={true} to="fellownichols">Teaching Fellow: Stephen J. Nichols</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(19)} smooth={true} spy={true} to="listen03">Platforms and Podcasts</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(13)} smooth={this.state.smooth} spy={true} to="introductionlisten">Faith Comes By Hearing</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(14)} smooth={this.state.smooth} spy={true} to="storyamy">Testimony: Amy</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} smooth={this.state.smooth} spy={true} to="listen01">Renewing Your Mind and RefNet</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} smooth={this.state.smooth} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} smooth={this.state.smooth} spy={true} to="listen02">Teaching Series and the Ligoner App</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(18)} smooth={this.state.smooth} spy={true} to="fellownichols">Teaching Fellow: Stephen J. Nichols</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(19)} smooth={this.state.smooth} spy={true} to="listen03">Platforms and Podcasts</Link>
                   </div>
                   <div>
                     <p><small>Part Three</small>Gather</p>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(20)} smooth={true} spy={true} to="introductiongather">Iron Sharpens Iron</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(21)} smooth={true} spy={true} to="storydoug">Testimony: Doug</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} smooth={true} spy={true} to="gather01">National, Regional and International Conferences</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(23)} smooth={true} spy={true} to="fellowparsons">Teaching Fellow: Burk Parsons</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(24)} smooth={true} spy={true} to="gather02">Reformation Bible College and Ligonier Connect</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} smooth={true} spy={true} to="fellowthomas">Teaching Fellow: Derek W.H. Thomas</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} smooth={true} spy={true} to="gather03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(20)} smooth={this.state.smooth} spy={true} to="introductiongather">Iron Sharpens Iron</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(21)} smooth={this.state.smooth} spy={true} to="storydoug">Testimony: Doug</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} smooth={this.state.smooth} spy={true} to="gather01">National, Regional and International Conferences</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(23)} smooth={this.state.smooth} spy={true} to="fellowparsons">Teaching Fellow: Burk Parsons</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(24)} smooth={this.state.smooth} spy={true} to="gather02">Reformation Bible College and Ligonier Connect</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} smooth={this.state.smooth} spy={true} to="fellowthomas">Teaching Fellow: Derek W.H. Thomas</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} smooth={this.state.smooth} spy={true} to="gather03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</Link>
                   </div>
                 </Navigation>
                 <ContainerInner

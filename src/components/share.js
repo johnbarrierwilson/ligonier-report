@@ -52,6 +52,7 @@ const Channels = styled('div')`
   justify-content: space-around;
   padding-left: 20px;
   a {
+    border-bottom: none;
     display: block;
     height: 20px;
     opacity: ${p => p.isSharing ? '1' : '0'};
@@ -107,11 +108,6 @@ const ContainerToggle = styled('div')`
   transition: ${p => p.theme.transition};
   transition-duration: 300ms;
   width: 45px;
-  &:hover {
-    svg {
-      color: ${p => p.theme.colors.green} !important;
-    }
-  }
   svg {
     height: 15px;
     transform: translate(5%, -2%);
@@ -123,7 +119,7 @@ const ContainerToggle = styled('div')`
   }
   svg:last-of-type {
     display: ${p => p.isSharing ? 'block' : 'none'};
-    color: ${p => p.theme.colors.gray};
+    color: ${p => p.theme.colors.black};
   }
 `
 

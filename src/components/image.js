@@ -3,9 +3,9 @@ import LazyLoad from 'react-lazyload'
 import styled, { css } from 'styled-components'
 
 const Image = (props) => (
-  // <LazyLoad height={props.lazyloadHeight ? props.lazyloadHeight : null} offset={1000} overflow={true}>
-  <Container src={props.src} {...props} />
-  // </LazyLoad>
+  <LazyLoad offset={1000} overflow={true}>
+    <Container src={props.src} {...props} />
+  </LazyLoad>
 )
 
 const Container = styled('img')`

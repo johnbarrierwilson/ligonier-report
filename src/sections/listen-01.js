@@ -110,11 +110,13 @@ const IndexPage = () => (
         row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
         text="CURATING TRUSTWORTHY TEACHING 24/7"
       />
-      <Image
-        column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-        row={['5 / span 2', '5 / span 2', '5 / span 2', '5 / span 2']}
-        src={RefNet}
-      />
+      <Well>
+        <Image
+          column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
+          row={['5 / span 2', '5 / span 2', '5 / span 2', '5 / span 2']}
+          src={RefNet}
+        />
+      </Well>
       <Content
         center={true}
         column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}

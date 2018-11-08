@@ -17,6 +17,7 @@ const IndexPage = () => (
     <Well bottom={true}>
       <Image
         column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+        lazyloadHeight={'23.5rem'}
         position="center 20%"
         row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
         src={ChrisLarson}

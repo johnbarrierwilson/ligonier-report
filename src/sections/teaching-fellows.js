@@ -29,6 +29,7 @@ const IndexPage = () => (
         <Image
           column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
           fullWidth={true}
+          lazyloadHeight={'13.2rem'}
           position='center 20%'
           row={['2 / span 8', '2 / span 8', '2 / span 8', '2 / span 8']}
           src={TeachingFellowsImage}

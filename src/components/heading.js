@@ -17,7 +17,7 @@ const Container = styled('h1')`
         return '1.5rem'
     }
   }};
-  letter-spacing: ${p => p.size === 'xl' ? '0.4em' : '0'};
+  letter-spacing: ${p => p.size === 'xl' ? '0.2em' : '0'};
   margin: 0 0 25px;
   position: relative;
   text-transform: uppercase;

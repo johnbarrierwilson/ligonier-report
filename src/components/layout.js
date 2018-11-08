@@ -123,7 +123,7 @@ class Layout extends React.Component {
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} smooth={true} spy={true} to="read03">Study Bible Translations &amp; Study Bibles for Africa</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} smooth={true} spy={true} to="read04">Reformation Trust &amp; Ligonier.org</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(10)} smooth={true} spy={true} to="fellowgodfrey">Teaching Fellow: W. Robert Godfrey</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} smooth={true} spy={true} to="read05">Translations, Military &amp; Prison Chaplains and Christology Statement</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} smooth={true} spy={true} to="read05">Translations, Military &amp; Prison Chaplains and Christology&nbsp;Statement</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(12)} smooth={true} spy={true} to="fellowlawson">Teaching Fellow: Steven Lawson</Link>
                   </div>
                   <div>
@@ -178,7 +178,7 @@ const GlobalStyles = createGlobalStyle`
   html {
     -webkit-font-smoothing: antialiased;
     font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
-    font-size: 4.25vw;
+    font-size: 5vw;
     font-weight: 400;
     line-height: 1.4;
     @media (min-width: ${p => p.theme.breakpoints.medium}) {

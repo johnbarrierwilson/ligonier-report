@@ -22,7 +22,6 @@ const Content = styled('div')`
     }
     strong {
       font-style: normal;
-      font-weight: 400 !important;
     }
   ` : null}
 
@@ -46,8 +45,6 @@ const Content = styled('div')`
   }
   strong {
     font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
   }
 `
 

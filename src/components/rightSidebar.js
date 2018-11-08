@@ -11,18 +11,18 @@ const RightSidebar = (props) => (
 )
 
 const Container = styled('ol')`
-  align-items: center;
-  bottom: 50%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  position: fixed;
-  right: 17px;
-  list-style: none;
-  transform: translate(50%, 50%);
-  z-index: ${p => p.theme.index.rightSidebar};
+  display: none;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
+    align-items: center;
+    bottom: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: fixed;
     right: 40px;
+    list-style: none;
+    transform: translate(50%, 50%);
+    z-index: ${p => p.theme.index.rightSidebar};
   }
   li a {
     align-items: center;
@@ -36,6 +36,7 @@ const Container = styled('ol')`
       border-radius: 50%;
       content: '';
       height: 8px;
+      opacity: ${p => p.navigating ? '0' : '1'};
       transition: ${p => p.theme.transition};
       width: 8px;
     }

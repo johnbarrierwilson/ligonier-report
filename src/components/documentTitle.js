@@ -13,6 +13,7 @@ const Container = styled('p')`
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.35em;
+    opacity: ${p => p.navigating ? '1' : '0'};
     position: fixed;
     right: 90px;
     text-align: right;

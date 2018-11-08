@@ -82,8 +82,8 @@ class Layout extends React.Component {
         render={data => (
           <ThemeProvider theme={theme}>
             <>
-              <Logo inverted={this.state.navigating || this.state.inverted}/>
-              <DocumentTitle inverted={this.state.navigating || this.state.inverted} />
+              <Logo inverted={this.state.navigating || this.state.inverted} navigating={this.state.navigating} />
+              <DocumentTitle inverted={this.state.navigating || this.state.inverted} navigating={this.state.navigating} />
               <Toggle
                 inverted={this.props.inverted || this.state.inverted}
                 navigating={this.state.navigating}
@@ -91,6 +91,8 @@ class Layout extends React.Component {
                
                 type={this.props.type}
               />
+              <LeftSidebar inverted={this.state.inverted} navigating={this.state.navigating} text={this.state.sidebarTitle} />
+              <RightSidebar inverted={this.state.inverted} navigating={this.state.navigating} status={this.state.sidebarStatus} />
               <Share />
               <Container>
                 <GlobalStyles />
@@ -113,35 +115,35 @@ class Layout extends React.Component {
                   </div>
                   <div>
                     <p><small>Part One</small>Read</p>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(3)} smooth={true} spy={true} to="introductionread">Introduction</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(4)} smooth={true} spy={true} to="storyxavier">Story: Xavier</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(3)} smooth={true} spy={true} to="introductionread">God Revealed Himself in a Book</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(4)} smooth={true} spy={true} to="storyxavier">Testimony: Xavier</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} smooth={true} spy={true} to="read01">Tabletalk, Ask Ligoner &amp; The State of Theology</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(6)} smooth={true} spy={true} to="fellowsinclair">Fellow: Sinclair Ferguson</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(6)} smooth={true} spy={true} to="fellowsinclair">Teaching Fellow: Sinclair Ferguson</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} smooth={true} spy={true} to="read02">Reformation Study Bible</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} smooth={true} spy={true} to="read03">Study Bible Translations &amp; Study Bibles for Africa</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} smooth={true} spy={true} to="read04">Reformation Trust &amp; Ligonier.org</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(10)} smooth={true} spy={true} to="fellowgodfrey">Fellow: W. Robert Godfrey</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(10)} smooth={true} spy={true} to="fellowgodfrey">Teaching Fellow: W. Robert Godfrey</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} smooth={true} spy={true} to="read05">Translations, Military &amp; Prison Chaplains and Christology Statement</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(12)} smooth={true} spy={true} to="fellowlawson">Fellow: Steven Lawson</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(12)} smooth={true} spy={true} to="fellowlawson">Teaching Fellow: Steven Lawson</Link>
                   </div>
                   <div>
                     <p><small>Part Two</small>Listen</p>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(13)} smooth={true} spy={true} to="introductionlisten">Introduction</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(14)} smooth={true} spy={true} to="storyamy">Story: Amy</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(13)} smooth={true} spy={true} to="introductionlisten">Faith Comes By Hearing</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(14)} smooth={true} spy={true} to="storyamy">Testimony: Amy</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} smooth={true} spy={true} to="listen01">Renewing Your Mind and RefNet</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} smooth={true} spy={true} to="fellowmohler">Fellow: Albert Mohler</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} smooth={true} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} smooth={true} spy={true} to="listen02">Teaching Series and the Ligoner App</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(18)} smooth={true} spy={true} to="fellownichols">Fellow: Stephen J. Nichols</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(18)} smooth={true} spy={true} to="fellownichols">Teaching Fellow: Stephen J. Nichols</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(19)} smooth={true} spy={true} to="listen03">Platforms and Podcasts</Link>
                   </div>
                   <div>
                     <p><small>Part Three</small>Gather</p>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(20)} smooth={true} spy={true} to="introductiongather">Introduction</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(21)} smooth={true} spy={true} to="storydoug">Story: Doug</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(20)} smooth={true} spy={true} to="introductiongather">Iron Sharpens Iron</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(21)} smooth={true} spy={true} to="storydoug">Testimony: Doug</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} smooth={true} spy={true} to="gather01">National, Regional and International Conferences</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(23)} smooth={true} spy={true} to="fellowparsons">Fellow: Burk Parsons</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(23)} smooth={true} spy={true} to="fellowparsons">Teaching Fellow: Burk Parsons</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(24)} smooth={true} spy={true} to="gather02">Reformation Bible College and Ligonier Connect</Link>
-                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} smooth={true} spy={true} to="fellowthomas">Fellow: Derek W.H. Thomas</Link>
+                    <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} smooth={true} spy={true} to="fellowthomas">Teaching Fellow: Derek W.H. Thomas</Link>
                     <Link containerId="containerElement" delay={500} hashSpy={true} href="#" offset={-650} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} smooth={true} spy={true} to="gather03">Cruises/Tours, Institute for Expository Preaching and Ask Anything</Link>
                   </div>
                 </Navigation>
@@ -150,8 +152,6 @@ class Layout extends React.Component {
                   navigating={this.state.navigating}
                   onClick={this.state.navigating ? this.toggleNavigation : null}
                 >
-                  <LeftSidebar inverted={this.state.inverted} text={this.state.sidebarTitle} />
-                  <RightSidebar inverted={this.state.inverted} status={this.state.sidebarStatus} />
                   {this.props.children}
                 </ContainerInner>
               </Container>

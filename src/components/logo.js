@@ -38,6 +38,7 @@ const Title = styled('p')`
     font-weight: 600;
     left: 90px;
     letter-spacing: 0.35em;
+    opacity: ${p => p.navigating ? '1' : '0'};
     position: fixed;
     right: auto;
     text-align: left;

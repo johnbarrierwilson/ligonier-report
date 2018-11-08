@@ -10,9 +10,14 @@ const Image = (props) => (
 
 const Container = styled('img')`
   height: auto;
+  margin-left: ${p => p.fullWidth ? '-40px' : '0'};
   position: relative;
-  width: 100%;
+  width: ${p => p.fullWidth ? 'calc(100% + 80px)' : '100%'};
   z-index: ${p => p.theme.index.image};
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    margin-left: 0;
+    width: 100%;
+  }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     grid-column: ${p => p.column[2]};
     grid-row: ${p => p.row[2]};

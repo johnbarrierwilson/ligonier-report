@@ -72,6 +72,17 @@ const IndexPage = () => (
         column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
         row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
       />
+      <Well bottom={true}>
+        <Podcasts
+          column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+          row={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
+          transform="translateY(-2rem)"
+        >
+          <img src={Podcast01} alt='five minutes in church history podcast cover' />
+          <img src={Podcast02} alt='the westminster shorter catechism podcast cover' />
+          <img src={Podcast03} alt='open book with stephen nichols podcast cover' />
+        </Podcasts>
+      </Well>
       <Heading
         center={true}
         column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
@@ -88,15 +99,6 @@ const IndexPage = () => (
         <p>The Westminster Shorter Catechism is a 107-episode podcast that features Dr. Sinclair Ferguson reading each question and answer in its entirety. This catechism has been beloved by Christians around the world for generations.</p>
         <p>Thanks to you, Renewing Your Mind, RefNet, and all our podcasts are offered freely. Tune in on iTunes, Google Play, and wherever you listen to podcasts.</p>
       </Content>
-      <Podcasts
-        column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
-        row={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
-        transform="translateY(-2rem)"
-      >
-        <img src={Podcast01} alt='five minutes in church history podcast cover' />
-        <img src={Podcast02} alt='the westminster shorter catechism podcast cover' />
-        <img src={Podcast03} alt='open book with stephen nichols podcast cover' />
-      </Podcasts>
       <Numbers
         column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
         description='MONTHLY PODCAST LISTENS'

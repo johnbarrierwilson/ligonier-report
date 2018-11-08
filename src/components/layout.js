@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import styled, { createGlobalStyle, css, ThemeProvider } from 'styled-components'
-import { Link, scrollSpy }from 'react-scroll'
+import { animateScroll, Link, scrollSpy }from 'react-scroll'
 
 import theme from '../theme.js'
 
@@ -48,6 +48,28 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
+    let windowHeight = window.innerHeight
+    let windowWidth = window.innerWidth
+    
+    window.addEventListener('resize', () => {
+      windowHeight = window.innerHeight
+      windowWidth = window.innerWidth
+    })
+
+    if (windowWidth >= 900) {
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown') {
+          animateScroll.scrollMore(windowHeight, {
+            containerId: 'containerElement'
+          })
+        } else if (e.key === 'ArrowUp') {
+          animateScroll.scrollMore(-windowHeight, {
+            containerId: 'containerElement'
+          })
+        }
+      })
+    }
+
     scrollSpy.update()
   }
 

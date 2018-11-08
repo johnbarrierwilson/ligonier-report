@@ -19,11 +19,10 @@ const podcasts = styled('div')`
   img {
     display: block;
     height: 70px;
-    margin: 30px 0;
+    margin: 0;
     width: 70px;
     @media (min-width: ${p => p.theme.breakpoints.small}) {
       height: 100%;
-      margin: 0;
       max-height: 140px;
       width: auto;
     }

@@ -35,6 +35,7 @@ const IndexPage = () => (
     <Well bottom={true}>
       <Image
         column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
+        fullWidth={true}
         position="center 20%"
         row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
         src={Lawson}

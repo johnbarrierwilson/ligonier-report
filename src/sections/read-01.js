@@ -22,11 +22,15 @@ const IndexPage = () => (
       >
         Tabletalk Magazine
       </Subject>
+      <Divider
+        column={['8 / span 2', '8 / span 2', '2 / span 2', '2 / span 2']}
+        row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+      />
       <Well>
         <Image
           column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
           position='left center'
-          row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+          row={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
           size="contain"
           src={TabletalkPlaceholder}
         />
@@ -34,12 +38,12 @@ const IndexPage = () => (
       <Heading
         center={true}
         column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
-        row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
+        row={['7 / span 2', '7 / span 2', '7 / span 2', '7 / span 2']}
         text="Helping Disciples&nbsp;Grow"
       />
       <Content
         column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-        row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
+        row={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}
       >
         <p><strong>For over forty years,</strong> Tabletalk magazine has helped growing Christians live biblically informed lives. Every month, it reaches approxi- mately 250,000 people in more than seventy-five countries around the world.</p>
         <p>Each issue contains daily Bible studies to help readers understand and apply the Word of God, as well as an effective plan for reading through the Bible in a year. Thought-provoking articles from trusted pastors and Bible teachers address biblical, theological, and practical themes to help strength- en and encourage people in their faith.</p>

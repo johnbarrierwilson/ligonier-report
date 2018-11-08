@@ -45,7 +45,16 @@ const IndexPage = () => (
       >
         <p><strong>Who is Jesus</strong> and what did He come to do? Most evangelicals are confused when it comes to answering these questions. The Ligonier Statement on Christology seeks to bring clarity where there is confusion. It carefully restates the Bible’s teaching about the person and work of Jesus Christ, the Word made flesh. With biblical testimony and theological precision, this statement proclaims that Jesus is truly God and truly man. Written for the glory of Christ and the edification of His people, it is available in English and sixteen other major world languages.</p>
       </Content>
+      <Well size="l">
+        <Numbers
+          column={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
+          description='Languages in which our resources are available'
+          number='36'
+          row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+        />
+      </Well>
     </Well>
+
 
     <Well>
       <Subject
@@ -74,15 +83,6 @@ const IndexPage = () => (
       </Content>
     </Well>
 
-    <Well>
-      <Numbers
-        column={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
-        description='Languages in which our resources are available'
-        number='36'
-        row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
-      />
-    </Well>
-
     <Well size="l" top={true}>
       <Backdrop />
       <Subject
@@ -95,12 +95,14 @@ const IndexPage = () => (
         column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
         row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
       />
-      <Image
-        column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
-        row={['4 / span 4', '4 / span 4', '4 / span 4', '4 / span 4']}
-        size='contain'
-        src={Book}
-      />
+      <Well>
+        <Image
+          column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+          row={['4 / span 4', '4 / span 4', '4 / span 4', '4 / span 4']}
+          size='contain'
+          src={Book}
+        />
+      </Well>
       <Heading
         center={true}
         column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}

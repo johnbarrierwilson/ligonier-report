@@ -9,6 +9,7 @@ const Toggle = (props) => (
 
 const Container = styled('a')`
   align-items: center;
+  border-bottom: none;
   display: flex;
   height: 40px;
   justify-content: center;

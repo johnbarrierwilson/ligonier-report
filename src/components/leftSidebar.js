@@ -8,12 +8,14 @@ const LeftSidebar = (props) => (
 )
 
 const Container = styled('div')`
-  bottom: 50%;
-  left: 20px;
-  position: fixed;
-  transform: translate(-50%, 50%);
-  z-index: ${p => p.theme.index.leftSidebar};
+  display: none;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
+    bottom: 50%;
+    display: block;
+    left: 20px;
+    position: fixed;
+    transform: translate(-50%, 50%);
+    z-index: ${p => p.theme.index.leftSidebar};
     left: 43px;
   }
   p {
@@ -22,6 +24,7 @@ const Container = styled('div')`
     font-size: 8px;
     font-weight: 600;
     letter-spacing: 0.35em;
+    opacity: ${p => p.navigating ? '0' : '1'};
     position: absolute;
     top: 50%;
     right: 50%;

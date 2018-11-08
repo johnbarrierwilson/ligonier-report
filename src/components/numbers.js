@@ -29,6 +29,7 @@ const Container = styled('div')`
     grid-column: ${p => p.column[2]};
     grid-row: ${p => p.row[2]};
     grid-template: 1fr 1fr / 7rem 1fr;
+    max-width: 700px;
     transform: ${p => p.transform ? p.transform : 'none'};
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {

@@ -47,10 +47,10 @@ const IndexPage = () => (
         column={['2 / span 5', '2 / span 5', '2 / span 5', '2 / span 5']}
         row={['7 / span 4', '7 / span 4', '7 / span 4', '7 / span 4']}
       >
-        <p>For over forty years, Tabletalk magazine has helped growing Christians live biblically informed lives. Every month, it reaches approxi- mately 250,000 people in more than seventy-five countries around the world.</p>
+        <p>For over forty years, <em>Tabletalk</em> magazine has helped growing Christians live biblically informed lives. Every month, it reaches approxi- mately 250,000 people in more than seventy-five countries around the world.</p>
         <p>Each issue contains daily Bible studies to help readers understand and apply the Word of God, as well as an effective plan for reading through the Bible in a year. Thought-provoking articles from trusted pastors and Bible teachers address biblical, theological, and practical themes to help strength- en and encourage people in their faith.</p>
-        <p>Subscribers can now access Tabletalk at TabletalkMagazine.com. Every new issue is available digitally, along with online-exclusive content and a searchable archive of back issues.</p>
-        <p>Tabletalk is biblical, reliable, and readable. Above all, Tabletalk exists to help Christians deepen their knowledge of God’s Word in order that their minds may be renewed and their lives transformed.</p>
+        <p>Subscribers can now access <em>Tabletalk</em> at TabletalkMagazine.com. Every new issue is available digitally, along with online-exclusive content and a searchable archive of back issues.</p>
+        <p><em>Tabletalk</em> is biblical, reliable, and readable. Above all, <em>Tabletalk</em> exists to help Christians deepen their knowledge of God’s Word in order that their minds may be renewed and their lives transformed.</p>
       </Content>
       <Well>
         <Numbers

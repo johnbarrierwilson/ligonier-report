@@ -56,7 +56,7 @@ const IndexPage = () => (
       column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
       row={['7 / span 5', '7 / span 5', '7 / span 5', '7 / span 5']}
     >
-      <p>I now know that I’m a third-generation Ligonier student. When my grandma passed away, I got her copy of The Holiness of God from one of the first printings. It’s pretty special to have such a classic. Like R.C. said, there’s a gap between Sunday school and seminary. Ligonier serves to fill that gap in a format that is scalable and digestible for many churches out there that don’t have the resources to produce this kind of material.”</p>
+      <p>I now know that I’m a third-generation Ligonier student. When my grandma passed away, I got her copy of <em>The Holiness of God</em> from one of the first printings. It’s pretty special to have such a classic. Like R.C. said, there’s a gap between Sunday school and seminary. Ligonier serves to fill that gap in a format that is scalable and digestible for many churches out there that don’t have the resources to produce this kind of material.”</p>
     </Content>
     <Well top={true}>
       <Divider

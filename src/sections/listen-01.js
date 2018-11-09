@@ -45,7 +45,7 @@ const IndexPage = () => (
       column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
       row={['7 / span 6', '7 / span 6', '7 / span 6', '7 / span 6']}
     >
-      <p>Our daily teaching broadcast, Renewing Your Mind, equips growing Christians to know what they believe, why they believe it, how to live it, and how to share it. Each day we air trustworthy, accessible, and in-depth Bible teaching from Dr. R.C. Sproul, the Ligonier Teaching Fellows, and other trusted teachers.</p>
+      <p>Our daily teaching broadcast, <em>Renewing Your Mind</em>, equips growing Christians to know what they believe, why they believe it, how to live it, and how to share it. Each day we air trustworthy, accessible, and in-depth Bible teaching from Dr. R.C. Sproul, the Ligonier Teaching Fellows, and other trusted teachers.</p>
       <p>You enable us to broadcast on more than 370 radio stations around the United States, as a podcast, and online at RenewingYourMind.org. Our aim is to spread the knowledge of the glory of God, and our prayer is that multitudes will be transformed by the renewing of their&nbsp;minds.</p>
     </Content>
     <Well>

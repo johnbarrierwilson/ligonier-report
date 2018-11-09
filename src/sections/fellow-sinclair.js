@@ -55,7 +55,7 @@ const IndexPage = () => (
       row={['7 / span 4', '7 / span 4', '7 / span 4', '7 / span 4']}
     >
       <p>Dr. Sinclair B. Ferguson is one of the most well-respected Reformed theologians in the world today. He taught systematic theology at Westminster Theological Seminary in Philadelphia for many years, and he has also taught at other Reformed seminaries. He served as pastor of St. George’s Tron Church in Glasgow, Scotland, from 1998 to 2003 and of First Presbyterian Church in Columbia, S.C., from 2005 until his retirement in 2013. Dr. Ferguson was a longtime friend of Dr. R.C. Sproul and has been a regular speaker at Ligonier conferences and events over the years.</p>
-      <p>Dr. Ferguson began serving at Ligonier Ministries as a teaching fellow in 2010. He has a rare ability to present the truths of the Christian faith clearly and winsomely. He has written numerous books, including The Whole Christ, In Christ Alone, Devoted to God, and Some Pastors and Teachers. He has also recorded several video teaching series with Ligonier. Dr. Ferguson, having now retired to his native Scotland, continues to write and speak.</p>
+      <p>Dr. Ferguson began serving at Ligonier Ministries as a teaching fellow in 2010. He has a rare ability to present the truths of the Christian faith clearly and winsomely. He has written numerous books, including <em>The Whole Christ</em>, <em>In Christ Alone</em>, <em>Devoted to God</em>, and <em>Some Pastors and Teachers</em>. He has also recorded several video teaching series with Ligonier. Dr. Ferguson, having now retired to his native Scotland, continues to write and speak.</p>
     </Content>
   </Grid>
 )

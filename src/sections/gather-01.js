@@ -44,7 +44,7 @@ const IndexPage = () => (
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
       row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
     >
-      <p><strong>For over thirty years,</strong> our National Conference has been gathering thousands of Ligonier friends and supporters to hear trustworthy teaching from God’s Word. The conference is held over three days every spring in Orlando, Fla., and brings together Christians from many different backgrounds who make up the Ligonier family. Each year it is encouraging to see more first- time attendees gathering from around the world. Your prayers and support enable our National Conference to serve as a great platform for equipping Christians with the truth.</p>
+      <p>For over thirty years, our National Conference has been gathering thousands of Ligonier friends and supporters to hear trustworthy teaching from God’s Word. The conference is held over three days every spring in Orlando, Fla., and brings together Christians from many different backgrounds who make up the Ligonier family. Each year it is encouraging to see more firsttime attendees gathering from around the world. Your prayers and support enable our National Conference to serve as a great platform for equipping Christians with the truth.</p>
     </Content>
 
     <Well size="l" top={true}>
@@ -79,7 +79,7 @@ const IndexPage = () => (
           column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
           row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
         >
-          <p><strong>Ligonier conferences are</strong> held nationally and internationally, bring- ing trusted teachers to live events for growing Christians. We bring gifted teachers to local gatherings so that as many people as possible can join with us. We give thanks to God for the thousands who do so every year.</p>
+          <p>Ligonier conferences are held nationally and internationally, bringing trusted teachers to live events for growing Christians. We bring gifted teachers to local gatherings so that as many people as possible can join with us. We give thanks to God for the thousands who do so every year.</p>
           <p>In addition to our popular biennial West Coast Conference, Ligonier hosts regional conferences in many states each year. Internationally, conferences have taken place in Germany, Northern Ireland, and Mexico. Future events are planned for the United Kingdom and other European countries, as well as Canada and Asia.</p>
         </Content>
       </Well>

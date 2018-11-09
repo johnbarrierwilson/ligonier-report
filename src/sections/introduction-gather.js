@@ -34,7 +34,7 @@ const IndexPage = () => (
         row={['8 / span 3', '8 / span 3', '8 / span 3', '8 / span 3']}
         type="deck"
       >
-        <p><strong>Iron sharpens iron.</strong> Every year, in cities around the world and online, Ligonier Ministries gathers Christians at events to study God’s Word for mutual edification. It’s a privilege to meet, serve, and learn from God’s people. Our aim is to bless the local church and strengthen its members for greater service. Thank you for joining&nbsp;us.</p>
+        <p>Iron sharpens iron. Every year, in cities around the world and online, Ligonier Ministries gathers Christians at events to study God’s Word for mutual edification. It’s a privilege to meet, serve, and learn from God’s people. Our aim is to bless the local church and strengthen its members for greater service. Thank you for joining&nbsp;us.</p>
       </Content>
     </Well>
   </Grid>

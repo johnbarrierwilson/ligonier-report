@@ -52,8 +52,8 @@ const IndexPage = () => (
       row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
     >
       <p>‘This might be interesting for you to read.’ It blew me away with the thoughtfulness around the theology and the way the magazine is laid out. It made a real impact on me.</p>
-      <p>After a year or two, I became a Ministry Partner and began listening to the monthly messages, as well as Renewing Your Mind. I was just devouring any content that I could at that time.</p>
-      <p>Teaching from Ligonier has given me greater dis- cernment in church life and has given me the foun- dation in my faith I needed to start teaching my kids. They ask questions at random times: questions about God, things God created, etc. If I hadn’t learned Reformed theology—reading Tabletalk and listening to Renewing Your Mind—I never would have had a founda- tion in theology to help my kids understand the funda- mental elements of the faith.”</p>
+      <p>After a year or two, I became a Ministry Partner and began listening to the monthly messages, as well as <em>Renewing Your Mind</em>. I was just devouring any content that I could at that time.</p>
+      <p>Teaching from Ligonier has given me greater discernment in church life and has given me the foundation in my faith I needed to start teaching my kids. They ask questions at random times: questions about God, things God created, etc. If I hadn’t learned Reformed theology&mdash;reading <em>Tabletalk</em> and listening to <em>Renewing Your Mind</em>&mdash;I never would have had a foundation in theology to help my kids understand the fundamental elements of the faith.”</p>
     </Content>
     <Well top={true}>
       <Divider

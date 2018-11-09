@@ -43,13 +43,13 @@ const IndexPage = () => (
       column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
       row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
     >
-      <p><strong>"I remember hearing R.C. Sproul</strong> preach a sermon many years ago about how we think we choose God, but the Bible says that God chooses us. From that moment on, I knew I needed to know the Bible better because what I was believing was wrong. Ligonier has always been a trustworthy place to turn for good teaching, and it has grown along with me, giving me more choices even be- yond my Tabletalk devotional and Renewing Your Mind.</p>
+      <p>"I remember hearing R.C. Sproul preach a sermon many years ago about how we think we choose God, but the Bible says that God chooses us. From that moment on, I knew I needed to know the Bible better because what I was believing was wrong. Ligonier has always been a trustworthy place to turn for good teaching, and it has grown along with me, giving me more choices even beyond my <em>Tabletalk</em> devotional and <em>Renewing Your Mind</em>.</p>
     </Content>
     <Blockquote
       column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
       row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
     >
-      <p>Now I listen to RefNet&nbsp;everyday.</p>
+      <p>Now I listen to RefNet&nbsp;every day.</p>
     </Blockquote>
     <Content
       column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}

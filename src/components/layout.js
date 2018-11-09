@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import styled, { createGlobalStyle, css, ThemeProvider } from 'styled-components'
 import { animateScroll, Link, scrollSpy }from 'react-scroll'
-import throttle from 'lodash.throttle'
 
 import theme from '../theme.js'
 

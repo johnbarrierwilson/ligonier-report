@@ -41,9 +41,9 @@ const IndexPage = () => (
         column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
         row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
       >
-        <p><strong>For decades,</strong> our video teaching series have enabled Dr. R.C. Sproul and other trusted teachers to share the riches of Scripture with a wide audience. There are hundreds of topics available, designed to build up disciples in their knowledge of God and equip them to live for the glory of God.</p>
+        <p>For decades, our video teaching series have enabled Dr. R.C. Sproul and other trusted teachers to share the riches of Scripture with a wide audience. There are hundreds of topics available, designed to build up disciples in their knowledge of God and equip them to live for the glory of God.</p>
         <p>This expansive library weaves a rich tapestry of theology, apologetics, church history, biblical studies, and much more. Each message is less than thirty minutes in length, making it well-suited for your Sunday school, home group, or personal Bible study.</p>
-        <p>Ligonier teaching series have been translated into several different lan- guages, including Portuguese, Korean, and Arabic. Thanks to your support, we are now preparing series in Spanish for people across Latin America.</p>
+        <p>Ligonier teaching series have been translated into several different languages, including Portuguese, Korean, and Arabic. Thanks to your support, we are now preparing series in Spanish for people across Latin America.</p>
       </Content>
     </Well>
 
@@ -68,8 +68,8 @@ const IndexPage = () => (
       column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
       row={['4 / span 4', '4 / span 4', '4 / span 4', '4 / span 4']}
     >
-      <p><strong>The Ligonier App is</strong> a daily gospel resource that provides instant access to a deep library of Christian teaching. It puts trustworthy teaching in the palm of your hand, gathering together daily audio, video, devotional arti- cles, and much more.</p>
-      <p>Accessed over 4.3 million times annually, the app is a go-to resource for growing Christians. In addition to our devotional content and media archives, you’ll also find easy access to Ask Ligonier, our biblical and theo- logical chat service.</p>
+      <p>The Ligonier App is a daily gospel resource that provides instant access to a deep library of Christian teaching. It puts trustworthy teaching in the palm of your hand, gathering together daily audio, video, devotional articles, and much more.</p>
+      <p>Accessed over 4.3 million times annually, the app is a go-to resource for growing Christians. In addition to our devotional content and media archives, you’ll also find easy access to Ask Ligonier, our biblical and theological chat service.</p>
       <p>By God’s grace, and because of your support, the Ligonier app is available free to all users. Thank you.</p>
     </Content>
     <Well>

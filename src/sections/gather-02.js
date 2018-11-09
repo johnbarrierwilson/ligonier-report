@@ -46,9 +46,9 @@ const IndexPage = () => (
         column={['2 / span 2', '2 / span 2', '2 / span 3', '2 / span 2']}
         row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
       >
-        <p><strong>REFORMATION BIBLE COLLEGE</strong> is gathering the next generation of reformers, offering a classically based, theologically driven college curricu- lum. Growing in the knowledge of God is the heartbeat of RBC, where faculty seek to ignite a passion for theological conviction and equip students for faithful service in any vocation.</p>
-        <p>Thanks to visionary donors, the college’s new $8.5 million state-of- the-art Student Learning Center allows for much-needed expansion on its campus in Orlando, Fla.</p>
-        <p>RBC’s entire outlook is grounded in the Scriptures and provides stu- dents with a firm biblical foundation on which to build their lives for the glory of God.</p>
+        <p>Reformation Bible College is gathering the next generation of reformers, offering a classically based, theologically driven college curriculum. Growing in the knowledge of God is the heartbeat of RBC, where faculty seek to ignite a passion for theological conviction and equip students for faithful service in any vocation.</p>
+        <p>Thanks to visionary donors, the college’s new $8.5 million state-of-the-art Student Learning Center allows for much-needed expansion on its campus in Orlando, Fla.</p>
+        <p>RBC’s entire outlook is grounded in the Scriptures and provides students with a firm biblical foundation on which to build their lives for the glory of God.</p>
       </Content>
 
       <Well>
@@ -74,7 +74,7 @@ const IndexPage = () => (
           row={['9 / span 3', '9 / span 3', '9 / span 3', '9 / span 3']}
           type='sans'
         >
-          <p><strong>Always Ready: Equipping Young Apologists</strong><br/>High school students are equipped to defend the Christian faith at RBC’s Always Ready Youth Conference. This annual, one-day apologetics event in Orlando, Fla., helps young disciples to better share their faith and give a defense to their non-Christian friends. In an age when the Bible’s teaching is rapidly being marginalized, RBC is encouraging young people to stand fast on the truth of God’s&nbsp;Word.</p>
+          <p><strong>Always Ready: Equipping Young&nbsp;Apologists</strong><br/>High school students are equipped to defend the Christian faith at RBC’s Always Ready Youth Conference. This annual, one-day apologetics event in Orlando, Fla., helps young disciples to better share their faith and give a defense to their non-Christian friends. In an age when the Bible’s teaching is rapidly being marginalized, RBC is encouraging young people to stand fast on the truth of God’s&nbsp;Word.</p>
         </Content>
       </Well>
     </Well>

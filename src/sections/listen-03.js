@@ -47,9 +47,9 @@ const IndexPage = () => (
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
       row={['7 / span 4', '7 / span 4', '7 / span 4', '7 / span 4']}
     >
-      <p><strong>Ligonier teaching resources</strong> can now be accessed in more ways than ever. Whether it’s video or audio, trusted Bible teaching is available wher- ever you like to tune in—YouTube, Amazon Prime Video, Alexa, and Roku.</p>
+      <p>Ligonier teaching resources can now be accessed in more ways than ever. Whether it’s video or audio, trusted Bible teaching is available wherever you like to tune in—YouTube, Amazon Prime Video, Alexa, and Roku.</p>
       <p>We are reaching more people than ever before with the knowledge of God’s holiness. Across all of our online platforms, students watch hundreds of thousands of hours of Ligonier videos each year. On YouTube alone, this now equates to nearly two hundred years of continuous playback.</p>
-      <p>Renewing Your Mind and messages from National Conferences also air on NRB TV, reaching up to forty-five million households with the truth of God’s Word.</p>
+      <p><em>Renewing Your Mind</em> and messages from National Conferences also air on NRB TV, reaching up to forty-five million households with the truth of God’s Word.</p>
     </Content>
     <Well top={true}>
       <Numbers
@@ -95,10 +95,10 @@ const IndexPage = () => (
         column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
         row={['5 / span 4', '5 / span 4', '4 / span 5', '5 / span 4']}
       >
-        <p><strong>Our featured podcasts provide</strong> spiritual food for growing Christians wherever they are. 5 Minutes in Church History, with Stephen Nichols, travels back in time to explore the lives of the saints who came before us and the events which shaped their journey.</p>
-        <p>Open Book allows you to step into Dr. R.C. Sproul’s library. Glean new in- sights into the books which have most influenced him and other pastors and theologians.</p>
-        <p>The Westminster Shorter Catechism is a 107-episode podcast that features Dr. Sinclair Ferguson reading each question and answer in its entirety. This catechism has been beloved by Christians around the world for generations.</p>
-        <p>Thanks to you, Renewing Your Mind, RefNet, and all our podcasts are offered freely. Tune in on iTunes, Google Play, and wherever you listen to podcasts.</p>
+        <p>Our featured podcasts provide spiritual food for growing Christians wherever they are. <em>5 Minutes in Church History</em>, with Stephen Nichols, travels back in time to explore the lives of the saints who came before us and the events which shaped their journey.</p>
+        <p><em>Open Book</em> allows you to step into Dr. R.C. Sproul’s library. Glean new insights into the books which have most influenced him and other pastors and theologians.</p>
+        <p><em>The Westminster Shorter Catechism</em> is a 107-episode podcast that features Dr. Sinclair Ferguson reading each question and answer in its entirety. This catechism has been beloved by Christians around the world for generations.</p>
+        <p>Thanks to you, <em>Renewing Your Mind</em>, RefNet, and all our podcasts are offered freely. Tune in on iTunes, Google Play, and wherever you listen to podcasts.</p>
       </Content>
       <Well top={true}>
         <Numbers

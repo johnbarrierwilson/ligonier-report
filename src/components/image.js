@@ -13,7 +13,7 @@ class Source extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      transformValue: -2000
+      transformValue: 0
     }
     this.image = React.createRef()
   }
@@ -67,7 +67,7 @@ const Container = styled('img')`
         }
       }
     };
-    transition: ${p => p.transform && !p.transform.startsWith('translate') ? 'transform 500ms linear' : 'none'};
+    transition: ${p => p.transform && !p.transform.startsWith('translate') ? 'transform 750ms linear' : 'none'};
     width: ${p => p.size ? p.size.split(' ')[0] : '100%'};
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {

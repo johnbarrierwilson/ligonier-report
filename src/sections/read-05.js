@@ -16,42 +16,45 @@ import NoneOther from '../images/TranslationsNoneOther.jpg'
 const IndexPage = () => (
   <Grid name="read05">
     <Image
-      column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
+      column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
       position="center 70%"
-      row={['1 / span 4', '1 / span 4', '1 / span 4', '1 / span 4']}
+      row={['1 / span 3', '1 / span 3', '1 / span 3', '1 / span 3']}
       src={NoneOther}
     />
     <Well>
       <Subject
         column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
-        row={['5 / span 1', '5 / span 1', '5 / span 1', '5 / span 1']}
+        row={['4 / span 1', '4 / span 1', '4 / span 1', '4 / span 1']}
       >
         Translations
       </Subject>
       <Divider
         column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
-        row={['5 / span 2', '5 / span 2', '5 / span 2', '5 / span 2']}
+        row={['4 / span 2', '4 / span 2', '4 / span 2', '4 / span 2']}
       />
       <Heading
         center={true}
-        column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
-        row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
+        column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
+        row={['5 / span 1', '5 / span 1', '5 / span 1', '5 / span 1']}
         text="Taking the Truth to the Nations"
+        transform="translateY(15%)"
       />
       <Content
         center={true}
-        column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
-        row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
+        column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
+        row={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
       >
-        <p><strong>Who is Jesus</strong> and what did He come to do? Most evangelicals are confused when it comes to answering these questions. The Ligonier Statement on Christology seeks to bring clarity where there is confusion. It carefully restates the Bible’s teaching about the person and work of Jesus Christ, the Word made flesh. With biblical testimony and theological precision, this statement proclaims that Jesus is truly God and truly man. Written for the glory of Christ and the edification of His people, it is available in English and sixteen other major world languages.</p>
+        <p>The English language contains a treasure trove of theological riches. Thanks to your prayerful and financial support, these resources are being distributed around the world in many languages.</p>
+        <p>Teams of people are translating trustworthy teaching into the most-spoken languages on earth. With billions of people around the world, there is an immense global need for truth, and our aim is to assist the church as it takes the gospel to all nations.</p>
+        <p>We hand-pick translators who combine fidelity to Scripture with an expert grasp of their language. Thanks to fruitful partnerships with ministries around the world, these translation efforts in Spanish and French are increasing, and publishing continues in many other languages.</p>
       </Content>
       <Well size="l">
         <Numbers
-          column={['5 / span 3', '5 / span 3', '4 / span 4', '4 / span 4']}
+          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
           description='Languages in which our resources are available'
           number='36'
           row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
-          transform="translateX(10%)"
+          transform="translateY(10%)"
         />
       </Well>
     </Well>
@@ -80,8 +83,8 @@ const IndexPage = () => (
         column={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
         row={['5 / span 4', '5 / span 4', '5 / span 4', '5 / span 4']}
       >
-        <p><strong>Military Chaplains</strong> serve those who are literally on the front line. Your support is forming a spiritual supply line by providing gospel resources for troops as trustworthy books are freely distributed for those on active duty around the world.</p>
-        <p>Prisoners write to us every month, hungry for the gospel and for resourc- es to help them grow in Christ. Your support sends them care packages that include a special edition of the Reformation Study Bible and books by trusted teachers. Prison chaplains are also supplied with the teaching resources they need to serve those under their care.</p>
+        <p>Military Chaplains serve those who are literally on the front line. Your support is forming a spiritual supply line by providing gospel resources for troops as trustworthy books are freely distributed for those on active duty around the world.</p>
+        <p>Prisoners write to us every month, hungry for the gospel and for resources to help them grow in Christ. Your support sends them care packages that include a special edition of the <em>Reformation Study Bible</em> and books by trusted teachers. Prison chaplains are also supplied with the teaching resources they need to serve those under their care.</p>
       </Content>
     </Well>
 
@@ -117,7 +120,7 @@ const IndexPage = () => (
         column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
         row={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
       >
-        <p><strong>Who is Jesus</strong> and what did He come to do? Most evangelicals are confused when it comes to answering these questions. The Ligonier Statement on Christology seeks to bring clarity where there is confusion. It carefully restates the Bible’s teaching about the person and work of Jesus Christ, the Word made flesh. With biblical testimony and theological precision, this statement proclaims that Jesus is truly God and truly man. Written for the glory of Christ and the edification of His people, it is available in English and sixteen other major world languages.</p>
+        <p>Who is Jesus and what did He come to do? Most evangelicals are confused when it comes to answering these questions. The Ligonier Statement on Christology seeks to bring clarity where there is confusion. It carefully restates the Bible’s teaching about the person and work of Jesus Christ, the Word made flesh. With biblical testimony and theological precision, this statement proclaims that Jesus is truly God and truly man. Written for the glory of Christ and the edification of His people, it is available in English and sixteen other major world languages.</p>
       </Content>
     </Well>
   </Grid>

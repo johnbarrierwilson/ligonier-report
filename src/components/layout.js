@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import styled, { createGlobalStyle, css, ThemeProvider } from 'styled-components'
 import { animateScroll, Link, scrollSpy }from 'react-scroll'
+import throttle from 'lodash.throttle'
 
 import theme from '../theme.js'
 
@@ -106,6 +107,9 @@ class Layout extends React.Component {
     this.setState({
       navigating: !this.state.navigating
     });
+    setTimeout(() => {
+      scrollSpy.update()
+    }, 10)
   }
 
   render() {
@@ -265,8 +269,10 @@ const ContainerInner = styled('div')`
   height: 100vh;
   overflow: auto;
   position: relative;
-  transition: ${p => p.theme.transition};
   z-index: ${p => p.theme.index.containerInner};
+  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    transition: ${p => p.theme.transition};
+  }
   ${p => p.navigating ? css`
     border-radius: 20px;
     transform: translateY(500px);
@@ -286,11 +292,14 @@ const Navigation = styled('nav')`
   left: 0;
   margin: 0 auto;
   overflow: auto;
-  padding: 75px 50px;
+  padding: 75px 40px;
   position: absolute;
   right: 0;
   width: 100%;
   z-index: ${p => p.theme.index.navigation};
+  @media (min-width: ${p => p.theme.breakpoints.small}) {
+    padding: 100px 20vw 0;
+  }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     flex-flow: row;
     height: auto;

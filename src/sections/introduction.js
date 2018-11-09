@@ -98,7 +98,7 @@ const IndexPage = () => (
           row={['7 / span 1', '8 / span 2', '8 / span 2', '8 / span 2']}
         >
           <p>Every year, Ligonier Ministries provides more ways for Christians to read, listen, and gather around God's truth.</p>
-          <p>Under God’s blessing, the outreach we’ve been able to do together has continued to grow, This report is a celebration of all that you’ve enabled through your generosity and your prayers.</p>
+          <p>Under God’s blessing, the outreach we’ve been able to do together has continued to grow. This report is a celebration of all that you’ve enabled through your generosity and your&nbsp;prayers.</p>
         </Content>
       </Well>
     </Well>

@@ -6,6 +6,7 @@ import Divider from '../components/divider'
 import Grid from '../components/grid'
 import Heading from '../components/heading'
 import Image from '../components/image'
+import Numbers from '../components/numbers'
 import Subject from '../components/subject'
 import Well from '../components/well'
 
@@ -17,7 +18,7 @@ const IndexPage = () => (
     <Well bottom={true} size="l">
       <Backdrop />
       <Subject
-        column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
+        column={['2 / span 5', '2 / span 5', '2 / span 5', '2 / span 5']}
         row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
       >
         Tabletalk Magazine
@@ -28,49 +29,58 @@ const IndexPage = () => (
       />
       <Well>
         <Image
-          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
+          column={['2 / span 5', '2 / span 5', '2 / span 5', '2 / span 5']}
           position='left center'
-          row={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
+          row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
           size="contain"
           src={TabletalkPlaceholder}
+          transform="translateY(10%)"
         />
       </Well>
       <Heading
         center={true}
-        column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
-        row={['7 / span 2', '7 / span 2', '7 / span 2', '7 / span 2']}
+        column={['2 / span 5', '2 / span 5', '2 / span 5', '2 / span 5']}
+        row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
         text="Helping Disciples&nbsp;Grow"
       />
       <Content
-        column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-        row={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}
+        column={['2 / span 5', '2 / span 5', '2 / span 5', '2 / span 5']}
+        row={['7 / span 4', '7 / span 4', '7 / span 4', '7 / span 4']}
       >
         <p>For over forty years, Tabletalk magazine has helped growing Christians live biblically informed lives. Every month, it reaches approxi- mately 250,000 people in more than seventy-five countries around the world.</p>
         <p>Each issue contains daily Bible studies to help readers understand and apply the Word of God, as well as an effective plan for reading through the Bible in a year. Thought-provoking articles from trusted pastors and Bible teachers address biblical, theological, and practical themes to help strength- en and encourage people in their faith.</p>
         <p>Subscribers can now access Tabletalk at TabletalkMagazine.com. Every new issue is available digitally, along with online-exclusive content and a searchable archive of back issues.</p>
         <p>Tabletalk is biblical, reliable, and readable. Above all, Tabletalk exists to help Christians deepen their knowledge of God’s Word in order that their minds may be renewed and their lives transformed.</p>
       </Content>
+      <Well>
+        <Numbers
+          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
+          description='Tabletalk Monthly Readership'
+          number='250,000'
+          row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
+        />
+      </Well>
     </Well>
     
     <Well>
       <Subject
-        column={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
+        column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
         name="ask-ligonier"
         row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
       >
         Ask Ligonier
       </Subject>
       <Divider
-        column={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
+        column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
         row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
       />
       <Heading
-        column={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
+        column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
         row={['4 / span 4', '4 / span 4', '4 / span 4', '4 / span 4']}
         text="Answering Your Biblical and Theological Questions"
       />
       <Content
-        column={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
+        column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
         row={['7 / span 5', '7 / span 5', '7 / span 5', '7 / span 5']}
       >
         <p>Ask Ligonier is our online biblical and theological chat ser- vice—providing clear, concise, and trustworthy answers. Drawing on Ligonier’s vast library of resources and Dr. R.C. Sproul’s decades-long ministry of answering students’ ques- tions, we’re now able to answer your theological questions twenty-four hours a day, six days a week.</p>
@@ -81,7 +91,7 @@ const IndexPage = () => (
 
     <Well>
       <Image
-        column={['11 / span 3', '11 / span 3', '11 / span 3', '11 / span 3']}
+        column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
         row={['1 / span 4', '1 / span 4', '1 / span 4', '1 / span 4']}
         src={GuyWalking}
       />
@@ -131,7 +141,7 @@ const Backdrop = styled('div')`
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     bottom: 0;
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 7;
     grid-row: 1 / span 12;
     left: 0;
     position: relative;

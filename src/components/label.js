@@ -4,6 +4,7 @@ const Label = styled('div')`
   line-height: 1.75;
   margin: 25px 0 50px;
   position: relative;
+  text-align: center;
   z-index: ${p => p.theme.index.label};
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     align-self: center;

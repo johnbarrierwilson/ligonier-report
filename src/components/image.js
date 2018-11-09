@@ -13,20 +13,23 @@ class Source extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      transformValue: 0
+      transformValue: -2000
     }
     this.image = React.createRef()
   }
   componentDidMount() {
     const containerElement = document.getElementById('containerElement')
-    if (this.props.transform === 'rotate' || this.props.transform === 'slide') {
+    if (this.props.transform && !this.props.transform.startsWith('translate') ) {
       const calculateValue = () => {
         const containerTop = containerElement.scrollTop
-        const imageTop = this.image.current.offsetTop
-        const transformValue = containerTop - imageTop + (containerTop + imageTop)
-        this.setState({transformValue})
+        const imageTop = this.image.current.parentNode.offsetTop
+        const imageHeight = this.image.current.offsetHeight * 2
+        const transformValue = imageTop - containerTop
+        if (containerTop < imageTop + imageHeight) {
+          this.setState({transformValue})
+        }
       }
-      containerElement.addEventListener('scroll', throttle(calculateValue, 250))
+      containerElement.addEventListener('scroll', throttle(calculateValue, 500))
     }
   }
   render() {
@@ -54,10 +57,9 @@ const Container = styled('img')`
     transform: ${p => 
       {
         if (p.transform === 'rotate') {
-          console.log(p.animate)
-          return `rotate(${p.animate / 50}deg)`
+          return `rotate(${p.animate / -50}deg)`
         } else if (p.transform === 'slide') {
-          return `translateY(${p.animate / -50}%)`
+          return `translateY(${p.animate / 20}%) translateX(0)`
         } else if (p.transform) {
           return p.transform
         } else {
@@ -65,7 +67,7 @@ const Container = styled('img')`
         }
       }
     };
-    transition: ${p => p.transform === 'rotate' || p.transform === 'slide' ? 'transform 300ms linear' : 'none'};
+    transition: ${p => p.transform && !p.transform.startsWith('translate') ? 'transform 500ms linear' : 'none'};
     width: ${p => p.size ? p.size.split(' ')[0] : '100%'};
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {

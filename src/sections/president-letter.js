@@ -20,6 +20,7 @@ const IndexPage = () => (
         position="center 20%"
         row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
         src={ChrisLarson}
+        transform="slide"
       />
     </Well>
     <Well size="l" top={true}>

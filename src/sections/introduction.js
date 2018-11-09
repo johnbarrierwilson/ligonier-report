@@ -60,10 +60,11 @@ const IndexPage = () => (
 
       <Image
         column={['9 / span 6', '9 / span 6', '9 / span 6', '9 / span 6']}
-        row={['3 / span 3', '1 / span 2', '1 / span 2', '1 / span 2']}
+        row={['1 / span 4', '1 / span 4', '1 / span 4', '1 / span 4']}
         position='bottom left'
-        size='495px 369px'
+        size='594px 443px'
         src={Piece02}
+        transform="slide"
       />
       
       <Well>

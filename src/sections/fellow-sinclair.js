@@ -39,6 +39,7 @@ const IndexPage = () => (
         position="center 20%"
         row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
         src={Sinclair}
+        transform='slide'
       />
     </Well>
     <Heading

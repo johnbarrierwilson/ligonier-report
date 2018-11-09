@@ -21,6 +21,7 @@ const IndexPage = () => (
           row={['4 / span 5', '4 / span 5', '4 / span 5', '4 / span 5']}
           size="contain"
           src={CoverImage}
+          transform="rotate"
         />
       </Well>
       <Content

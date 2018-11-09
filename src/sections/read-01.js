@@ -89,6 +89,7 @@ const IndexPage = () => (
     <Well top={true}>
       <Subject
         column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
+        name="state-of-theology" 
         row={['5 / span 1', '5 / span 1', '5 / span 1', '5 / span 1']}
       >
         The State of Theology

@@ -19,6 +19,7 @@ const IndexPage = () => (
         row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
         size="contain"
         src={IntroductionListen}
+        transform="rotate"
       />
     </Well>
     <Well size="l">

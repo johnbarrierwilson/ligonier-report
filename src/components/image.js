@@ -29,7 +29,7 @@ class Source extends React.Component {
           this.setState({transformValue})
         }
       }
-      containerElement.addEventListener('scroll', throttle(calculateValue, 500))
+      containerElement.addEventListener('scroll', throttle(calculateValue, 100))
     }
   }
   render() {
@@ -67,7 +67,7 @@ const Container = styled('img')`
         }
       }
     };
-    transition: ${p => p.transform && !p.transform.startsWith('translate') ? 'transform 750ms linear' : 'none'};
+    /* transition: ${p => p.transform && !p.transform.startsWith('translate') ? 'transform 150ms linear' : 'none'}; */
     width: ${p => p.size ? p.size.split(' ')[0] : '100%'};
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {

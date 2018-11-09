@@ -264,12 +264,16 @@ const ContainerInner = styled('div')`
   -webkit-overflow-scrolling: touch;
   height: 100vh;
   overflow: auto;
+  position: relative;
   transition: ${p => p.theme.transition};
-
+  z-index: ${p => p.theme.index.containerInner};
   ${p => p.navigating ? css`
     border-radius: 20px;
-    transform: translateY(850px);
+    transform: translateY(500px);
     opacity: 0.5;
+    @media (min-width: ${p.theme.breakpoints.medium}) {
+      transform: translateY(850px);
+    }
   ` : null}
 `
 
@@ -304,10 +308,12 @@ const Navigation = styled('nav')`
     }
   }
   div {
+    margin-bottom: 50px;
     opacity: ${p => p.navigating ? '1' : '0'};
     transform: ${p => p.navigating ? 'scale(1) translateY(0%)': 'scale(0.75) translateY(25%)'};
     transition: ${p => p.theme.transition};
     @media (min-width: ${p => p.theme.breakpoints.medium}) {
+      margin-bottom: none;
       width: 25%;
     }
     &:nth-child(1) {

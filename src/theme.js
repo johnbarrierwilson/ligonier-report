@@ -14,6 +14,7 @@ const theme = {
     large: '1600px'
   },
   index: {
+    containerInner: '2',
     content: '30',
     grid: '10',
     heading: '30',

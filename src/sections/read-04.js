@@ -67,6 +67,7 @@ const IndexPage = () => (
       <Well>
         <Subject
           column={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}
+          name="ligonier-org"
           row={['6 / span 1', '6 / span 1', '6 / span 1', '6 / span 1']}
         >
           Ligonier.org

@@ -59,9 +59,9 @@ const IndexPage = () => (
     />
     <Heading
       center={true}
-      column={['9 / span 3', '9 / span 3', '9 / span 3', '9 / span 3']}
+      column={['9 / span 3', '9 / span 3', '9 / span 4', '9 / span 3']}
       row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-      text="SSERVING CHRISTIANS ON THE GO"
+      text="SERVING CHRISTIANS ON THE GO"
     />
     <Content
       center={true}
@@ -98,8 +98,8 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -90px;
-    right: -90px;
+    left: -20vw;
+    right: -20vw;
     top: -50px;
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}){

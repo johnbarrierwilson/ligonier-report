@@ -47,10 +47,11 @@ const IndexPage = () => (
       </Content>
       <Well size="l">
         <Numbers
-          column={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
+          column={['5 / span 3', '5 / span 3', '4 / span 4', '4 / span 4']}
           description='Languages in which our resources are available'
           number='36'
           row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+          transform="translateX(10%)"
         />
       </Well>
     </Well>
@@ -129,8 +130,8 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -90px;
-    right: -90px;
+    left: -20vw;
+    right: -20vw;
     top: -50px;
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {

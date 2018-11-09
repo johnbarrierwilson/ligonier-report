@@ -13,8 +13,8 @@ import ChrisLarsonSignature from '../images/ChrisLarsonSignature.png'
 
 const IndexPage = () => (
   <Grid name="presidentletter">
-    <Backdrop />
     <Well bottom={true}>
+      <Backdrop />
       <Image
         column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
         position="center 20%"
@@ -58,18 +58,25 @@ const IndexPage = () => (
 
 const Backdrop = styled('div')`
   background: ${p => p.theme.colors.tanDark};
-  left: 0;
-  height: 142vw;
+  bottom: -40px;
+  left: -40px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -40px;
+  top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
-    height: 124vw;
+    bottom: -50px;
+    left: -20vw;
+    right: -20vw;
+    top: -50px;
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    bottom: 0;
     grid-column: 1 / span 7;
     grid-row: 1 / span 12;
+    left: 0;
     position: relative;
+    right: 0;
+    top: 0;
   }
 `
 

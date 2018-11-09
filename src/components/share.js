@@ -80,22 +80,25 @@ const Channels = styled('div')`
 `
 
 const Container = styled('div')`
-  align-items: center;
-  background: ${p => p.theme.colors.white};
-  box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px, rgba(0, 0, 0, 0.1) 0 5px 25px 0;
-  border-radius: 100px;
-  bottom: 20px;
-  display: flex;
-  flex-flow: row nowrap;
-  height: 45px;
-  justify-content: flex-end;
-  overflow: hidden;
-  position: fixed;
-  right: 20px;
-  transition: ${p => p.theme.transition};
-  transition-duration: 300ms;
-  width: ${p => p.isSharing ? '175px' : '45px'};
-  z-index: ${p => p.theme.index.share};
+  display: none;
+  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    align-items: center;
+    background: ${p => p.theme.colors.white};
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px, rgba(0, 0, 0, 0.1) 0 5px 25px 0;
+    border-radius: 100px;
+    bottom: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 45px;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: fixed;
+    right: 20px;
+    transition: ${p => p.theme.transition};
+    transition-duration: 300ms;
+    width: ${p => p.isSharing ? '175px' : '45px'};
+    z-index: ${p => p.theme.index.share};
+  }
 `
 
 const ContainerToggle = styled('div')`

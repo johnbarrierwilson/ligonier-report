@@ -38,12 +38,12 @@ const IndexPage = () => (
       />
       <Heading
         center={true}
-        column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+        column={['2 / span 2', '2 / span 2', '2 / span 3', '2 / span 2']}
         row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
         text="Teaching the Knowledge of&nbsp;God"
       />
       <Content
-        column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+        column={['2 / span 2', '2 / span 2', '2 / span 3', '2 / span 2']}
         row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
       >
         <p><strong>REFORMATION BIBLE COLLEGE</strong> is gathering the next generation of reformers, offering a classically based, theologically driven college curricu- lum. Growing in the knowledge of God is the heartbeat of RBC, where faculty seek to ignite a passion for theological conviction and equip students for faithful service in any vocation.</p>
@@ -131,8 +131,8 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -90px;
-    right: -90px;
+    left: -20vw;
+    right: -20vw;
     top: -50px;
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}){

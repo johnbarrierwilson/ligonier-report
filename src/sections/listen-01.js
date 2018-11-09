@@ -29,7 +29,7 @@ const IndexPage = () => (
     />
     <Heading
       center={true}
-      column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
+      column={['2 / span 3', '2 / span 3', '2 / span 4', '2 / span 3']}
       row={['7 / span 1', '7 / span 1', '7 / span 1', '7 / span 1']}
       text="TEACHING GROWING CHRISTIANS EVERY&nbsp;DAY"
     />
@@ -139,8 +139,8 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -90px;
-    right: -90px;
+    left: -20vw;
+    right: -20vw;
     top: -50px;
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {

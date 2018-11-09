@@ -32,13 +32,13 @@ const IndexPage = () => (
         position='top right'
         size='495px 446px'
         src={Piece01}
-        transform='translate(-90px, -35px)'
+        transform='translate(-180px, -35px)'
       />
       
       <Well>
         <Content
-          column={['2 / span 12', '2 / span 5', '4 / span 2', '4 / span 2']}
-          row={['4 / span 1', '5 / span 5', '5 / span 5', '5 / span 5']}
+          column={['2 / span 12', '2 / span 5', '3 / span 4', '4 / span 2']}
+          row={['4 / span 1', '5 / span 5', '6 / span 4', '5 / span 5']}
         >
           <p><strong>In 1957, Dr. R.C. Sproul</strong> was confronted by the overwhelming holiness of God. That experience began a lifetime of pursuing a greater knowledge of God and birthed an unquenchable desire to lead others into a greater understanding of God and of themselves.</p>
           <p>Over fifty years later, we are humbled to survey the vast army of supporters that has risen to enable such important work. Thanks to you, the deep truths of God’s Word are finding their way into more places than ever before, and lives are being transformed by a growing knowledge of&nbsp;God.</p>
@@ -64,6 +64,7 @@ const IndexPage = () => (
         position='bottom left'
         size='505px 377px'
         src={Piece02}
+        transform='translate(20px, -50px)'
       />
       
       <Well>

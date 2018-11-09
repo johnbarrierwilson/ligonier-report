@@ -7,13 +7,15 @@ const Grid = styled('div')`
   transition: transform 500ms cubic-bezier(.55,0,.1,1), opacity 500ms cubic-bezier(.55,0,.1,1);
   z-index: ${p => p.theme.index.grid};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
-    padding: 50px 90px;
+    padding: 50px 20vw;
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}) {
     display: grid;
     grid-template-columns: 90px repeat(12, 1fr) 90px;
     grid-template-rows: 90px repeat(11, 1fr);
     height: 100vh;
+    max-height: 75vw;
+    min-height: 950px;
     overflow: hidden;
     padding: 0;
   }

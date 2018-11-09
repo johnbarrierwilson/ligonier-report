@@ -47,10 +47,11 @@ const IndexPage = () => (
       </Content>
       <Well size="l">
         <Numbers
-          column={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
+          column={['5 / span 3', '5 / span 3', '4 / span 4', '4 / span 4']}
           description='Languages in which our resources are available'
           number='36'
           row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+          transform="translateX(10%)"
         />
       </Well>
     </Well>

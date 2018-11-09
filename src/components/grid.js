@@ -14,6 +14,7 @@ const Grid = styled('div')`
     grid-template-columns: 90px repeat(12, 1fr) 90px;
     grid-template-rows: 90px repeat(11, 1fr);
     height: 100vh;
+    min-height: 950px;
     overflow: hidden;
     padding: 0;
   }

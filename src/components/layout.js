@@ -53,6 +53,20 @@ class Layout extends React.Component {
     let windowWidth = window.innerWidth
     
     this.setState({ smooth: (windowWidth >= 900) })
+
+    if (windowWidth >= 900) {
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown') {
+          animateScroll.scrollMore(Math.max(windowHeight, 950), {
+            containerId: 'containerElement'
+          })
+        } else if (e.key === 'ArrowUp') {
+          animateScroll.scrollMore(Math.min((windowHeight * -1), -950), {
+            containerId: 'containerElement'
+          })
+        }
+      })
+    }
     
     window.addEventListener('resize', () => {
       windowHeight = window.innerHeight
@@ -63,11 +77,11 @@ class Layout extends React.Component {
       if (windowWidth >= 900) {
         window.addEventListener('keydown', (e) => {
           if (e.key === 'ArrowDown') {
-            animateScroll.scrollMore(windowHeight, {
+            animateScroll.scrollMore(Math.max(windowHeight, 950), {
               containerId: 'containerElement'
             })
           } else if (e.key === 'ArrowUp') {
-            animateScroll.scrollMore(-windowHeight, {
+            animateScroll.scrollMore(Math.min((windowHeight * -1), -950), {
               containerId: 'containerElement'
             })
           }

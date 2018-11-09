@@ -92,7 +92,7 @@ const IndexPage = () => (
       <Content
         center={true}
         column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
-        row={['5 / span 4', '5 / span 4', '5 / span 4', '5 / span 4']}
+        row={['5 / span 4', '5 / span 4', '4 / span 5', '5 / span 4']}
       >
         <p><strong>Our featured podcasts provide</strong> spiritual food for growing Christians wherever they are. 5 Minutes in Church History, with Stephen Nichols, travels back in time to explore the lives of the saints who came before us and the events which shaped their journey.</p>
         <p>Open Book allows you to step into Dr. R.C. Sproul’s library. Glean new in- sights into the books which have most influenced him and other pastors and theologians.</p>

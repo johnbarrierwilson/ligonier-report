@@ -40,7 +40,7 @@ const IndexPage = () => (
       text="Xavier, San&nbsp;Francisco"
     />
     <Blockquote
-      column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
+      column={['9 / span 4', '9 / span 4', '8 / span 5', '9 / span 4']}
       indent={true}
       row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
       top={true}
@@ -48,7 +48,7 @@ const IndexPage = () => (
       <p>“Shortly after I became a Christian, one of my coworkers gave me a copy of Tabletalk and&nbsp;said,</p>
     </Blockquote>
     <Content
-      column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
+      column={['10 / span 3', '10 / span 3', '9 / span 4', '10 / span 3']}
       row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
     >
       <p>‘This might be interesting for you to read.’ It blew me away with the thoughtfulness around the theology and the way the magazine is laid out. It made a real impact on me.</p>

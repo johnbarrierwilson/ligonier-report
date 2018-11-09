@@ -29,7 +29,7 @@ const IndexPage = () => (
     />
     <Heading
       center={true}
-      column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
+      column={['2 / span 3', '2 / span 3', '2 / span 4', '2 / span 3']}
       row={['7 / span 1', '7 / span 1', '7 / span 1', '7 / span 1']}
       text="TEACHING GROWING CHRISTIANS EVERY&nbsp;DAY"
     />

@@ -54,7 +54,7 @@ const IndexPage = () => (
       inverted={true}
       row={['7 / span 4', '7 / span 4', '7 / span 4', '7 / span 4']}
     >
-      <p>Dr. Burk Parsons is senior pastor of Saint Andrew’s Chapel in Sanford, Fla., where he labored many years alongside Dr. Sproul as copastor. Dr. Parsons had the privilege of joining Dr. Sproul in local church ministry as they worked together as shepherds in Central Florida. Dr. Parsons also serves as chief pub- lishing officer of Ligonier Ministries, and he has served as editor of <em>Tabletalk</em> magazine since 2003.</p>
+      <p>Dr. Burk Parsons is senior pastor of Saint Andrew’s Chapel in Sanford, Fla., where he labored many years alongside Dr. Sproul as copastor. Dr. Parsons had the privilege of joining Dr. Sproul in local church ministry as they worked together as shepherds in Central Florida. Dr. Parsons also serves as chief publishing officer of Ligonier Ministries, and he has served as editor of <em>Tabletalk</em> magazine since 2003.</p>
       <p>Dr. Parsons began serving at Ligonier Ministries in 1999, and he became a teaching fellow in 2017. Dr. Parsons is a wise and discerning voice, and he helps maintain Ligonier’s theological fidelity and advance Ligonier’s service to the church. He has recorded a teaching series with Ligonier called <em>The Great Commission</em>, and he is author of <em>Why Do We Have Creeds?</em> He is editor of <em>Assured by God</em> and <em>John Calvin: A Heart for Devotion, Doctrine, and Doxology</em> and coeditor and cotranslator of <em>A Little Book on the Christian Life</em> by John&nbsp;Calvin.</p>
     </Content>
   </Grid>

@@ -57,7 +57,7 @@ const IndexPage = () => (
         column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
         row={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
       >
-        <p>Translating the <em>Reformation Study Bible</em> into other languages is fueling Great Commission discipleship around the world. German and Korean edi- tions are now available. Translation work is underway in three more lan- guages: Spanish, Portuguese, and French. In total, over one billion people worldwide speak one of these three languages, yet they lack a study Bible rooted in the historic Christian faith and Reformed theology.</p>
+        <p>Translating the <em>Reformation Study Bible</em> into other languages is fueling Great Commission discipleship around the world. German and Korean editions are now available. Translation work is underway in three more languages: Spanish, Portuguese, and French. In total, over one billion people worldwide speak one of these three languages, yet they lack a study Bible rooted in the historic Christian faith and Reformed theology.</p>
         <p>These pioneering translations will strengthen and advance global gospel ministry thanks to your generous support. When complete, it will mean a <em>Reformation Study Bible</em> is available in at least one language spoken on every continent in the world.</p>
       </Content>
     </Well>

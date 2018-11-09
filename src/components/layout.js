@@ -220,9 +220,12 @@ const GlobalStyles = createGlobalStyle`
   html {
     -webkit-font-smoothing: antialiased;
     font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
-    font-size: 5vw;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.4;
+    @media (min-width: ${p => p.theme.breakpoints.small}) {
+      font-size: 16px;
+    }
     @media (min-width: ${p => p.theme.breakpoints.medium}) {
       font-size: 1vw;
       line-height: 1.3;

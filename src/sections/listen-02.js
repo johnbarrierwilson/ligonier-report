@@ -98,8 +98,8 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -90px;
-    right: -90px;
+    left: -20vw;
+    right: -20vw;
     top: -50px;
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}){

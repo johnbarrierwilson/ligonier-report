@@ -99,12 +99,14 @@ const IndexPage = () => (
         <p>The Westminster Shorter Catechism is a 107-episode podcast that features Dr. Sinclair Ferguson reading each question and answer in its entirety. This catechism has been beloved by Christians around the world for generations.</p>
         <p>Thanks to you, Renewing Your Mind, RefNet, and all our podcasts are offered freely. Tune in on iTunes, Google Play, and wherever you listen to podcasts.</p>
       </Content>
-      <Numbers
-        column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
-        description='MONTHLY PODCAST LISTENS'
-        number='1,000,000+'
-        row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
-      />
+      <Well top={true}>
+        <Numbers
+          column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+          description='MONTHLY PODCAST LISTENS'
+          number='1,000,000+'
+          row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
+        />
+      </Well>
     </Well>
   </Grid>
 )
@@ -118,8 +120,8 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -90px;
-    right: -90px;
+    left: -20vw;
+    right: -20vw;
     top: -50px;
   }
   @media (min-width: ${p => p.theme.breakpoints.medium}){

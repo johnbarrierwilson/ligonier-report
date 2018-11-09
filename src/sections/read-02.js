@@ -20,7 +20,7 @@ const IndexPage = () => (
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
       row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
     >
-      Reformation Study Bible
+      Reformation Study&nbsp;Bible
     </Subject>
     <Divider
       column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
@@ -40,6 +40,13 @@ const IndexPage = () => (
         src={Standard}
       />
     </Well>
+    <Image
+      column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
+      row={['1 / span 6', '1 / span 6', '1 / span 6', '1 / span 6']}
+      size="contain"
+      src={Brown}
+      transform="translateY(-2rem)"
+    />
     <Content
       column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
       row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
@@ -48,19 +55,14 @@ const IndexPage = () => (
       <p>Dr. R.C. Sproul edited this landmark publication, which contains over 1.1 million words of verse-by-verse commentary. The original edition is packed with insightful articles; topical explanations; historic creeds, confessions, and catechisms; plus award-winning maps and visuals. The newly released Condensed Edition contains the best of this commentary and is designed for life on the go.</p>
       <p>The Reformation Study Bible, available in ESV or NKJV, elevates Scripture on every page and distills timeless theology for twenty-first-century disciples.</p>
     </Content>
-    <Image
-      column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
-      row={['1 / span 6', '1 / span 6', '1 / span 6', '1 / span 6']}
-      size="contain"
-      src={Brown}
-      transform="translateY(-2rem)"
-    />
-    <Numbers
-      column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
-      description='REFORMATION STUDY BIBLES DISTRIBUTED SINCE 2015'
-      number='145,000+'
-      row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
-    />
+    <Well top={true}>
+      <Numbers
+        column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+        description='REFORMATION STUDY BIBLES DISTRIBUTED SINCE 2015'
+        number='145,000+'
+        row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+      />
+    </Well>
     <Well hide={true}>
       <Image
         column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}

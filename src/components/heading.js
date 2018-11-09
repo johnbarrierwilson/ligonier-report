@@ -20,6 +20,7 @@ const Container = styled('h1')`
   letter-spacing: ${p => p.size === 'xl' ? '0.2em' : '0'};
   margin: 0 0 25px;
   position: relative;
+  ${p => p.size === 'xl' && css`text-align: center;`};
   text-transform: uppercase;
   z-index: ${p => p.theme.index.heading};
 
@@ -41,6 +42,7 @@ const Container = styled('h1')`
     grid-row: ${p => p.row[2]};
     letter-spacing: ${p => p.size === 'xl' ? '0.65em' : '0'};
     margin: 0;
+    ${p => p.size === 'xl' && css`text-align: left;`};
     transform: ${p => p.transform ? p.transform : null};
   }
   

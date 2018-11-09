@@ -57,7 +57,7 @@ const IndexPage = () => (
         column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
         row={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
       >
-        <p><strong>Translating the</strong> <em>Reformation Study Bible</em> into other languages is fueling Great Commission discipleship around the world. German and Korean edi- tions are now available. Translation work is underway in three more lan- guages: Spanish, Portuguese, and French. In total, over one billion people worldwide speak one of these three languages, yet they lack a study Bible rooted in the historic Christian faith and Reformed theology.</p>
+        <p>Translating the <em>Reformation Study Bible</em> into other languages is fueling Great Commission discipleship around the world. German and Korean edi- tions are now available. Translation work is underway in three more lan- guages: Spanish, Portuguese, and French. In total, over one billion people worldwide speak one of these three languages, yet they lack a study Bible rooted in the historic Christian faith and Reformed theology.</p>
         <p>These pioneering translations will strengthen and advance global gospel ministry thanks to your generous support. When complete, it will mean a Reformation Study Bible is available in at least one language spoken on every continent in the world.</p>
       </Content>
     </Well>
@@ -108,7 +108,7 @@ const IndexPage = () => (
         column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
         row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
       >
-        <p><strong>Thousands of pastors,</strong> church leaders, and students in ten African countries are receiving a free copy of the Reformation Study Bible thanks to the strategic partnership between Ligonier Ministries and the Rosemary Jensen Bible Foundation. We have already sent more than 10,000 Bibles, with plans to distribute an additional 26,000 by 2028.</p>
+        <p>Thousands of pastors, church leaders, and students in ten African countries are receiving a free copy of the Reformation Study Bible thanks to the strategic partnership between Ligonier Ministries and the Rosemary Jensen Bible Foundation. We have already sent more than 10,000 Bibles, with plans to distribute an additional 26,000 by 2028.</p>
         <p>This outreach is only possible with the support of visionary donors. Thank you for partnering with us. You are bringing the Word of God to needy Christians in lands where Bibles are expensive and trustworthy theological resources are rare.</p>
       </Content>
     </Well>

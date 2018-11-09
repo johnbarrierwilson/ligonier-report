@@ -45,7 +45,7 @@ const IndexPage = () => (
       column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
       row={['7 / span 6', '7 / span 6', '7 / span 6', '7 / span 6']}
     >
-      <p><strong>OUR DAILY TEACHING BROADCAST,</strong> Renewing Your Mind, equips growing Christians to know what they believe, why they believe it, how to live it, and how to share it. Each day we air trustworthy, accessible, and in-depth Bible teaching from Dr. R.C. Sproul, the Ligonier Teaching Fellows, and other trusted teachers.</p>
+      <p>Our daily teaching broadcast, Renewing Your Mind, equips growing Christians to know what they believe, why they believe it, how to live it, and how to share it. Each day we air trustworthy, accessible, and in-depth Bible teaching from Dr. R.C. Sproul, the Ligonier Teaching Fellows, and other trusted teachers.</p>
       <p>You enable us to broadcast on more than 370 radio stations around the United States, as a podcast, and online at RenewingYourMind.org. Our aim is to spread the knowledge of the glory of God, and our prayer is that multitudes will be transformed by the renewing of their&nbsp;minds.</p>
     </Content>
     <Well>
@@ -62,7 +62,7 @@ const IndexPage = () => (
       column={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
       row={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
       size="s"
-      text='GOD CALLS HIS PEOPLE TO BE TRANSFORMED BY THE RENEWING OF THEIR MINDS. THIS TRANSFORMATION IS A DAILY PURSUIT.'
+      text='God calls his people to be transformed by the renewing of their minds. This transformation is a daily pursuit.'
     />
     <Well top={true}>
       <Image
@@ -80,7 +80,7 @@ const IndexPage = () => (
         type='sans'
         transform='translateX(-4rem)'
       >
-        <p><strong>New Spanish Edition: <em>Renovando Tu Mente</em></strong><br/>The program launched in March 2018 and within six months more than thirty Spanish-speaking radio stations were broadcasting the program across Latin America, along with major online radio portals.</p>
+        <p><strong>New Spanish Edition: <em>Renovando&nbsp;Tu&nbsp;Mente</em></strong><br/>The program launched in March 2018 and within six months more than thirty Spanish-speaking radio stations were broadcasting the program across Latin America, along with major online radio portals.</p>
       </Content>
     </Well>
     
@@ -122,7 +122,7 @@ const IndexPage = () => (
         column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
         row={['7 / span 5', '7 / span 5', '7 / span 5', '7 / span 5']}
       >
-        <p><strong>Streaming trustworthy teaching</strong> and preaching twenty- four hours a day, RefNet is our pop- ular internet radio app. It provides God-centered content for growing Christians, now with listeners in more than 180 countries.</p>
+        <p>Streaming trustworthy teaching and preaching twenty- four hours a day, RefNet is our pop- ular internet radio app. It provides God-centered content for growing Christians, now with listeners in more than 180 countries.</p>
         <p>RefNet features trusted teachers including Alistair Begg, John MacArthur, R.C. Sproul, and the Ligonier Teaching Fellows. The daily schedule also includes Bible excerpts, news updates, and audiobooks— combining to bring you fresh spiritual encouragement every day.</p>
         <p>RefNet draws on Ligonier’s exten- sive library of resources and partners with other respected Reformed min- istries to be a trusted alternate to traditional Christian radio.</p>
       </Content>

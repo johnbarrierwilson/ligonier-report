@@ -39,7 +39,7 @@ const IndexPage = () => (
         inverted={true}
         row={['5 / span 1', '10 / span 3', '10 / span 3', '10 / span 3']}
       >
-        <strong>The Teaching Fellows</strong> bring unique gifts and broad experience to Ligonier Ministries. They help us remain true to our founding purpose and inform our future outreach. Dr. R.C. Sproul and the board gathered this team of men to aid in present and future ministry. Trusting God for biblical and theological fidelity, we are grateful for this group of gifted&nbsp;teachers.
+        <p>The Teaching Fellows bring unique gifts and broad experience to Ligonier Ministries. They help us remain true to our founding purpose and inform our future outreach. Dr. R.C. Sproul and the board gathered this team of men to aid in present and future ministry. Trusting God for biblical and theological fidelity, we are grateful for this group of gifted&nbsp;teachers.</p>
       </Content>
     </Well>
   </Grid>

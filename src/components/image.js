@@ -13,7 +13,7 @@ class Source extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      transformValue: 2000
+      transformValue: 0
     }
     this.image = React.createRef()
   }

@@ -54,7 +54,7 @@ const IndexPage = () => (
       inverted={true}
       row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
     >
-      <p><strong>Dr. Derek W.H. Thomas</strong> is senior minister of First Presbyterian Church in Columbia, S.C., and Chancellor’s Professor of Systematic and Pastoral Theology at Reformed Theological Seminary. Originally from Wales, Dr. Thomas served as a pastor in Belfast, Northern Ireland, for seventeen years before being called to the United States to serve as minister of teaching at First Presbyterian Church in Jackson, Miss.</p>
+      <p>Dr. Derek W.H. Thomas is senior minister of First Presbyterian Church in Columbia, S.C., and Chancellor’s Professor of Systematic and Pastoral Theology at Reformed Theological Seminary. Originally from Wales, Dr. Thomas served as a pastor in Belfast, Northern Ireland, for seventeen years before being called to the United States to serve as minister of teaching at First Presbyterian Church in Jackson, Miss.</p>
       <p>Dr. Thomas began serving Ligonier Ministries as a teaching fellow in 2015. Dr. Thomas’ many years of pastoral ministry in the United States and Northern Ireland, along with his extensive and profound understanding of Reformed theology, have furnished him with a sharp intellect and a pastor's heart. He is author of numerous books, including How the Gospel Brings Us All the Way Home, Calvin’s Teaching on Job, Strength for the Weary, and, with Dr. Sinclair B. Ferguson, Ichthus: Jesus Christ, God’s Son, the Saviour. He has also written commentaries on books of the Bible including Job, Isaiah, Ezekiel, Ezra and Nehemiah, Acts, Galatians, and Revelation.</p>
     </Content>
   </Grid>

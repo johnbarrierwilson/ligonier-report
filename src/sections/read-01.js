@@ -45,7 +45,7 @@ const IndexPage = () => (
         column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
         row={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}
       >
-        <p><strong>For over forty years,</strong> Tabletalk magazine has helped growing Christians live biblically informed lives. Every month, it reaches approxi- mately 250,000 people in more than seventy-five countries around the world.</p>
+        <p>For over forty years, Tabletalk magazine has helped growing Christians live biblically informed lives. Every month, it reaches approxi- mately 250,000 people in more than seventy-five countries around the world.</p>
         <p>Each issue contains daily Bible studies to help readers understand and apply the Word of God, as well as an effective plan for reading through the Bible in a year. Thought-provoking articles from trusted pastors and Bible teachers address biblical, theological, and practical themes to help strength- en and encourage people in their faith.</p>
         <p>Subscribers can now access Tabletalk at TabletalkMagazine.com. Every new issue is available digitally, along with online-exclusive content and a searchable archive of back issues.</p>
         <p>Tabletalk is biblical, reliable, and readable. Above all, Tabletalk exists to help Christians deepen their knowledge of God’s Word in order that their minds may be renewed and their lives transformed.</p>
@@ -73,7 +73,7 @@ const IndexPage = () => (
         column={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
         row={['7 / span 5', '7 / span 5', '7 / span 5', '7 / span 5']}
       >
-        <p><strong>Ask Ligonier is our</strong> online biblical and theological chat ser- vice—providing clear, concise, and trustworthy answers. Drawing on Ligonier’s vast library of resources and Dr. R.C. Sproul’s decades-long ministry of answering students’ ques- tions, we’re now able to answer your theological questions twenty-four hours a day, six days a week.</p>
+        <p>Ask Ligonier is our online biblical and theological chat ser- vice—providing clear, concise, and trustworthy answers. Drawing on Ligonier’s vast library of resources and Dr. R.C. Sproul’s decades-long ministry of answering students’ ques- tions, we’re now able to answer your theological questions twenty-four hours a day, six days a week.</p>
         <p>Do you have a question about a Bible passage or theology? Whether it’s for tomorrow night’s Bible study or something that’s been puzzling you for years, just ask Ligonier.</p>
         <p>Your generous support means this ground-breaking initiative is avail- able free of charge. Well-trained team members are located around the world, standing by to answer your questions.</p>
       </Content>
@@ -109,7 +109,7 @@ const IndexPage = () => (
         column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
         row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
       >
-        <p><strong>Since 2014,</strong> The State of Theology survey has been measuring the theo- logical health of Americans. In 2018, we asked three thousand people about their beliefs regarding God, the Bible, Jesus Christ, judgment, and eternity. This professionally conducted sur- vey was designed to equip Christians with statistically robust findings to aid the work of the local church and is unrivaled in its theological scope and depth.</p>
+        <p>Since 2014, The State of Theology survey has been measuring the theo- logical health of Americans. In 2018, we asked three thousand people about their beliefs regarding God, the Bible, Jesus Christ, judgment, and eternity. This professionally conducted sur- vey was designed to equip Christians with statistically robust findings to aid the work of the local church and is unrivaled in its theological scope and depth.</p>
         <p>We also commissioned the first ever State of Theology survey in the United Kingdom. The results show an urgent need for gospel witness as society in the United Kingdom becomes ever more secular.</p>
       </Content>
     </Well>

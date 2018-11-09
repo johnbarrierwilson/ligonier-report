@@ -54,7 +54,7 @@ const IndexPage = () => (
       inverted={true}
       row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
     >
-      <p><strong>Dr. Stephen J. Nichols</strong> serves as president of Reformation Bible College and chief academic officer of Ligonier Ministries. Before being appointed to these positions in 2014, Dr. Nichols taught for seventeen years as a Bible college and seminary professor. He was research professor of Christianity and culture at Lancaster Bible College in Lancaster, Pa., and he has also taught courses at Reformed Theological Seminary and Westminster Theological Seminary in Philadelphia.</p>
+      <p>Dr. Stephen J. Nichols serves as president of Reformation Bible College and chief academic officer of Ligonier Ministries. Before being appointed to these positions in 2014, Dr. Nichols taught for seventeen years as a Bible college and seminary professor. He was research professor of Christianity and culture at Lancaster Bible College in Lancaster, Pa., and he has also taught courses at Reformed Theological Seminary and Westminster Theological Seminary in Philadelphia.</p>
       <p>Dr. Nichols began serving Ligonier Ministries as a teaching fellow in 2013. Combining his interest in church history and a love for the Reformed tra- dition, Dr. Nichols has a passion for discipleship. He is author of numerous books, including For Us and for Our Salvation, Peace, and A Time for Confidence. He is coeditor of The Legacy of Luther and Crossway’s Theologians on the Christian Life series.</p>
     </Content>
   </Grid>

@@ -43,7 +43,7 @@ const IndexPage = () => (
         column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
         row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
       >
-        <p><strong>Who is Jesus</strong> and what did He come to do? Most evangelicals are confused when it comes to answering these questions. The Ligonier Statement on Christology seeks to bring clarity where there is confusion. It carefully restates the Bible’s teaching about the person and work of Jesus Christ, the Word made flesh. With biblical testimony and theological precision, this statement proclaims that Jesus is truly God and truly man. Written for the glory of Christ and the edification of His people, it is available in English and sixteen other major world languages.</p>
+        <p>Who is Jesus and what did He come to do? Most evangelicals are confused when it comes to answering these questions. The Ligonier Statement on Christology seeks to bring clarity where there is confusion. It carefully restates the Bible’s teaching about the person and work of Jesus Christ, the Word made flesh. With biblical testimony and theological precision, this statement proclaims that Jesus is truly God and truly man. Written for the glory of Christ and the edification of His people, it is available in English and sixteen other major world languages.</p>
       </Content>
       <Well size="l">
         <Numbers
@@ -80,7 +80,7 @@ const IndexPage = () => (
         column={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
         row={['5 / span 4', '5 / span 4', '5 / span 4', '5 / span 4']}
       >
-        <p><strong>Military Chaplains</strong> serve those who are literally on the front line. Your support is forming a spiritual supply line by providing gospel resources for troops as trustworthy books are freely distributed for those on active duty around the world.</p>
+        <p>Military Chaplains serve those who are literally on the front line. Your support is forming a spiritual supply line by providing gospel resources for troops as trustworthy books are freely distributed for those on active duty around the world.</p>
         <p>Prisoners write to us every month, hungry for the gospel and for resourc- es to help them grow in Christ. Your support sends them care packages that include a special edition of the Reformation Study Bible and books by trusted teachers. Prison chaplains are also supplied with the teaching resources they need to serve those under their care.</p>
       </Content>
     </Well>
@@ -117,7 +117,7 @@ const IndexPage = () => (
         column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
         row={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
       >
-        <p><strong>Who is Jesus</strong> and what did He come to do? Most evangelicals are confused when it comes to answering these questions. The Ligonier Statement on Christology seeks to bring clarity where there is confusion. It carefully restates the Bible’s teaching about the person and work of Jesus Christ, the Word made flesh. With biblical testimony and theological precision, this statement proclaims that Jesus is truly God and truly man. Written for the glory of Christ and the edification of His people, it is available in English and sixteen other major world languages.</p>
+        <p>Who is Jesus and what did He come to do? Most evangelicals are confused when it comes to answering these questions. The Ligonier Statement on Christology seeks to bring clarity where there is confusion. It carefully restates the Bible’s teaching about the person and work of Jesus Christ, the Word made flesh. With biblical testimony and theological precision, this statement proclaims that Jesus is truly God and truly man. Written for the glory of Christ and the edification of His people, it is available in English and sixteen other major world languages.</p>
       </Content>
     </Well>
   </Grid>

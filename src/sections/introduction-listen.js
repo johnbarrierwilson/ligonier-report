@@ -32,7 +32,6 @@ const IndexPage = () => (
             row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
             size="contain"
             src={data.IntroductionListen.childImageSharp.fluid}
-            transform="rotate"
           />
         </Well>
         <Well size="l">

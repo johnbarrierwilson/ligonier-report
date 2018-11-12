@@ -2,11 +2,9 @@ import React from 'react'
 import Img from 'gatsby-image'
 import styled, { css } from 'styled-components'
 
-const Image = (props) => {
-  return (
-    <Container fluid={props.src} {...props} />
-  )
-}
+const Image = (props) => (
+  <Container fluid={props.src} {...props} />
+)
 
 const Container = styled(Img)`
   height: auto;

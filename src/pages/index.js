@@ -38,7 +38,7 @@ const IndexPage = () => (
   <ThemeProvider theme={theme} >
     <Layout>
       <CoverStart />
-      <Introduction />
+      {/* <Introduction />
       <TeachingFellows />
       <PresidentLetter />
       <IntroductionRead />
@@ -65,7 +65,7 @@ const IndexPage = () => (
       <Gather02 />
       <FellowThomas />
       <Gather03 />
-      <CoverEnd />
+      <CoverEnd /> */}
     </Layout>
   </ThemeProvider>
 )

@@ -13,7 +13,7 @@ import IntroductionPattern from '../images/IntroductionPattern.png'
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
-      query GatsbyImageQuery {
+      query CoverStartQuery {
         file(relativePath: { eq: "CoverStart.png" }) {
           childImageSharp {
             fluid(maxWidth: 700) {
@@ -23,33 +23,31 @@ const IndexPage = () => (
         }
       }
     `}
-    render={({ file }) => {
-      return (
-        <Grid>
-          <Backdrop />
-          <Well>
-            <DocumentTitle cover={true} />
-            <Well size="l">
-              <Image
-                column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
-                row={['4 / span 5', '4 / span 5', '4 / span 5', '4 / span 5']}
-                size="contain"
-                src={file.childImageSharp.fluid}
-                transform="rotate"
-              />
-            </Well>
-            <Content
-              column={['5 / span 6', '5 / span 6', '5 / span 6', '5 / span 6']}
-              row={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
-              type="deck-intro"
-            >
-              <p>For the earth will be filled with the knowledge of the glory of the Lord as the waters cover the sea.</p>
-              <span>Habakkuk 2:14</span>
-            </Content>
+    render={(data) => (
+      <Grid>
+        <Backdrop />
+        <Well>
+          <DocumentTitle cover={true} />
+          <Well size="l">
+            <Image
+              column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
+              row={['4 / span 5', '4 / span 5', '4 / span 5', '4 / span 5']}
+              size="contain"
+              src={data.file.childImageSharp.fluid}
+              transform="rotate"
+            />
           </Well>
-        </Grid>
-      )}
-    }
+          <Content
+            column={['5 / span 6', '5 / span 6', '5 / span 6', '5 / span 6']}
+            row={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
+            type="deck-intro"
+          >
+            <p>For the earth will be filled with the knowledge of the glory of the Lord as the waters cover the sea.</p>
+            <span>Habakkuk 2:14</span>
+          </Content>
+        </Well>
+      </Grid>
+    )}
   />
 )
 

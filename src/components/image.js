@@ -23,11 +23,10 @@ const Container = styled(Img)`
     grid-row: ${p => p.row[2]};
     height: ${p => p.size && p.size !== 'contain' ? p.size.split(' ')[1] : '100%'};
     ${p => p.height ? css`height: ${p.height};` : null}
-    object-position: ${p => p.position ? p.position : 'center center'};
-    object-fit: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'};
     transform: ${p => p.transform ? p.transform : 'none'};
     width: ${p => p.size ? p.size.split(' ')[0] : '100%'};
     img {
+      object-position: ${p => p.position ? p.position : 'center center'} !important;
       object-fit: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'} !important;
     }
   }

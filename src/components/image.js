@@ -10,7 +10,7 @@ const Container = styled(Img)`
   height: auto;
   margin-left: ${p => p.fullWidth ? '-40px' : p.maxWidth ? 'auto' : '0'};
   margin-right: ${p => p.maxWidth ? 'auto' : '0'};
-  max-width: ${p => p.maxWidth ? `175px` : 'none'};
+  max-width: ${p => p.maxWidth === 'small' ? `175px` : 'none'};
   position: relative;
   width: ${p => p.fullWidth ? 'calc(100% + 80px)' : '100%'};
   z-index: ${p => p.theme.index.image};

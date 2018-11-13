@@ -130,7 +130,7 @@ const IndexPage = () => (
             name="ask-anything"
             row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
           >
-            ASK ANYTHING AND TRUTH &amp; CONSEQUENCES
+            ASK ANYTHING AND TRUTH &amp;&nbsp;CONSEQUENCES
           </Subject>
           <Divider
             column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}

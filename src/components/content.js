@@ -48,6 +48,9 @@ const Content = styled('div')`
     font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
     line-height: 1.4;
+    @media (min-width: ${p.theme.breakpoints.small}) {
+      font-size: 1rem;
+    }
     strong {
       display: block;
       font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;

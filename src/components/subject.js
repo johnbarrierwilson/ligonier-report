@@ -5,7 +5,7 @@ const Subject = styled('div')`
   font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.1em;
   margin-bottom: 30px;
   position: relative;
   text-transform: uppercase;
@@ -14,6 +14,7 @@ const Subject = styled('div')`
     align-self: center;
     grid-column: ${p => p.column[3]};
     grid-row: ${p => p.row[3]};
+    letter-spacing: 0.4em;
     margin-bottom: 0;
   }
 `

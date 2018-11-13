@@ -96,7 +96,7 @@ const IndexPage = () => (
             <Well>
               <Image
                 center={true}
-                column={['1 / span 14', '1 / span 9', '3 / span 8', '4 / span 6']}
+                column={['1 / span 14', '1 / span 9', '3 / span 8', '3 / span 6']}
                 maxWidth='small'
                 position='top center'
                 row={['9 / span 4', '10 / span 3', '10 / span 3', '10 / span 3']}

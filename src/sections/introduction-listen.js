@@ -17,7 +17,7 @@ const IndexPage = () => (
         IntroductionListen: file(relativePath: { eq: "IntroductionListen.png" }) {
           childImageSharp {
             fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

@@ -18,7 +18,7 @@ const IndexPage = () => (
         Amy: file(relativePath: { eq: "StoryAmy.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

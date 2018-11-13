@@ -18,14 +18,14 @@ const IndexPage = () => (
         Conference: file(relativePath: { eq: "Conference.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1500) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         ConferenceSeattle: file(relativePath: { eq: "ConferenceSeattle.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

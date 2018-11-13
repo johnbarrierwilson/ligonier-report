@@ -18,14 +18,14 @@ const IndexPage = () => (
         Book: file(relativePath: { eq: "ChristologyStatement.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         NoneOther: file(relativePath: { eq: "TranslationsNoneOther.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

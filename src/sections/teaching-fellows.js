@@ -16,7 +16,7 @@ const IndexPage = () => (
         TeachingFellowsImage: file(relativePath: { eq: "2018_TF_Group_Wide_RGB.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1500) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

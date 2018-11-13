@@ -18,14 +18,14 @@ const IndexPage = () => (
         TabletalkPlaceholder: file(relativePath: { eq: "placeholder-tabletalk.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         GuyWalking: file(relativePath: { eq: "Read01–GuyWalking.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

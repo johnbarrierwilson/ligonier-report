@@ -17,7 +17,7 @@ const IndexPage = () => (
         FellowMohler: file(relativePath: { eq: "FellowMohler.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

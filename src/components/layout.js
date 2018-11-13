@@ -38,6 +38,7 @@ class Layout extends React.Component {
     super(props);
     this.state = {
       inverted: false,
+      offset: -100,
       navigating: false,
       slideNumber: 0,
       sidebarStatus: 0,
@@ -99,7 +100,8 @@ class Layout extends React.Component {
   toggleNavigation(e) {
     e.preventDefault();
     this.setState({
-      navigating: !this.state.navigating
+      navigating: !this.state.navigating,
+      offset: this.state.navigating ? -200 : 0
     });
     scrollSpy.update()
   }
@@ -146,51 +148,51 @@ class Layout extends React.Component {
                 <Navigation navigating={this.state.navigating}>
                   <div>
                     <p><small>&nbsp;</small>Introduction</p>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(0)} spy={true} to="introduction">Overview</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(1)} spy={true} to="teachingfellows">The Teaching Fellows</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(2)} spy={true} to="presidentletter">A Letter from the President</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(0)} spy={true} to="introduction">Overview</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(1)} spy={true} to="teachingfellows">The Teaching Fellows</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(2)} spy={true} to="presidentletter">A Letter from the President</Link>
                   </div>
                   <div>
                     <p><small>Part One</small>Read</p>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(3)} spy={true} to="introductionread">God Revealed Himself in a Book</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(4)} spy={true} to="storyxavier">Testimony: Xavier</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="read01">Tabletalk</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="ask-ligonier">Ask Ligoner</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="state-of-theology">The State of Theology</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(6)} spy={true} to="fellowsinclair">Teaching Fellow: Sinclair Ferguson</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} spy={true} to="read02">Reformation Study Bible</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} spy={true} to="read03">Study Bible Translations</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} spy={true} to="bibles-for-africa">Study Bibles for Africa</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} spy={true} to="read04">Reformation Trust</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} spy={true} to="ligonier-org">Ligonier.org</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(10)} spy={true} to="fellowgodfrey">Teaching Fellow: W. Robert Godfrey</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} spy={true} to="read05">Translations</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} spy={true} to="military-prison-chaplains">Military &amp; Prison Chaplains</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} spy={true} to="christology-statement">Christology&nbsp;Statement</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(12)} spy={true} to="fellowlawson">Teaching Fellow: Steven Lawson</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(3)} spy={true} to="introductionread">God Revealed Himself in a Book</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(4)} spy={true} to="storyxavier">Testimony: Xavier</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="read01">Tabletalk</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="ask-ligonier">Ask Ligoner</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="state-of-theology">The State of Theology</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(6)} spy={true} to="fellowsinclair">Teaching Fellow: Sinclair Ferguson</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} spy={true} to="read02">Reformation Study Bible</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} spy={true} to="read03">Study Bible Translations</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} spy={true} to="bibles-for-africa">Study Bibles for Africa</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} spy={true} to="read04">Reformation Trust</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} spy={true} to="ligonier-org">Ligonier.org</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(10)} spy={true} to="fellowgodfrey">Teaching Fellow: W. Robert Godfrey</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} spy={true} to="read05">Translations</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} spy={true} to="military-prison-chaplains">Military &amp; Prison Chaplains</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} spy={true} to="christology-statement">Christology&nbsp;Statement</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(12)} spy={true} to="fellowlawson">Teaching Fellow: Steven Lawson</Link>
                   </div>
                   <div>
                     <p><small>Part Two</small>Listen</p>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(13)} spy={true} to="introductionlisten">Faith Comes By Hearing</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(14)} spy={true} to="storyamy">Testimony: Amy</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} spy={true} to="listen01">Renewing Your Mind and RefNet</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} spy={true} to="listen02">Teaching Series and the Ligoner App</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(18)} spy={true} to="fellownichols">Teaching Fellow: Stephen J. Nichols</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(19)} spy={true} to="listen03">Platforms</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(19)} spy={true} to="podcasts">Podcasts</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(13)} spy={true} to="introductionlisten">Faith Comes By Hearing</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(14)} spy={true} to="storyamy">Testimony: Amy</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} spy={true} to="listen01">Renewing Your Mind and RefNet</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} spy={true} to="listen02">Teaching Series and the Ligoner App</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(18)} spy={true} to="fellownichols">Teaching Fellow: Stephen J. Nichols</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(19)} spy={true} to="listen03">Platforms</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(19)} spy={true} to="podcasts">Podcasts</Link>
                   </div>
                   <div>
                     <p><small>Part Three</small>Gather</p>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(20)} spy={true} to="introductiongather">Iron Sharpens Iron</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(21)} spy={true} to="storydoug">Testimony: Doug</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="gather01">National, Regional and International Conferences</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(23)} spy={true} to="fellowparsons">Teaching Fellow: Burk Parsons</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(24)} spy={true} to="gather02">Reformation Bible College and Ligonier Connect</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} spy={true} to="fellowthomas">Teaching Fellow: Derek W.H. Thomas</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="gather03">Study Cruises &amp; Tours</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="institute-expository-preaching">The Institute for Expository Preaching</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="ask-anything">Ask Anything and Truth &amp; Consequences</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(20)} spy={true} to="introductiongather">Iron Sharpens Iron</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(21)} spy={true} to="storydoug">Testimony: Doug</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="gather01">National, Regional and International Conferences</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(23)} spy={true} to="fellowparsons">Teaching Fellow: Burk Parsons</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(24)} spy={true} to="gather02">Reformation Bible College and Ligonier Connect</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} spy={true} to="fellowthomas">Teaching Fellow: Derek W.H. Thomas</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="gather03">Study Cruises &amp; Tours</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="institute-expository-preaching">The Institute for Expository Preaching</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="ask-anything">Ask Anything and Truth &amp; Consequences</Link>
                   </div>
                 </Navigation>
                 <ContainerInner

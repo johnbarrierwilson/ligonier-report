@@ -45,6 +45,7 @@ const IndexPage = () => (
           <Well bottom={true}>
             <Image
               column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
+              maxWidth='large'
               position='center 30%'
               row={['1 / span 4', '1 / span 4', '1 / span 4', '1 / span 4']}
               src={data.House.childImageSharp.fluid}
@@ -78,6 +79,7 @@ const IndexPage = () => (
           <Well>
             <Content
               column={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
+              maxWidth='large'
               row={['1 / span 5', '1 / span 5', '1 / span 5', '1 / span 5']}
               type='sans'
             >
@@ -86,6 +88,7 @@ const IndexPage = () => (
           </Well>
           <Image
             column={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
+            maxWidth='large'
             position='left center'
             row={['6 / span 3', '6 / span 3', '6 / span 3', '6 / span 3']}
             size='contain'
@@ -121,6 +124,7 @@ const IndexPage = () => (
         />
         <Image
           column={['9 / span 6', '9 / span 6', '9 / span 6', '9 / span 6']}
+          maxWidth='large'
           position="center 90%"
           row={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
           src={data.Connect.childImageSharp.fluid}
@@ -157,11 +161,11 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -20vw;
-    right: -20vw;
+    left: -25vw;
+    right: -25vw;
     top: -50px;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}){
+  @media (min-width: ${p => p.theme.breakpoints.large}){
     bottom: 0;
     grid-column: 1 / span 8;
     grid-row: 1 / span 12;

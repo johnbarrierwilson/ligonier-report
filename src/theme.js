@@ -10,8 +10,7 @@ const theme = {
   },
   breakpoints: {
     small: '600px',
-    medium: '900px',
-    large: '1600px'
+    large: '1300px',
   },
   index: {
     containerInner: '2',

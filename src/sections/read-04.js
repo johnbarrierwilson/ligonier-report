@@ -53,6 +53,7 @@ const IndexPage = () => (
           />
           <Image
             column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
+            maxWidth='large'
             row={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
             src={data.Books.childImageSharp.fluid}
           />
@@ -78,6 +79,7 @@ const IndexPage = () => (
           <Well size="xl" top={true}>
             <Image
               column={['7 / span 7', '7 / span 7', '7 / span 7', '7 / span 7']}
+              maxWidth='large'
               row={['1 / span 5', '1 / span 5', '1 / span 5', '1 / span 5']}
               src={data.Reading.childImageSharp.fluid}
             />
@@ -137,11 +139,11 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -20vw;
-    right: -20vw;
+    left: -25vw;
+    right: -25vw;
     top: -50px;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     bottom: 0;
     grid-column: 1 / span 6;
     grid-row: 1 / span 12;

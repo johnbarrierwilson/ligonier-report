@@ -31,7 +31,7 @@ const Mark = styled('svg')`
 
 const Title = styled('p')`
   display: none;
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     color: ${p => p.inverted ? p.theme.colors.white : theme.colors.black};
     display: block;
     font-size: 10px;

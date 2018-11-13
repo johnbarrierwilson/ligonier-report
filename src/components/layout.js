@@ -55,11 +55,11 @@ class Layout extends React.Component {
     if (windowWidth >= 900) {
       window.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowDown') {
-          animateScroll.scrollMore(Math.max(windowHeight, 950), {
+          animateScroll.scrollMore(Math.max(windowHeight, 1000), {
             containerId: 'containerElement'
           })
         } else if (e.key === 'ArrowUp') {
-          animateScroll.scrollMore(Math.min((windowHeight * -1), -950), {
+          animateScroll.scrollMore(Math.min((windowHeight * -1), -1000), {
             containerId: 'containerElement'
           })
         }
@@ -226,15 +226,11 @@ const GlobalStyles = createGlobalStyle`
   html {
     -webkit-font-smoothing: antialiased;
     font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
     @media (min-width: ${p => p.theme.breakpoints.small}) {
       font-size: 16px;
-    }
-    @media (min-width: ${p => p.theme.breakpoints.medium}) {
-      font-size: 1vw;
-      line-height: 1.3;
     }
     @media (min-width: ${p => p.theme.breakpoints.large}) {
       font-size: 0.85vw;
@@ -269,7 +265,7 @@ const ContainerInner = styled('div')`
   ${p => p.navigating ? css`
     transform: translateY(500px);
     opacity: 0.5;
-    @media (min-width: ${p.theme.breakpoints.medium}) {
+    @media (min-width: ${p.theme.breakpoints.large}) {
       transform: translateY(850px);
     }
   ` : null}
@@ -292,7 +288,7 @@ const Navigation = styled('nav')`
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     padding: 100px 20vw 0;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     flex-flow: row;
     height: auto;
     padding: 140px 50px 0;
@@ -311,12 +307,10 @@ const Navigation = styled('nav')`
   div {
     margin-bottom: 50px;
     opacity: ${p => p.navigating ? '1' : '0'};
-    transform: ${p => p.navigating ? 'scale(1) translateY(0%)': 'scale(0.75) translateY(25%)'};
-    transform-origin: 0% -100%;
+    transform: ${p => p.navigating ? 'translateY(0%)': 'translateY(5%)'};
     transition: ${p => p.theme.transition};
-    @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    @media (min-width: ${p => p.theme.breakpoints.large}) {
       margin-bottom: none;
-      transition-duration: 750ms;
       width: 25%;
     }
     &:nth-child(1) {
@@ -338,7 +332,7 @@ const Navigation = styled('nav')`
     margin-bottom: 15px;
     opacity: 0.5;
     text-transform: uppercase;
-    @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    @media (min-width: ${p => p.theme.breakpoints.large}) {
       margin-bottom: 50px;
     }
   }

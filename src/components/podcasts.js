@@ -6,15 +6,11 @@ const podcasts = styled('div')`
   justify-content: space-between;
   position: relative;
   z-index: ${p => p.theme.index.podcasts};
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
-    align-self: center;
-    grid-column: ${p => p.column[2]};
-    grid-row: ${p => p.row[2]};
-    transform: ${p => p.transform ? p.transform : 'none'};
-  }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    align-self: center;
     grid-column: ${p => p.column[3]};
     grid-row: ${p => p.row[3]};
+    transform: ${p => p.transform ? p.transform : 'none'};
   }
   img {
     display: block;

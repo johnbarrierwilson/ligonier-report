@@ -24,16 +24,12 @@ const Container = styled('div')`
   text-align: center;
   text-transform: uppercase;
   z-index: ${p => p.theme.index.numbers};
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
-    align-self: center;
-    grid-column: ${p => p.column[2]};
-    grid-row: ${p => p.row[2]};
-    height: 100%;
-    transform: ${p => p.transform ? p.transform : 'none'};
-  }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    align-self: center;
     grid-column: ${p => p.column[3]};
     grid-row: ${p => p.row[3]};
+    height: 100%;
+    transform: ${p => p.transform ? p.transform : 'none'};
   }
 `
 

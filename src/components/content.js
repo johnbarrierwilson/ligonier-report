@@ -4,17 +4,12 @@ const Content = styled('div')`
   color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
   position: relative;
   z-index: ${p => p.theme.index.content};
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
-    align-self: center;
-    grid-column: ${p => p.column[2]};
-    grid-row: ${p => p.row[2]};
-    transform: ${p => p.transform ? p.transform : 'none'};
-  }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    align-self: center;
     grid-column: ${p => p.column[3]};
     grid-row: ${p => p.row[3]};
+    transform: ${p => p.transform ? p.transform : 'none'};
   }
-
   ${p => p.type === 'deck' ? css`
     font-style: italic;
     @media (min-width: ${p.theme.breakpoints.small}) {
@@ -29,11 +24,10 @@ const Content = styled('div')`
     text-align: center;
     @media (min-width: ${p.theme.breakpoints.small}) {
       font-size: 1.25rem;
-      line-height: 2;
+      line-height: 1.5;
     }
-    @media (min-width: ${p.theme.breakpoints.medium}) {
-      letter-spacing: 0.5em;
-      text-transform: uppercase;
+    @media (min-width: ${p.theme.breakpoints.large}) {
+      font-size: 1.7rem;
     }
     span {
       display: block;

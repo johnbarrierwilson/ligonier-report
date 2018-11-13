@@ -34,6 +34,7 @@ const IndexPage = () => (
         <Well bottom={true}>
           <Image
             column={['2 / span 7', '2 / span 7', '2 / span 7', '2 / span 7']}
+            maxWidth='large'
             position='center 30%'
             row={['1 / span 4', '1 / span 4', '1 / span 4', '1 / span 4']}
             src={data.FatherSon.childImageSharp.fluid}
@@ -136,11 +137,11 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -20vw;
-    right: -20vw;
+    left: -25vw;
+    right: -25vw;
     top: -50px;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}){
+  @media (min-width: ${p => p.theme.breakpoints.large}){
     bottom: 0;
     grid-column: 9 / span 6;
     grid-row: 1 / span 12;

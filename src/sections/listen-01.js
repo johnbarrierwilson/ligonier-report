@@ -66,6 +66,7 @@ const IndexPage = () => (
         <Well>
           <Image
             column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
+            maxWidth='large'
             row={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
             src={data.Couple.childImageSharp.fluid}
             transform='translateY(-2.75rem)'
@@ -81,6 +82,7 @@ const IndexPage = () => (
         <Well>
           <Image
             column={['5 / span 2', '5 / span 2', '5 / span 2', '5 / span 2']}
+            maxWidth='large'
             position="left center"
             row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
             size="contain"
@@ -97,6 +99,7 @@ const IndexPage = () => (
         <Well top={true}>
           <Image
             column={['5 / span 4', '5 / span 4', '5 / span 4', '5 / span 4']}
+            maxWidth='large'
             row={['5 / span 5', '5 / span 5', '5 / span 5', '5 / span 5']}
             src={data.Family.childImageSharp.fluid}
             transform='translateX(2rem)'
@@ -143,6 +146,7 @@ const IndexPage = () => (
           <Well>
             <Image
               column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
+              maxWidth='large'
               row={['5 / span 2', '5 / span 2', '5 / span 2', '5 / span 2']}
               src={data.RefNet.childImageSharp.fluid}
             />
@@ -171,11 +175,11 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -20vw;
-    right: -20vw;
+    left: -25vw;
+    right: -25vw;
     top: -50px;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     bottom: 0;
     grid-column: 11 / span 4;
     grid-row: 1 / span 12;

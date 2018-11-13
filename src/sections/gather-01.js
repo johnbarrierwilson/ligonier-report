@@ -36,6 +36,7 @@ const IndexPage = () => (
         <Well bottom={true}>
           <Image
             column={['2 / span 7', '2 / span 7', '2 / span 7', '2 / span 7']}
+            maxWidth='large'
             position='center bottom'
             row={['1 / span 6', '1 / span 6', '1 / span 6', '1 / span 6']}
             src={data.Conference.childImageSharp.fluid}
@@ -85,6 +86,7 @@ const IndexPage = () => (
           />
           <Image
             column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+            maxWidth='large'
             position='left center'
             row={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
             size='contain'
@@ -124,11 +126,11 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -20vw;
-    right: -20vw;
+    left: -25vw;
+    right: -25vw;
     top: -50px;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     bottom: 0;
     grid-column: 9 / span 6;
     grid-row: 1 / span 12;

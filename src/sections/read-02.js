@@ -72,6 +72,7 @@ const IndexPage = () => (
         </Well>
         <Image
           column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
+          maxWidth='large'
           row={['1 / span 6', '1 / span 6', '1 / span 6', '1 / span 6']}
           size="contain"
           src={data.Brown.childImageSharp.fluid}

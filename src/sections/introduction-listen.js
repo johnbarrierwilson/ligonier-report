@@ -28,6 +28,7 @@ const IndexPage = () => (
         <Backdrop />
         <Well size="l">
           <Image
+            center={true}
             column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
             row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
             size="contain"
@@ -63,7 +64,7 @@ const Backdrop = styled('div')`
   position: absolute;
   right: 0;
   top: 0;
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     grid-column: 1 / span 14;
     grid-row: 1 / span 12;
     position: relative;

@@ -40,6 +40,7 @@ const IndexPage = () => (
         <Well bottom={true}>
           <Image
             column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+            maxWidth='large'
             position="center 20%"
             row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
             src={data.Xavier.childImageSharp.fluid}
@@ -85,7 +86,7 @@ const Backdrop = styled('div')`
   position: absolute;
   right: 0;
   top: 0;
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     grid-column: 2 / span 12;
     grid-row: 2 / span 10;
   }

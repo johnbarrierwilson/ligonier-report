@@ -39,6 +39,18 @@ const IndexPage = () => (
       <Grid name="introduction" >
         <Well>
           <Well>
+            <Well>
+              <Image
+                center={true}
+                column={['1 / span 2', '1 / span 3', '1 / span 3', '1 / span 3']}
+                maxWidth='small'
+                position='top right'
+                row={['3 / span 3', '4 / span 6', '4 / span 6', '4 / span 6']}
+                size='495px 446px'
+                src={data.Piece01.childImageSharp.fluid}
+                transform='translate(-180px, -35px)'
+              />
+            </Well>
             <Heading
               column={['2 / span 12', '2 / span 3', '2 / span 3', '2 / span 3']}
               row={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
@@ -51,17 +63,21 @@ const IndexPage = () => (
             >
               <span>God revealed Himself in&nbsp;a&nbsp;book</span>
             </Label>
-            <Image
-              column={['1 / span 2', '1 / span 3', '1 / span 3', '1 / span 3']}
-              row={['3 / span 3', '4 / span 6', '4 / span 6', '4 / span 6']}
-              position='top right'
-              size='495px 446px'
-              src={data.Piece01.childImageSharp.fluid}
-              transform='translate(-180px, -35px)'
-            />
           </Well>
 
           <Well>
+            <Well>
+              <Image
+                center={true}
+                column={['9 / span 6', '9 / span 6', '9 / span 6', '9 / span 6']}
+                maxWidth='small'
+                position='bottom left'
+                row={['1 / span 2', '1 / span 2', '1 / span 2', '1 / span 2']}
+                size='505px 377px'
+                src={data.Piece02.childImageSharp.fluid}
+                transform='translate(20px, -50px)'
+              />
+            </Well>
             <Heading
               column={['2 / span 12', '10 / span 4', '10 / span 4', '10 / span 4']}
               row={['5 / span 1', '5 / span 1', '5 / span 1', '5 / span 1']}
@@ -74,17 +90,21 @@ const IndexPage = () => (
             >
               <span>Faith comes by hearing</span>
             </Label>
-            <Image
-              column={['9 / span 6', '9 / span 6', '9 / span 6', '9 / span 6']}
-              row={['1 / span 2', '1 / span 2', '1 / span 2', '1 / span 2']}
-              position='bottom left'
-              size='505px 377px'
-              src={data.Piece02.childImageSharp.fluid}
-              transform='translate(20px, -50px)'
-            />
           </Well>
 
           <Well>
+            <Well>
+              <Image
+                center={true}
+                column={['1 / span 14', '1 / span 9', '3 / span 8', '4 / span 6']}
+                maxWidth='small'
+                position='top center'
+                row={['9 / span 4', '10 / span 3', '10 / span 3', '10 / span 3']}
+                size='468px 414px'
+                src={data.Piece03.childImageSharp.fluid}
+                transform='translate(15px, 35px)'
+              />
+            </Well>
             <Heading
               column={['2 / span 12', '7 / span 2', '7 / span 2', '7 / span 2']}
               row={['9 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
@@ -97,14 +117,6 @@ const IndexPage = () => (
             >
               <span>Iron sharpens iron</span>
             </Label>
-            <Image
-              column={['1 / span 14', '1 / span 9', '3 / span 8', '4 / span 6']}
-              row={['9 / span 4', '10 / span 3', '10 / span 3', '10 / span 3']}
-              position='top center'
-              size='468px 414px'
-              src={data.Piece03.childImageSharp.fluid}
-              transform='translate(15px, 35px)'
-            />
           </Well>
 
           <Well>

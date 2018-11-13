@@ -9,9 +9,9 @@ class Well extends React.Component {
     this.state = { isSmall: false }
   }
   componentDidMount() {
-    this.setState({ isSmall: window.innerWidth <= 900 })
+    this.setState({ isSmall: window.innerWidth <= 1300 })
     window.addEventListener('resize', () => {
-      this.setState({ isSmall: window.innerWidth <= 900 })
+      this.setState({ isSmall: window.innerWidth <= 1300 })
     })
   }
   render() {
@@ -23,11 +23,11 @@ const Container = styled('div')`
   margin: ${p => {
     switch(p.size) {
       case 'xl':
-        return '90px'
+        return '5.75rem'
       case 'l':
-        return '80px'
+        return '5rem'
       default:
-        return '40px'
+        return '2.5rem'
     }
   }} 0;
   position: relative;

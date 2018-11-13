@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Content from '../components/content'
@@ -9,110 +10,141 @@ import Image from '../components/image'
 import Subject from '../components/subject'
 import Well from '../components/well'
 
-import Bay from '../images/TranslationBay.jpg'
-import Building from '../images/TranslationBuilding.jpg'
-import City from '../images/TranslationCity.jpg'
-import Group from '../images/GroupAfrica.jpg'
-
 const IndexPage = () => (
-  <Grid name="read03">
-    <Subject
-      column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-      row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
-    >
-      Study Bible Translations
-    </Subject>
-    <Divider
-      column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-      row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
-    />
-    <Heading
-      center={true}
-      column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-      row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-      text="Bringing the Reformation&nbsp;Study Bible to&nbsp;Major World Languages"
-    />
-    <Image
-      column={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
-      row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
-      src={City}
-    />
-    <Well top={true}>
-      <Heading
-        column={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
-        row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
-        size="s"
-        text='OVER ONE BILLION PEOPLE WORLDWIDE SPEAK SPANISH, PORTUGUESE, OR FRENCH. YET THEY LACK A STUDY BIBLE ROOTED IN THE HISTORIC CHRISTIAN FAITH AND REFORMED THEOLOGY.'
-        transform="translateX(2rem)"
-      />
-    </Well>
-    <Image
-      column={['1 / span 5', '1 / span 5', '1 / span 5', '1 / span 5']}
-      row={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
-      src={Bay}
-      transform="translateY(2rem)"
-    />
-    <Well>
-      <Content
-        column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-        row={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
-      >
-        <p>Translating the <em>Reformation Study Bible</em> into other languages is fueling Great Commission discipleship around the world. German and Korean editions are now available. Translation work is underway in three more languages: Spanish, Portuguese, and French. In total, over one billion people worldwide speak one of these three languages, yet they lack a study Bible rooted in the historic Christian faith and Reformed theology.</p>
-        <p>These pioneering translations will strengthen and advance global gospel ministry thanks to your generous support. When complete, it will mean a <em>Reformation Study Bible</em> is available in at least one language spoken on every continent in the world.</p>
-      </Content>
-    </Well>
-    <Well bottom={true}>
-      <Image
-        column={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
-        row={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
-        src={Building}
-        transform="translate(-1.5rem, 0.5rem)"
-      />
-    </Well>
-    <Divider
-      column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
-      row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
-    />
-
-    <Well bottom={true} top={true}>
-      <Backdrop />
-      <Subject
-        column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-        name="bibles-for-africa"
-        row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
-      >
-        Study Bibles for Africa
-      </Subject>
-      <Divider
-        column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-        row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
-      />
-      <Heading
-        center={true}
-        column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-        row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
-        text="Equipping Church Leaders in&nbsp;Africa"
+  <StaticQuery
+    query={graphql`
+      query Read03Query {
+        Bay: file(relativePath: { eq: "TranslationBay.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        Building: file(relativePath: { eq: "TranslationBuilding.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 600) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        City: file(relativePath: { eq: "TranslationCity.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        Group: file(relativePath: { eq: "GroupAfrica.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={(data) => (
+      <Grid name="read03">
+        <Subject
+          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
+          row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
+        >
+          Study Bible Translations
+        </Subject>
+        <Divider
+          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
+          row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
         />
-      <Well bottom={true}>
+        <Heading
+          center={true}
+          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
+          row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
+          text="Bringing the Reformation&nbsp;Study Bible to&nbsp;Major World Languages"
+        />
         <Image
-          column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-          position="left center"
-          row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
-          size="contain"
-          src={Group}
-          transform="translateY(-15%)"
+          column={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
+          row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
+          src={data.City.childImageSharp.fluid}
         />
-      </Well>
-      <Content
-        center={true}
-        column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-        row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
-      >
-        <p>Thousands of pastors, church leaders, and students in ten African countries are receiving a free copy of the <em>Reformation Study Bible</em> thanks to the strategic partnership between Ligonier Ministries and the Rosemary Jensen Bible Foundation. We have already sent more than 10,000 Bibles, with plans to distribute an additional 26,000 by 2028.</p>
-        <p>This outreach is only possible with the support of visionary donors. Thank you for partnering with us. You are bringing the Word of God to needy Christians in lands where Bibles are expensive and trustworthy theological resources are rare.</p>
-      </Content>
-    </Well>
-  </Grid>
+        <Well top={true}>
+          <Heading
+            column={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
+            row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+            size="s"
+            text='OVER ONE BILLION PEOPLE WORLDWIDE SPEAK SPANISH, PORTUGUESE, OR FRENCH. YET THEY LACK A STUDY BIBLE ROOTED IN THE HISTORIC CHRISTIAN FAITH AND REFORMED THEOLOGY.'
+            transform="translateX(2rem)"
+          />
+        </Well>
+        <Image
+          column={['1 / span 5', '1 / span 5', '1 / span 5', '1 / span 5']}
+          row={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
+          src={data.Bay.childImageSharp.fluid}
+          transform="translateY(2rem)"
+        />
+        <Well>
+          <Content
+            column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
+            row={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
+          >
+            <p>Translating the <em>Reformation Study Bible</em> into other languages is fueling Great Commission discipleship around the world. German and Korean editions are now available. Translation work is underway in three more languages: Spanish, Portuguese, and French. In total, over one billion people worldwide speak one of these three languages, yet they lack a study Bible rooted in the historic Christian faith and Reformed theology.</p>
+            <p>These pioneering translations will strengthen and advance global gospel ministry thanks to your generous support. When complete, it will mean a <em>Reformation Study Bible</em> is available in at least one language spoken on every continent in the world.</p>
+          </Content>
+        </Well>
+        <Well bottom={true}>
+          <Image
+            column={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
+            row={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
+            src={data.Building.childImageSharp.fluid}
+            transform="translate(-1.5rem, 0.5rem)"
+          />
+        </Well>
+        <Divider
+          column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
+          row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
+        />
+
+        <Well bottom={true} top={true}>
+          <Backdrop />
+          <Subject
+            column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
+            name="bibles-for-africa"
+            row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
+          >
+            Study Bibles for Africa
+          </Subject>
+          <Divider
+            column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
+            row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+          />
+          <Heading
+            center={true}
+            column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
+            row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+            text="Equipping Church Leaders in&nbsp;Africa"
+            />
+          <Well bottom={true}>
+            <Image
+              column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
+              position="left center"
+              row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
+              size="contain"
+              src={data.Group.childImageSharp.fluid}
+              transform="translateY(-15%)"
+            />
+          </Well>
+          <Content
+            center={true}
+            column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
+            row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
+          >
+            <p>Thousands of pastors, church leaders, and students in ten African countries are receiving a free copy of the <em>Reformation Study Bible</em> thanks to the strategic partnership between Ligonier Ministries and the Rosemary Jensen Bible Foundation. We have already sent more than 10,000 Bibles, with plans to distribute an additional 26,000 by 2028.</p>
+            <p>This outreach is only possible with the support of visionary donors. Thank you for partnering with us. You are bringing the Word of God to needy Christians in lands where Bibles are expensive and trustworthy theological resources are rare.</p>
+          </Content>
+        </Well>
+      </Grid>
+    )}
+  />
 )
 
 const Backdrop = styled('div')`

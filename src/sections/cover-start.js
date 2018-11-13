@@ -17,7 +17,7 @@ const IndexPage = () => (
         file(relativePath: { eq: "CoverStart.png" }) {
           childImageSharp {
             fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

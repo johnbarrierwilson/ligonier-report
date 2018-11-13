@@ -18,21 +18,21 @@ const IndexPage = () => (
         Connect: file(relativePath: { eq: "Connect.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         House: file(relativePath: { eq: "RBCHouse.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         Students: file(relativePath: { eq: "RBCStudents.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

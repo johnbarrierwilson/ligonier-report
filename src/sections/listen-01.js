@@ -18,28 +18,28 @@ const IndexPage = () => (
         Couple: file(relativePath: { eq: "RYMCouple.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         Family: file(relativePath: { eq: "RYMFamily.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         RefNet: file(relativePath: { eq: "RefNet.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         Window: file(relativePath: { eq: "RYMWindow.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

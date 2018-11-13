@@ -17,28 +17,28 @@ const IndexPage = () => (
         Bay: file(relativePath: { eq: "TranslationBay.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         Building: file(relativePath: { eq: "TranslationBuilding.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         City: file(relativePath: { eq: "TranslationCity.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
         Group: file(relativePath: { eq: "GroupAfrica.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

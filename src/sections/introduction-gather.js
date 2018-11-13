@@ -17,7 +17,7 @@ const IndexPage = () => (
         IntroductionGather: file(relativePath: { eq: "IntroductionGather.png" }) {
           childImageSharp {
             fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

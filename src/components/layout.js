@@ -131,7 +131,7 @@ class Layout extends React.Component {
               <LeftSidebar inverted={this.state.inverted} navigating={this.state.navigating} text={this.state.sidebarTitle} />
               <RightSidebar inverted={this.state.inverted} navigating={this.state.navigating} status={this.state.sidebarStatus} />
               <Share />
-              <Container>
+              <Container navigating={this.state.navigating}>
                 <GlobalStyles />
                 <Helmet
                   title={data.site.siteMetadata.title}
@@ -252,7 +252,8 @@ const GlobalStyles = createGlobalStyle`
 `
 
 const Container = styled('div')`
-  background: #111111;
+  background: ${p => p.navigating ? '#111111' : p.theme.colors.white};
+  transition: background 0ms ${p => p.navigating ? '0ms' : '500ms'} linear;
   overflow: hidden;
 `
 
@@ -264,7 +265,6 @@ const ContainerInner = styled('div')`
   transition: ${p => p.theme.transition};
   z-index: ${p => p.theme.index.containerInner};
   ${p => p.navigating ? css`
-    border-radius: 20px;
     transform: translateY(500px);
     opacity: 0.5;
     @media (min-width: ${p.theme.breakpoints.medium}) {
@@ -310,9 +310,11 @@ const Navigation = styled('nav')`
     margin-bottom: 50px;
     opacity: ${p => p.navigating ? '1' : '0'};
     transform: ${p => p.navigating ? 'scale(1) translateY(0%)': 'scale(0.75) translateY(25%)'};
+    transform-origin: 0% -100%;
     transition: ${p => p.theme.transition};
     @media (min-width: ${p => p.theme.breakpoints.medium}) {
       margin-bottom: none;
+      transition-duration: 750ms;
       width: 25%;
     }
     &:nth-child(1) {

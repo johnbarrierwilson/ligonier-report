@@ -137,7 +137,7 @@ class Layout extends React.Component {
   }
 
   toggleNavigation(e) {
-    e.preventDefault();
+    e.preventDefault()
     this.setState({
       navigating: !this.state.navigating,
       offset: this.state.navigating ? -200 : 0
@@ -225,7 +225,8 @@ class Layout extends React.Component {
                     <p><small>Part Three</small>Gather</p>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(20)} spy={true} to="introductiongather">Iron Sharpens Iron</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(21)} spy={true} to="storydoug">Testimony: Doug</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="gather01">National, Regional and International Conferences</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="gather01">National Conference</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="regionalinternationalconferences">Regional and International Conferences</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(23)} spy={true} to="fellowparsons">Teaching Fellow: Burk Parsons</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(24)} spy={true} to="gather02">Reformation Bible College and Ligonier Connect</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} spy={true} to="fellowthomas">Teaching Fellow: Derek W.H. Thomas</Link>

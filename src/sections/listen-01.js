@@ -149,6 +149,7 @@ const IndexPage = () => (
               maxWidth='large'
               row={['5 / span 2', '5 / span 2', '5 / span 2', '5 / span 2']}
               src={data.RefNet.childImageSharp.fluid}
+              transform='translateY(15%)'
             />
           </Well>
           <Content

@@ -31,11 +31,12 @@ const IndexPage = () => (
           <Image
             column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
             position="center 20%"
+            president={true}
             row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
             src={data.ChrisLarson.childImageSharp.fluid}
           />
         </Well>
-        <Well size="l" top={true}>
+        <Well top={true}>
           <Subject
             column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
             row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
@@ -72,13 +73,13 @@ const IndexPage = () => (
 
 const Backdrop = styled('div')`
   background: ${p => p.theme.colors.tanDark};
-  bottom: -40px;
+  bottom: 50%;
   left: -40px;
   position: absolute;
   right: -40px;
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
-    bottom: -50px;
+    bottom: 50%;
     left: -25vw;
     right: -25vw;
     top: -50px;

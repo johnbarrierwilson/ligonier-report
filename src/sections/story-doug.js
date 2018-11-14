@@ -50,14 +50,15 @@ const IndexPage = () => (
           center={true}
           column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
           row={['10 / span 1', '10 / span 1', '10 / span 1', '10 / span 1']}
-          text="Doug, Los&nbsp;Angeles"
-        />
+        >
+          Doug,<br /><em>Los&nbsp;Angeles</em>
+        </Heading>
         <Content
           column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
           row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
         >
-          <p>“I wasn’t actively practicing or able to articulate what I said I believed. My dad sent over a Ligonier Conference Q&A, and on a free weekend I sat down and watched one. . . and then another and another. . . and I could not stop watching. It was my discovery of theology, the doctrines of grace, and the provision of a system of belief.</p>
-          <p>Since then, I’ve been to two Ligonier conferences in Seattle. It felt like an eternity before I finally went to one since I had watched so many online. It is interesting that . . .</p>
+          <p>“I wasn’t actively practicing or able to articulate what I said I believed. My dad sent over a Ligonier Conference Q&A, and on a free weekend I sat down and watched one&hellip;and then another and another&hellip;and I could not stop watching. It was my discovery of theology, the doctrines of grace, and the provision of a system of belief.</p>
+          <p>Since then, I’ve been to two Ligonier conferences in Seattle. It felt like an eternity before I finally went to one since I had watched so many online. It is interesting that&hellip;</p>
         </Content>
         <Blockquote
           column={['8 / span 5', '8 / span 5', '8 / span 5', '8 / span 5']}

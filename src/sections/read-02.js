@@ -60,7 +60,7 @@ const IndexPage = () => (
           center={true}
           column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
           row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-          text="Deepening Your Study of&nbsp;God's Word"
+          text="Deepening Your Study of&nbsp;God's&nbsp;Word"
         />
         <Well hide={true}>
           <Image

@@ -70,6 +70,7 @@ const IndexPage = () => (
 
         <Subject
           column={['9 / span 5', '9 / span 5', '9 / span 5', '9 / span 5']}
+          id="ligonier-app"
           row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
         >
           Ligonier App
@@ -82,7 +83,7 @@ const IndexPage = () => (
           center={true}
           column={['9 / span 3', '9 / span 3', '9 / span 4', '9 / span 3']}
           row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-          text="SERVING CHRISTIANS ON THE GO"
+          text="SERVING CHRISTIANS ON&nbsp;THE&nbsp;GO"
         />
         <Content
           center={true}

@@ -54,7 +54,7 @@ const IndexPage = () => (
         />
         <Heading
           center={true}
-          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
+          column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
           row={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
           text="GATHERING FOR AN ANNUAL FAMILY REUNION"
         />
@@ -70,6 +70,7 @@ const IndexPage = () => (
           <Backdrop />
           <Subject
             column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+            id="regionalinternationalconferences"
             row={['1 / span 2', '1 / span 2', '1 / span 2', '1 / span 2']}
           >
             Regional &amp; International Conferences
@@ -80,7 +81,7 @@ const IndexPage = () => (
           />
           <Heading
             center={true}
-            column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+            column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
             row={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
             text="GATHERING LOCALLY AND AROUND THE WORLD"
           />

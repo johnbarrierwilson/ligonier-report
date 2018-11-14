@@ -84,7 +84,7 @@ const IndexPage = () => (
         <Well size='l'>
           <Subject
             column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
-            name="ask-ligonier"
+            id="ask-ligonier"
             row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
           >
             Ask Ligonier
@@ -119,7 +119,7 @@ const IndexPage = () => (
         <Well top={true}>
           <Subject
             column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-            name="state-of-theology" 
+            id="state-of-theology" 
             row={['5 / span 1', '5 / span 1', '5 / span 1', '5 / span 1']}
           >
             The State of Theology

@@ -85,48 +85,6 @@ class Layout extends React.Component {
       }
     })
 
-    const analytics = document.createElement('div')
-    analytics.innerHTML = `
-      <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1958004644520947');
-        fbq('track', 'PageView');
-      </script>
-      <script type="text/javascript">
-        (function() {
-          var didInit = false;
-          function initMunchkin() {
-            if(didInit === false) {
-              didInit = true;
-              Munchkin.init('189-JLA-216');
-            }
-          }
-          var s = document.createElement('script');
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = '//munchkin.marketo.net/munchkin.js';
-          s.onreadystatechange = function() {
-            if (this.readyState == 'complete' || this.readyState == 'loaded') {
-              initMunchkin();
-            }
-          };
-          s.onload = initMunchkin;
-          document.getElementsByTagName('head')[0].appendChild(s);
-        })();
-      </script>
-      <script>
-        console.log('stuff loaded');
-      </script>
-    `
-    document.body.appendChild(analytics)
-
     scrollSpy.update()
   }
 
@@ -246,6 +204,48 @@ class Layout extends React.Component {
                   {this.props.children}
                 </ContainerInner>
               </Container>
+
+              {/* Facebook Pixel */}
+              <script dangerouslySetInnerHTML={{__html: `
+                <script>
+                  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                  n.queue=[];t=b.createElement(e);t.async=!0;
+                  t.src=v;s=b.getElementsByTagName(e)[0];
+                  s.parentNode.insertBefore(t,s)}(window, document,'script',
+                  'https://connect.facebook.net/en_US/fbevents.js');
+                  fbq('init', '1958004644520947');
+                  fbq('track', 'PageView');
+                </script>
+              `}}/>
+
+              {/* Marketo */}
+              <script dangerouslySetInnerHTML={{__html: `
+                <script type="text/javascript">
+                  (function() {
+                    var didInit = false;
+                    function initMunchkin() {
+                      if(didInit === false) {
+                        didInit = true;
+                        Munchkin.init('189-JLA-216');
+                      }
+                    }
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = '//munchkin.marketo.net/munchkin.js';
+                    s.onreadystatechange = function() {
+                      if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                        initMunchkin();
+                      }
+                    };
+                    s.onload = initMunchkin;
+                    document.getElementsByTagName('head')[0].appendChild(s);
+                  })();
+                </script>
+              `}}/>
+              
             </>
           </ThemeProvider>
         )}

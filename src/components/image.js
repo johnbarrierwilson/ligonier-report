@@ -33,6 +33,20 @@ const Container = styled(Img)`
       object-fit: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'} !important;
     }
   }
+
+  ${p => p.president && css`
+    @media (max-width: ${p.theme.breakpoints.large}) {
+      height: 115px;
+      width: 115px !important;
+    }
+    img {
+      @media (max-width: ${p.theme.breakpoints.large}) {
+        height: auto !important;
+        transform: translate(-25.5%,-4%);
+        width: 280px !important;
+      }
+    }
+  `}
 `
 
 export default Image

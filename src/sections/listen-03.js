@@ -79,7 +79,7 @@ const IndexPage = () => (
           <Backdrop />
           <Subject
             column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
-            name="podcasts"
+            id="podcasts"
             row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
           >
             Podcasts

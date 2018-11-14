@@ -44,8 +44,9 @@ class Layout extends React.Component {
       sidebarStatus: 0,
       sidebarTitle: ''
     }
-    this.toggleNavigation = this.toggleNavigation.bind(this)
     this.setActive = this.setActive.bind(this)
+    this.subNavigation = this.subNavigation.bind(this)
+    this.toggleNavigation = this.toggleNavigation.bind(this)
   }
 
   componentDidMount() {
@@ -95,6 +96,15 @@ class Layout extends React.Component {
       sidebarStatus: sidebarStatuses[slide],
       sidebarTitle: sidebarTitles[slide]
     })
+  }
+
+  subNavigation(id) {
+    const container = document.getElementById('containerElement')
+    const distance = container.scrollTop
+    const offset = window.innerWidth > 1300 ? 920 : 540
+    const item = document.getElementById(id).getBoundingClientRect().top - offset
+    container.scrollTo(0, item + distance)
+    this.setState({navigating: !this.state.navigating})
   }
 
   toggleNavigation(e) {
@@ -157,18 +167,18 @@ class Layout extends React.Component {
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(3)} spy={true} to="introductionread">God Revealed Himself in a Book</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(4)} spy={true} to="storyxavier">Testimony: Xavier</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="read01">Tabletalk</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="ask-ligonier">Ask Ligoner</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="state-of-theology">The State of Theology</Link>
+                    <a onClick={() => this.subNavigation('ask-ligonier')}>Ask Ligonier</a>
+                    <a onClick={() => this.subNavigation('state-of-theology')}>The State of Theology</a>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(6)} spy={true} to="fellowsinclair">Teaching Fellow: Sinclair Ferguson</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} spy={true} to="read02">Reformation Study Bible</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} spy={true} to="read03">Study Bible Translations</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} spy={true} to="bibles-for-africa">Study Bibles for Africa</Link>
+                    <a onClick={() => this.subNavigation('bibles-for-africa')}>Study Bibles for Africa</a>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} spy={true} to="read04">Reformation Trust</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} spy={true} to="ligonier-org">Ligonier.org</Link>
+                    <a onClick={() => this.subNavigation('ligonier-org')}>Ligonier.org</a>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(10)} spy={true} to="fellowgodfrey">Teaching Fellow: W. Robert Godfrey</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} spy={true} to="read05">Translations</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} spy={true} to="military-prison-chaplains">Military &amp; Prison Chaplains</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} spy={true} to="christology-statement">Christology&nbsp;Statement</Link>
+                    <a onClick={() => this.subNavigation('military-prison-chaplains')}>Military &amp; Prison Chaplains</a>
+                    <a onClick={() => this.subNavigation('christology-statement')}>Christology&nbsp;Statement</a>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(12)} spy={true} to="fellowlawson">Teaching Fellow: Steven Lawson</Link>
                   </div>
                   <div>
@@ -177,23 +187,25 @@ class Layout extends React.Component {
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(14)} spy={true} to="storyamy">Testimony: Amy</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} spy={true} to="listen01">Renewing Your Mind and RefNet</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} spy={true} to="listen02">Teaching Series and the Ligoner App</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} spy={true} to="listen02">Teaching Series</Link>
+                    <a onClick={() => this.subNavigation('ligonier-app')}>The Ligonier App</a>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(18)} spy={true} to="fellownichols">Teaching Fellow: Stephen J. Nichols</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(19)} spy={true} to="listen03">Platforms</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(19)} spy={true} to="podcasts">Podcasts</Link>
+                    <a onClick={() => this.subNavigation('podcasts')}>Podcasts</a>
                   </div>
                   <div>
                     <p><small>Part Three</small>Gather</p>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(20)} spy={true} to="introductiongather">Iron Sharpens Iron</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(21)} spy={true} to="storydoug">Testimony: Doug</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="gather01">National Conference</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="regionalinternationalconferences">Regional and International Conferences</Link>
+                    <a onClick={() => this.subNavigation('regionalinternationalconferences')}>Regional and International Conferences</a>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(23)} spy={true} to="fellowparsons">Teaching Fellow: Burk Parsons</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(24)} spy={true} to="gather02">Reformation Bible College and Ligonier Connect</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(24)} spy={true} to="gather02">Reformation Bible College</Link>
+                    <a onClick={() => this.subNavigation('ligonier-connect')}>Ligonier Connect</a>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} spy={true} to="fellowthomas">Teaching Fellow: Derek W.H. Thomas</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="gather03">Study Cruises &amp; Tours</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="institute-expository-preaching">The Institute for Expository Preaching</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="ask-anything">Ask Anything and Truth &amp; Consequences</Link>
+                    <a onClick={() => this.subNavigation('institute-expository-preaching')}>The Institute for Expository Preaching</a>
+                    <a onClick={() => this.subNavigation('ask-anything')}>Ask Anything and Truth &amp; Consequences</a>
                   </div>
                 </Navigation>
                 <ContainerInner
@@ -288,6 +300,7 @@ const GlobalStyles = createGlobalStyle`
   a {
     border-bottom: 1px solid ${p => p.theme.colors.black};
     color: ${p => p.theme.colors.black};
+    cursor: pointer;
     text-decoration: none;
   }
 `

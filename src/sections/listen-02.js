@@ -70,6 +70,7 @@ const IndexPage = () => (
 
         <Subject
           column={['9 / span 5', '9 / span 5', '9 / span 5', '9 / span 5']}
+          id="ligonier-app"
           row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
         >
           Ligonier App

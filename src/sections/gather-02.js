@@ -108,6 +108,7 @@ const IndexPage = () => (
 
         <Subject
           column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+          id="ligonier-connect"
           row={['1 / span 2', '1 / span 2', '1 / span 2', '1 / span 2']}
         >
           Ligonier Connect

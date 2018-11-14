@@ -112,7 +112,7 @@ const IndexPage = () => (
           <Backdrop />
           <Subject
             column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-            name="bibles-for-africa"
+            id="bibles-for-africa"
             row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
           >
             Study Bibles for Africa

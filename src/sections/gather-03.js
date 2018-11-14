@@ -101,7 +101,7 @@ const IndexPage = () => (
 
         <Subject
           column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
-          name="institute-expository-preaching"
+          id="institute-expository-preaching"
           row={['6 / span 1', '6 / span 1', '6 / span 1', '6 / span 1']}
         >
           THE INSTITUTE FOR EXPOSITORY PREACHING
@@ -127,7 +127,7 @@ const IndexPage = () => (
         <Well>
           <Subject
             column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-            name="ask-anything"
+            id="ask-anything"
             row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
           >
             ASK ANYTHING AND TRUTH &amp;&nbsp;CONSEQUENCES

@@ -1,11 +1,22 @@
 import React from 'react'
-import Layout from '../components/layout'
+import styled from 'styled-components'
 
 const NotFoundPage = () => (
-  <Layout>
+  <Container>
     <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+    <p>You just hit a route that doesn&#39;t exist.</p>
+    <a href="/">Return</a>
+  </Container>
 )
+
+const Container = styled('div')`
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+`
 
 export default NotFoundPage

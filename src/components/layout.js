@@ -154,7 +154,7 @@ class Layout extends React.Component {
                 >
                   <html lang="en" />
                   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6693092/7770812/css/fonts.css" />
-                  <script src="https://cdn.jsdelivr.net/npm/fitie@1.0.0/dist/fitie.js"></script>
+                  <script src="/fitie.js"></script>
                 </Helmet>
                 <Navigation navigating={this.state.navigating}>
                   <div>

@@ -167,18 +167,18 @@ class Layout extends React.Component {
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(3)} spy={true} to="introductionread">God Revealed Himself in a Book</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(4)} spy={true} to="storyxavier">Testimony: Xavier</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="read01">Tabletalk</Link>
-                    <a href="#temp" onClick={() => this.subNavigation('ask-ligonier')}>Ask Ligonier</a>
-                    <a href="#temp" onClick={() => this.subNavigation('state-of-theology')}>The State of Theology</a>
+                    <button onClick={() => this.subNavigation('ask-ligonier')}>Ask Ligonier</button>
+                    <button onClick={() => this.subNavigation('state-of-theology')}>The State of Theology</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(6)} spy={true} to="fellowsinclair">Teaching Fellow: Sinclair Ferguson</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} spy={true} to="read02">Reformation Study Bible</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} spy={true} to="read03">Study Bible Translations</Link>
-                    <a href="#temp" onClick={() => this.subNavigation('bibles-for-africa')}>Study Bibles for Africa</a>
+                    <button onClick={() => this.subNavigation('bibles-for-africa')}>Study Bibles for Africa</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} spy={true} to="read04">Reformation Trust</Link>
-                    <a href="#temp" onClick={() => this.subNavigation('ligonier-org')}>Ligonier.org</a>
+                    <button onClick={() => this.subNavigation('ligonier-org')}>Ligonier.org</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(10)} spy={true} to="fellowgodfrey">Teaching Fellow: W. Robert Godfrey</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(11)} spy={true} to="read05">Translations</Link>
-                    <a href="#temp" onClick={() => this.subNavigation('military-prison-chaplains')}>Military &amp; Prison Chaplains</a>
-                    <a href="#temp" onClick={() => this.subNavigation('christology-statement')}>Christology&nbsp;Statement</a>
+                    <button onClick={() => this.subNavigation('military-prison-chaplains')}>Military &amp; Prison Chaplains</button>
+                    <button onClick={() => this.subNavigation('christology-statement')}>Christology&nbsp;Statement</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(12)} spy={true} to="fellowlawson">Teaching Fellow: Steven Lawson</Link>
                   </div>
                   <div>
@@ -188,24 +188,24 @@ class Layout extends React.Component {
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} spy={true} to="listen01">Renewing Your Mind and RefNet</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} spy={true} to="listen02">Teaching Series</Link>
-                    <a href="#temp" onClick={() => this.subNavigation('ligonier-app')}>The Ligonier App</a>
+                    <button onClick={() => this.subNavigation('ligonier-app')}>The Ligonier App</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(18)} spy={true} to="fellownichols">Teaching Fellow: Stephen J. Nichols</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(19)} spy={true} to="listen03">Platforms</Link>
-                    <a href="#temp" onClick={() => this.subNavigation('podcasts')}>Podcasts</a>
+                    <button onClick={() => this.subNavigation('podcasts')}>Podcasts</button>
                   </div>
                   <div>
                     <p><small>Part Three</small>Gather</p>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(20)} spy={true} to="introductiongather">Iron Sharpens Iron</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(21)} spy={true} to="storydoug">Testimony: Doug</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="gather01">National Conference</Link>
-                    <a href="#temp" onClick={() => this.subNavigation('regionalinternationalconferences')}>Regional and International Conferences</a>
+                    <button onClick={() => this.subNavigation('regionalinternationalconferences')}>Regional and International Conferences</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(23)} spy={true} to="fellowparsons">Teaching Fellow: Burk Parsons</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(24)} spy={true} to="gather02">Reformation Bible College</Link>
-                    <a href="#temp" onClick={() => this.subNavigation('ligonier-connect')}>Ligonier Connect</a>
+                    <button onClick={() => this.subNavigation('ligonier-connect')}>Ligonier Connect</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} spy={true} to="fellowthomas">Teaching Fellow: Derek W.H. Thomas</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="gather03">Study Cruises &amp; Tours</Link>
-                    <a href="#temp" onClick={() => this.subNavigation('institute-expository-preaching')}>The Institute for Expository Preaching</a>
-                    <a href="#temp" onClick={() => this.subNavigation('ask-anything')}>Ask Anything and Truth &amp; Consequences</a>
+                    <button onClick={() => this.subNavigation('institute-expository-preaching')}>The Institute for Expository Preaching</button>
+                    <button onClick={() => this.subNavigation('ask-anything')}>Ask Anything and Truth &amp; Consequences</button>
                   </div>
                 </Navigation>
                 <ContainerInner
@@ -300,7 +300,6 @@ const GlobalStyles = createGlobalStyle`
   a {
     border-bottom: 1px solid ${p => p.theme.colors.black};
     color: ${p => p.theme.colors.black};
-    cursor: pointer;
     text-decoration: none;
   }
 `
@@ -349,13 +348,19 @@ const Navigation = styled('nav')`
     height: auto;
     padding: 140px 50px 0;
   }
-  a {
-    border-bottom: none;
+  a, button {
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
     color: ${p => p.theme.colors.gray};
+    cursor: pointer;
     display: block;
     font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin: 15px auto;
+    outline: none;
+    text-align: left;
+    width: 100%;
     &:hover {
       color: ${p => p.theme.colors.white};
     }

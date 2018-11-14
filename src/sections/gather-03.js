@@ -66,6 +66,7 @@ const IndexPage = () => (
           />
           <Image
             column={['6 / span 3', '6 / span 3', '6 / span 3', '6 / span 3']}
+            maxWidth='large'
             position='center 30%'
             row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
             src={data.Travel02.childImageSharp.fluid}
@@ -82,6 +83,7 @@ const IndexPage = () => (
           </Well>
           <Image
             column={['2 / span 5', '2 / span 5', '2 / span 5', '2 / span 5']}
+            maxWidth='large'
             position='center 30%'
             row={['5 / span 4', '5 / span 4', '5 / span 4', '5 / span 4']}
             src={data.Travel01.childImageSharp.fluid}
@@ -128,7 +130,7 @@ const IndexPage = () => (
             name="ask-anything"
             row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
           >
-            ASK ANYTHING AND TRUTH &amp; CONSEQUENCES
+            ASK ANYTHING AND TRUTH &amp;&nbsp;CONSEQUENCES
           </Subject>
           <Divider
             column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
@@ -137,6 +139,7 @@ const IndexPage = () => (
           <Well>
             <Image
               column={['12 / span 3', '12 / span 3', '12 / span 3', '12 / span 3']}
+              maxWidth='large'
               position="center 90%"
               row={['9 / span 3', '9 / span 3', '9 / span 3', '9 / span 3']}
               src={data.AskAnything.childImageSharp.fluid}
@@ -170,11 +173,11 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -20vw;
-    right: -20vw;
+    left: -25vw;
+    right: -25vw;
     top: -50px;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}){
+  @media (min-width: ${p => p.theme.breakpoints.large}){
     bottom: 0;
     grid-column: 1 / span 6;
     grid-row: 1 / span 12;

@@ -9,17 +9,13 @@ const Blockquote = styled('div')`
   position: relative;
   text-transform: uppercase;
   z-index: ${p => p.theme.index.content};
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     font-size: 2.35rem;
-    grid-column: ${p => p.column[2]};
-    grid-row: ${p => p.row[2]};
+    grid-column: ${p => p.column[3]};
+    grid-row: ${p => p.row[3]};
     letter-spacing: 0.175em;
     line-height: 1.5;
     margin: 0;
-  }
-  @media (min-width: ${p => p.theme.breakpoints.large}) {
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
   }
   ${p => p.indent ? css`
     p:first-of-type {

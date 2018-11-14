@@ -41,13 +41,16 @@ const IndexPage = () => (
           >
             Teaching Series
           </Subject>
-          <Image
-            column={['1 / span 7', '1 / span 7', '1 / span 7', '1 / span 7']}
-            position='left center'
-            row={['3 / span 6', '3 / span 6', '3 / span 6', '3 / span 6']}
-            size='contain'
-            src={data.TeachingSeries.childImageSharp.fluid}
-          />
+          <Well>
+            <Image
+              column={['1 / span 7', '1 / span 7', '1 / span 7', '1 / span 7']}
+              maxWidth='large'
+              position='left center'
+              row={['3 / span 6', '3 / span 6', '3 / span 6', '3 / span 6']}
+              size='contain'
+              src={data.TeachingSeries.childImageSharp.fluid}
+            />
+          </Well>
           <Heading
             center={true}
             column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
@@ -93,6 +96,7 @@ const IndexPage = () => (
         <Well>
           <Image
             column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
+            maxWidth='large'
             row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
             src={data.GirlBus.childImageSharp.fluid}
             transform="translateY(2rem)"
@@ -118,11 +122,11 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -20vw;
-    right: -20vw;
+    left: -25vw;
+    right: -25vw;
     top: -50px;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}){
+  @media (min-width: ${p => p.theme.breakpoints.large}){
     bottom: 0;
     grid-column: 1 / span 7;
     grid-row: 1 / span 12;

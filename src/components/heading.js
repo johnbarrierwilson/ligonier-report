@@ -24,7 +24,7 @@ const Container = styled('h1')`
   text-transform: uppercase;
   z-index: ${p => p.theme.index.heading};
 
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     ${p => p.center ? css`
       align-self: center;
   ` : null}
@@ -38,17 +38,12 @@ const Container = styled('h1')`
           return '2.375rem'
       }
     }};
-    grid-column: ${p => p.column[2]};
-    grid-row: ${p => p.row[2]};
+    grid-column: ${p => p.column[3]};
+    grid-row: ${p => p.row[3]};
     letter-spacing: ${p => p.size === 'xl' ? '0.65em' : '0'};
     margin: 0;
     ${p => p.size === 'xl' && css`text-align: left;`};
     transform: ${p => p.transform ? p.transform : null};
-  }
-  
-  @media (min-width: ${p => p.theme.breakpoints.large}) {
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
   }
 `
 

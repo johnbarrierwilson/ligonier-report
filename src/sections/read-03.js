@@ -64,6 +64,7 @@ const IndexPage = () => (
         />
         <Image
           column={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
+          maxWidth='large'
           row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
           src={data.City.childImageSharp.fluid}
         />
@@ -78,6 +79,7 @@ const IndexPage = () => (
         </Well>
         <Image
           column={['1 / span 5', '1 / span 5', '1 / span 5', '1 / span 5']}
+          maxWidth='large'
           row={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
           src={data.Bay.childImageSharp.fluid}
           transform="translateY(2rem)"
@@ -94,6 +96,7 @@ const IndexPage = () => (
         <Well bottom={true}>
           <Image
             column={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
+            maxWidth='large'
             row={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
             src={data.Building.childImageSharp.fluid}
             transform="translate(-1.5rem, 0.5rem)"
@@ -156,11 +159,11 @@ const Backdrop = styled('div')`
   top: -40px;
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     bottom: -50px;
-    left: -20vw;
-    right: -20vw;
+    left: -25vw;
+    right: -25vw;
     top: -50px;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     bottom: 0;
     grid-column: 11 / span 4;
     grid-row: 1 / span 12;

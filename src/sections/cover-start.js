@@ -30,6 +30,7 @@ const IndexPage = () => (
           <DocumentTitle cover={true} />
           <Well size="l">
             <Image
+              center={true}
               column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
               row={['4 / span 5', '4 / span 5', '4 / span 5', '4 / span 5']}
               size="contain"
@@ -37,11 +38,11 @@ const IndexPage = () => (
             />
           </Well>
           <Content
-            column={['5 / span 6', '5 / span 6', '5 / span 6', '5 / span 6']}
-            row={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
+            column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
+            row={['9 / span 3', '9 / span 3', '9 / span 3', '9 / span 3']}
             type="deck-intro"
           >
-            <p>For the earth will be filled with the knowledge of the glory of the Lord as the waters cover the sea.</p>
+            <p>For the earth will be filled with the knowledge of the glory of the L<small>ORD</small> as the waters cover the sea.</p>
             <span>Habakkuk 2:14</span>
           </Content>
         </Well>
@@ -59,7 +60,7 @@ const Backdrop = styled('div')`
   position: absolute;
   right: 0;
   top: 0;
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     grid-column: 1 / span 14;
     grid-row: 1 / span 12;
     position: relative;

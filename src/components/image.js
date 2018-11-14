@@ -8,29 +8,30 @@ const Image = (props) => (
 
 const Container = styled(Img)`
   height: auto;
-  margin-left: ${p => p.fullWidth ? '-40px' : '0'};
+  margin-left: ${p => p.fullWidth ? '-40px' : p.maxWidth ? 'auto' : '0'};
+  margin-right: ${p => p.maxWidth ? 'auto' : '0'};
+  max-width: ${p => p.maxWidth === 'small' ? `175px` : 'none'};
   position: relative;
   width: ${p => p.fullWidth ? 'calc(100% + 80px)' : '100%'};
   z-index: ${p => p.theme.index.image};
   @media (min-width: ${p => p.theme.breakpoints.small}) {
-    margin-left: 0;
+    margin-left: ${p => p.center ? 'auto' : '0'};
+    margin-right: auto;
+    max-width: ${p => p.fullWidth ? 'none' : p.maxWidth === 'small' ? `250px` : p.maxWidth === 'large' ? 'none' : '350px'};
     width: 100%;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
-    grid-column: ${p => p.column[2]};
-    grid-row: ${p => p.row[2]};
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
+    grid-column: ${p => p.column[3]};
+    grid-row: ${p => p.row[3]};
     height: ${p => p.size && p.size !== 'contain' ? p.size.split(' ')[1] : '100%'};
     ${p => p.height ? css`height: ${p.height};` : null}
+    max-width: none;
     transform: ${p => p.transform ? p.transform : 'none'};
     width: ${p => p.size ? p.size.split(' ')[0] : '100%'};
     img {
       object-position: ${p => p.position ? p.position : 'center center'} !important;
       object-fit: ${p => p.size === 'contain' ? 'contain' : p.size ? p.size : 'cover'} !important;
     }
-  }
-  @media (min-width: ${p => p.theme.breakpoints.large}) {
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
   }
 `
 

@@ -18,7 +18,7 @@ const Container = styled('p')`
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    @media (min-width: ${p => p.theme.breakpoints.large}) {
       font-size: 0.875rem;
       left: 0;
       margin: auto;
@@ -27,7 +27,7 @@ const Container = styled('p')`
       top: 15vh;
     }
   ` : css`
-    @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    @media (min-width: ${p => p.theme.breakpoints.large}) {
       color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
       display: block;
       font-size: 10px;

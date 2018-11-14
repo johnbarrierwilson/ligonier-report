@@ -55,11 +55,11 @@ class Layout extends React.Component {
     if (windowWidth >= 900) {
       window.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowDown') {
-          animateScroll.scrollMore(Math.max(windowHeight, 950), {
+          animateScroll.scrollMore(Math.max(windowHeight, 1000), {
             containerId: 'containerElement'
           })
         } else if (e.key === 'ArrowUp') {
-          animateScroll.scrollMore(Math.min((windowHeight * -1), -950), {
+          animateScroll.scrollMore(Math.min((windowHeight * -1), -1000), {
             containerId: 'containerElement'
           })
         }
@@ -85,6 +85,45 @@ class Layout extends React.Component {
       }
     })
 
+    const analytics = document.createElement('div')
+    analytics.innerHTML = `
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1958004644520947');
+        fbq('track', 'PageView');
+      </script>
+      <script type="text/javascript">
+        (function() {
+          var didInit = false;
+          function initMunchkin() {
+            if(didInit === false) {
+              didInit = true;
+              Munchkin.init('189-JLA-216');
+            }
+          }
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//munchkin.marketo.net/munchkin.js';
+          s.onreadystatechange = function() {
+            if (this.readyState == 'complete' || this.readyState == 'loaded') {
+              initMunchkin();
+            }
+          };
+          s.onload = initMunchkin;
+          document.getElementsByTagName('head')[0].appendChild(s);
+        })();
+      </script>
+    `
+    document.body.appendChild(analytics)
+
     scrollSpy.update()
   }
 
@@ -98,7 +137,7 @@ class Layout extends React.Component {
   }
 
   toggleNavigation(e) {
-    e.preventDefault();
+    e.preventDefault()
     this.setState({
       navigating: !this.state.navigating,
       offset: this.state.navigating ? -200 : 0
@@ -186,7 +225,8 @@ class Layout extends React.Component {
                     <p><small>Part Three</small>Gather</p>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(20)} spy={true} to="introductiongather">Iron Sharpens Iron</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(21)} spy={true} to="storydoug">Testimony: Doug</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="gather01">National, Regional and International Conferences</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="gather01">National Conference</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(22)} spy={true} to="regionalinternationalconferences">Regional and International Conferences</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(23)} spy={true} to="fellowparsons">Teaching Fellow: Burk Parsons</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(24)} spy={true} to="gather02">Reformation Bible College and Ligonier Connect</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} spy={true} to="fellowthomas">Teaching Fellow: Derek W.H. Thomas</Link>
@@ -226,15 +266,11 @@ const GlobalStyles = createGlobalStyle`
   html {
     -webkit-font-smoothing: antialiased;
     font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
     @media (min-width: ${p => p.theme.breakpoints.small}) {
       font-size: 16px;
-    }
-    @media (min-width: ${p => p.theme.breakpoints.medium}) {
-      font-size: 1vw;
-      line-height: 1.3;
     }
     @media (min-width: ${p => p.theme.breakpoints.large}) {
       font-size: 0.85vw;
@@ -269,7 +305,7 @@ const ContainerInner = styled('div')`
   ${p => p.navigating ? css`
     transform: translateY(500px);
     opacity: 0.5;
-    @media (min-width: ${p.theme.breakpoints.medium}) {
+    @media (min-width: ${p.theme.breakpoints.large}) {
       transform: translateY(850px);
     }
   ` : null}
@@ -292,7 +328,7 @@ const Navigation = styled('nav')`
   @media (min-width: ${p => p.theme.breakpoints.small}) {
     padding: 100px 20vw 0;
   }
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     flex-flow: row;
     height: auto;
     padding: 140px 50px 0;
@@ -311,12 +347,10 @@ const Navigation = styled('nav')`
   div {
     margin-bottom: 50px;
     opacity: ${p => p.navigating ? '1' : '0'};
-    transform: ${p => p.navigating ? 'scale(1) translateY(0%)': 'scale(0.75) translateY(25%)'};
-    transform-origin: 0% -100%;
+    transform: ${p => p.navigating ? 'translateY(0%)': 'translateY(5%)'};
     transition: ${p => p.theme.transition};
-    @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    @media (min-width: ${p => p.theme.breakpoints.large}) {
       margin-bottom: none;
-      transition-duration: 750ms;
       width: 25%;
     }
     &:nth-child(1) {
@@ -338,7 +372,7 @@ const Navigation = styled('nav')`
     margin-bottom: 15px;
     opacity: 0.5;
     text-transform: uppercase;
-    @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    @media (min-width: ${p => p.theme.breakpoints.large}) {
       margin-bottom: 50px;
     }
   }

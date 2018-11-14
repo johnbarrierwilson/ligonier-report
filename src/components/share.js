@@ -81,7 +81,7 @@ const Channels = styled('div')`
 
 const Container = styled('div')`
   display: none;
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     align-items: center;
     background: ${p => p.theme.colors.white};
     box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px, rgba(0, 0, 0, 0.1) 0 5px 25px 0;

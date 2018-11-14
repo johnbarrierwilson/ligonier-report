@@ -6,16 +6,12 @@ const Label = styled('div')`
   position: relative;
   text-align: center;
   z-index: ${p => p.theme.index.label};
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
-    align-self: center;
-    grid-column: ${p => p.column[2]};
-    grid-row: ${p => p.row[2]};
-    margin: 0;
-    text-align: right;
-  }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    align-self: center;
     grid-column: ${p => p.column[3]};
     grid-row: ${p => p.row[3]};
+    margin: 0;
+    text-align: right;
   }
   span {
     border-bottom: 1px solid ${p => p.theme.colors.black};

@@ -24,17 +24,13 @@ const Container = styled('div')`
   text-align: center;
   text-transform: uppercase;
   z-index: ${p => p.theme.index.numbers};
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     align-self: center;
-    grid-column: ${p => p.column[2]};
-    grid-row: ${p => p.row[2]};
+    grid-column: ${p => p.column[3]};
+    grid-row: ${p => p.row[3]};
     grid-template: 1fr 1fr / 7rem 1fr;
     max-width: 700px;
     transform: ${p => p.transform ? p.transform : 'none'};
-  }
-  @media (min-width: ${p => p.theme.breakpoints.large}) {
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
   }
 `
 
@@ -46,7 +42,7 @@ const Title = styled('div')`
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   justify-content: center;
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     border-right: 1px solid ${p => p.theme.colors.black};
     border-bottom: none;
     flex-direction: column;
@@ -57,7 +53,7 @@ const Title = styled('div')`
   }
   span {
     margin: 0 5px;
-    @media (min-width: ${p => p.theme.breakpoints.medium}) {
+    @media (min-width: ${p => p.theme.breakpoints.large}) {
       border-bottom: 1px solid ${p => p.theme.colors.black};
       margin: 0;
       padding: 5px 0;
@@ -74,7 +70,7 @@ const Number = styled('div')`
   grid-row: 2 / span 1;
   justify-content: center;
   letter-spacing: 0;
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     padding-top: 0.5rem;
@@ -90,7 +86,7 @@ const Description = styled('div')`
   height: 4rem;
   justify-content: center;
   line-height: 2;
-  @media (min-width: ${p => p.theme.breakpoints.medium}) {
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
     padding: 0 2rem;

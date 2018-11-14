@@ -62,7 +62,7 @@ const IndexPage = () => (
             center={true}
             column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
             row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-            text="Gathering and Exploring Together"
+            text="Gathering and Exploring&nbsp;Together"
           />
           <Image
             column={['6 / span 3', '6 / span 3', '6 / span 3', '6 / span 3']}

@@ -118,7 +118,7 @@ const IndexPage = () => (
         />
         <Heading
           center={true}
-          column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+          column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
           row={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
           text="BUILDING A WORLDWIDE DISCIPLESHIP COMMUNITY"
         />

@@ -50,8 +50,9 @@ const IndexPage = () => (
           center={true}
           column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
           row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
-          text="Xavier, San&nbsp;Francisco"
-        />
+        >
+          Xavier,<br /><em>San&nbsp;Francisco</em>
+        </Heading>
         <Blockquote
           column={['9 / span 4', '9 / span 4', '8 / span 5', '9 / span 4']}
           indent={true}

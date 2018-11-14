@@ -46,10 +46,10 @@ const Content = styled('div')`
 
   ${p => p.type === 'sans' ? css`
     font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     line-height: 1.4;
     @media (min-width: ${p.theme.breakpoints.small}) {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
     strong {
       display: block;

@@ -50,8 +50,9 @@ const IndexPage = () => (
           center={true}
           column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
           row={['10 / span 1', '10 / span 1', '10 / span 1', '10 / span 1']}
-          text="Amy, Washington D.C."
-        />
+        >
+          Amy,<br /><em>Washington D.C.</em>
+        </Heading>
         <Content
           column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
           row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}

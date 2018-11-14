@@ -2,11 +2,12 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 
 const Heading = (props) => (
-  <Container {...props}>{props.text}</Container>
+  <Container {...props}>{props.text ? props.text : props.children}</Container>
 )
 
 const Container = styled('h1')`
   color: ${p => p.inverted ? p.theme.colors.white : p.theme.colors.black};
+  font-family: ${p => p.size !== 'xl' ? '"Chronicle Comp A", "Chronicle Comp B", Georgia, "Times New Roman", Times, serif' : '"Chronicle Cond A", "Chronicle Cond B", Georgia, "Times New Roman", Times, serif'};
   font-size: ${p => {
     switch(p.size) {
       case 'xl':
@@ -17,7 +18,7 @@ const Container = styled('h1')`
         return '1.5rem'
     }
   }};
-  letter-spacing: ${p => p.size === 'xl' ? '0.2em' : '0'};
+  letter-spacing: ${p => p.size === 'xl' ? '0.2em' : p.size === 's' ? '0.1em' : '0'};
   margin: 0 0 25px;
   position: relative;
   ${p => p.size === 'xl' && css`text-align: center;`};

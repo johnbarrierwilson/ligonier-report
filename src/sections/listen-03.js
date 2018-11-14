@@ -54,8 +54,9 @@ const IndexPage = () => (
           center={true}
           column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
           row={['6 / span 2', '6 / span 2', '6 / span 2', '6 / span 2']}
-          text="STREAMING TRUSTWORTHY TEACHING"
-        />
+        >
+          Streaming<br />Trustworthy Teaching
+        </Heading>
         <Content
           center={true}
           column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
@@ -102,8 +103,9 @@ const IndexPage = () => (
             center={true}
             column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
             row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-            text="SHARING TIMELESS&nbsp;TRUTHS"
-          />
+          >
+            Sharing<br />Timeless&nbsp;Truths
+          </Heading>
           <Content
             center={true}
             column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}

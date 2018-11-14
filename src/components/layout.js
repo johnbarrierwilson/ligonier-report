@@ -121,6 +121,9 @@ class Layout extends React.Component {
           document.getElementsByTagName('head')[0].appendChild(s);
         })();
       </script>
+      <script>
+        console.log('stuff loaded');
+      </script>
     `
     document.body.appendChild(analytics)
 

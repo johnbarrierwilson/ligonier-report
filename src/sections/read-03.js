@@ -60,8 +60,9 @@ const IndexPage = () => (
           center={true}
           column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
           row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-          text="Bringing the Reformation&nbsp;Study Bible to&nbsp;Major World Languages"
-        />
+        >
+          Bringing the <em>Reformation Study&nbsp;Bible</em> to&nbsp;Major World Languages
+        </Heading>
         <Image
           column={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
           maxWidth='large'

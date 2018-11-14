@@ -99,7 +99,7 @@ const IndexPage = () => (
           />
           <Heading
             center={true}
-            column={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
+            column={['8 / span 3', '8 / span 3', '8 / span 3', '8 / span 3']}
             row={['7 / span 2', '7 / span 2', '7 / span 2', '7 / span 2']}
             text="Supplying Your Most Trusted&nbsp;Bible Teaching"
           />

@@ -82,7 +82,7 @@ const IndexPage = () => (
           center={true}
           column={['9 / span 3', '9 / span 3', '9 / span 4', '9 / span 3']}
           row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-          text="SERVING CHRISTIANS ON THE GO"
+          text="SERVING CHRISTIANS ON&nbsp;THE&nbsp;GO"
         />
         <Content
           center={true}

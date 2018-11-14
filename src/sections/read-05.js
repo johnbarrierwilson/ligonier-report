@@ -123,6 +123,7 @@ const IndexPage = () => (
             <Image
               column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
               maxWidth='large'
+              position='left center'
               row={['4 / span 4', '4 / span 4', '4 / span 4', '4 / span 4']}
               size='contain'
               src={data.Book.childImageSharp.fluid}
@@ -132,7 +133,7 @@ const IndexPage = () => (
             center={true}
             column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
             row={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
-            text="Affirming the Biblical Christ"
+            text="Affirming the Biblical&nbsp;Christ"
           />
           <Content
             center={true}

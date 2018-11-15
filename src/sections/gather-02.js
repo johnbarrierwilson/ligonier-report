@@ -137,7 +137,7 @@ const IndexPage = () => (
             column='10 / span 4'
             row='7 / span 4'
           >
-            <p><strong>Ligonier Connect allows</strong> growing Christians to learn online from an ever-expanding library of interactive video courses. Flexibility to study with others or to pursue a course at your own pace means how you learn is up to you.</p>
+            <p>Ligonier Connect allows growing Christians to learn online from an ever-expanding library of interactive video courses. Flexibility to study with others or to pursue a course at your own pace means how you learn is up to you.</p>
             <p>Sit under the teaching of gifted theologians such as Drs. R.C. Sproul, Sinclair Ferguson, and Derek Thomas, together with other Ligonier Teaching Fellows and trusted teachers. More than eight hundred lessons from over eighty courses are available to choose from.</p>
             <p>Covering the Bible, theology, Christian living, worldview and culture, and church history, Ligonier Connect offers teaching, interactive activities, and more to build up disciples in the knowledge of God.</p>
           </Content>

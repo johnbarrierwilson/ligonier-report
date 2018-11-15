@@ -77,7 +77,7 @@ const IndexPage = () => (
               column='2 / span 4'
               row='9 / span 4'
             >
-              <p><strong>Ligonier Cruises</strong> gather ministry friends at sea for trustworthy teaching from God’s Word. Together they enjoy a memorable time with refreshing Christian fellowship set amid the glory of God’s creation. In addition to faithful teaching, Christians have the opportunity to meet like-minded believers. Popular destinations include Alaska, the Caribbean, and Europe.</p>
+              <p>Ligonier Cruises gather ministry friends at sea for trustworthy teaching from God’s Word. Together they enjoy a memorable time with refreshing Christian fellowship set amid the glory of God’s creation. In addition to faithful teaching, Christians have the opportunity to meet like-minded believers. Popular destinations include Alaska, the Caribbean, and Europe.</p>
               <p>From historic sites in Israel to Germany to the British Isles, Ligonier tours take inquisitive Christians to the places where God has worked in church history. Ligonier Teaching Fellows travel with attendees to guide, to teach, and to explain why our history still matters today. These non-donor funded tours provide a rare, first-hand opportunity for growing Christians to experience our family history together.</p>
             </Content>
           </Well>

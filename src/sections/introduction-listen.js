@@ -29,22 +29,22 @@ const IndexPage = () => (
         <Well size="l">
           <Image
             center={true}
-            column={['9 / span 4', '9 / span 4', '9 / span 4', '9 / span 4']}
-            row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+            column='9 / span 4'
+            row='4 / span 6'
             size="contain"
             src={data.IntroductionListen.childImageSharp.fluid}
           />
         </Well>
         <Well size="l">
           <Heading
-            column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
-            row={['4 / span 1', '4 / span 1', '4 / span 1', '4 / span 1']}
+            column='3 / span 4'
+            row='4 / span 1'
             size="xl"
             text="Listen"
           />
           <Content
-            column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
-            row={['8 / span 3', '8 / span 3', '8 / span 3', '8 / span 3']}
+            column='3 / span 4'
+            row='8 / span 3'
             type="deck"
           >
             <p>Faith comes by hearing. Every week, Ligonier Ministries broadcasts audio and video teaching on the air and on the web to millions of people, free of charge. Trustworthy, life-changing teaching from Dr. R.C. Sproul, the Ligonier Ministries Teaching Fellows, and many others is available to you 24/7. Thank you for tuning&nbsp;in.</p>
@@ -65,6 +65,10 @@ const Backdrop = styled('div')`
   right: 0;
   top: 0;
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 12;
     grid-column: 1 / span 14;
     grid-row: 1 / span 12;
     position: relative;

@@ -10,9 +10,13 @@ const Blockquote = styled('div')`
   text-transform: uppercase;
   z-index: ${p => p.theme.index.content};
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-column: ${p => p.column.split(' ')[0]};
+    -ms-grid-column-span: ${p => p.column.split(' ')[3]};
+    -ms-grid-row: ${p => p.row.split(' ')[0]};
+    -ms-grid-row-span: ${p => p.column.split(' ')[3]};
     font-size: 2.35rem;
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
+    grid-column: ${p => p.column};
+    grid-row: ${p => p.row};
     letter-spacing: 0.175em;
     line-height: 1.5;
     margin: 0;

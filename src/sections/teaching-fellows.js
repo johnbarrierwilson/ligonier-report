@@ -27,29 +27,29 @@ const IndexPage = () => (
         <Backdrop />
         <Well size="l">
           <Heading
-            column={['2 / span 12', '2 / span 6', '2 / span 6', '2 / span 6']}
+            column='2 / span 6'
             inverted={true}
-            row={['3 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
+            row='11 / span 1'
             text='The Ligonier Teaching Fellows'
           />
           <Divider
-            column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+            column='2 / span 2'
             inverted={true}
-            row={['3 / span 2', '12 / span 1', '12 / span 1', '11 / span 2']}
+            row='11 / span 2'
           />
           <Well bottom={true}>
             <Image
-              column={['2 / span 12', '2 / span 12', '2 / span 12', '2 / span 12']}
+              column='2 / span 12'
               fullWidth={true}
               position='center 20%'
-              row={['2 / span 8', '2 / span 8', '2 / span 8', '2 / span 8']}
+              row='2 / span 8'
               src={data.TeachingFellowsImage.childImageSharp.fluid}
             />
           </Well>
           <Content
-            column={['2 / span 12', '10 / span 4', '10 / span 4', '10 / span 4']}
+            column='10 / span 4'
             inverted={true}
-            row={['5 / span 1', '10 / span 3', '10 / span 3', '10 / span 3']}
+            row='10 / span 3'
           >
             <p>The Teaching Fellows bring unique gifts and broad experience to Ligonier Ministries. They help us remain true to our founding purpose and inform our future outreach. Dr. R.C. Sproul and the board gathered this team of men to aid in present and future ministry. Trusting God for biblical and theological fidelity, we are grateful for this group of gifted&nbsp;teachers.</p>
           </Content>
@@ -67,6 +67,10 @@ const Backdrop = styled('div')`
   right: 0;
   top: 0;
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 12;
     grid-column: 1 / span 14;
     grid-row: 1 / span 12;
     position: relative;

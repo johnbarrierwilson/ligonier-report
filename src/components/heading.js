@@ -26,6 +26,10 @@ const Container = styled('h1')`
   z-index: ${p => p.theme.index.heading};
 
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-column: ${p => p.column.split(' ')[0]};
+    -ms-grid-column-span: ${p => p.column.split(' ')[3]};
+    -ms-grid-row: ${p => p.row.split(' ')[0]};
+    -ms-grid-row-span: ${p => p.column.split(' ')[3]};
     ${p => p.center ? css`
       align-self: center;
   ` : null}
@@ -39,8 +43,8 @@ const Container = styled('h1')`
           return '2.375rem'
       }
     }};
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
+    grid-column: ${p => p.column};
+    grid-row: ${p => p.row};
     letter-spacing: ${p => p.size === 'xl' ? '0.65em' : '0'};
     margin: 0;
     ${p => p.size === 'xl' && css`text-align: left;`};

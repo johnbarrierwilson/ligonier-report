@@ -50,7 +50,10 @@ const Channels = styled('div')`
   flex-grow: 1;
   height: 100%;
   justify-content: space-around;
-  padding-left: 20px;
+  padding-left: ${p => p.isSharing ? '20px' : '0px'};
+  transition: ${p => p.theme.transition};
+  transition-duration: 300ms;
+  width: ${p => p.isSharing ? '130px' : '0px'};
   a {
     border-bottom: none;
     display: block;
@@ -62,15 +65,15 @@ const Channels = styled('div')`
     width: 20px;
     &:nth-child(1) {
       color: #3b5998;
-      transition-delay: ${p => !p.isSharing ? '0' : '225ms'};
+      transition-delay: ${p => !p.isSharing ? '0' : '150ms'};
     }
     &:nth-child(2) {
       color: #1da1f2;
-      transition-delay: ${p => !p.isSharing ? '0' : '150ms'};;
+      transition-delay: ${p => !p.isSharing ? '0' : '100ms'};;
     }
     &:nth-child(3) {
       color: ${p => p.theme.colors.black};
-      transition-delay: ${p => !p.isSharing ? '0' : '75ms'};;
+      transition-delay: ${p => !p.isSharing ? '0' : '50ms'};;
     }
   }
   svg {
@@ -110,7 +113,7 @@ const ContainerToggle = styled('div')`
   justify-content: center;
   transition: ${p => p.theme.transition};
   transition-duration: 300ms;
-  width: 45px;
+  width: 45px !important;
   svg {
     height: 15px;
     transform: translate(5%, -2%);

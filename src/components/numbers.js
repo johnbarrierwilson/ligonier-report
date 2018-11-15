@@ -10,8 +10,11 @@ const Numbers = (props) => (
 )
 
 const Container = styled('div')`
+  -ms-grid-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
   border-bottom: 1px solid ${p => p.theme.colors.black};
   border-top: 1px solid ${p => p.theme.colors.black};
+  display: -ms-grid;
   display: grid;
   font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
   font-size: 0.6rem;
@@ -25,9 +28,13 @@ const Container = styled('div')`
   text-transform: uppercase;
   z-index: ${p => p.theme.index.numbers};
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-column: ${p => p.column.split(' ')[0]};
+    -ms-grid-column-span: ${p => p.column.split(' ')[3]};
+    -ms-grid-row: ${p => p.row.split(' ')[0]};
+    -ms-grid-row-span: ${p => p.column.split(' ')[3]};
     align-self: center;
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
+    grid-column: ${p => p.column};
+    grid-row: ${p => p.row};
     grid-template: 1fr 1fr / 7rem 1fr;
     max-width: 700px;
     transform: ${p => p.transform ? p.transform : 'none'};
@@ -35,6 +42,10 @@ const Container = styled('div')`
 `
 
 const Title = styled('div')`
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   align-items: center;
   border-bottom: 1px solid ${p => p.theme.colors.black};
   display: flex;
@@ -43,6 +54,8 @@ const Title = styled('div')`
   grid-row: 1 / span 1;
   justify-content: center;
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     border-right: 1px solid ${p => p.theme.colors.black};
     border-bottom: none;
     flex-direction: column;
@@ -62,6 +75,10 @@ const Title = styled('div')`
 `
 
 const Number = styled('div')`
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
   align-items: center;
   display: flex;
   font-family: "Chronicle Cond A", "Chronicle Cond B", Georgia, 'Times New Roman', Times, serif;
@@ -71,6 +88,10 @@ const Number = styled('div')`
   justify-content: center;
   letter-spacing: 0;
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     padding-top: 0.5rem;
@@ -87,6 +108,10 @@ const Description = styled('div')`
   justify-content: center;
   line-height: 2;
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
     padding: 0 2rem;

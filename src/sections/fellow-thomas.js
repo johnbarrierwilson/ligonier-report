@@ -27,43 +27,43 @@ const IndexPage = () => (
       <Grid name="fellowthomas">
         <Backdrop />
         <Subject
-          column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
+          column='3 / span 4'
           inverted={true}
-          row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+          row='2 / span 2'
         >
           Teaching Fellow
         </Subject>
         <Divider
-          column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
+          column='3 / span 2'
           inverted={true}
-          row={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
+          row='3 / span 1'
         />
         <Heading
-          column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
+          column='3 / span 2'
           inverted={true}
-          row={['4 / span 1', '4 / span 1', '4 / span 1', '4 / span 1']}
+          row='4 / span 1'
           text='Derek W.H. Thomas'
         />
         <Well bottom={true}>
           <Image
-            column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
+            column='10 / span 3'
             fullWidth={true}
             position="center 20%"
-            row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+            row='4 / span 6'
             src={data.FellowThomas.childImageSharp.fluid}
           />
         </Well>
         <Heading
-          column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
+          column='9 / span 2'
           inverted={true}
-          row={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
+          row='8 / span 2'
           size="s"
           text='“WEHAVE DIFFERENT GIFTS AND DIFFERENT STYLES AND DIFFERENT BACKGROUNDS, BUT WE’RE ALL COMMITTED TO PROCLAIMING AND TEACHING THE HISTORIC CHRISTIAN&nbsp;FAITH.”'
         />
         <Content
-          column={['3 / span 4', '3 / span 4', '3 / span 4', '3 / span 4']}
+          column='3 / span 4'
           inverted={true}
-          row={['8 / span 4', '8 / span 4', '8 / span 4', '8 / span 4']}
+          row='8 / span 4'
         >
           <p>Dr. Derek W.H. Thomas is senior minister of First Presbyterian Church in Columbia, S.C., and Chancellor’s Professor of Systematic and Pastoral Theology at Reformed Theological Seminary. Originally from Wales, Dr. Thomas served as a pastor in Belfast, Northern Ireland, for seventeen years before being called to the United States to serve as minister of teaching at First Presbyterian Church in Jackson, Miss.</p>
           <p>Dr. Thomas began serving Ligonier Ministries as a teaching fellow in 2015. Dr. Thomas’ many years of pastoral ministry in the United States and Northern Ireland, along with his extensive and profound understanding of Reformed theology, have furnished him with a sharp intellect and a pastor's heart. He is author of numerous books, including <em>How the Gospel Brings Us All the Way Home</em>, <em>Calvin’s Teaching on Job</em>, <em>Strength for the Weary</em>, and, with Dr. Sinclair B. Ferguson, <em>Ichthus: Jesus Christ, God’s Son, the Saviour</em>. He has also written commentaries on books of the Bible including Job, Isaiah, Ezekiel, Ezra and Nehemiah, Acts, Galatians, and Revelation.</p>
@@ -81,6 +81,10 @@ const Backdrop = styled('div')`
   right: 0;
   top: 0;
   @media (min-width: ${p => p.theme.breakpoints.large}){
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 12;
     grid-column: 1 / span 14;
     grid-row: 1 / span 12;
     position: relative;

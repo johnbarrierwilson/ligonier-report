@@ -47,40 +47,40 @@ const IndexPage = () => (
     render={(data) => (
       <Grid name="read02">
         <Subject
-          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-          row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
+          column='2 / span 4'
+          row='2 / span 1'
         >
           Reformation Study&nbsp;Bible
         </Subject>
         <Divider
-          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-          row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+          column='2 / span 4'
+          row='2 / span 2'
         />
         <Heading
           center={true}
-          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-          row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
+          column='2 / span 4'
+          row='3 / span 2'
           text="Deepening Your Study of&nbsp;God's&nbsp;Word"
         />
         <Well hide={true}>
           <Image
-            column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-            row={['5 / span 6', '5 / span 6', '5 / span 6', '5 / span 6']}
+            column='2 / span 4'
+            row='5 / span 6'
             size="contain"
             src={data.Standard.childImageSharp.fluid}
           />
         </Well>
         <Image
-          column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
+          column='6 / span 4'
           maxWidth='large'
-          row={['1 / span 6', '1 / span 6', '1 / span 6', '1 / span 6']}
+          row='1 / span 6'
           size="contain"
           src={data.Brown.childImageSharp.fluid}
           transform="translateY(-2rem)"
         />
         <Content
-          column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
-          row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
+          column='10 / span 4'
+          row='7 / span 3'
         >
           <p>The Reformation Study Bible guides growing Christians through the Word of God with trusted contributions from seventy-five gifted scholars. More than one hundred thousand copies have been distributed since March 2015.</p>
           <p>Dr. R.C. Sproul edited this landmark publication, which contains over 1.1 million words of verse-by-verse commentary. The original edition is packed with insightful articles; topical explanations; historic creeds, confessions, and catechisms; plus award-winning maps and visuals. The newly released Condensed Edition contains the best of this commentary and is designed for life on the go.</p>
@@ -88,24 +88,24 @@ const IndexPage = () => (
         </Content>
         <Well top={true}>
           <Numbers
-            column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
+            column='10 / span 4'
             description='REFORMATION STUDY BIBLES DISTRIBUTED SINCE 2015'
             number='145,000+'
-            row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+            row='10 / span 2'
           />
         </Well>
         <Well hide={true}>
           <Image
-            column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
-            row={['7 / span 6', '7 / span 6', '7 / span 6', '7 / span 6']}
+            column='6 / span 4'
+            row='7 / span 6'
             size="contain"
             src={data.Leather.childImageSharp.fluid}
           />
         </Well>
         <Well hide={true}>
           <Image
-            column={['10 / span 4', '10 / span 4', '10 / span 4', '10 / span 4']}
-            row={['1 / span 6', '1 / span 6', '1 / span 6', '1 / span 6']}
+            column='10 / span 4'
+            row='1 / span 6'
             size="contain"
             src={data.Gray.childImageSharp.fluid}
           />

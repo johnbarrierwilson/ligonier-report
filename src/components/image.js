@@ -21,8 +21,8 @@ const Container = styled(Img)`
     width: 100%;
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
+    grid-column: ${p => p.column};
+    grid-row: ${p => p.row};
     height: ${p => p.size && p.size !== 'contain' ? p.size.split(' ')[1] : '100%'};
     ${p => p.height ? css`height: ${p.height};` : null}
     max-width: none;

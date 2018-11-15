@@ -8,8 +8,8 @@ const Divider = styled('hr')`
   width: 100px;
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     align-self: center;
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
+    grid-column: ${p => p.column};
+    grid-row: ${p => p.row};
     margin: 0;
   }
 `

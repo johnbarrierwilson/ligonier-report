@@ -39,8 +39,8 @@ const Container = styled('h1')`
           return '2.375rem'
       }
     }};
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
+    grid-column: ${p => p.column};
+    grid-row: ${p => p.row};
     letter-spacing: ${p => p.size === 'xl' ? '0.65em' : '0'};
     margin: 0;
     ${p => p.size === 'xl' && css`text-align: left;`};

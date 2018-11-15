@@ -28,42 +28,42 @@ const IndexPage = () => (
       <Grid name="storyxavier">
         <Backdrop />
         <Subject
-          column={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
-          row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+          column='3 / span 1'
+          row='2 / span 2'
         >
           Testimony
         </Subject>
         <Divider
-          column={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
-          row={['3 / span 1', '3 / span 1', '3 / span 1', '3 / span 1']}
+          column='3 / span 1'
+          row='3 / span 1'
         />
         <Well bottom={true}>
           <Image
-            column={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+            column='3 / span 3'
             maxWidth='large'
             position="center 20%"
-            row={['4 / span 6', '4 / span 6', '4 / span 6', '4 / span 6']}
+            row='4 / span 6'
             src={data.Xavier.childImageSharp.fluid}
           />
         </Well>
         <Heading
           center={true}
-          column={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
-          row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+          column='3 / span 2'
+          row='10 / span 2'
         >
           Xavier,<br /><em>San&nbsp;Francisco</em>
         </Heading>
         <Blockquote
-          column={['9 / span 4', '9 / span 4', '8 / span 5', '9 / span 4']}
+          column='9 / span 4'
           indent={true}
-          row={['3 / span 3', '3 / span 3', '3 / span 3', '3 / span 3']}
+          row='3 / span 3'
           top={true}
         >
           <p>“Shortly after I became a Christian, one of my coworkers gave me a copy of Tabletalk and&nbsp;said,</p>
         </Blockquote>
         <Content
-          column={['10 / span 3', '10 / span 3', '9 / span 4', '10 / span 3']}
-          row={['7 / span 3', '7 / span 3', '7 / span 3', '7 / span 3']}
+          column='10 / span 3'
+          row='7 / span 3'
         >
           <p>‘This might be interesting for you to read.’ It blew me away with the thoughtfulness around the theology and the way the magazine is laid out. It made a real impact on me.</p>
           <p>After a year or two, I became a Ministry Partner and began listening to the monthly messages, as well as <em>Renewing Your Mind</em>. I was just devouring any content that I could at that time.</p>
@@ -71,8 +71,8 @@ const IndexPage = () => (
         </Content>
         <Well top={true}>
           <Divider
-            column={['10 / span 3', '10 / span 3', '10 / span 3', '10 / span 3']}
-            row={['10 / span 2', '10 / span 2', '10 / span 2', '10 / span 2']}
+            column='10 / span 3'
+            row='10 / span 2'
           />
         </Well>
       </Grid>

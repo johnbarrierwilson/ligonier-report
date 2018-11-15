@@ -11,8 +11,8 @@ const Blockquote = styled('div')`
   z-index: ${p => p.theme.index.content};
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     font-size: 2.35rem;
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
+    grid-column: ${p => p.column};
+    grid-row: ${p => p.row};
     letter-spacing: 0.175em;
     line-height: 1.5;
     margin: 0;

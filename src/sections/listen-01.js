@@ -48,59 +48,59 @@ const IndexPage = () => (
     render={(data) => (
       <Grid name="listen01">
         <Subject
-          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-          row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
+          column='2 / span 4'
+          row='2 / span 1'
         >
           Renewing Your Mind
         </Subject>
         <Divider
-          column={['2 / span 4', '2 / span 4', '2 / span 4', '2 / span 4']}
-          row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+          column='2 / span 4'
+          row='2 / span 2'
         />
         <Heading
           center={true}
-          column={['2 / span 3', '2 / span 3', '2 / span 4', '2 / span 3']}
-          row={['7 / span 1', '7 / span 1', '7 / span 1', '7 / span 1']}
+          column='2 / span 3'
+          row='7 / span 1'
           text="TEACHING GROWING CHRISTIANS EVERY&nbsp;DAY"
         />
         <Well>
           <Image
-            column={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
+            column='2 / span 3'
             maxWidth='large'
-            row={['4 / span 3', '4 / span 3', '4 / span 3', '4 / span 3']}
+            row='4 / span 3'
             src={data.Couple.childImageSharp.fluid}
             transform='translateY(-2.75rem)'
           />
         </Well>
         <Content
-          column={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
-          row={['7 / span 6', '7 / span 6', '7 / span 6', '7 / span 6']}
+          column='2 / span 2'
+          row='7 / span 6'
         >
           <p>Our daily teaching broadcast, <em>Renewing Your Mind</em>, equips growing Christians to know what they believe, why they believe it, how to live it, and how to share it. Each day we air trustworthy, accessible, and in-depth Bible teaching from Dr. R.C. Sproul, the Ligonier Teaching Fellows, and other trusted teachers.</p>
           <p>You enable us to broadcast on more than 370 radio stations around the United States, as a podcast, and online at RenewingYourMind.org. Our aim is to spread the knowledge of the glory of God, and our prayer is that multitudes will be transformed by the renewing of their&nbsp;minds.</p>
         </Content>
         <Well>
           <Image
-            column={['5 / span 2', '5 / span 2', '5 / span 2', '5 / span 2']}
+            column='5 / span 2'
             maxWidth='large'
             position="left center"
-            row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+            row='2 / span 2'
             size="contain"
             src={data.Window.childImageSharp.fluid}
             transform='translate(2rem, 3rem)'
           />
         </Well>
         <Heading
-          column={['8 / span 2', '8 / span 2', '8 / span 2', '8 / span 2']}
-          row={['2 / span 3', '2 / span 3', '2 / span 3', '2 / span 3']}
+          column='8 / span 2'
+          row='2 / span 3'
           size="s"
           text='God calls his people to be transformed by the renewing of their minds. This transformation is a daily pursuit.'
         />
         <Well top={true}>
           <Image
-            column={['5 / span 4', '5 / span 4', '5 / span 4', '5 / span 4']}
+            column='5 / span 4'
             maxWidth='large'
-            row={['5 / span 5', '5 / span 5', '5 / span 5', '5 / span 5']}
+            row='5 / span 5'
             src={data.Family.childImageSharp.fluid}
             transform='translateX(2rem)'
           />
@@ -108,8 +108,8 @@ const IndexPage = () => (
 
         <Well>
           <Content
-            column={['9 / span 2', '9 / span 2', '9 / span 2', '9 / span 2']}
-            row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
+            column='9 / span 2'
+            row='11 / span 1'
             type='sans'
             transform='translateX(-4rem)'
           >
@@ -118,44 +118,44 @@ const IndexPage = () => (
         </Well>
         
         <Number
-          column={['5 / span 3', '5 / span 3', '5 / span 3', '5 / span 3']}
+          column='5 / span 3'
           description='Countries with Listeners'
           number='180'
-          row={['11 / span 1', '11 / span 1', '11 / span 1', '11 / span 1']}
+          row='11 / span 1'
           transform='translateX(-3rem)'
         />
 
         <Well size="l" top={true}>
           <Backdrop />
           <Subject
-            column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-            row={['2 / span 1', '2 / span 1', '2 / span 1', '2 / span 1']}
+            column='12 / span 2'
+            row='2 / span 1'
           >
             REFNET
           </Subject>
           <Divider
-            column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-            row={['2 / span 2', '2 / span 2', '2 / span 2', '2 / span 2']}
+            column='12 / span 2'
+            row='2 / span 2'
           />
           <Heading
             center={true}
-            column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-            row={['3 / span 2', '3 / span 2', '3 / span 2', '3 / span 2']}
+            column='12 / span 2'
+            row='3 / span 2'
             text="CURATING TRUSTWORTHY TEACHING 24/7"
           />
           <Well>
             <Image
-              column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
+              column='12 / span 2'
               maxWidth='large'
-              row={['5 / span 2', '5 / span 2', '5 / span 2', '5 / span 2']}
+              row='5 / span 2'
               src={data.RefNet.childImageSharp.fluid}
               transform='translateY(15%)'
             />
           </Well>
           <Content
             center={true}
-            column={['12 / span 2', '12 / span 2', '12 / span 2', '12 / span 2']}
-            row={['7 / span 5', '7 / span 5', '7 / span 5', '7 / span 5']}
+            column='12 / span 2'
+            row='7 / span 5'
           >
             <p>Streaming trustworthy teaching and preaching twenty-four hours a day, RefNet is our popular internet radio app. It provides God-centered content for growing Christians, now with listeners in more than 180 countries.</p>
             <p>RefNet features trusted teachers including Alistair Begg, John MacArthur, R.C. Sproul, and the Ligonier Teaching Fellows. The daily schedule also includes Bible excerpts, news updates, and audiobooks— combining to bring you fresh spiritual encouragement every day.</p>

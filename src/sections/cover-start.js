@@ -31,15 +31,15 @@ const IndexPage = () => (
           <Well size="l">
             <Image
               center={true}
-              column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
-              row={['4 / span 5', '4 / span 5', '4 / span 5', '4 / span 5']}
+              column='6 / span 4'
+              row='4 / span 5'
               size="contain"
               src={data.file.childImageSharp.fluid}
             />
           </Well>
           <Content
-            column={['6 / span 4', '6 / span 4', '6 / span 4', '6 / span 4']}
-            row={['9 / span 3', '9 / span 3', '9 / span 3', '9 / span 3']}
+            column='6 / span 4'
+            row='9 / span 3'
             type="deck-intro"
           >
             <p>For the earth will be filled with the knowledge of the glory of the L<small>ORD</small> as the waters cover the sea.</p>

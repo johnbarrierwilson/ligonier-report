@@ -26,8 +26,8 @@ const Container = styled('div')`
   z-index: ${p => p.theme.index.numbers};
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     align-self: center;
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
+    grid-column: ${p => p.column};
+    grid-row: ${p => p.row};
     grid-template: 1fr 1fr / 7rem 1fr;
     max-width: 700px;
     transform: ${p => p.transform ? p.transform : 'none'};

@@ -10,6 +10,9 @@ const Grid = styled('div')`
     padding: 50px 25vw;
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-columns: 90px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 90px;
+    -ms-grid-rows: 90px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 90px repeat(12, 1fr) 90px;
     grid-template-rows: 90px repeat(11, 1fr);

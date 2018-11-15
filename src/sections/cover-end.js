@@ -21,16 +21,16 @@ class IndexPage extends React.Component{
         <Well size="xl">
           <Well>
             <Content
-              column={['5 / span 6', '5 / span 6', '5 / span 6', '5 / span 6']}
-              row={['5 / span 4', '5 / span 4', '5 / span 4', '5 / span 4']}
+              column='5 / span 6'
+              row='5 / span 4'
               type="deck-intro"
             >
               <p>Our outreach would not be possible without your continued&nbsp;support.<br />Thank you.</p>
             </Content>
           </Well>
           <Content
-            column={['5 / span 6', '5 / span 6', '5 / span 6', '5 / span 6']}
-            row={['12 / span 1', '12 / span 1', '12 / span 1', '12 / span 1']}
+            column='5 / span 6'
+            row='12 / span 1'
             style={{ textAlign: 'center' }}
           >
             <small>An Outreach of <a href="https://ligonier.org">Ligonier</a> &copy; {this.state.year}</small>

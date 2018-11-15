@@ -6,8 +6,8 @@ const Content = styled('div')`
   z-index: ${p => p.theme.index.content};
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     align-self: center;
-    grid-column: ${p => p.column[3]};
-    grid-row: ${p => p.row[3]};
+    grid-column: ${p => p.column};
+    grid-row: ${p => p.row};
     transform: ${p => p.transform ? p.transform : 'none'};
   }
   ${p => p.type === 'deck' ? css`

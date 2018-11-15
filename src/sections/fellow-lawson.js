@@ -82,6 +82,10 @@ const Backdrop = styled('div')`
   right: 0;
   top: 0;
   @media (min-width: ${p => p.theme.breakpoints.large}){
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 12;
     grid-column: 1 / span 14;
     grid-row: 1 / span 12;
     position: relative;

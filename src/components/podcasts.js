@@ -7,6 +7,10 @@ const podcasts = styled('div')`
   position: relative;
   z-index: ${p => p.theme.index.podcasts};
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-column: ${p => p.column.split(' ')[0]};
+    -ms-grid-column-span: ${p => p.column.split(' ')[3]};
+    -ms-grid-row: ${p => p.row.split(' ')[0]};
+    -ms-grid-row-span: ${p => p.column.split(' ')[3]};
     align-self: center;
     grid-column: ${p => p.column};
     grid-row: ${p => p.row};

@@ -12,8 +12,11 @@ const Numbers = (props) => (
 )
 
 const Container = styled('div')`
+  -ms-grid-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
   border-bottom: 1px solid ${p => p.theme.colors.black};
   border-top: 1px solid ${p => p.theme.colors.black};
+  display: -ms-grid;
   display: grid;
   font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
   font-size: 0.6rem;
@@ -25,6 +28,10 @@ const Container = styled('div')`
   text-transform: uppercase;
   z-index: ${p => p.theme.index.numbers};
   @media (min-width: ${p => p.theme.breakpoints.large}) {
+    -ms-grid-column: ${p => p.column.split(' ')[0]};
+    -ms-grid-column-span: ${p => p.column.split(' ')[3]};
+    -ms-grid-row: ${p => p.row.split(' ')[0]};
+    -ms-grid-row-span: ${p => p.column.split(' ')[3]};
     align-self: center;
     grid-column: ${p => p.column};
     grid-row: ${p => p.row};
@@ -34,6 +41,10 @@ const Container = styled('div')`
 `
 
 const Title = styled('div')`
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   align-items: center;
   border-bottom: 1px solid ${p => p.theme.colors.black};
   display: flex;
@@ -47,6 +58,10 @@ const Title = styled('div')`
 `
 
 const Number = styled('div')`
+  -ms-grid-column: ${p => p.right ? '2' : '1'};
+  -ms-grid-column-span: 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
   align-items: center;
   display: flex;
   font-family: "Chronicle Cond A", "Chronicle Cond B", Georgia, 'Times New Roman', Times, serif;
@@ -62,6 +77,10 @@ const Number = styled('div')`
 `
 
 const Description = styled('div')`
+  -ms-grid-column: ${p => p.right ? '2' : '1'};
+  -ms-grid-column-span: 1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
   align-items: center;
   border-top: 1px solid ${p => p.theme.colors.black};
   display: flex;

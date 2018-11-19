@@ -155,12 +155,24 @@ class Layout extends React.Component {
                 <GlobalStyles />
                 <Helmet
                   title={data.site.siteMetadata.title}
-                  meta={[
-                    { name: 'description', content: 'Sample' },
-                    { name: 'keywords', content: 'sample, something' },
-                  ]}
                 >
                   <html lang="en" />
+                  
+                  <meta name="title" content="Ministry Report - Ligonier Ministries" />
+                  <meta name="description" content="Thanks to you, the deep truths of God’s Word are finding their way into more places than ever before, and lives are being transformed by a growing knowledge of God." />
+
+                  <meta property="og:type" content="website" />
+                  <meta property="og:url" content="https://report.ligonier.org/" />
+                  <meta property="og:title" content="Ministry Report - Ligonier Ministries" />
+                  <meta property="og:description" content="Thanks to you, the deep truths of God’s Word are finding their way into more places than ever before, and lives are being transformed by a growing knowledge of God." />
+                  <meta property="og:image" content="/share.jpg" />
+
+                  <meta property="twitter:card" content="summary_large_image" />
+                  <meta property="twitter:url" content="https://report.ligonier.org/" />
+                  <meta property="twitter:title" content="Ministry Report - Ligonier Ministries" />
+                  <meta property="twitter:description" content="Thanks to you, the deep truths of God’s Word are finding their way into more places than ever before, and lives are being transformed by a growing knowledge of God." />
+                  <meta property="twitter:image" content="/share.jpg" />
+
                   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6693092/7770812/css/fonts.css" />
                   <script src="/fitie.js"></script>
                 </Helmet>

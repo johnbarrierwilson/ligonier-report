@@ -59,7 +59,7 @@ const IndexPage = () => (
           row='3 / span 3'
           top={true}
         >
-          <p>“Shortly after I became a Christian, one of my coworkers gave me a copy of Tabletalk and&nbsp;said,</p>
+          <p>“Shortly after I became a Christian, one of my coworkers gave me a copy of <em>Tabletalk</em> and&nbsp;said,</p>
         </Blockquote>
         <Content
           column='10 / span 3'

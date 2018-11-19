@@ -51,7 +51,7 @@ const IndexPage = () => (
           column='2 / span 4'
           row='2 / span 1'
         >
-          Renewing Your Mind
+          <em>Renewing Your Mind</em>
         </Subject>
         <Divider
           column='2 / span 4'
@@ -129,6 +129,7 @@ const IndexPage = () => (
           <Backdrop />
           <Subject
             column='12 / span 2'
+            id="refnet"
             row='2 / span 1'
           >
             REFNET
@@ -158,7 +159,7 @@ const IndexPage = () => (
             row='7 / span 5'
           >
             <p>Streaming trustworthy teaching and preaching twenty-four hours a day, RefNet is our popular internet radio app. It provides God-centered content for growing Christians, now with listeners in more than 180 countries.</p>
-            <p>RefNet features trusted teachers including Alistair Begg, John MacArthur, R.C. Sproul, and the Ligonier Teaching Fellows. The daily schedule also includes Bible excerpts, news updates, and audiobooks— combining to bring you fresh spiritual encouragement every day.</p>
+            <p>RefNet features trusted teachers including Alistair Begg, John MacArthur, R.C. Sproul, and the Ligonier Teaching Fellows. The daily schedule also includes Bible excerpts, news updates, and audiobooks&mdash;combining to bring you fresh spiritual encouragement every day.</p>
             <p>RefNet draws on Ligonier’s extensive library of resources and partners with other respected Reformed ministries to be a trusted alternate to traditional Christian radio.</p>
           </Content>
         </Well>

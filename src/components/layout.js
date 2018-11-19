@@ -175,11 +175,11 @@ class Layout extends React.Component {
                     <p><small>Part One</small>Read</p>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(3)} spy={true} to="introductionread">God Revealed Himself in a Book</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(4)} spy={true} to="storyxavier">Testimony: Xavier</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="read01">Tabletalk</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="read01"><em>Tabletalk</em></Link>
                     <button onClick={() => this.subNavigation('ask-ligonier')}>Ask Ligonier</button>
                     <button onClick={() => this.subNavigation('state-of-theology')}>The State of Theology</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(6)} spy={true} to="fellowsinclair">Teaching Fellow: Sinclair Ferguson</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} spy={true} to="read02">Reformation Study Bible</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} spy={true} to="read02"><em>Reformation Study Bible</em></Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} spy={true} to="read03">Study Bible Translations</Link>
                     <button onClick={() => this.subNavigation('bibles-for-africa')}>Study Bibles for Africa</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} spy={true} to="read04">Reformation Trust</Link>
@@ -194,7 +194,8 @@ class Layout extends React.Component {
                     <p><small>Part Two</small>Listen</p>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(13)} spy={true} to="introductionlisten">Faith Comes By Hearing</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(14)} spy={true} to="storyamy">Testimony: Amy</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} spy={true} to="listen01">Renewing Your Mind and RefNet</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} spy={true} to="listen01"><em>Renewing Your Mind</em></Link>
+                    <button onClick={() => this.subNavigation('refnet')}>RefNet</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} spy={true} to="listen02">Teaching Series</Link>
                     <button onClick={() => this.subNavigation('ligonier-app')}>The Ligonier App</button>

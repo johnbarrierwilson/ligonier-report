@@ -13,6 +13,7 @@ const Logo = (props) => (
 )
 
 const Mark = styled('svg')`
+  cursor: pointer;
   left: 0;
   position: fixed;
   top: 2px;
@@ -33,6 +34,7 @@ const Title = styled('p')`
   display: none;
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     color: ${p => p.inverted ? p.theme.colors.white : theme.colors.black};
+    cursor: pointer;
     display: block;
     font-size: 10px;
     font-weight: 600;

@@ -44,6 +44,7 @@ class Layout extends React.Component {
       sidebarStatus: 0,
       sidebarTitle: ''
     }
+    this.scrollToTop = this.scrollToTop.bind(this)
     this.setActive = this.setActive.bind(this)
     this.subNavigation = this.subNavigation.bind(this)
     this.toggleNavigation = this.toggleNavigation.bind(this)
@@ -89,6 +90,13 @@ class Layout extends React.Component {
     scrollSpy.update()
   }
 
+  scrollToTop() {
+    animateScroll.scrollToTop({
+      containerId: 'containerElement'
+    });
+    this.setState({ navigating: false })
+  }
+
   setActive(slide) {
     this.setState({
       inverted: slidesInverted.includes(slide),
@@ -131,7 +139,7 @@ class Layout extends React.Component {
         render={data => (
           <ThemeProvider theme={theme}>
             <>
-              <Logo inverted={this.state.navigating || this.state.inverted} navigating={this.state.navigating} />
+              <Logo onClick={this.scrollToTop} inverted={this.state.navigating || this.state.inverted} navigating={this.state.navigating} />
               <DocumentTitle inverted={this.state.navigating || this.state.inverted} navigating={this.state.navigating} />
               <Toggle
                 inverted={this.props.inverted || this.state.inverted}

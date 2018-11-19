@@ -63,7 +63,7 @@ const IndexPage = () => (
           column='2 / span 4'
           row='10 / span 2'
         >
-          <p>For over thirty years, our National Conference has been gathering thousands of Ligonier friends and supporters to hear trustworthy teaching from God’s Word. The conference is held over three days every spring in Orlando, Fla., and brings together Christians from many different backgrounds who make up the Ligonier family. Each year it is encouraging to see more firsttime attendees gathering from around the world. Your prayers and support enable our National Conference to serve as a great platform for equipping Christians with the truth.</p>
+          <p>For over thirty years, our National Conference has been gathering thousands of Ligonier friends and supporters to hear trustworthy teaching from God’s Word. The conference is held over three days every spring in Orlando, Fla., and brings together Christians from many different backgrounds who make up the Ligonier family. Each year it is encouraging to see more first&ndash;time attendees gathering from around the world. Your prayers and support enable our National Conference to serve as a great platform for equipping Christians with the truth.</p>
         </Content>
 
         <Well size="l" top={true}>

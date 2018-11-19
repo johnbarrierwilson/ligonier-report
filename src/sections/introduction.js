@@ -127,12 +127,11 @@ const IndexPage = () => (
               <p>In 1957, Dr. R.C. Sproul was confronted by the overwhelming holiness of God. That experience began a lifetime of pursuing a greater knowledge of God and birthed an unquenchable desire to lead others into a greater understanding of God and of themselves.</p>
               <p>Over fifty years later, we are humbled to survey the vast army of supporters that has risen to enable such important work. Thanks to you, the deep truths of God’s Word are finding their way into more places than ever before, and lives are being transformed by a growing knowledge of&nbsp;God.</p>
             </Content>
-          </Well>
-          <Well>
             <Content
               column='10 / span 2'
               row='8 / span 2'
             >
+              <p></p>
               <p>Every year, Ligonier Ministries provides more ways for Christians to read, listen, and gather around God's truth.</p>
               <p>Under God’s blessing, the outreach we’ve been able to do together has continued to grow. This report is a celebration of all that you’ve enabled through your generosity and your&nbsp;prayers.</p>
             </Content>

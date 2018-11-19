@@ -101,7 +101,7 @@ const IndexPage = () => (
             column='6 / span 2'
             row='5 / span 4'
           >
-            <p>Military Chaplains serve those who are literally on the front line. Your support is forming a spiritual supply line by providing gospel resources for troops as trustworthy books are freely distributed for those on active duty around the world.</p>
+            <p>Military chaplains serve those who are literally on the front line. Your support is forming a spiritual supply line by providing gospel resources for troops as trustworthy books are freely distributed for those on active duty around the world.</p>
             <p>Prisoners write to us every month, hungry for the gospel and for resources to help them grow in Christ. Your support sends them care packages that include a special edition of the <em>Reformation Study Bible</em> and books by trusted teachers. Prison chaplains are also supplied with the teaching resources they need to serve those under their care.</p>
           </Content>
         </Well>

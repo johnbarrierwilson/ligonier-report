@@ -33,7 +33,7 @@ class IndexPage extends React.Component{
             row='12 / span 1'
             style={{ textAlign: 'center' }}
           >
-            <small>An Outreach of <a href="https://ligonier.org">Ligonier</a> &copy; {this.state.year}</small>
+            <small>An Outreach of <a href="https://www.ligonier.org">Ligonier</a> &copy; {this.state.year}</small>
           </Content>
         </Well>
       </Grid>

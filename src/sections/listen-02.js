@@ -90,7 +90,7 @@ const IndexPage = () => (
           column='9 / span 4'
           row='4 / span 4'
         >
-          <p>The Ligonier App is a daily gospel resource that provides instant access to a deep library of Christian teaching. It puts trustworthy teaching in the palm of your hand, gathering together daily audio, video, devotional articles, and much more.</p>
+          <p>The Ligonier app is a daily gospel resource that provides instant access to a deep library of Christian teaching. It puts trustworthy teaching in the palm of your hand, gathering together daily audio, video, devotional articles, and much more.</p>
           <p>Accessed over 4.3 million times annually, the app is a go-to resource for growing Christians. In addition to our devotional content and media archives, you’ll also find easy access to Ask Ligonier, our biblical and theological chat service.</p>
           <p>By God’s grace, and because of your support, the Ligonier app is available free to all users. Thank you.</p>
         </Content>

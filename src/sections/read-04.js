@@ -62,7 +62,7 @@ const IndexPage = () => (
             column='2 / span 4'
             row='8 / span 3'
           >
-            <p>The Gospel Legacy of the Reformers lives on through our publishing imprint, Reformation Trust. Authored by trusted teachers of our own day, such as Dr. R.C. Sproul and the Ligonier Teaching Fellows, these books stand resolutely on the Bible and seek to build up believers in their knowledge of God.</p>
+            <p>The gospel legacy of the Reformers lives on through our publishing imprint, Reformation Trust. Authored by trusted teachers of our own day, such as Dr. R.C. Sproul and the Ligonier Teaching Fellows, these books stand resolutely on the Bible and seek to build up believers in their knowledge of God.</p>
             <p>New titles on discipleship, the doctrines of the Reformation, and the history of the church continue to steward the historic Christian faith for future generations. These volumes also fuel our partnerships with international ministries and provide trustworthy teaching for Christians around the world.</p>
           </Content>
           <Well>
@@ -108,7 +108,7 @@ const IndexPage = () => (
             column='8 / span 3'
             row='8 / span 3'
           >
-            <p><a href="https://ligonier.org">Ligonier.org</a> provides a spiritual feast for growing Christians. Over eight thousand educational resources, including a vast library of articles, devotionals, and video and audio messages are available to explore. Thanks to you, many of these resources are available for free, reaching millions of people every year.</p>
+            <p><a href="https://www.ligonier.org">Ligonier.org</a> provides a spiritual feast for growing Christians. Over eight thousand educational resources, including a vast library of articles, devotionals, and video and audio messages, are available to explore. Thanks to you, many of these resources are available for free, reaching millions of people every year.</p>
           </Content>
           <Well>
             <Heading

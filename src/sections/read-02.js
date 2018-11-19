@@ -50,7 +50,7 @@ const IndexPage = () => (
           column='2 / span 4'
           row='2 / span 1'
         >
-          Reformation Study&nbsp;Bible
+          <em>Reformation Study&nbsp;Bible</em>
         </Subject>
         <Divider
           column='2 / span 4'
@@ -82,17 +82,18 @@ const IndexPage = () => (
           column='10 / span 4'
           row='7 / span 3'
         >
-          <p>The Reformation Study Bible guides growing Christians through the Word of God with trusted contributions from seventy-five gifted scholars. More than one hundred thousand copies have been distributed since March 2015.</p>
+          <p>The <em>Reformation Study Bible</em> guides growing Christians through the Word of God with trusted contributions from seventy-five gifted scholars. More than one hundred thousand copies have been distributed since March 2015.</p>
           <p>Dr. R.C. Sproul edited this landmark publication, which contains over 1.1 million words of verse-by-verse commentary. The original edition is packed with insightful articles; topical explanations; historic creeds, confessions, and catechisms; plus award-winning maps and visuals. The newly released Condensed Edition contains the best of this commentary and is designed for life on the go.</p>
           <p>The <em>Reformation Study Bible</em>, available in ESV or NKJV, elevates Scripture on every page and distills timeless theology for twenty-first-century disciples.</p>
         </Content>
         <Well top={true}>
           <Numbers
             column='10 / span 4'
-            description='REFORMATION STUDY BIBLES DISTRIBUTED SINCE 2015'
             number='145,000+'
             row='10 / span 2'
-          />
+            >
+            <em>REFORMATION STUDY BIBLES</em> DISTRIBUTED SINCE 2015
+          </Numbers>
         </Well>
         <Well hide={true}>
           <Image

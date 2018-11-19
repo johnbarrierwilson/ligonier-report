@@ -39,7 +39,7 @@ const IndexPage = () => (
             column='2 / span 5'
             row='2 / span 1'
           >
-            Tabletalk Magazine
+            <em>Tabletalk Magazine</em>
           </Subject>
           <Divider
             column='2 / span 2'
@@ -74,10 +74,11 @@ const IndexPage = () => (
           <Well>
             <Numbers
               column='2 / span 4'
-              description='Tabletalk Monthly Readership'
               number='250,000'
               row='11 / span 1'
-            />
+            >
+              <em>Tabletalk</em> &nbsp;Monthly Readership
+            </Numbers>
           </Well>
         </Well>
         

@@ -5,7 +5,7 @@ const Numbers = (props) => (
   <Container {...props}>
     <Title><span>By The</span><span>Numbers</span></Title>
     <Number>{props.number}</Number>
-    <Description>{props.description}</Description>
+    <Description>{props.description ? props.description : props.children}</Description>
   </Container>
 )
 
@@ -102,11 +102,13 @@ const Description = styled('div')`
   align-items: center;
   border-top: 1px solid ${p => p.theme.colors.black};
   display: flex;
+  flex-flow: row wrap;
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
   height: 4rem;
   justify-content: center;
   line-height: 2;
+  padding: 0.75rem 0;
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -114,7 +116,7 @@ const Description = styled('div')`
     -ms-grid-row-span: 2;
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    padding: 0 2rem;
+    padding: 0.75rem 2rem;
   }
 `
 

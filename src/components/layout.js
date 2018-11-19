@@ -44,6 +44,7 @@ class Layout extends React.Component {
       sidebarStatus: 0,
       sidebarTitle: ''
     }
+    this.scrollToTop = this.scrollToTop.bind(this)
     this.setActive = this.setActive.bind(this)
     this.subNavigation = this.subNavigation.bind(this)
     this.toggleNavigation = this.toggleNavigation.bind(this)
@@ -89,6 +90,13 @@ class Layout extends React.Component {
     scrollSpy.update()
   }
 
+  scrollToTop() {
+    animateScroll.scrollToTop({
+      containerId: 'containerElement'
+    });
+    this.setState({ navigating: false })
+  }
+
   setActive(slide) {
     this.setState({
       inverted: slidesInverted.includes(slide),
@@ -131,7 +139,7 @@ class Layout extends React.Component {
         render={data => (
           <ThemeProvider theme={theme}>
             <>
-              <Logo inverted={this.state.navigating || this.state.inverted} navigating={this.state.navigating} />
+              <Logo onClick={this.scrollToTop} inverted={this.state.navigating || this.state.inverted} navigating={this.state.navigating} />
               <DocumentTitle inverted={this.state.navigating || this.state.inverted} navigating={this.state.navigating} />
               <Toggle
                 inverted={this.props.inverted || this.state.inverted}
@@ -147,12 +155,24 @@ class Layout extends React.Component {
                 <GlobalStyles />
                 <Helmet
                   title={data.site.siteMetadata.title}
-                  meta={[
-                    { name: 'description', content: 'Sample' },
-                    { name: 'keywords', content: 'sample, something' },
-                  ]}
                 >
                   <html lang="en" />
+                  
+                  <meta name="title" content="Ministry Report - Ligonier Ministries" />
+                  <meta name="description" content="Thanks to you, the deep truths of God’s Word are finding their way into more places than ever before, and lives are being transformed by a growing knowledge of God." />
+
+                  <meta property="og:type" content="website" />
+                  <meta property="og:url" content="https://report.ligonier.org/" />
+                  <meta property="og:title" content="Ministry Report - Ligonier Ministries" />
+                  <meta property="og:description" content="Thanks to you, the deep truths of God’s Word are finding their way into more places than ever before, and lives are being transformed by a growing knowledge of God." />
+                  <meta property="og:image" content="/share.jpg" />
+
+                  <meta property="twitter:card" content="summary_large_image" />
+                  <meta property="twitter:url" content="https://report.ligonier.org/" />
+                  <meta property="twitter:title" content="Ministry Report - Ligonier Ministries" />
+                  <meta property="twitter:description" content="Thanks to you, the deep truths of God’s Word are finding their way into more places than ever before, and lives are being transformed by a growing knowledge of God." />
+                  <meta property="twitter:image" content="/share.jpg" />
+
                   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6693092/7770812/css/fonts.css" />
                   <script src="/fitie.js"></script>
                 </Helmet>
@@ -167,11 +187,11 @@ class Layout extends React.Component {
                     <p><small>Part One</small>Read</p>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(3)} spy={true} to="introductionread">God Revealed Himself in a Book</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(4)} spy={true} to="storyxavier">Testimony: Xavier</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="read01">Tabletalk</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(5)} spy={true} to="read01"><em>Tabletalk</em></Link>
                     <button onClick={() => this.subNavigation('ask-ligonier')}>Ask Ligonier</button>
                     <button onClick={() => this.subNavigation('state-of-theology')}>The State of Theology</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(6)} spy={true} to="fellowsinclair">Teaching Fellow: Sinclair Ferguson</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} spy={true} to="read02">Reformation Study Bible</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(7)} spy={true} to="read02"><em>Reformation Study Bible</em></Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(8)} spy={true} to="read03">Study Bible Translations</Link>
                     <button onClick={() => this.subNavigation('bibles-for-africa')}>Study Bibles for Africa</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(9)} spy={true} to="read04">Reformation Trust</Link>
@@ -186,7 +206,8 @@ class Layout extends React.Component {
                     <p><small>Part Two</small>Listen</p>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(13)} spy={true} to="introductionlisten">Faith Comes By Hearing</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(14)} spy={true} to="storyamy">Testimony: Amy</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} spy={true} to="listen01">Renewing Your Mind and RefNet</Link>
+                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} spy={true} to="listen01"><em>Renewing Your Mind</em></Link>
+                    <button onClick={() => this.subNavigation('refnet')}>RefNet</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} spy={true} to="listen02">Teaching Series</Link>
                     <button onClick={() => this.subNavigation('ligonier-app')}>The Ligonier App</button>

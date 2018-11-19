@@ -299,7 +299,7 @@ const GlobalStyles = createGlobalStyle`
   html {
     -webkit-font-smoothing: antialiased;
     font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1.6;
     @media (min-width: ${p => p.theme.breakpoints.large}) {

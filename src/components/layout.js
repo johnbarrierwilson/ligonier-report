@@ -301,12 +301,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Mercury Display A", "Mercury Display B", Georgia, "Times New Roman", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.4;
-    @media (min-width: ${p => p.theme.breakpoints.small}) {
-      font-size: 16px;
-    }
+    line-height: 1.6;
     @media (min-width: ${p => p.theme.breakpoints.large}) {
       font-size: 0.85vw;
+      line-height: 1.4;
     }
   }
   h1, h2, h3, h4, h5, h6 {

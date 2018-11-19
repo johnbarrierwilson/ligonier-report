@@ -108,7 +108,7 @@ const IndexPage = () => (
             column='8 / span 3'
             row='8 / span 3'
           >
-            <p><a href="https://ligonier.org">Ligonier.org</a> provides a spiritual feast for growing Christians. Over eight thousand educational resources, including a vast library of articles, devotionals, and video and audio messages are available to explore. Thanks to you, many of these resources are available for free, reaching millions of people every year.</p>
+            <p><a href="https://www.ligonier.org">Ligonier.org</a> provides a spiritual feast for growing Christians. Over eight thousand educational resources, including a vast library of articles, devotionals, and video and audio messages are available to explore. Thanks to you, many of these resources are available for free, reaching millions of people every year.</p>
           </Content>
           <Well>
             <Heading

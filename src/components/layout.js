@@ -322,6 +322,7 @@ const GlobalStyles = createGlobalStyle`
 
 const Container = styled('div')`
   background: ${p => p.navigating ? '#111111' : p.theme.colors.white};
+  height: 100vh;
   transition: background 0ms ${p => p.navigating ? '0ms' : '500ms'} linear;
   overflow: hidden;
 `
@@ -361,6 +362,7 @@ const Navigation = styled('nav')`
   }
   @media (min-width: ${p => p.theme.breakpoints.large}) {
     flex-flow: row;
+    max-height: 100vh;
     height: auto;
     padding: 140px 50px 0;
   }

@@ -27,16 +27,16 @@ class Share extends React.Component {
     return (
       <Container isSharing={this.state.isSharing}>
         <Channels isSharing={this.state.isSharing}>
-          <FacebookShareButton url={'https://report.ligonier.org'}>
+          <FacebookShareButton quote="Get a snapshot of God’s work through Ligonier Ministries in 2018 and the work they hope to do next year. Read it at Report.Ligonier.org." url={'https://report.ligonier.org'}>
             <FacebookIcon size={28} round={true} />
           </FacebookShareButton>
-          <TwitterShareButton url={'https://report.ligonier.org'}>
+          <TwitterShareButton title="Get a snapshot of God’s work through @Ligonier in 2018 and the work they hope to do next year. Read it at" url={'https://report.ligonier.org'}>
             <TwitterIcon size={28} round={true} />
           </TwitterShareButton>
           <EmailShareButton
             logoFillColor="#000000"
-            body="Thanks to you, the deep truths of God’s Word are finding their way into more places than ever before, and lives are being transformed by a growing knowledge of God. Learn more at https://report.ligonier.org"
-            subject="Ministry Report - Ligonier Ministries"
+            body="Get a snapshot of God’s work through Ligonier in 2018 and the work they hope to do next year. Read it at Report.Ligonier.org."
+            subject="Ligonier’s Ministry Report"
           >
             <EmailIcon size={28} round={true} />
           </EmailShareButton>

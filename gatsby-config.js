@@ -30,6 +30,7 @@ module.exports = {
         // Add any options here
       },
     },
+    'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

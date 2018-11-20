@@ -70,7 +70,7 @@ const Button = styled('a')`
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1em;
-  margin: 24px auto 0;
+  margin: 10vh auto 0;
   padding: 12px;
   text-align: center;
   text-transform: uppercase;

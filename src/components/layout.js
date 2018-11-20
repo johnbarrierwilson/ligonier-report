@@ -177,6 +177,7 @@ class Layout extends React.Component {
                   <script src="/fitie.js"></script>
                 </Helmet>
                 <Navigation navigating={this.state.navigating}>
+                  <Button href="https://gift.ligonier.org/835/donate" target="_window" navigating={this.state.navigating}>Give Now</Button>
                   <div>
                     <p><small>&nbsp;</small>Introduction</p>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(0)} spy={true} to="introduction">Overview</Link>
@@ -320,6 +321,38 @@ const GlobalStyles = createGlobalStyle`
   }
 `
 
+const Button = styled('a')`
+  background: rgba(255,255,255,0.1) !important;
+  border-bottom: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px, rgba(0, 0, 0, 0.1) 0 1px 5px 0;
+  display: block;
+  font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
+  font-size: 10px !important;
+  font-weight: 600;
+  left: 40px;
+  letter-spacing: 0.1em !important;
+  margin: auto;
+  opacity: ${p => p.navigating ? '1' : '0'};
+  padding: 10px;
+  position: absolute;
+  right: 40px;
+  text-transform: uppercase;
+  text-align: center !important;
+  top: 40px;
+  transition: ${p => p.theme.transition};
+  width: 200px !important;
+  @media (min-width: ${p => p.theme.breakpoints.large}) {
+    left: 250px;
+    right: 250px;
+    top: 12px;
+  }
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px, rgba(0, 0, 0, 0.1) 0 5px 25px 0;
+    color: #dddddd !important;
+  }
+`
+
 const Container = styled('div')`
   background: ${p => p.navigating ? '#111111' : p.theme.colors.white};
   height: 100vh;
@@ -352,7 +385,7 @@ const Navigation = styled('nav')`
   left: 0;
   margin: 0 auto;
   overflow: auto;
-  padding: 75px 40px;
+  padding: 120px 40px 50px;
   position: absolute;
   right: 0;
   width: 100%;
@@ -377,8 +410,11 @@ const Navigation = styled('nav')`
     font-size: 14px;
     margin: 15px auto;
     outline: none;
-    text-align: left;
+    text-align: center;
     width: 100%;
+    @media (min-width: ${p => p.theme.breakpoints.large}) {
+      text-align: left;
+    }
     &:hover {
       color: ${p => p.theme.colors.white};
     }
@@ -410,9 +446,11 @@ const Navigation = styled('nav')`
     letter-spacing: 0.15em;
     margin-bottom: 15px;
     opacity: 0.5;
+    text-align: center;
     text-transform: uppercase;
     @media (min-width: ${p => p.theme.breakpoints.large}) {
       margin-bottom: 50px;
+      text-align: left;
     }
   }
   small {

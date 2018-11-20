@@ -26,6 +26,7 @@ class IndexPage extends React.Component{
               type="deck-intro"
             >
               <p>Our outreach would not be possible without your continued&nbsp;support.<br />Thank you.</p>
+              <Button href="https://gift.ligonier.org/835/donate" target="_window">Give Now</Button>
             </Content>
           </Well>
           <Content
@@ -56,6 +57,29 @@ const Backdrop = styled('div')`
     grid-column: 1 / span 14;
     grid-row: 1 / span 12;
     position: relative;
+  }
+`
+
+const Button = styled('a')`
+  background: white;
+  border-bottom: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px, rgba(0, 0, 0, 0.1) 0 1px 5px 0;
+  display: block;
+  font-family: "Whitney SSm A", "Whitney SSm B", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin: 24px auto 0;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: ${p => p.theme.transition};
+  transition-duration: 100ms;
+  width: 200px;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px, rgba(0, 0, 0, 0.1) 0 5px 25px 0;
+    color: #777777;
   }
 `
 

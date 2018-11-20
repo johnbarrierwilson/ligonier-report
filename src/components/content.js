@@ -15,9 +15,14 @@ const Content = styled('div')`
     transform: ${p => p.transform ? p.transform : 'none'};
   }
   ${p => p.type === 'deck' ? css`
+    font-size: 1.1rem;
     font-style: italic;
     @media (min-width: ${p.theme.breakpoints.small}) {
+      font-size: 1rem;
       line-height: 2;
+    }
+    @media (min-width: ${p.theme.breakpoints.small}) {
+      font-size: 1.2rem;
     }
     strong {
       font-style: normal;
@@ -25,9 +30,9 @@ const Content = styled('div')`
   ` : null}
 
   ${p => p.type === 'deck-intro' ? css`
+    font-size: 1.2rem;
     text-align: center;
     @media (min-width: ${p.theme.breakpoints.small}) {
-      font-size: 1.25rem;
       line-height: 1.5;
     }
     @media (min-width: ${p.theme.breakpoints.large}) {

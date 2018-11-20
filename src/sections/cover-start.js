@@ -42,7 +42,7 @@ const IndexPage = () => (
             row='9 / span 3'
             type="deck-intro"
           >
-            <p>For the earth will be filled with the knowledge of the glory of the L<small>ORD</small> as the waters cover the sea.</p>
+            <p>For the earth will be filled with the knowledge of the glory of the L<small>ORD</small> as the waters cover the&nbsp;sea.</p>
             <span>Habakkuk 2:14</span>
           </Content>
         </Well>

@@ -30,7 +30,7 @@ class Share extends React.Component {
           <FacebookShareButton quote="Get a snapshot of God’s work through Ligonier Ministries in 2018 and the work they hope to do next year. Read it at Report.Ligonier.org." url={'https://report.ligonier.org'}>
             <FacebookIcon size={28} round={true} />
           </FacebookShareButton>
-          <TwitterShareButton title="Get a snapshot of God’s work through @Ligonier in 2018 and the work they hope to do next year. Read it at" url={'https://report.ligonier.org'}>
+          <TwitterShareButton title="Get a snapshot of God’s work through @Ligonier in 2018 and the work they hope to do next year. Read it at Report.Ligonier.org." url={'https://report.ligonier.org'}>
             <TwitterIcon size={28} round={true} />
           </TwitterShareButton>
           <EmailShareButton

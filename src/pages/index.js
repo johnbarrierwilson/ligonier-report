@@ -8,7 +8,7 @@ import CoverStart from '../sections/cover-start'
 import CoverEnd from '../sections/cover-end'
 import FellowGodfrey from '../sections/fellow-godfrey'
 import FellowLawson from '../sections/fellow-lawson'
-import FellowMohler from '../sections/fellow-mohler'
+// import FellowMohler from '../sections/fellow-mohler'
 import FellowNichols from '../sections/fellow-nichols'
 import FellowParsons from '../sections/fellow-parsons'
 import FellowSinclair from '../sections/fellow-sinclair'
@@ -32,14 +32,14 @@ import Read05 from '../sections/read-05'
 import StoryAmy from '../sections/story-amy'
 import StoryDoug from '../sections/story-doug'
 import StoryXavier from '../sections/story-xavier'
-import TeachingFellows from'../sections/teaching-fellows'
+// import TeachingFellows from'../sections/teaching-fellows'
 
 const IndexPage = () => (
   <ThemeProvider theme={theme} >
     <Layout>
       <CoverStart />
       <Introduction />
-      <TeachingFellows />
+      {/* <TeachingFellows /> */}
       <PresidentLetter />
       <IntroductionRead />
       <StoryXavier />
@@ -54,7 +54,7 @@ const IndexPage = () => (
       <IntroductionListen />
       <StoryAmy />
       <Listen01 />
-      <FellowMohler />
+      {/* <FellowMohler /> */}
       <Listen02 />
       <FellowNichols />
       <Listen03 />

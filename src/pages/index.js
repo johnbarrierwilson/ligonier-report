@@ -39,7 +39,7 @@ const IndexPage = () => (
     <Layout>
       <CoverStart />
       <Introduction />
-      <TeachingFellows />
+      {/* <TeachingFellows /> */}
       <PresidentLetter />
       <IntroductionRead />
       <StoryXavier />
@@ -54,7 +54,7 @@ const IndexPage = () => (
       <IntroductionListen />
       <StoryAmy />
       <Listen01 />
-      <FellowMohler />
+      {/* <FellowMohler /> */}
       <Listen02 />
       <FellowNichols />
       <Listen03 />

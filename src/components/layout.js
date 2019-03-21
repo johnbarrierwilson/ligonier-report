@@ -180,7 +180,7 @@ class Layout extends React.Component {
                   <div>
                     <p><small>&nbsp;</small>Introduction</p>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(0)} spy={true} to="introduction">Overview</Link>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(1)} spy={true} to="teachingfellows">The Teaching Fellows</Link>
+                    {/* <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(1)} spy={true} to="teachingfellows">The Teaching Fellows</Link> */}
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(2)} spy={true} to="presidentletter">A Letter from the President</Link>
                   </div>
                   <div>
@@ -208,7 +208,7 @@ class Layout extends React.Component {
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(14)} spy={true} to="storyamy">Testimony: Amy</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(15)} spy={true} to="listen01"><em>Renewing Your Mind</em></Link>
                     <button onClick={() => this.subNavigation('refnet')}>RefNet</button>
-                    <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link>
+                    {/* <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(16)} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link> */}
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(17)} spy={true} to="listen02">Teaching Series</Link>
                     <button onClick={() => this.subNavigation('ligonier-app')}>The Ligonier App</button>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(18)} spy={true} to="fellownichols">Teaching Fellow: Stephen J. Nichols</Link>

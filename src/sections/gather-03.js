@@ -21,6 +21,13 @@ const IndexPage = () => (
             }
           }
         }
+        TruthConsequences: file(relativePath: { eq: "TruthConsequences.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }
         Travel01: file(relativePath: { eq: "Travel01.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
@@ -130,7 +137,7 @@ const IndexPage = () => (
             id="ask-anything"
             row='2 / span 1'
           >
-            ASK ANYTHING AND TRUTH &amp;&nbsp;CONSEQUENCES
+            TRUTH &amp;&nbsp;CONSEQUENCES
           </Subject>
           <Divider
             column='12 / span 2'
@@ -142,7 +149,7 @@ const IndexPage = () => (
               maxWidth='large'
               position="center 90%"
               row='9 / span 3'
-              src={data.AskAnything.childImageSharp.fluid}
+              src={data.TruthConsequences.childImageSharp.fluid}
             />
           </Well>
           <Heading
@@ -156,7 +163,7 @@ const IndexPage = () => (
             column='12 / span 2'
             row='5 / span 3'
           >
-            <p>New to major college campuses across the United States, Ask Anything events provide a platform for Dr. Albert Mohler to answer students’ questions live. Dr. Mohler equips Christian students to contend earnestly for the faith once delivered to the saints. He is joined by other Teaching Fellows for the companion Truth and Consequences training seminar, which helps Christian students debunk the tenets of secularism and trains them in a biblical worldview. By God’s grace, your financial support is making these events possible for students.</p>
+            <p>Does God exist? What is He like? Has He spoken to us? How we answer these questions has consequences for our lives now and forever. Unfortunately, many students on college campuses aren’t finding the right answers. That’s why we host Truth and Consequences apologetics seminars, training Christian students around the United States to debunk secularism and defend the biblical worldview. By God’s grace, your financial support is making these events possible and equipping the next generation to contend for the faith.</p>
           </Content>
         </Well>
       </Grid>

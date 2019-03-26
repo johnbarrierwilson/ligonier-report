@@ -227,7 +227,7 @@ class Layout extends React.Component {
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(25)} spy={true} to="fellowthomas">Teaching Fellow: Derek W.H. Thomas</Link>
                     <Link containerId="containerElement" hashSpy={true} href="#" offset={this.state.offset} onClick={this.toggleNavigation} onSetActive={() => this.setActive(26)} spy={true} to="gather03">Study Cruises &amp; Tours</Link>
                     <button onClick={() => this.subNavigation('institute-expository-preaching')}>The Institute for Expository Preaching</button>
-                    <button onClick={() => this.subNavigation('ask-anything')}>Ask Anything and Truth &amp; Consequences</button>
+                    <button onClick={() => this.subNavigation('ask-anything')}>Truth &amp; Consequences</button>
                   </div>
                   <Button href="https://gift.ligonier.org/835/donate" target="_window" navigating={this.state.navigating}>Give Now</Button>
                 </Navigation>

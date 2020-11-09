@@ -15,7 +15,7 @@
     "gatsby-plugin-sharp": "^2.0.12",
     "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-source-filesystem": "^2.0.8",
-    "gatsby-transformer-sharp": "^2.1.8",
+    "gatsby-transformer-sharp": "^2.5.21",
     "lodash.throttle": "^4.1.1",
     "normalize.css": "^8.0.0",
     "react": "^16.5.1",

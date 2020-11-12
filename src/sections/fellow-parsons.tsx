@@ -58,7 +58,7 @@ const IndexPage = () => (
             Sanford, Fla., where he labored many years alongside Dr. Sproul as
             copastor. Dr. Parsons had the privilege of joining Dr. Sproul in
             local church ministry as they worked together as shepherds in
-            central Florida. Dr. Parsons also serves as chief publishing officer
+            Central Florida. Dr. Parsons also serves as chief publishing officer
             of Ligonier Ministries, and he has served as editor of{' '}
             <em>Tabletalk</em> magazine since 2003.
           </p>
@@ -100,4 +100,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

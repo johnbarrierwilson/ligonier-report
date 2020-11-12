@@ -101,11 +101,11 @@ const IndexPage = () => (
           <Content center column="8 / span 3" row="8 / span 3">
             <p>
               <a href="https://www.ligonier.org">Ligonier.org</a> provides a
-              spiritual feast for growing Christians. Over eight thousand
+              spiritual feast for growing Christians. More than eight thousand
               educational resources, including a vast library of articles,
               devotionals, and video and audio messages, are available to
               explore. Thanks to you, many of these resources are available for
-              free, reaching millions of people every year.
+              free, reaching millions of people every month.
             </p>
           </Content>
           <Well>
@@ -119,7 +119,7 @@ const IndexPage = () => (
           <Numbers
             column="8 / span 6"
             description="Annual Visits to Ligonier.org"
-            number="13,000,000+"
+            number="16,000,000+"
             row="11 / span 1"
           />
         </Well>
@@ -157,4 +157,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

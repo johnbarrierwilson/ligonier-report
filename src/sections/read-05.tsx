@@ -56,7 +56,7 @@ const IndexPage = () => (
               The English language contains a treasure trove of theological
               riches. Thanks to your prayerful and financial support, these
               resources are being distributed around the world in many
-              languages.
+              additional languages.
             </p>
             <p>
               Teams of people are translating trustworthy teaching into the
@@ -67,16 +67,16 @@ const IndexPage = () => (
             <p>
               We hand-pick translators who combine fidelity to Scripture with an
               expert grasp of their language. Thanks to fruitful partnerships
-              with ministries around the world, these translation efforts in
-              Spanish and French are increasing, and publishing continues in
-              many other languages.
+              with ministries around the world, these translation efforts are
+              increasing in Chinese, Farsi, French, and Spanish, and publishing
+              continues in many other languages.
             </p>
           </Content>
           <Well size="l">
             <Numbers
               column="2 / span 4"
-              description="Languages in which our resources are available"
-              number="36"
+              description="Languages in which our resources have been translated"
+              number="42"
               row="10 / span 2"
               transform="translateY(10%)"
             />
@@ -101,9 +101,9 @@ const IndexPage = () => (
           <Content center column="6 / span 2" row="5 / span 4">
             <p>
               Military chaplains serve those who are literally on the front
-              line. Your support is forming a spiritual supply line by providing
-              gospel resources for troops as trustworthy books are freely
-              distributed for those on active duty around the world.
+              lines. Your support is forming a spiritual supply line by
+              providing gospel resources for troops as trustworthy books are
+              freely distributed for those on active duty around the world.
             </p>
             <p>
               Prisoners write to us every month, hungry for the gospel and for
@@ -144,7 +144,7 @@ const IndexPage = () => (
           />
           <Content center column="10 / span 4" row="9 / span 4">
             <p>
-              Who is Jesus and what did He come to do? Most evangelicals are
+              Who is Jesus, and what did He come to do? Many evangelicals are
               confused when it comes to answering these questions. The Ligonier
               Statement on Christology seeks to bring clarity where there is
               confusion. It carefully restates the Bible’s teaching about the
@@ -152,7 +152,7 @@ const IndexPage = () => (
               biblical testimony and theological precision, this statement
               proclaims that Jesus is truly God and truly man. Written for the
               glory of Christ and the edification of His people, it is available
-              in English and sixteen other major world languages.
+              in English and twenty other major world languages.
             </p>
           </Content>
         </Well>
@@ -190,4 +190,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

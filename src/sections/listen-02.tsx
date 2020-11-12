@@ -57,7 +57,7 @@ const IndexPage = () => (
           <Content center column="2 / span 4" row="10 / span 2">
             <p>
               For decades, our video teaching series have enabled Dr. R.C.
-              Sproul and other trusted teachers to share the riches of Scripture
+              Sproul and other gifted teachers to share the riches of Scripture
               with a wide audience. There are hundreds of topics available,
               designed to build up disciples in their knowledge of God and equip
               them to live for the glory of God.
@@ -71,9 +71,9 @@ const IndexPage = () => (
             </p>
             <p>
               Ligonier teaching series have been translated into several
-              different languages, including Portuguese, Korean, and Arabic.
-              Thanks to your support, we are now preparing series in Spanish for
-              people across Latin America.
+              different languages, including Arabic, Korean, Portuguese, and
+              Spanish. Thanks to your support, we are now preparing series in
+              Chinese and Farsi.
             </p>
           </Content>
         </Well>
@@ -96,7 +96,7 @@ const IndexPage = () => (
             video, devotional articles, and much more.
           </p>
           <p>
-            Accessed over 4.3 million times annually, the app is a go-to
+            Accessed more than 6.1 million times annually, the app is a go-to
             resource for growing Christians. In addition to our devotional
             content and media archives, you’ll also find easy access to Ask
             Ligonier, our biblical and theological chat service.
@@ -118,7 +118,7 @@ const IndexPage = () => (
         <Numbers
           column="9 / span 4"
           description="Annual Ligonier App Launches"
-          number="4,300,000+"
+          number="6,140,000+"
           row="11 / span 1"
         />
       </Grid>
@@ -155,4 +155,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

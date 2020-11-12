@@ -120,8 +120,8 @@ const IndexPage = () => (
                 themselves.
               </p>
               <p>
-                Over fifty years later, we are humbled to survey the vast army
-                of supporters that has risen to enable such important work.
+                More than fifty years later, we are humbled to survey the vast
+                army of supporters that has risen to enable such important work.
                 Thanks to you, the deep truths of God’s Word are finding their
                 way into more places than ever before, and lives are being
                 transformed by a growing knowledge of&nbsp;God.
@@ -134,9 +134,9 @@ const IndexPage = () => (
                 Christians to read, listen, and gather around God's truth.
               </p>
               <p>
-                Under God’s blessing, the outreach we’ve been able to do
-                together has continued to grow. This report is a celebration of
-                all that you’ve enabled through your generosity and
+                Under God’s blessing, the outreach we’ve been able to accomplish
+                together has continued to expand. This report is a celebration
+                of all that you’ve enabled through your generosity and
                 your&nbsp;prayers.
               </p>
             </Content>

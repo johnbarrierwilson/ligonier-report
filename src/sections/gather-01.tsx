@@ -43,26 +43,26 @@ const IndexPage = () => (
           />
         </Well>
         <Subject column="2 / span 5" row="7 / span 1">
-          National Conference
+          Made in the Image of God
         </Subject>
         <Divider column="2 / span 5" row="7 / span 2" />
         <Heading
           center
           column="2 / span 3"
           row="8 / span 2"
-          text="GATHERING FOR AN ANNUAL FAMILY REUNION"
+          text="TAKING OUR ANNUAL FAMILY REUNION ONLINE"
         />
         <Content center column="2 / span 4" row="10 / span 2">
           <p>
-            For over thirty years, our National Conference has been gathering
-            thousands of Ligonier friends and supporters to hear trustworthy
-            teaching from God’s Word. The conference is held over three days
-            every spring in Orlando, Fla., and brings together Christians from
-            many different backgrounds who make up the Ligonier family. Each
-            year it is encouraging to see more first&ndash;time attendees
-            gathering from around the world. Your prayers and support enable our
-            National Conference to serve as a great platform for equipping
-            Christians with the truth.
+            Due to local restrictions responding to COVID-19, we were unable to
+            meet in person for our 2021 National Conference. In God’s
+            providence, and because of your support, Ligonier’s new on-campus
+            studio was finished just in time to transition to an online event,
+            <em>Made in the Image of God</em>. The livestream reached more than
+            100,000 people around the world, helping Christians to draw needed
+            strength from God’s Word as we considered our responsibility to
+            serve our families, churches, and communities well amid a global
+            crisis.
           </p>
         </Content>
 
@@ -73,14 +73,14 @@ const IndexPage = () => (
             id="regionalinternationalconferences"
             row="1 / span 2"
           >
-            Regional &amp; International Conferences
+            Online Events and Livestreams
           </Subject>
           <Divider column="10 / span 4" row="2 / span 1" />
           <Heading
             center
             column="10 / span 3"
             row="2 / span 3"
-            text="GATHERING LOCALLY AND AROUND THE WORLD"
+            text="TIMELY ENCOURAGEMENT FOR THE GLOBAL CHURCH"
           />
           <Image
             column="10 / span 4"
@@ -94,28 +94,27 @@ const IndexPage = () => (
           <Well>
             <Content center column="10 / span 4" row="7 / span 3">
               <p>
-                Ligonier conferences are held nationally and internationally,
-                bringing trusted teachers to live events for growing Christians.
-                We bring gifted teachers to local gatherings so that as many
-                people as possible can join with us. We give thanks to God for
-                the thousands who do so every year.
+                While many in-person gatherings were postponed, we hosted online
+                panel discussions with our Teaching Fellows and special guests
+                to deliver timely encouragement to the people of God. Several
+                Teaching Fellows also brought clear, accessible answers to your
+                theological questions during Ask Ligonier livestreams.
               </p>
               <p>
-                In addition to our popular biennial West Coast Conference,
-                Ligonier hosts regional conferences in many states each year.
-                Internationally, conferences have taken place in Germany,
-                Northern Ireland, and Mexico. Future events are planned for the
-                United Kingdom and other European countries, as well as Canada
-                and Asia.
+                To Commemorate Reformation Day, we streamed Romans 8, a special
+                online event in Spanish and Portuguese and dubbed in English.
+                Growing Christians joined together from around the world to
+                marvel at the rich truths of the gospel, emboldened to live as
+                more than conquerors in Christ.
               </p>
             </Content>
           </Well>
           <NumbersLarge
             column="10 / span 4"
             description1="EVENTS IN A YEAR"
-            description2="NUMBER OF ATTENDEES"
+            description2="ONLINE EVENT &amp; STREAM VIEWS"
             number1="20+"
-            number2="12,000+"
+            number2="612,000+"
             row="10 / span 2"
           />
         </Well>

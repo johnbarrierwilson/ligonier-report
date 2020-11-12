@@ -9,7 +9,6 @@ import styled, {
 import { animateScroll, Link, scrollSpy } from 'react-scroll'
 
 import theme from '../theme'
-import  { useWindowSize } from '../useWindowSize'
 
 import DocumentTitle from './documentTitle'
 import LeftSidebar from './leftSidebar'
@@ -166,7 +165,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
 
                 <meta
                   name="title"
-                  content="2020 Ministry Update - Ligonier Ministries"
+                  content="2020 Ministry Report - Ligonier Ministries"
                 />
                 <meta
                   name="description"
@@ -180,7 +179,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                 />
                 <meta
                   property="og:title"
-                  content="2020 Ministry Update - Ligonier Ministries"
+                  content="2020 Ministry Report - Ligonier Ministries"
                 />
                 <meta
                   property="og:description"
@@ -198,7 +197,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                 />
                 <meta
                   property="twitter:title"
-                  content="2020 Ministry Update - Ligonier Ministries"
+                  content="2020 Ministry Report - Ligonier Ministries"
                 />
                 <meta
                   property="twitter:description"

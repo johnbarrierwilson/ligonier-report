@@ -76,16 +76,16 @@ const IndexPage = () => (
           <p>
             The <em>Reformation Study Bible</em> guides growing Christians
             through the Word of God with trusted contributions from seventy-five
-            gifted scholars. More than one hundred thousand copies have been
-            distributed since March 2015.
+            distinguished scholars. More than one hundred thousand copies have
+            been distributed since March 2015.
           </p>
           <p>
             Dr. R.C. Sproul edited this landmark publication, which contains
-            over 1.1 million words of verse-by-verse commentary. The original
-            edition is packed with insightful articles; topical explanations;
-            historic creeds, confessions, and catechisms; plus award-winning
-            maps and visuals. The newly released Condensed Edition contains the
-            best of this commentary and is designed for life on the go.
+            more than 1.1 million words of verse-by-verse commentary. Its pages
+            are also packed with insightful articles; topical explanations;
+            historic creeds, confessions, and catechisms; and award-winning maps
+            and visuals. The Condensed Edition contains the best of this
+            commentary and is designed for life on the go.
           </p>
           <p>
             The <em>Reformation Study Bible</em>, available in ESV or NKJV,
@@ -94,7 +94,7 @@ const IndexPage = () => (
           </p>
         </Content>
         <Well top>
-          <Numbers column="10 / span 4" number="145,000+" row="10 / span 2">
+          <Numbers column="10 / span 4" number="175,000+" row="10 / span 2">
             <em>REFORMATION STUDY BIBLES</em> DISTRIBUTED SINCE 2015
           </Numbers>
         </Well>
@@ -120,4 +120,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-

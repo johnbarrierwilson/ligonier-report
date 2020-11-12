@@ -69,10 +69,11 @@ const IndexPage = () => (
             fellow in 2010. He has a rare ability to present the truths of the
             Christian faith clearly and winsomely. He has written numerous
             books, including <em>The Whole Christ</em>, <em>In Christ Alone</em>
-            , <em>Devoted to God</em>, and <em>Some Pastors and Teachers</em>.
-            He has also recorded several video teaching series with Ligonier.
-            Dr. Ferguson, having now retired to his native Scotland, continues
-            to write and speak.
+            , <em>Devoted to God</em>, <em>Some Pastors and Teachers</em>,{' '}
+            <em>In the Year of Our Lord</em>, and <em>Maturity</em>. He has also
+            recorded several video teaching series with Ligonier. Dr. Ferguson,
+            having now retired to his native Scotland, continues to write and
+            speak.
           </p>
         </Content>
       </Grid>
@@ -99,4 +100,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

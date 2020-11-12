@@ -34,7 +34,7 @@ const IndexPage = () => (
           column="3 / span 2"
           inverted
           row="4 / span 1"
-          text="Stephen J. Nichols"
+          text="Stephen Nichols"
         />
         <Well bottom>
           <Image
@@ -98,4 +98,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

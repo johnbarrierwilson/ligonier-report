@@ -38,7 +38,7 @@ const IndexPage = () => (
         <Well bottom size="l">
           <Backdrop />
           <Subject column="2 / span 5" row="2 / span 1">
-            <em>Tabletalk Magazine</em>
+            <em>Tabletalk</em> Magazine
           </Subject>
           <Divider column="2 / span 2" row="2 / span 2" />
           <Well>
@@ -60,24 +60,24 @@ const IndexPage = () => (
           />
           <Content column="2 / span 5" row="7 / span 4">
             <p>
-              For over forty years, <em>Tabletalk</em> magazine has helped
+              For more than forty years, <em>Tabletalk</em> magazine has helped
               growing Christians live biblically informed lives. Every month, it
-              reaches approximately 250,000 people in more than seventy-five
+              reaches more than 260,000 people in more than seventy-five
               countries around the world.
             </p>
             <p>
               Each issue contains daily Bible studies to help readers understand
               and apply the Word of God, as well as an effective plan for
               reading through the Bible in a year. Thought-provoking articles
-              from trusted pastors and Bible teachers address biblical,
+              from gifted pastors and Bible teachers address biblical,
               theological, and practical themes to help strengthen and encourage
               people in their faith.
             </p>
             <p>
-              Subscribers can now access <em>Tabletalk</em> at
-              TabletalkMagazine.com. Every new issue is available digitally,
-              along with online-exclusive content and a searchable archive of
-              back issues.
+              Subscribers can also access <em>Tabletalk</em> at{' '}
+              <a href="https://tabletalkmagazine.com">TabletalkMagazine.com</a>.
+              Every new issue is available digitally, along with
+              online-exclusive content and a searchable archive of back issues.
             </p>
             <p>
               <em>Tabletalk</em> is biblical, reliable, and readable. Above all,{' '}
@@ -87,8 +87,12 @@ const IndexPage = () => (
             </p>
           </Content>
           <Well>
-            <Numbers column="2 / span 4" number="250,000" row="11 / span 1">
-              <em>Tabletalk</em> &nbsp;Monthly Readership
+            <Numbers
+              column="2 / span 4"
+              number="75+ Countries"
+              row="11 / span 1"
+            >
+              <em>Tabletalk</em> readers around the world
             </Numbers>
           </Well>
         </Well>
@@ -110,7 +114,9 @@ const IndexPage = () => (
               on Ligonier’s vast library of resources and Dr. R.C. Sproul’s
               decades-long ministry of answering students’ questions, we’re now
               able to answer your theological questions twenty-four hours a day,
-              six days a week.
+              six days a week. In 2020, we launched the Ask Ligonier podcast as
+              another way for you to receive answers from some of the most
+              trusted pastors and theologians who are serving the church today.
             </p>
             <p>
               Do you have a question about a Bible passage or theology? Whether
@@ -146,19 +152,23 @@ const IndexPage = () => (
           />
           <Content column="12 / span 2" row="8 / span 4">
             <p>
-              Since 2014, The State of Theology survey has been measuring the
-              theological health of Americans. In 2018, we asked three thousand
-              people about their beliefs regarding God, the Bible, Jesus Christ,
-              judgment, and eternity. This professionally conducted survey was
-              designed to equip Christians with statistically robust findings to
-              aid the work of the local church and is unrivaled in its
-              theological scope and depth.
+              Since 2014, our biennial State of Theology survey has been
+              measuring the theological health of Americans. Two years ago, we
+              also commissioned the first ever State of Theology in the United
+              Kingdom. In 2020, we asked three thousand Americans about their
+              beliefs regarding God, the Bible, Jesus Christ, truth, and ethics.
+              This professionally conducted survey is designed to help
+              Christians understand today’s culture and equip the church with
+              better insights for discipleship.
             </p>
             <p>
-              We also commissioned the first ever State of Theology survey in
-              the United Kingdom. The results show an urgent need for gospel
-              witness as society in the United Kingdom becomes ever more
-              secular.
+              The 2020 results, available at{' '}
+              <a href="https://thestateoftheology.com">
+                TheStateOfTheology.com
+              </a>
+              , show an urgent need for faithful Bible teaching as society in
+              the U.S. drifts from accepting the truth claims of the Christian
+              faith.
             </p>
           </Content>
         </Well>

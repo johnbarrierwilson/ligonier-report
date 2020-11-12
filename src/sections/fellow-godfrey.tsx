@@ -71,10 +71,11 @@ const IndexPage = () => (
             the people of God. He has recorded a six-part Ligonier teaching
             series called <em>A Survey of Church History</em>, and his many
             books include <em>God’s Pattern for Creation</em>,{' '}
-            <em>Reformation Sketches</em>, <em>An Unexpected Journey</em>, and{' '}
-            <em>Learning to Love the Psalms</em>. Dr. Godfrey continues to speak
-            and write, and he is president emeritus and professor emeritus of
-            church history at Westminster Seminary California.
+            <em>Reformation Sketches</em>, <em>An Unexpected Journey</em>,{' '}
+            <em>Learning to Love the Psalms</em>, and{' '}
+            <em>Saving the Reformation</em>. Dr. Godfrey continues to speak and
+            write, and he is president emeritus and professor emeritus of church
+            history at Westminster Seminary California.
           </p>
         </Content>
       </Grid>
@@ -101,4 +102,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

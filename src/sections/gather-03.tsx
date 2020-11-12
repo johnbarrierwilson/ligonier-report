@@ -77,7 +77,7 @@ const IndexPage = () => (
             <Content column="2 / span 4" row="9 / span 4">
               <p>
                 Ligonier Cruises gather ministry friends at sea for trustworthy
-                teaching from God’s Word. Together they enjoy a memorable time
+                teaching from God’s Word. Together, they enjoy a memorable time
                 with refreshing Christian fellowship set amid the glory of God’s
                 creation. In addition to faithful teaching, Christians have the
                 opportunity to meet like-minded believers. Popular destinations
@@ -89,8 +89,9 @@ const IndexPage = () => (
                 God has worked in church history. Ligonier Teaching Fellows
                 travel with attendees to guide, to teach, and to explain why our
                 history still matters today. These non&ndash;donor&ndash;funded
-                tours provide a rare, first-hand opportunity for growing
-                Christians to experience our family history together.
+                tours provide a rare, firsthand opportunity for growing
+                Christians to experience our family history together. We look
+                forward to sailing again in 2021.
               </p>
             </Content>
           </Well>
@@ -206,4 +207,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

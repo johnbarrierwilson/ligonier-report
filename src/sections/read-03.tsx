@@ -65,7 +65,7 @@ const IndexPage = () => (
             column="8 / span 2"
             row="3 / span 3"
             size="s"
-            text="OVER ONE BILLION PEOPLE WORLDWIDE SPEAK SPANISH, PORTUGUESE, OR FRENCH. YET THEY LACK A STUDY BIBLE ROOTED IN THE HISTORIC CHRISTIAN FAITH AND REFORMED THEOLOGY."
+            text="NEARLY ONE BILLION PEOPLE WORLDWIDE SPEAK ARABIC, FRENCH, OR PORTUGUESE. YET THEY LACK A STUDY BIBLE ROOTED IN THE HISTORIC CHRISTIAN FAITH AND REFORMED THEOLOGY."
             transform="translateX(2rem)"
           />
         </Well>
@@ -81,16 +81,17 @@ const IndexPage = () => (
             <p>
               Translating the <em>Reformation Study Bible</em> into other
               languages is fueling Great Commission discipleship around the
-              world. German and Korean editions are now available. Translation
-              work is underway in three more languages: Spanish, Portuguese, and
-              French. In total, over one billion people worldwide speak one of
-              these three languages, yet they lack a study Bible rooted in the
-              historic Christian faith and Reformed theology.
+              world. German, Korean, and Spanish editions are now available.
+              Translation work is underway in three more languages: Arabic,
+              French, and Portuguese. In total, nearly one billion people
+              worldwide speak one of these three languages, yet they lack a
+              study Bible rooted in the historic Christian faith and Reformed
+              theology.
             </p>
             <p>
               These pioneering translations will strengthen and advance global
-              gospel ministry thanks to your generous support. When complete, it
-              will mean a <em>Reformation Study Bible</em> is available in at
+              gospel ministry, thanks to your generous support. When complete,
+              it will mean a <em>Reformation Study Bible</em> is available in at
               least one language spoken on every continent in the world.
             </p>
           </Content>
@@ -132,15 +133,15 @@ const IndexPage = () => (
             <p>
               Thousands of pastors, church leaders, and students in ten African
               countries are receiving a free copy of the{' '}
-              <em>Reformation Study Bible</em> thanks to the strategic
+              <em>Reformation Study Bible</em>, thanks to the strategic
               partnership between Ligonier Ministries and the Rosemary Jensen
-              Bible Foundation. We have already sent more than 10,000 Bibles,
-              with plans to distribute an additional 26,000 by 2028.
+              Bible Foundation. We have already sent more than 20,000 Bibles,
+              with plans to distribute an additional 15,000 by 2028.
             </p>
             <p>
               This outreach is only possible with the support of visionary
               donors. Thank you for partnering with us. You are bringing the
-              Word of God to needy Christians in lands where Bibles are
+              Word of God to growing Christians in lands where Bibles are
               expensive and trustworthy theological resources are rare.
             </p>
           </Content>
@@ -179,4 +180,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

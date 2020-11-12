@@ -8,7 +8,7 @@ interface DocumentTitleProps {
 }
 
 const DocumentTitle = (props: DocumentTitleProps) => (
-  <Container {...props}>2020 Ministry Update</Container>
+  <Container {...props}>2020 Ministry Report</Container>
 )
 
 const Container = styled.p<DocumentTitleProps>`

@@ -43,43 +43,50 @@ const IndexPage = () => (
           <Divider column="9 / span 4" row="2 / span 2" />
           <Content column="9 / span 4" row="4 / span 7">
             <p>
-              We moved into a new year with a deepened trust in our sovereign
-              God. Without our beloved founder, our steps were tentative at
-              first, but the pace of ministry quickened in the following weeks
-              and months. It’s almost as if a spotlight was turned toward
-              Ligonier this year. With thanksgiving to God for His mercy, we can
-              report to you that more people than ever are seeking out biblical
-              and theological teaching through this ministry.
+              As we entered 2020, none of us could have imagined the challenges
+              our world would face. The COVID-19 health crisis, economic
+              turmoil, and social and political upheaval were beyond what most
+              of us have experienced in any year prior. However, we know that
+              none of these trials have fallen outside the sovereign purposes of
+              God. In fact, we believe the Lord prepared Ligonier to serve the
+              global church at such a time as this. By His grace, more people
+              than ever are seeking out faithful biblical teaching from this
+              ministry.
             </p>
             <p>
-              Dr. Sproul and I often discussed his vision for the future. He had
-              in mind for us to have a growing, global outreach—as long as we
-              are faithful. Ligonier stands on the authority of God’s Word and
-              the gospel of Jesus Christ. If we lose that, we’ve lost
-              everything.
+              When we proclaim, teach, and defend the truth of God’s holiness,
+              it provides eternal hope in Jesus Christ. That’s why it was Dr.
+              R.C. Sproul’s vision to have Ligonier in the middle of a
+              flourishing of Reformed theology in service to the church
+              throughout the world. Committed to this calling of discipleship,
+              the Lord provided as we opened our online teaching series library
+              to people around the globe during stay-at-home orders. Through
+              thousands of hours of teaching, numerous livestreams and online
+              events, new outreaches and podcasts, and landmark translation
+              efforts, more than twenty million people have been reached this
+              year with the hope that they will better understand the holiness,
+              sovereignty, and saving grace of God.
             </p>
             <p>
-              I believe that R.C.’s greatest gift to Ligonier was a clear
-              identity. We know who we are. And this year, out of the hundreds
-              of hours of conferences and classroom instruction, thousands of
-              pages published and study Bibles distributed, hundreds of
-              thousands of minutes broadcast and streamed, more than six million
-              people have been helped to better understand who God is, who they
-              are, and how the Lord is calling them to live in this world.
-            </p>
-            <p>
-              This ministry report only hints at the many unique outreaches the
-              Lord is doing through Ligonier and through your support. Please
-              take a few minutes and read through an overview of our work this
-              year and the work we hope to do in the coming year. Would you now
-              and in the months ahead commit to praying for our shared labor for
-              the kingdom of God as the Lord brings Ligonier Ministries to your
-              mind?
+              And as the spiritual need grows daily, Ligonier’s opportunity to
+              serve more people in more places is growing. The Lord is our
+              steadfast anchor in every storm, and He is working all things
+              together for the good of His people and the glory of His name. As
+              we approach our fiftieth year of ministry in 2021, demand for
+              trustworthy Bible teaching from Ligonier has never been higher.
+              This ministry report gives only a glimpse into the many outreaches
+              you have made possible by your prayers and financial support. We
+              are grateful to God for you, for you share in this work. Please
+              join us in praying for faithful, fruitful ministry in the years to
+              come.
             </p>
             <br />
-            <p style={{ textIndent: '0px' }}>Thank you for standing with us.</p>
+            <p style={{ textIndent: '0px' }}>
+              It is a privilege to serve with you to advance the gospel. Thank
+              you.
+            </p>
             <br />
-            <p style={{ textIndent: '0px' }}>Soli Deo gloria,</p>
+            <p style={{ textIndent: '0px' }}>Yours in Christ,</p>
             <br />
             <img
               src={ChrisLarsonSignature}
@@ -126,4 +133,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

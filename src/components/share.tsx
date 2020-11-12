@@ -41,7 +41,7 @@ function Share() {
         <EmailShareButton
           url="https://report.ligonier.org"
           body="Get a snapshot of God’s work through Ligonier in 2018 and the work they hope to do next year. Read it at Report.Ligonier.org."
-          subject="Ligonier’s 2020 Ministry Update"
+          subject="Ligonier’s 2020 Ministry Report"
         >
           <EmailIcon iconFillColor="#ffffff" size={28} round={true} />
         </EmailShareButton>

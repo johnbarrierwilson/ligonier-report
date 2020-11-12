@@ -59,9 +59,9 @@ const IndexPage = () => (
           <p>
             We are reaching more people than ever before with the knowledge of
             God’s holiness. Across all of our online platforms, students watch
-            hundreds of thousands of hours of Ligonier videos each year. On
-            YouTube alone, this now equates to nearly two hundred years of
-            continuous playback.
+            millions of hours of Ligonier videos each year. On YouTube alone,
+            this equates to more than five hundred years of continuous playback
+            in 2020.
           </p>
           <p>
             <em>Renewing Your Mind</em> and messages from National Conferences
@@ -73,7 +73,7 @@ const IndexPage = () => (
           <Numbers
             column="2 / span 4"
             description="YOUTUBE CHANNEL PLAYS PER&nbsp;MONTH"
-            number="500,000+"
+            number="1,800,000+"
             row="11 / span 1"
           />
         </Well>
@@ -111,22 +111,25 @@ const IndexPage = () => (
           </Heading>
           <Content center column="10 / span 4" row="5 / span 4">
             <p>
-              Our featured podcasts provide spiritual food for growing
-              Christians wherever they are. <em>5 Minutes in Church History</em>
-              , with Stephen Nichols, travels back in time to explore the lives
-              of the saints who came before us and the events which shaped their
-              journey.
+              Our featured podcasts provide spiritual food to growing Christians
+              wherever they are, and we’ve expanded our library to meet the
+              surging demand for trustworthy audio teaching.
             </p>
             <p>
-              <em>Open Book</em> allows you to step into Dr. R.C. Sproul’s
-              library. Glean new insights into the books which have most
-              influenced him and other pastors and theologians.
+              In January, we launched the <em>Ask Ligonier</em> podcast. Each
+              week, our Teaching Fellows and special guests draw from years of
+              careful study to answer biblical and theological questions from
+              listeners like you.
             </p>
             <p>
-              <em>The Westminster Shorter Catechism</em> is a 107-episode
-              podcast that features Dr. Sinclair Ferguson reading each question
-              and answer in its entirety. This catechism has been beloved by
-              Christians around the world for generations.
+              <em>Luther: In Real Time</em> launched in October, allowing you to
+              walk with Martin Luther 500 years to the day from his heresy
+              charges to his famous stand for God’s Word at the Diet of Worms.
+            </p>
+            <p>
+              A new podcast from Dr. Sproul is coming in early 2021. We’re eager
+              for you to hear and share it once the first episode releases in
+              January.
             </p>
             <p>
               Thanks to you, <em>Renewing Your Mind</em>, RefNet, and all our
@@ -138,7 +141,7 @@ const IndexPage = () => (
             <Numbers
               column="10 / span 4"
               description="MONTHLY PODCAST LISTENS"
-              number="1,000,000+"
+              number="1,500,000+"
               row="11 / span 1"
             />
           </Well>
@@ -177,4 +180,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

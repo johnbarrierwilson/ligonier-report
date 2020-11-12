@@ -70,15 +70,16 @@ const IndexPage = () => (
           <p>
             Our daily teaching broadcast, <em>Renewing Your Mind</em>, equips
             growing Christians to know what they believe, why they believe it,
-            how to live it, and how to share it. Each day we air trustworthy,
+            how to live it, and how to share it. Each day, we air trustworthy,
             accessible, and in-depth Bible teaching from Dr. R.C. Sproul, the
-            Ligonier Teaching Fellows, and other trusted teachers.
+            Ligonier Teaching Fellows, and other gifted teachers.
           </p>
           <p>
-            You enable us to broadcast on more than 370 radio stations around
-            the United States, as a podcast, and online at RenewingYourMind.org.
-            Our aim is to spread the knowledge of the glory of God, and our
-            prayer is that multitudes will be transformed by the renewing of
+            You enable us to broadcast on more than 360 radio stations around
+            the United States, as a podcast, and online at{' '}
+            <a href="https://renewingyourmind.org">RenewingYourMind.org</a>. Our
+            aim is to spread the knowledge of the glory of God, and our prayer
+            is that multitudes will be transformed by the renewing of
             their&nbsp;minds.
           </p>
         </Content>
@@ -118,13 +119,12 @@ const IndexPage = () => (
           >
             <p>
               <strong>
-                New Spanish Edition: <em>Renovando&nbsp;Tu&nbsp;Mente</em>
+                Spanish Edition: <em>Renovando&nbsp;Tu&nbsp;Mente</em>
               </strong>
               <br />
-              The program launched in March 2018 and within six months more than
-              thirty Spanish-speaking radio stations were broadcasting the
-              program across Latin America, along with major online radio
-              portals.
+              Since its launch in 2018, the Spanish edition of Renewing Your
+              Mind has broadcasted on radio stations across Latin America, along
+              with major online radio portals.
             </p>
           </Content>
         </Well>
@@ -168,14 +168,14 @@ const IndexPage = () => (
             <p>
               RefNet features trusted teachers including Alistair Begg, John
               MacArthur, R.C. Sproul, and the Ligonier Teaching Fellows. The
-              daily schedule also includes Bible excerpts, news updates, and
-              audiobooks&mdash;combining to bring you fresh spiritual
+              daily schedule also includes Bible readings, audiobooks, music,
+              and more&mdash;combining to bring you fresh spiritual
               encouragement every day.
             </p>
             <p>
               RefNet draws on Ligonier’s extensive library of resources and
               partners with other respected Reformed ministries to be a trusted
-              alternate to traditional Christian radio.
+              alternative to traditional Christian radio.
             </p>
           </Content>
         </Well>
@@ -213,4 +213,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

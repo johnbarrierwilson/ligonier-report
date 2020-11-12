@@ -64,21 +64,19 @@ const IndexPage = () => (
           <Content column="2 / span 2" row="8 / span 4">
             <p>
               Reformation Bible College is gathering the next generation of
-              reformers, offering a classically based, theologically driven
-              college curriculum. Growing in the knowledge of God is the
+              Christian leaders, offering a classically based, theologically
+              driven college curriculum. Growing in the knowledge of God is the
               heartbeat of RBC, where faculty seek to ignite a passion for
               theological conviction and equip students for faithful service in
               any vocation.
             </p>
             <p>
-              Thanks to visionary donors, the college’s new $8.5 million
-              state-of-the-art Student Learning Center allows for much-needed
-              expansion on its campus in Orlando, Fla.
-            </p>
-            <p>
-              RBC’s entire outlook is grounded in the Scriptures and provides
-              students with a firm biblical foundation on which to build their
-              lives for the glory of God.
+              This year, visionary donors provided the needed resources for RBC
+              to offer its Foundation Year certificate program online for the
+              first time. This allows students who are currently unable to move
+              to Central Florida to gain a firm theological foundation for all
+              of life. The on-campus student body was also the largest it has
+              been in the college’s history.
             </p>
           </Content>
 
@@ -116,15 +114,15 @@ const IndexPage = () => (
           <Well top>
             <Content column="6 / span 2" row="9 / span 3" type="sans">
               <p>
-                <strong>Always Ready: Equipping Young&nbsp;Apologists</strong>
+                <strong>Always Ready: Answers to Tough Questions</strong>
                 <br />
-                High school students are equipped to defend the Christian faith
-                at RBC’s Always Ready Youth Conference. This annual, one-day
-                apologetics event in Orlando, Fla., helps young disciples to
-                better share their faith and give a defense to their
-                non-Christian friends. In an age when the Bible’s teaching is
-                rapidly being marginalized, RBC is encouraging young people to
-                stand fast on the truth of God’s&nbsp;Word.
+                Thousands of middle and high school students were equipped to
+                defend the Christian faith through Always Ready, an online
+                livestream hosted by Ligonier Ministries and RBC. At a time when
+                the Bible’s teaching is rapidly being marginalized, gifted
+                teachers and speakers helped young disciples stand firm for the
+                truth of God’s Word and give sound answers to the questions
+                posed by their non-Christian friends.
               </p>
             </Content>
           </Well>
@@ -159,8 +157,8 @@ const IndexPage = () => (
             <p>
               Sit under the teaching of gifted theologians such as Drs. R.C.
               Sproul, Sinclair Ferguson, and Derek Thomas, together with other
-              Ligonier Teaching Fellows and trusted teachers. More than eight
-              hundred lessons from over eighty courses are available to choose
+              Ligonier Teaching Fellows and gifted teachers. More than 1,100
+              lessons from over one hundred courses are available to choose
               from.
             </p>
             <p>
@@ -174,7 +172,7 @@ const IndexPage = () => (
         <Numbers
           column="10 / span 4"
           description="ACTIVE CONNECT STUDENTS"
-          number="5,500+"
+          number="5,000+"
           row="11 / span 1"
         />
       </Grid>
@@ -211,4 +209,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

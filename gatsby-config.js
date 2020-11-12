@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Ministry Report - Ligonier Ministries',
+    title: '2020 Ministry Update - Ligonier Ministries',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Ligonier Ministries Ministry Report',
+        name: 'Ligonier Ministries 2020 Ministry Update',
         short_name: 'ligonierministryreport',
         start_url: '/',
         background_color: '#ffffff',

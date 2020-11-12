@@ -166,7 +166,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
 
                 <meta
                   name="title"
-                  content="Ministry Report - Ligonier Ministries"
+                  content="2020 Ministry Update - Ligonier Ministries"
                 />
                 <meta
                   name="description"
@@ -180,7 +180,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                 />
                 <meta
                   property="og:title"
-                  content="Ministry Report - Ligonier Ministries"
+                  content="2020 Ministry Update - Ligonier Ministries"
                 />
                 <meta
                   property="og:description"
@@ -198,7 +198,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                 />
                 <meta
                   property="twitter:title"
-                  content="Ministry Report - Ligonier Ministries"
+                  content="2020 Ministry Update - Ligonier Ministries"
                 />
                 <meta
                   property="twitter:description"

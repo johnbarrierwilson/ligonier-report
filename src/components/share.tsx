@@ -16,7 +16,9 @@ interface ShareProps {
 function Share() {
   const [isSharing, setIsSharing] = React.useState(false)
 
-  const handleClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>): void => {
+  const handleClick = (
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ): void => {
     event.preventDefault()
     setIsSharing(!isSharing)
   }
@@ -39,7 +41,7 @@ function Share() {
         <EmailShareButton
           url="https://report.ligonier.org"
           body="Get a snapshot of God’s work through Ligonier in 2018 and the work they hope to do next year. Read it at Report.Ligonier.org."
-          subject="Ligonier’s Ministry Report"
+          subject="Ligonier’s 2020 Ministry Update"
         >
           <EmailIcon iconFillColor="#ffffff" size={28} round={true} />
         </EmailShareButton>

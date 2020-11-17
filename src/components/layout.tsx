@@ -518,14 +518,14 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     spy={true}
                     to="gather01"
                   >
-                    National Conference
+                    Made in the Image of God
                   </Link>
                   <button
                     onClick={() =>
                       subNavigation('regionalinternationalconferences')
                     }
                   >
-                    Regional and International Conferences
+                    Online Events and Livestreams
                   </button>
                   <Link
                     containerId="containerElement"

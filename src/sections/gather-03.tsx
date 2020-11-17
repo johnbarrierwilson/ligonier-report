@@ -91,7 +91,7 @@ const IndexPage = () => (
                 history still matters today. These non&ndash;donor&ndash;funded
                 tours provide a rare, firsthand opportunity for growing
                 Christians to experience our family history together. We look
-                forward to sailing again in 2021.
+                forward to sailing again soon.
               </p>
             </Content>
           </Well>

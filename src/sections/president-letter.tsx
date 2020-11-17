@@ -63,9 +63,9 @@ const IndexPage = () => (
               to people around the globe during stay-at-home orders. Through
               thousands of hours of teaching, numerous livestreams and online
               events, new outreaches and podcasts, and landmark translation
-              efforts, more than twenty million people have been reached this
-              year with the hope that they will better understand the holiness,
-              sovereignty, and saving grace of God.
+              efforts, more than twenty-five million people have been reached
+              this year with the hope that they will better understand the
+              holiness, sovereignty, and saving grace of God.
             </p>
             <p>
               And as the spiritual need grows daily, Ligonier’s opportunity to

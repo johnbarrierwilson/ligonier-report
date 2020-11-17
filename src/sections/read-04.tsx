@@ -36,7 +36,7 @@ const IndexPage = () => (
         <Well bottom>
           <Backdrop />
           <Subject column="2 / span 4" row="2 / span 1">
-            Reformation Trust
+            Publishing
           </Subject>
           <Divider column="2 / span 4" row="2 / span 2" />
           <Heading
@@ -56,8 +56,8 @@ const IndexPage = () => (
               The gospel legacy of the Reformers lives on through our publishing
               imprint, Reformation Trust. Authored by trusted teachers of our
               own day, such as Dr. R.C. Sproul and the Ligonier Teaching
-              Fellows, these books stand resolutely on the Bible and seek to
-              build up believers in their knowledge of God.
+              Fellows, these books and resources stand resolutely on the Bible
+              and seek to build up believers in their knowledge of God.
             </p>
             <p>
               New titles on discipleship, the doctrines of the Reformation, and
@@ -70,8 +70,8 @@ const IndexPage = () => (
           <Well>
             <Numbers
               column="2 / span 4"
-              description="Physical Resources Given Away in the Past Year"
-              number="375,000+"
+              description="Free study guides downloaded this year"
+              number="660,000+"
               row="11 / span 1"
             />
           </Well>

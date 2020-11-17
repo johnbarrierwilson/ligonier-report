@@ -21,7 +21,7 @@ const IndexPage = () => (
             }
           }
         }
-        TruthConsequences: file(relativePath: { eq: "TruthConsequences.jpg" }) {
+        TIEP: file(relativePath: { eq: "TIEP.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 700) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -114,64 +114,47 @@ const IndexPage = () => (
         </Well>
 
         <Subject
-          column="9 / span 2"
+          column="10 / span 3"
           id="institute-expository-preaching"
-          row="6 / span 1"
+          row="2 / span 1"
         >
           THE INSTITUTE FOR EXPOSITORY PREACHING
         </Subject>
-        <Divider column="9 / span 2" row="6 / span 2" />
+        <Divider column="10 / span 2" row="2 / span 2" />
         <Heading
           center
-          column="9 / span 2"
-          row="7 / span 2"
+          column="10 / span 4"
+          row="3 / span 1"
           text="TRAINING BIBLICAL EXPOSITORS"
         />
-        <Content center column="9 / span 2" row="9 / span 3">
+        <Content column="10 / span 4" row="4 / span 3">
           <p>
-            The Institute for Expository Preaching trains pastors, church
-            leaders, and Bible teachers in the art of expository preaching. With
-            over forty-five years in preaching and teaching ministry, Dr. Steven
+            To fight the worldwide famine of the knowledge of God, the Institute
+            for Expository Preaching trains pastors, church leaders, and Bible
+            teachers in the art of expository preaching. With more than
+            forty-five years in preaching and teaching ministry, Dr. Steven
             Lawson leads these events across the country and around the world.
-            Each event is dedicated to the passionate preaching and exposition
-            of the Word of God so that the glorious gospel of Jesus Christ can
-            be heard more clearly from pulpits everywhere.
+          </p>
+
+          <p>
+            Each concentrated, three-day seminar is dedicated to the passionate
+            preaching of the Word of God. Focused modules help growing
+            expositors learn the ins and outs of proclaiming God’s sovereignty
+            in salvation, exhorting the church in the pursuit of holiness,
+            preaching with evangelistic zeal, and more. As Christian leaders
+            sharpen their ability to expound the Scriptures, the glorious gospel
+            of Jesus Christ is heard more clearly from pulpits everywhere and
+            the church is strengthened in the knowledge of the Lord.
           </p>
         </Content>
-
         <Well>
-          <Subject column="12 / span 2" id="ask-anything" row="2 / span 1">
-            TRUTH &amp;&nbsp;CONSEQUENCES
-          </Subject>
-          <Divider column="12 / span 2" row="2 / span 2" />
-          <Well>
-            <Image
-              column="12 / span 3"
-              maxWidth="large"
-              position="center 90%"
-              row="9 / span 3"
-              src={data.TruthConsequences.childImageSharp.fluid}
-            />
-          </Well>
-          <Heading
-            center
-            column="12 / span 2"
-            row="3 / span 2"
-            text="CONTENDING FOR THE FAITH"
+          <Image
+            column="9 / span 5"
+            maxWidth="large"
+            position="center 90%"
+            row="8 / span 5"
+            src={data.TIEP.childImageSharp.fluid}
           />
-          <Content center column="12 / span 2" row="5 / span 3">
-            <p>
-              Does God exist? What is He like? Has He spoken to us? How we
-              answer these questions has consequences for our lives now and
-              forever. Unfortunately, many students on college campuses aren’t
-              finding the right answers. That’s why we host Truth and
-              Consequences apologetics seminars, training Christian students
-              around the United States to debunk secularism and defend the
-              biblical worldview. By God’s grace, your financial support is
-              making these events possible and equipping the next generation to
-              contend for the faith.
-            </p>
-          </Content>
         </Well>
       </Grid>
     )}

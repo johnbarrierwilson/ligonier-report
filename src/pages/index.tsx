@@ -28,9 +28,9 @@ import Read02 from '../sections/read-02'
 import Read03 from '../sections/read-03'
 import Read04 from '../sections/read-04'
 import Read05 from '../sections/read-05'
-import StoryAmy from '../sections/story-amy'
-import StoryDoug from '../sections/story-doug'
-import StoryXavier from '../sections/story-xavier'
+import StoryStephanie from '../sections/story-stephanie'
+import StoryKarla from '../sections/story-karla'
+import StoryGary from '../sections/story-gary'
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -39,7 +39,7 @@ const IndexPage = () => (
       <Introduction />
       <PresidentLetter />
       <IntroductionRead />
-      <StoryXavier />
+      <StoryGary />
       <Read01 />
       <FellowSinclair />
       <Read02 />
@@ -49,13 +49,13 @@ const IndexPage = () => (
       <Read05 />
       <FellowLawson />
       <IntroductionListen />
-      <StoryAmy />
+      <StoryStephanie />
       <Listen01 />
       <Listen02 />
       <FellowNichols />
       <Listen03 />
       <IntroductionGather />
-      <StoryDoug />
+      <StoryKarla />
       <Gather01 />
       <FellowParsons />
       <Gather02 />

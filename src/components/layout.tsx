@@ -270,9 +270,9 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     onClick={toggleNavigation}
                     onSetActive={() => setActive(4)}
                     spy={true}
-                    to="storyxavier"
+                    to="storygary"
                   >
-                    Testimony: Xavier
+                    Testimony: Gary
                   </Link>
                   <Link
                     containerId="containerElement"
@@ -417,9 +417,9 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     onClick={toggleNavigation}
                     onSetActive={() => setActive(14)}
                     spy={true}
-                    to="storyamy"
+                    to="storystephanie"
                   >
-                    Testimony: Amy
+                    Testimony: Stephanie
                   </Link>
                   <Link
                     containerId="containerElement"
@@ -504,9 +504,9 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     onClick={toggleNavigation}
                     onSetActive={() => setActive(21)}
                     spy={true}
-                    to="storydoug"
+                    to="storykarla"
                   >
-                    Testimony: Doug
+                    Testimony: Karla
                   </Link>
                   <Link
                     containerId="containerElement"
@@ -584,9 +584,6 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     }
                   >
                     The Institute for Expository Preaching
-                  </button>
-                  <button onClick={() => subNavigation('ask-anything')}>
-                    Truth &amp; Consequences
                   </button>
                 </div>
                 <Button

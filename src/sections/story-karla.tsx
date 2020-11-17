@@ -17,6 +17,26 @@ const IndexPage = () => (
       Testimony
     </Subject>
     <Divider column="3 / span 1" row="3 / span 1" />
+    <Blockquote column="9 / span 3" indent row="4 / span 3">
+      <p>“Thank you for giving away the free study groups.</p>
+    </Blockquote>
+    <Content column="10 / span 3" row="7 / span 2">
+      <p>
+        In the beginning of the quarantine, I asked my nephew if he would like
+        to take courses with me. He is 16 years old, and it has been a great
+        blessing to see how he's grown in his knowledge of the Bible. For so
+        many people, the 2020 quarantine will be filled with bad memories; for
+        me and my nephew, we will remember it for the theology courses we took.”
+      </p>
+    </Content>
+    <Well>
+      <Heading column="10 / span 2" row="9 / span 1">
+        Karla,
+        <br />
+        <em>Florida</em>
+      </Heading>
+      <Divider column="12 / span 3" row="10 / span 2" />
+    </Well>
     <Well>
       <Content column="3 / span 3" row="3 / span 6">
         <p>
@@ -35,30 +55,10 @@ const IndexPage = () => (
           take any course in our library.
         </p>
       </Content>
-      <Numbers column="3 / span 3" number="24,800" row="8 / span 2">
-        Free study groups created
-      </Numbers>
     </Well>
-    <Blockquote column="9 / span 3" indent row="4 / span 3">
-      <p>“Thank you for giving away the free study groups.</p>
-    </Blockquote>
-    <Content column="10 / span 3" row="7 / span 2">
-      <p>
-        In the beginning of the quarantine, I asked my nephew if he would like
-        to take courses with me. He is 16 years old, and it has been a great
-        blessing to see how he's grown in his knowledge of the Bible. For so
-        many people, the 2020 quarantine will be filled with bad memories; for
-        me and my nephew, we will remember it for the theology courses we took.”
-      </p>
-    </Content>
-    <Heading column="10 / span 2" row="9 / span 1">
-      Karla,
-      <br />
-      <em>Florida</em>
-    </Heading>
-    <Well>
-      <Divider column="12 / span 3" row="10 / span 2" />
-    </Well>
+    <Numbers column="3 / span 3" number="24,800" row="8 / span 2">
+      Free study groups created
+    </Numbers>
   </Grid>
 )
 

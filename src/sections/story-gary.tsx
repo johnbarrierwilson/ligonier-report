@@ -17,6 +17,28 @@ const IndexPage = () => (
       Testimony
     </Subject>
     <Divider column="3 / span 1" row="3 / span 1" />
+    <Blockquote column="9 / span 4" indent row="4 / span 3">
+      <p>
+        “I can't stress enough how grateful I feel to God for letting me find
+        this amazing ministry.
+      </p>
+    </Blockquote>
+    <Content column="10 / span 3" row="7 / span 2">
+      <p>
+        I'm a missionary to Haiti, and to keep learning from Scripture is vital
+        for me. I downloaded all of the study guides because I really want to
+        learn as much as I can. My relationship with God is improving as I get
+        deeper into the Scripture, and I love it.”
+      </p>
+    </Content>
+    <Well>
+      <Heading column="10 / span 2" row="9 / span 1">
+        Gary,
+        <br />
+        <em>Haiti</em>
+      </Heading>
+      <Divider column="12 / span 3" row="10 / span 2" />
+    </Well>
     <Well>
       <Content column="3 / span 3" row="3 / span 6">
         <p>
@@ -36,32 +58,10 @@ const IndexPage = () => (
           deeper.
         </p>
       </Content>
-      <Numbers column="3 / span 3" number="662,500" row="8 / span 2">
-        Study guides downloaded
-      </Numbers>
     </Well>
-    <Blockquote column="9 / span 4" indent row="4 / span 3">
-      <p>
-        “I can't stress enough how grateful I feel to God for letting me find
-        this amazing ministry.
-      </p>
-    </Blockquote>
-    <Content column="10 / span 3" row="7 / span 2">
-      <p>
-        I'm a missionary to Haiti, and to keep learning from Scripture is vital
-        for me. I downloaded all of the study guides because I really want to
-        learn as much as I can. My relationship with God is improving as I get
-        deeper into the Scripture, and I love it.”
-      </p>
-    </Content>
-    <Heading column="10 / span 2" row="9 / span 1">
-      Gary,
-      <br />
-      <em>Haiti</em>
-    </Heading>
-    <Well>
-      <Divider column="12 / span 3" row="10 / span 2" />
-    </Well>
+    <Numbers column="3 / span 3" number="662,500" row="8 / span 2">
+      Study guides downloaded
+    </Numbers>
   </Grid>
 )
 

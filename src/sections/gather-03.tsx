@@ -127,6 +127,15 @@ const IndexPage = () => (
           row="3 / span 1"
           text="TRAINING BIBLICAL EXPOSITORS"
         />
+        <Well>
+          <Image
+            column="9 / span 5"
+            maxWidth="large"
+            position="center 90%"
+            row="8 / span 5"
+            src={data.TIEP.childImageSharp.fluid}
+          />
+        </Well>
         <Content column="10 / span 4" row="4 / span 3">
           <p>
             To fight the worldwide famine of the knowledge of God, the Institute
@@ -147,15 +156,6 @@ const IndexPage = () => (
             the church is strengthened in the knowledge of the Lord.
           </p>
         </Content>
-        <Well>
-          <Image
-            column="9 / span 5"
-            maxWidth="large"
-            position="center 90%"
-            row="8 / span 5"
-            src={data.TIEP.childImageSharp.fluid}
-          />
-        </Well>
       </Grid>
     )}
   />

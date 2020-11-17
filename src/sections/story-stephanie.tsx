@@ -17,6 +17,26 @@ const IndexPage = () => (
       Testimony
     </Subject>
     <Divider column="3 / span 1" row="3 / span 1" />
+    <Blockquote column="9 / span 4" indent row="3 / span 3">
+      <p>
+        “By opening your teaching series, what would have been a mental struggle
+        for me has turned into delving into the Word of the Lord.
+      </p>
+    </Blockquote>
+    <Content column="10 / span 3" row="8 / span 1">
+      <p>
+        I have learned so much and have grown closer to the Lord in unbelievable
+        ways! Thank you so much.”
+      </p>
+    </Content>
+    <Well>
+      <Heading column="10 / span 2" row="9 / span 1">
+        Stephanie,
+        <br />
+        <em>South Afria</em>
+      </Heading>
+      <Divider column="12 / span 3" row="10 / span 2" />
+    </Well>
     <Well>
       <Content column="3 / span 3" row="3 / span 6">
         <p>
@@ -39,30 +59,10 @@ const IndexPage = () => (
           views on Ligonier’s YouTube channel to triple.
         </p>
       </Content>
-      <Numbers column="3 / span 3" number="2x time" row="8 / span 2">
-        Spent on Ligonier.org
-      </Numbers>
     </Well>
-    <Blockquote column="9 / span 4" indent row="3 / span 3">
-      <p>
-        “By opening your teaching series, what would have been a mental struggle
-        for me has turned into delving into the Word of the Lord.
-      </p>
-    </Blockquote>
-    <Content column="10 / span 3" row="8 / span 1">
-      <p>
-        I have learned so much and have grown closer to the Lord in unbelievable
-        ways! Thank you so much.”
-      </p>
-    </Content>
-    <Heading column="10 / span 2" row="9 / span 1">
-      Stephanie,
-      <br />
-      <em>South Afria</em>
-    </Heading>
-    <Well>
-      <Divider column="12 / span 3" row="10 / span 2" />
-    </Well>
+    <Numbers column="3 / span 3" number="2x time" row="8 / span 2">
+      Spent on Ligonier.org
+    </Numbers>
   </Grid>
 )
 

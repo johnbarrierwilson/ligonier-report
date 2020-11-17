@@ -22,7 +22,7 @@ const IndexPage = () => (
             }
           }
         }
-        ConferenceSeattle: file(relativePath: { eq: "ConferenceSeattle.jpg" }) {
+        ConferenceSeattle: file(relativePath: { eq: "ConferenceSeattle.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid_withWebp_noBase64

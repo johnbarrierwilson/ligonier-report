@@ -57,7 +57,7 @@ const IndexPage = () => (
             Due to local restrictions responding to COVID-19, we were unable to
             meet in person for our 2021 National Conference. In God’s
             providence, and because of your support, Ligonier’s new on-campus
-            studio was finished just in time to transition to an online event,
+            studio was finished just in time to transition to an online event,{' '}
             <em>Made in the Image of God</em>. The livestream reached more than
             100,000 people around the world, helping Christians to draw needed
             strength from God’s Word as we considered our responsibility to

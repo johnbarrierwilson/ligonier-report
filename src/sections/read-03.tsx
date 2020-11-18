@@ -136,7 +136,7 @@ const IndexPage = () => (
               <em>Reformation Study Bible</em>, thanks to the strategic
               partnership between Ligonier Ministries and the Rosemary Jensen
               Bible Foundation. We have already sent more than 20,000 Bibles,
-              with plans to distribute an additional 15,000 by 2028.
+              with plans to distribute an additional 16,000 by 2028.
             </p>
             <p>
               This outreach is only possible with the support of visionary

@@ -54,10 +54,10 @@ const IndexPage = () => (
           <Content center column="2 / span 4" row="8 / span 3">
             <p>
               The gospel legacy of the Reformers lives on through our publishing
-              imprint, Reformation Trust. Authored by trusted teachers of our
-              own day, such as Dr. R.C. Sproul and the Ligonier Teaching
-              Fellows, these books and resources stand resolutely on the Bible
-              and seek to build up believers in their knowledge of God.
+              efforts. Authored by trusted teachers of our own day, such as Dr.
+              R.C. Sproul and the Ligonier Teaching Fellows, these books and
+              resources stand resolutely on the Bible and seek to build up
+              believers in their knowledge of God.
             </p>
             <p>
               New titles on discipleship, the doctrines of the Reformation, and

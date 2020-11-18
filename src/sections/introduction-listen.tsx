@@ -46,12 +46,13 @@ const IndexPage = () => (
           />
           <Content column="3 / span 4" row="8 / span 3" type="deck">
             <p>
-              Faith comes by hearing. Every week, Ligonier Ministries broadcasts
-              audio and video teaching on the air and on the web to millions of
-              people, free of charge. Trustworthy, life-changing teaching from
-              Dr. R.C. Sproul, the Ligonier Ministries Teaching Fellows, and
-              many others is available to you 24/7. Thank you for
-              tuning&nbsp;in.
+              Faith comes by hearing. Since hearing the word of Christ is
+              essential to our spiritual life, every week we broadcast radio
+              programs, video teaching series, podcasts, and more in order to
+              reach millions of people with biblical truth. Trustworthy,
+              life-changing teaching from Dr. R.C. Sproul, the Ligonier Teaching
+              Fellows, and many others is made available 24/7. Thank you for
+              tuning in.
             </p>
           </Content>
         </Well>
@@ -81,4 +82,3 @@ const Backdrop = styled.div`
 `
 
 export default IndexPage
-

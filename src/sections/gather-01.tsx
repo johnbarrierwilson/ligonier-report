@@ -111,8 +111,8 @@ const IndexPage = () => (
           </Well>
           <NumbersLarge
             column="10 / span 4"
-            description1="EVENTS IN A YEAR"
-            description2="ONLINE EVENT &amp; STREAM VIEWS"
+            description1="ONLINE AND IN-PERSON EVENTS"
+            description2="ONLINE EVENT & STREAM VIEWS"
             number1="20+"
             number2="612,000+"
             row="10 / span 2"

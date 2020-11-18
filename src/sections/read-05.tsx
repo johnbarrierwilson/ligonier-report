@@ -68,8 +68,8 @@ const IndexPage = () => (
               We hand-pick translators who combine fidelity to Scripture with an
               expert grasp of their language. Thanks to fruitful partnerships
               with ministries around the world, these translation efforts are
-              increasing in Chinese, Farsi, French, and Spanish, and publishing
-              continues in many other languages.
+              increasing in Arabic, Chinese, Farsi, French, and Spanish, and
+              publishing continues in many other languages.
             </p>
           </Content>
           <Well size="l">
@@ -106,9 +106,9 @@ const IndexPage = () => (
               freely distributed for those on active duty around the world.
             </p>
             <p>
-              Prisoners write to us every month, hungry for the gospel and for
-              resources to help them grow in Christ. Your support sends them
-              care packages that include a special edition of the{' '}
+              Hundreds of prisoners write to us every month, hungry for the
+              gospel and for resources to help them grow in Christ. Your support
+              sends them care packages that include a special edition of the{' '}
               <em>Reformation Study Bible</em> and books by trusted teachers.
               Prison chaplains are also supplied with the teaching resources
               they need to serve those under their care.

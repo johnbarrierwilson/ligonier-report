@@ -72,8 +72,8 @@ const IndexPage = () => (
             <p>
               Ligonier teaching series have been translated into several
               different languages, including Arabic, Korean, Portuguese, and
-              Spanish. Thanks to your support, we are now preparing series in
-              Chinese and Farsi.
+              Spanish. Thanks to your support, we are now also sharing series
+              widely in Chinese and Farsi.
             </p>
           </Content>
         </Well>

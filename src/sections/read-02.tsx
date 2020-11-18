@@ -76,7 +76,7 @@ const IndexPage = () => (
           <p>
             The <em>Reformation Study Bible</em> guides growing Christians
             through the Word of God with trusted contributions from seventy-five
-            distinguished scholars. More than one hundred thousand copies have
+            distinguished scholars. More than two hundred thousand copies have
             been distributed since March 2015.
           </p>
           <p>

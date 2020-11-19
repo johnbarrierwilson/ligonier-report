@@ -55,7 +55,7 @@ const IndexPage = () => (
           support made it possible to provide all of our{' '}
           <a href="https://www.ligonier.org/store/format/digital-study-guide-1/?sort=featured">
             digital study guides
-          </a>
+          </a>{' '}
           for free. The interest surged, and more than 660,000 free study guides
           were downloaded, helping many people take their Bible study even
           deeper.

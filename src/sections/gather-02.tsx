@@ -124,7 +124,7 @@ const IndexPage = () => (
                 <br />
                 Thousands of middle and high school students were equipped to
                 defend the Christian faith through{' '}
-                <a href="https://reformationbiblecollege.org/blog/always-ready-free-online-event-students">
+                <a href="https://www.ligonier.org/learn/conferences/always-ready-answers-to-tough-questions/">
                   Always Ready, an online livestream
                 </a>{' '}
                 hosted by Ligonier Ministries and RBC. At a time when the

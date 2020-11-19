@@ -104,7 +104,7 @@ const IndexPage = () => (
           <Content center column="6 / span 2" row="5 / span 4">
             <p>
               Military chaplains serve those who are literally on the front
-              lines. Your support is forming a spiritual supply line by
+              lines. Your support is forming a spiritual supply line by{' '}
               <a href="https://www.ligonier.org/give/outreach-projects/military-chaplain-outreach/">
                 providing gospel resources
               </a>{' '}

@@ -166,9 +166,9 @@ const IndexPage = () => (
           <Content center column="12 / span 2" row="7 / span 5">
             <p>
               Streaming trustworthy teaching and preaching twenty-four hours a
-              day, RefNet is our popular internet radio app. It provides
-              God-centered content for growing Christians, now with listeners in
-              more than 180 countries.
+              day, <a href="https://refnet.fm">RefNet</a> is our popular
+              internet radio app. It provides God-centered content for growing
+              Christians, now with listeners in more than 180 countries.
             </p>
             <p>
               RefNet features trusted teachers including Alistair Begg, John

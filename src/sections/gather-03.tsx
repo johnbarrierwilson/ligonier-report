@@ -76,9 +76,10 @@ const IndexPage = () => (
           <Well>
             <Content column="2 / span 4" row="9 / span 4">
               <p>
-                Ligonier Cruises gather ministry friends at sea for trustworthy
-                teaching from God’s Word. Together, they enjoy a memorable time
-                with refreshing Christian fellowship set amid the glory of God’s
+                <a href="https://www.ligoniertours.com/">Ligonier Cruises</a>{' '}
+                gather ministry friends at sea for trustworthy teaching from
+                God’s Word. Together, they enjoy a memorable time with
+                refreshing Christian fellowship set amid the glory of God’s
                 creation. In addition to faithful teaching, Christians have the
                 opportunity to meet like-minded believers. Popular destinations
                 include Alaska, the Caribbean, and Europe.
@@ -88,10 +89,10 @@ const IndexPage = () => (
                 Ligonier tours take inquisitive Christians to the places where
                 God has worked in church history. Ligonier Teaching Fellows
                 travel with attendees to guide, to teach, and to explain why our
-                history still matters today. These non&ndash;donor&ndash;funded
-                tours provide a rare, firsthand opportunity for growing
-                Christians to experience our family history together. We look
-                forward to sailing again soon.
+                history still matters today. These non-donor-funded tours
+                provide a rare, firsthand opportunity for growing Christians to
+                experience our family history together. We look forward to
+                sailing again soon.
               </p>
             </Content>
           </Well>

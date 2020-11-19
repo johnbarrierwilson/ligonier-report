@@ -70,8 +70,8 @@ const IndexPage = () => (
           <Well>
             <Numbers
               column="2 / span 4"
-              description="Free study guides downloaded this year"
-              number="660,000+"
+              description="Resources given away in the past year"
+              number="1,600,000+"
               row="11 / span 1"
             />
           </Well>

@@ -71,10 +71,10 @@ const IndexPage = () => (
             Dr. Lawson began serving at Ligonier Ministries as a teaching fellow
             in 2010. He preaches with an uncommon zeal for God’s glory and for
             the central tenets of Reformed theology. He is author of numerous
-            books, including <em>Foundations of Grace</em>,{' '}
+            books, including <em>Foundations of Grace</em> and{' '}
             <em>The Moment of Truth</em>, and has recorded several video
             teaching series with Ligonier. He also serves as editor of the Long
-            Line of Godly Men Profile series from Reformation Trust Publishing.
+            Line of Godly Men Profile series.
           </p>
         </Content>
       </Grid>

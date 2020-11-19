@@ -53,8 +53,11 @@ const IndexPage = () => (
           <p>
             Ligonier teaching resources can now be accessed in more ways than
             ever. Whether it’s video or audio, trusted Bible teaching is
-            available wherever you like to tune in—YouTube, Amazon Prime Video,
-            Alexa, and Roku.
+            available wherever you like to tune in—
+            <a href="https://www.youtube.com/user/LigonierMinistries">
+              YouTube
+            </a>
+            , Amazon Prime Video, Alexa, and Roku.
           </p>
           <p>
             We are reaching more people than ever before with the knowledge of
@@ -116,15 +119,21 @@ const IndexPage = () => (
               surging demand for trustworthy audio teaching.
             </p>
             <p>
-              In January, we launched the <em>Ask Ligonier</em> podcast. Each
-              week, our Teaching Fellows and special guests draw from years of
-              careful study to answer biblical and theological questions from
-              listeners like you.
+              In January, we launched the{' '}
+              <a href="https://ask.ligonier.org/podcast">
+                <em>Ask Ligonier</em>
+              </a>{' '}
+              podcast. Each week, our Teaching Fellows and special guests draw
+              from years of careful study to answer biblical and theological
+              questions from listeners like you.
             </p>
             <p>
-              <em>Luther: In Real Time</em> launched in October, allowing you to
-              walk with Martin Luther 500 years to the day from his heresy
-              charges to his famous stand for God’s Word at the Diet of Worms.
+              <a href="https://lutherinrealtime.com/">
+                <em>Luther: In Real Time</em>
+              </a>{' '}
+              launched in October, allowing you to walk with Martin Luther 500
+              years to the day from his heresy charges to his famous stand for
+              God’s Word at the Diet of Worms.
             </p>
             <p>
               A new podcast from Dr. Sproul is coming in early 2021. We’re eager

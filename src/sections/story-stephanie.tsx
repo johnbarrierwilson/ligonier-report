@@ -33,7 +33,7 @@ const IndexPage = () => (
       <Heading column="10 / span 2" row="9 / span 1">
         Stephanie,
         <br />
-        <em>South Afria</em>
+        <em>South Africa</em>
       </Heading>
       <Divider column="12 / span 3" row="10 / span 2" />
     </Well>
@@ -56,7 +56,11 @@ const IndexPage = () => (
           to help Christians redeem the time and grow in their knowledge of God
           caused the time spent on{' '}
           <a href="https://ligonier.org">Ligonier.org</a> to double and video
-          views on Ligonier’s YouTube channel to triple.
+          views on Ligonier’s{' '}
+          <a href="https://www.youtube.com/user/LigonierMinistries">
+            YouTube channel
+          </a>{' '}
+          to triple.
         </p>
       </Content>
     </Well>

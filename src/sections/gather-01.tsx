@@ -58,11 +58,13 @@ const IndexPage = () => (
             meet in person for our 2021 National Conference. In God’s
             providence, and because of your support, Ligonier’s new on-campus
             studio was finished just in time to transition to an online event,{' '}
-            <em>Made in the Image of God</em>. The livestream reached more than
-            100,000 people around the world, helping Christians to draw needed
-            strength from God’s Word as we considered our responsibility to
-            serve our families, churches, and communities well amid a global
-            crisis.
+            <a href="https://www.ligonier.org/learn/conferences/made-in-the-image-of-god/">
+              Made in the Image of God
+            </a>
+            . The livestream reached more than 100,000 people around the world,
+            helping Christians to draw needed strength from God’s Word as we
+            considered our responsibility to serve our families, churches, and
+            communities well amid a global crisis.
           </p>
         </Content>
 
@@ -101,11 +103,14 @@ const IndexPage = () => (
                 theological questions during Ask Ligonier livestreams.
               </p>
               <p>
-                To Commemorate Reformation Day, we streamed Romans 8, a special
-                online event in Spanish and Portuguese and dubbed in English.
-                Growing Christians joined together from around the world to
-                marvel at the rich truths of the gospel, emboldened to live as
-                more than conquerors in Christ.
+                To commemorate Reformation Day, we streamed{' '}
+                <a href="https://www.youtube.com/watch?v=FaRPtCvAibw">
+                  Romans 8
+                </a>
+                , a special online event in Spanish and Portuguese and dubbed in
+                English. Growing Christians joined together from around the
+                world to marvel at the rich truths of the gospel, emboldened to
+                live as more than conquerors in Christ.
               </p>
             </Content>
           </Well>

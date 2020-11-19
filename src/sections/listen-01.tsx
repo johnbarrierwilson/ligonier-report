@@ -122,8 +122,11 @@ const IndexPage = () => (
                 Spanish Edition: <em>Renovando&nbsp;Tu&nbsp;Mente</em>
               </strong>
               <br />
-              Since its launch in 2018, the Spanish edition of{' '}
-              <em>Renewing Your Mind</em> has broadcasted on radio stations
+              Since its launch in 2018, the{' '}
+              <a href="https://es.ligonier.org/renovandotumente/">
+                Spanish edition
+              </a>{' '}
+              of <em>Renewing Your Mind</em> has broadcasted on radio stations
               across Latin America, along with major online radio portals. This
               year alone, the program has been downloaded more than 1.6 million
               times.

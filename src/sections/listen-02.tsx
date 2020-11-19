@@ -56,11 +56,14 @@ const IndexPage = () => (
           />
           <Content center column="2 / span 4" row="10 / span 2">
             <p>
-              For decades, our video teaching series have enabled Dr. R.C.
-              Sproul and other gifted teachers to share the riches of Scripture
-              with a wide audience. There are hundreds of topics available,
-              designed to build up disciples in their knowledge of God and equip
-              them to live for the glory of God.
+              For decades, our{' '}
+              <a href="https://www.ligonier.org/learn/series/">
+                video teaching series
+              </a>{' '}
+              have enabled Dr. R.C. Sproul and other gifted teachers to share
+              the riches of Scripture with a wide audience. There are hundreds
+              of topics available, designed to build up disciples in their
+              knowledge of God and equip them to live for the glory of God.
             </p>
             <p>
               This expansive library weaves a rich tapestry of theology,
@@ -90,10 +93,11 @@ const IndexPage = () => (
         />
         <Content center column="9 / span 4" row="4 / span 4">
           <p>
-            The Ligonier app is a daily gospel resource that provides instant
-            access to a deep library of Christian teaching. It puts trustworthy
-            teaching in the palm of your hand, gathering together daily audio,
-            video, devotional articles, and much more.
+            The <a href="https://subsplash.com/ligonier/app">Ligonier app</a> is
+            a daily gospel resource that provides instant access to a deep
+            library of Christian teaching. It puts trustworthy teaching in the
+            palm of your hand, gathering together daily audio, video, devotional
+            articles, and much more.
           </p>
           <p>
             Accessed more than 6.1 million times annually, the app is a go-to

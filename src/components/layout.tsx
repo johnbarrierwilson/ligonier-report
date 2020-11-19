@@ -341,7 +341,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     spy={true}
                     to="read04"
                   >
-                    Reformation Trust
+                    Publishing
                   </Link>
                   <button onClick={() => subNavigation('ligonier-org')}>
                     Ligonier.org

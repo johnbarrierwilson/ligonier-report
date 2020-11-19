@@ -72,11 +72,14 @@ const IndexPage = () => (
             </p>
             <p>
               This year, visionary donors provided the needed resources for RBC
-              to offer its Foundation Year certificate program online for the
-              first time. This allows students who are currently unable to move
-              to Central Florida to gain a firm theological foundation for all
-              of life. The on-campus student body was also the largest it has
-              been in the college’s history.
+              to offer its{' '}
+              <a href="https://reformationbiblecollege.org/academics/foundation-year-online">
+                Foundation Year certificate program online
+              </a>{' '}
+              for the first time. This allows students who are currently unable
+              to move to Central Florida to gain a firm theological foundation
+              for all of life. The on-campus student body was also the largest
+              it has been in the college’s history.
             </p>
           </Content>
 
@@ -92,13 +95,16 @@ const IndexPage = () => (
                   Winter Conference: Gathering with Today and Tomorrow’s Leaders
                 </strong>
                 <br />
-                Every year, RBC hosts its annual Winter Conference on its
-                central Florida campus. Trusted teachers train students and
-                Christian leaders in theology and the knowledge of God, urging
-                them to hold to the truth of God’s Word—especially where it is
-                under attack. With sessions on apologetics, church history, and
-                more, this conference seeks to fuel the bold proclamation of the
-                gospel of our Savior Jesus Christ.
+                Every year, RBC hosts its annual{' '}
+                <a href="https://reformationbiblecollege.org/blog/%20winter-conference-the-sufficiency-scripture">
+                  Winter Conference
+                </a>{' '}
+                on its Central Florida campus. Gifted teachers train students
+                and Christian leaders in theology and the knowledge of God,
+                urging them to hold to the truth of God’s Word—especially where
+                it is under attack. With sessions on apologetics, church
+                history, and more, this conference seeks to fuel the bold
+                proclamation of the gospel of our Savior Jesus Christ.
               </p>
             </Content>
           </Well>
@@ -117,12 +123,15 @@ const IndexPage = () => (
                 <strong>Always Ready: Answers to Tough Questions</strong>
                 <br />
                 Thousands of middle and high school students were equipped to
-                defend the Christian faith through Always Ready, an online
-                livestream hosted by Ligonier Ministries and RBC. At a time when
-                the Bible’s teaching is rapidly being marginalized, gifted
-                teachers and speakers helped young disciples stand firm for the
-                truth of God’s Word and give sound answers to the questions
-                posed by their non-Christian friends.
+                defend the Christian faith through{' '}
+                <a href="https://reformationbiblecollege.org/blog/always-ready-free-online-event-students">
+                  Always Ready, an online livestream
+                </a>{' '}
+                hosted by Ligonier Ministries and RBC. At a time when the
+                Bible’s teaching is rapidly being marginalized, gifted teachers
+                and speakers helped young disciples stand firm for the truth of
+                God’s Word and give sound answers to the questions posed by
+                their non-Christian friends.
               </p>
             </Content>
           </Well>
@@ -149,10 +158,13 @@ const IndexPage = () => (
         <Well>
           <Content center column="10 / span 4" row="7 / span 4">
             <p>
-              Ligonier Connect allows growing Christians to learn online from an
-              ever-expanding library of interactive video courses. Flexibility
-              to study with others or to pursue a course at your own pace means
-              how you learn is up to you.
+              <a href="https://connect.ligonier.org/p/ligonier-connect/">
+                Ligonier Connect
+              </a>{' '}
+              allows growing Christians to learn online from an ever-expanding
+              library of interactive video courses. Flexibility to study with
+              others or to pursue a course at your own pace means how you learn
+              is up to you.
             </p>
             <p>
               Sit under the teaching of gifted theologians such as Drs. R.C.
@@ -171,8 +183,8 @@ const IndexPage = () => (
         </Well>
         <Numbers
           column="10 / span 4"
-          description="ACTIVE CONNECT STUDENTS"
-          number="5,000+"
+          description="Ligonier Connect students this year"
+          number="34,000+"
           row="11 / span 1"
         />
       </Grid>

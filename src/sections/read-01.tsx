@@ -92,7 +92,7 @@ const IndexPage = () => (
               number="75+ Countries"
               row="11 / span 1"
             >
-              <em>Tabletalk</em> readers around the world
+              <em>Tabletalk</em>&nbsp;readers around the world
             </Numbers>
           </Well>
         </Well>
@@ -109,14 +109,19 @@ const IndexPage = () => (
           />
           <Content column="9 / span 2" row="7 / span 5">
             <p>
-              Ask Ligonier is our online biblical and theological chat
-              service—providing clear, concise, and trustworthy answers. Drawing
-              on Ligonier’s vast library of resources and Dr. R.C. Sproul’s
-              decades-long ministry of answering students’ questions, we’re now
-              able to answer your theological questions twenty-four hours a day,
-              six days a week. In 2020, we launched the Ask Ligonier podcast as
-              another way for you to receive answers from some of the most
-              trusted pastors and theologians who are serving the church today.
+              <a href="https://ask.ligonier.org/">Ask Ligonier</a> is our online
+              biblical and theological chat service—providing clear, concise,
+              and trustworthy answers. Drawing on Ligonier’s vast library of
+              resources and Dr. R.C. Sproul’s decades-long ministry of answering
+              students’ questions, we’re now able to answer your theological
+              questions twenty-four hours a day, six days a week. In 2020, we
+              launched the{' '}
+              <a href="https://ask.ligonier.org/podcast">
+                <em>Ask Ligonier</em>
+              </a>{' '}
+              podcast as another way for you to receive answers from some of the
+              most trusted pastors and theologians who are serving the church
+              today.
             </p>
             <p>
               Do you have a question about a Bible passage or theology? Whether

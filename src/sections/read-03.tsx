@@ -81,12 +81,19 @@ const IndexPage = () => (
             <p>
               Translating the <em>Reformation Study Bible</em> into other
               languages is fueling Great Commission discipleship around the
-              world. German, Korean, and Spanish editions are now available.
-              Translation work is underway in three more languages: Arabic,
-              French, and Portuguese. In total, nearly one billion people
-              worldwide speak one of these three languages, yet they lack a
-              study Bible rooted in the historic Christian faith and Reformed
-              theology.
+              world.{' '}
+              <a href="https://www.3lverlag.de/schnellbestellung/619-studienbibel-2017-schwarz.html">
+                German
+              </a>
+              , <a href="https://rnrbook.com/28/?idx=1661">Korean</a>, and{' '}
+              <a href="https://www.ligonier.org/store/lbla-la-biblia-de-estudio-de-la-reforma-spanish-crimson-hardcover/">
+                Spanish
+              </a>{' '}
+              editions are now available. Translation work is underway in three
+              more languages: Arabic, French, and Portuguese. In total, nearly
+              one billion people worldwide speak one of these three languages,
+              yet they lack a study Bible rooted in the historic Christian faith
+              and Reformed theology.
             </p>
             <p>
               These pioneering translations will strengthen and advance global
@@ -139,10 +146,13 @@ const IndexPage = () => (
               with plans to distribute an additional 16,000 by 2028.
             </p>
             <p>
-              This outreach is only possible with the support of visionary
-              donors. Thank you for partnering with us. You are bringing the
-              Word of God to growing Christians in lands where Bibles are
-              expensive and trustworthy theological resources are rare.
+              <a href="https://www.ligonier.org/give/outreach-projects/study-bibles-africa/">
+                This outreach
+              </a>{' '}
+              is only possible with the support of visionary donors. Thank you
+              for partnering with us. You are bringing the Word of God to
+              growing Christians in lands where Bibles are expensive and
+              trustworthy theological resources are rare.
             </p>
           </Content>
         </Well>

@@ -55,8 +55,11 @@ const IndexPage = () => (
             <p>
               The English language contains a treasure trove of theological
               riches. Thanks to your prayerful and financial support, these
-              resources are being distributed around the world in many
-              additional languages.
+              resources are being distributed around the world in{' '}
+              <a href="https://www.ligonier.org/give/outreach-projects/international-outreach/">
+                many additional languages
+              </a>
+              .
             </p>
             <p>
               Teams of people are translating trustworthy teaching into the
@@ -102,13 +105,20 @@ const IndexPage = () => (
             <p>
               Military chaplains serve those who are literally on the front
               lines. Your support is forming a spiritual supply line by
-              providing gospel resources for troops as trustworthy books are
-              freely distributed for those on active duty around the world.
+              <a href="https://www.ligonier.org/give/outreach-projects/military-chaplain-outreach/">
+                providing gospel resources
+              </a>{' '}
+              for troops as trustworthy books are freely distributed for those
+              on active duty around the world.
             </p>
             <p>
               Hundreds of prisoners write to us every month, hungry for the
               gospel and for resources to help them grow in Christ. Your support
-              sends them care packages that include a special edition of the{' '}
+              sends them{' '}
+              <a href="https://www.ligonier.org/give/outreach-projects/prison-ministry/">
+                care packages
+              </a>{' '}
+              that include a special edition of the{' '}
               <em>Reformation Study Bible</em> and books by trusted teachers.
               Prison chaplains are also supplied with the teaching resources
               they need to serve those under their care.
@@ -145,14 +155,17 @@ const IndexPage = () => (
           <Content center column="10 / span 4" row="9 / span 4">
             <p>
               Who is Jesus, and what did He come to do? Many evangelicals are
-              confused when it comes to answering these questions. The Ligonier
-              Statement on Christology seeks to bring clarity where there is
-              confusion. It carefully restates the Bible’s teaching about the
-              person and work of Jesus Christ, the Word made flesh. With
-              biblical testimony and theological precision, this statement
-              proclaims that Jesus is truly God and truly man. Written for the
-              glory of Christ and the edification of His people, it is available
-              in English and twenty other major world languages.
+              confused when it comes to answering these questions.{' '}
+              <a href="https://www.christologystatement.com/">
+                The Ligonier Statement on Christology
+              </a>{' '}
+              seeks to bring clarity where there is confusion. It carefully
+              restates the Bible’s teaching about the person and work of Jesus
+              Christ, the Word made flesh. With biblical testimony and
+              theological precision, this statement proclaims that Jesus is
+              truly God and truly man. Written for the glory of Christ and the
+              edification of His people, it is available in English and twenty
+              other major world languages.
             </p>
           </Content>
         </Well>

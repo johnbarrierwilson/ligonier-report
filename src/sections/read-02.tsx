@@ -74,10 +74,13 @@ const IndexPage = () => (
         />
         <Content column="10 / span 4" row="7 / span 3">
           <p>
-            The <em>Reformation Study Bible</em> guides growing Christians
-            through the Word of God with trusted contributions from seventy-five
-            distinguished scholars. More than two hundred thousand copies have
-            been distributed since March 2015.
+            The{' '}
+            <a href="https://reformationstudybible.com/">
+              <em>Reformation Study Bible</em>
+            </a>{' '}
+            guides growing Christians through the Word of God with trusted
+            contributions from seventy-five distinguished scholars. More than
+            two hundred thousand copies have been distributed since March 2015.
           </p>
           <p>
             Dr. R.C. Sproul edited this landmark publication, which contains
@@ -94,7 +97,7 @@ const IndexPage = () => (
           </p>
         </Content>
         <Well top>
-          <Numbers column="10 / span 4" number="175,000+" row="10 / span 2">
+          <Numbers column="10 / span 4" number="200,000+" row="10 / span 2">
             <em>REFORMATION STUDY BIBLES</em> DISTRIBUTED SINCE 2015
           </Numbers>
         </Well>

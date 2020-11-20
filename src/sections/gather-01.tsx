@@ -55,7 +55,7 @@ const IndexPage = () => (
         <Content center column="2 / span 4" row="10 / span 2">
           <p>
             Due to local restrictions responding to COVID-19, we were unable to
-            meet in person for our 2021 National Conference. In God’s
+            meet in person for our 2020 National Conference. In God’s
             providence, and because of your support, Ligonier’s new on-campus
             studio was finished just in time to transition to an online event,{' '}
             <a href="https://www.ligonier.org/learn/conferences/made-in-the-image-of-god/">

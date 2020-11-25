@@ -68,8 +68,8 @@ const IndexPage = () => (
           </p>
           <p>
             <em>Renewing Your Mind</em> and messages from National Conferences
-            also air on NRB TV, reaching up to forty-five million households
-            with the truth of God’s Word.
+            also air on NRBTV, reaching up to forty-five million households with
+            the truth of God’s Word.
           </p>
         </Content>
         <Well top>

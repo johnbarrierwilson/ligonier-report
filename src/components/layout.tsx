@@ -17,64 +17,63 @@ import RightSidebar from './rightSidebar'
 import Share from './share'
 import Toggle from './toggle'
 
-const slidesInverted = [1, 6, 10, 12, 16, 18, 23, 25]
+const slidesInverted = [6, 10, 12, 16, 18, 21, 23]
 
 const sidebarStatuses = [
   0, // cover
   0, // introduction
   0, // letter
   1, // intro read
-  1,
-  1,
-  0, // ferguson
-  1,
-  1,
-  1,
-  0, // godfrey
-  1,
-  0, // lawson
+  1, // read
+  1, // read
+  0, // ferguson, inverted
+  1, // read
+  1, // read
+  1, // read
+  0, // godfrey, inverted
+  1, // read
+  0, // lawson, inverted
   2, // intro listen
-  2,
-  2,
-  2,
-  0, // nichols
-  2,
-  3, // intro gather
-  3,
-  3,
-  0, // parsons
-  3,
-  0, // thomas
-  3,
+  2, // listen
+  2, // listen
+  0, // nichols, inverted
+  2, // listen
+  3, // intro gather, inverted
+  3, // gather
+  3, // gather
+  0, // parsons, inverted
+  3, // gather
+  0, // thomas, inverted
+  3, // gather
+  3, // gather
 ]
 
 const sidebarTitles = [
-  '',
-  '',
-  'A Letter from the President',
-  '',
-  'Part One / Read',
-  'Part One / Read',
-  'Teaching Fellows / Ferguson',
-  'Part One / Read',
-  'Part One / Read',
-  'Part One / Read',
-  'Teaching Fellows / Godfrey',
-  'Part One / Read',
-  'Teaching Fellows / Lawson',
-  '',
-  'Part Two / Listen',
-  'Part Two / Listen',
-  'Part Two / Listen',
-  'Teaching Fellows / Nichols',
-  'Part Two / Listen',
-  '',
-  'Part Three / Gather',
-  'Part Three / Gather',
-  'Teaching Fellows / Parsons',
-  'Part Three / Gather',
-  'Teaching Fellows / Thomas',
-  'Part Three / Gather',
+  '', // cover
+  '', // introduction, inverted
+  'A Letter from the President', // letter
+  '', // intro read
+  'Part One / Read', // read
+  'Part One / Read', // read
+  'Teaching Fellows / Ferguson', // ferguson, inverted
+  'Part One / Read', // read
+  'Part One / Read', // read
+  'Part One / Read', // read
+  'Teaching Fellows / Godfrey', // godfrey, inverted
+  'Part One / Read', // read
+  'Teaching Fellows / Lawson', // lawson, inverted
+  '', // intro listen
+  'Part Two / Listen', // listen
+  'Part Two / Listen', // listen
+  'Teaching Fellows / Nichols', // nichols, inverted
+  'Part Two / Listen', // listen
+  '', // intro gather, inverted
+  'Part Three / Gather', // gather
+  'Part Three / Gather', // gather
+  'Teaching Fellows / Parsons', // parson, inverted
+  'Part Three / Gather', // gather
+  'Teaching Fellows / Thomas', // thomas, inverted
+  'Part Three / Gather', // gather
 ]
 
 interface LayoutProps {
@@ -226,13 +225,12 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(0)}
+                    onSetActive={() => setActive(1)}
                     spy={true}
                     to="introduction"
                   >
                     Overview
                   </Link>
-                  {/* <Link containerId="containerElement" hashSpy={true} href="#" offset={offset} onClick={toggleNavigation} onSetActive={() => setActive(1)} spy={true} to="teachingfellows">The Teaching Fellows</Link> */}
                   <Link
                     containerId="containerElement"
                     hashSpy={true}
@@ -436,14 +434,13 @@ const Layout: React.FC<LayoutProps> = (props) => {
                   <button onClick={() => subNavigation('refnet')}>
                     RefNet
                   </button>
-                  {/* <Link containerId="containerElement" hashSpy={true} href="#" offset={offset} onClick={toggleNavigation} onSetActive={() => setActive(16)} spy={true} to="fellowmohler">Teaching Fellow: Albert Mohler</Link> */}
                   <Link
                     containerId="containerElement"
                     hashSpy={true}
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(17)}
+                    onSetActive={() => setActive(15)}
                     spy={true}
                     to="listen02"
                   >
@@ -458,7 +455,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(18)}
+                    onSetActive={() => setActive(16)}
                     spy={true}
                     to="fellownichols"
                   >
@@ -470,7 +467,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(19)}
+                    onSetActive={() => setActive(17)}
                     spy={true}
                     to="listen03"
                   >
@@ -490,7 +487,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(20)}
+                    onSetActive={() => setActive(18)}
                     spy={true}
                     to="introductiongather"
                   >
@@ -502,7 +499,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(21)}
+                    onSetActive={() => setActive(19)}
                     spy={true}
                     to="storykarla"
                   >
@@ -514,7 +511,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(22)}
+                    onSetActive={() => setActive(20)}
                     spy={true}
                     to="gather01"
                   >
@@ -533,7 +530,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(23)}
+                    onSetActive={() => setActive(21)}
                     spy={true}
                     to="fellowparsons"
                   >
@@ -545,7 +542,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(24)}
+                    onSetActive={() => setActive(22)}
                     spy={true}
                     to="gather02"
                   >
@@ -560,7 +557,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(25)}
+                    onSetActive={() => setActive(23)}
                     spy={true}
                     to="fellowthomas"
                   >
@@ -572,7 +569,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     href="#"
                     offset={offset}
                     onClick={toggleNavigation}
-                    onSetActive={() => setActive(26)}
+                    onSetActive={() => setActive(24)}
                     spy={true}
                     to="gather03"
                   >
